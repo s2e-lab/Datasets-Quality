@@ -1,27 +1,32 @@
 from tqdm import tqdm
-
 from utils import get_data, process_concode_dataset, write_result
-from heuristics import heuristic_1
+from rules import rule_p1
 
-TARGET_DATASET = "../../../Datasets/CONCODE/concode_test.json"
-
+TARGET_DATASET = "../../datasets/CONCODE/concode_test.json"
+RESULT_FOLDER  = "../../results/"
 MAX_NUMBER_OF_HEURISTICS = 6
 
 
-def run_heuristic(data):
+def apply_rules(data: object) -> None:
+    """
+    Executes the heuristics on the JSON data passed as inout.
+    
+    :param data: the prompt dataset
+    """
+
     nl_docs = []
-    write_path = "./Result/"
+    write_path = RESULT_FOLDER
     if "CONCODE" in TARGET_DATASET:
         nl_docs = process_concode_dataset(data)
         write_path += "CONCODE_heuristic_results.json"
-        print(nl_docs[0])
+        
     assert nl_docs != []
     results = []
 
     for nl in tqdm(nl_docs):
         result = {"nl": nl, "Heuristic": ""}
         applied_heuristics = [False for _ in range(0, MAX_NUMBER_OF_HEURISTICS)]
-        if heuristic_1(nl):
+        if rule_p1(nl):
             applied_heuristics[0] = True
 
         result["Heuristic"] = [
@@ -36,7 +41,7 @@ def run_heuristic(data):
 
 def main():
     data = get_data(path=TARGET_DATASET, jsonl=True)
-    run_heuristic(data)
+    apply_rules(data)
 
 
 if __name__ == "__main__":
