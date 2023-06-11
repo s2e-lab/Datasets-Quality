@@ -2,7 +2,7 @@ from tqdm import tqdm
 from utils import get_data, process_concode_dataset, write_result
 from rules import rule_p1
 
-TARGET_DATASET = "../../datasets/CONCODE/concode_test.json"
+TARGET_DATASET = [{"Source_Path":"../../datasets/CONCODE/concode_test.json", "Output_Path":"CONCODE_heuristic_results.json"}]
 RESULT_FOLDER  = "../../results/"
 MAX_NUMBER_OF_HEURISTICS = 6
 
@@ -16,9 +16,9 @@ def apply_rules(data: object) -> None:
 
     nl_docs = []
     write_path = RESULT_FOLDER
-    if "CONCODE" in TARGET_DATASET:
+    if "CONCODE" in TARGET_DATASET[0]["Source_Path"]:
         nl_docs = process_concode_dataset(data)
-        write_path += "CONCODE_heuristic_results.json"
+        write_path += TARGET_DATASET[0]["Output_Path"]
         
     assert nl_docs != []
     results = []
@@ -40,7 +40,7 @@ def apply_rules(data: object) -> None:
 
 
 def main():
-    data = get_data(path=TARGET_DATASET, jsonl=True)
+    data = get_data(path=TARGET_DATASET[0]["Source_Path"], jsonl=True)
     apply_rules(data)
 
 
