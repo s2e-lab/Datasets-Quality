@@ -3,7 +3,7 @@ from utils import get_data, process_concode_dataset, process_human_eval_dataset,
 from rules import rule_p1,rule_p2,rule_p5,rule_p4,rule_p3
 
 TARGET_DATASET = [{"Source_Path":"../../datasets/CONCODE/concode_test.json", "Output_Path":"CONCODE_heuristic_results.json"},
-                  {"Source_Path":"../../datasets/HumanEval/human-eval-v2-20210705.jsonl", "Output_Path":"HumanEval_heuristic_results.json"},
+                  {"Source_Path":"../../datasets/HumanEval/HumanEval.jsonl", "Output_Path":"HumanEval_heuristic_results.json"},
                   {"Source_Path":"../../datasets/mbxp/mbpp_release_v1.jsonl", "Output_Path":"mbxp_python_heuristic_results.json"},
                   {"Source_Path":"../../datasets/mbxp/mbjp_release_v1.jsonl", "Output_Path":"mbxp_java_heuristic_results.json"},
                   {"Source_Path":"../../datasets/mbxp_humaneval/HumanEval.jsonl", "Output_Path":"mbxp_humaneval_python_heuristic_results.json"},
@@ -32,7 +32,7 @@ def apply_rules(current_dataset: dict,data: object) -> None:
     elif "mbxp" in current_dataset["Source_Path"] and "mbpp" in current_dataset["Source_Path"]:
         nl_docs = process_mbxp_python_dataset(data)
         write_path += current_dataset["Output_Path"]
-    elif "mbxp" in current_dataset"Source_Path"] and "mbjp" in current_dataset["Source_Path"]:
+    elif "mbxp" in current_dataset["Source_Path"] and "mbjp" in current_dataset["Source_Path"]:
         nl_docs = process_mbxp_java_dataset(data)
         write_path += current_dataset["Output_Path"]
     elif "mbxp_humaneval" in current_dataset["Source_Path"] and not "java" in current_dataset["Source_Path"]:
@@ -79,8 +79,10 @@ def apply_rules(current_dataset: dict,data: object) -> None:
 
 def main():
     for current_dataset in TARGET_DATASET:
+        print("Processing dataset: ", current_dataset["Source_Path"])
         data = get_data(path=current_dataset["Source_Path"], jsonl=True)
         apply_rules(current_dataset,data)
+        print("Done processing dataset: ", current_dataset["Source_Path"])
 
 
 
