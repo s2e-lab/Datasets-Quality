@@ -13,9 +13,8 @@ TARGET_DATASET = [{"Source_Path":"../../datasets/CONCODE/concode_test.json", "Ou
 
 RESULT_FOLDER  = "../../results/"
 MAX_NUMBER_OF_HEURISTICS = 6
-global_i = 0
 
-def apply_rules(data: object) -> None:
+def apply_rules(current_dataset: dict,data: object) -> None:
     """
     Executes the heuristics on the JSON data passed as inout.
     
@@ -24,30 +23,30 @@ def apply_rules(data: object) -> None:
 
     nl_docs = []
     write_path = RESULT_FOLDER
-    if "CONCODE" in TARGET_DATASET[global_i]["Source_Path"]:
+    if "CONCODE" in current_dataset["Source_Path"]:
         nl_docs = process_concode_dataset(data)
-        write_path += TARGET_DATASET[global_i]["Output_Path"]
-    elif "HumanEval" in TARGET_DATASET[global_i]["Source_Path"]:
+        write_path += current_dataset["Output_Path"]
+    elif "HumanEval" in current_dataset["Source_Path"]:
         nl_docs = process_human_eval_dataset(data)
-        write_path += TARGET_DATASET[global_i]["Output_Path"]
-    elif "mbxp" in TARGET_DATASET[global_i]["Source_Path"] and "mbpp" in TARGET_DATASET[global_i]["Source_Path"]:
+        write_path += current_dataset["Output_Path"]
+    elif "mbxp" in current_dataset["Source_Path"] and "mbpp" in current_dataset["Source_Path"]:
         nl_docs = process_mbxp_python_dataset(data)
-        write_path += TARGET_DATASET[global_i]["Output_Path"]
-    elif "mbxp" in TARGET_DATASET[global_i]["Source_Path"] and "mbjp" in TARGET_DATASET[global_i]["Source_Path"]:
+        write_path += current_dataset["Output_Path"]
+    elif "mbxp" in current_dataset"Source_Path"] and "mbjp" in current_dataset["Source_Path"]:
         nl_docs = process_mbxp_java_dataset(data)
-        write_path += TARGET_DATASET[global_i]["Output_Path"]
-    elif "mbxp_humaneval" in TARGET_DATASET[global_i]["Source_Path"] and not "java" in TARGET_DATASET[global_i]["Source_Path"]:
+        write_path += current_dataset["Output_Path"]
+    elif "mbxp_humaneval" in current_dataset["Source_Path"] and not "java" in current_dataset["Source_Path"]:
         nl_docs = process_mbxp_humaneval_python_dataset(data)
         write_path += TARGET_DATASET[global_i]["Output_Path"]
-    elif "mbxp_humaneval" in TARGET_DATASET[global_i]["Source_Path"] and "java" in TARGET_DATASET[global_i]["Source_Path"]:
+    elif "mbxp_humaneval" in current_dataset["Source_Path"] and "java" in current_dataset["Source_Path"]:
         nl_docs = process_mbxp_humaneval_java_dataset(data)
-        write_path += TARGET_DATASET[global_i]["Output_Path"]
-    elif "mbxp_mathqa" in TARGET_DATASET[global_i]["Source_Path"] and "python" in TARGET_DATASET[global_i]["Source_Path"]:
+        write_path += current_dataset["Output_Path"]
+    elif "mbxp_mathqa" in current_dataset["Source_Path"] and "python" in current_dataset["Source_Path"]:
         nl_docs = process_mbxp_mathqa_python_dataset(data)
-        write_path += TARGET_DATASET[global_i]["Output_Path"]
-    elif "mbxp_mathqa" in TARGET_DATASET[global_i]["Source_Path"] and "java" in TARGET_DATASET[global_i]["Source_Path"]:
+        write_path += current_dataset["Output_Path"]
+    elif "mbxp_mathqa" in current_dataset["Source_Path"] and "java" in current_dataset["Source_Path"]:
         nl_docs = process_mbxp_mathqa_java_dataset(data)
-        write_path += TARGET_DATASET[global_i]["Output_Path"]
+        write_path += current_dataset["Output_Path"]
 
     assert nl_docs != []
     results = []
@@ -79,11 +78,10 @@ def apply_rules(data: object) -> None:
 
 
 def main():
-    for i in range(0, len(TARGET_DATASET)):
-        global global_i 
-        global_i = i
-        data = get_data(path=TARGET_DATASET[global_i]["Source_Path"], jsonl=True)
-        apply_rules(data)
+    for current_dataset in TARGET_DATASET:
+        data = get_data(path=current_dataset["Source_Path"], jsonl=True)
+        apply_rules(current_dataset,data)
+
 
 
 if __name__ == "__main__":
