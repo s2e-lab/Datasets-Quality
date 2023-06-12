@@ -34,21 +34,9 @@ def process_concode_dataset(data: list) -> list:
 def process_human_eval_dataset(data: list) -> list:
     nl_docs = []
     for d in tqdm(data):
-        # print(d)
-        # print("here")
-        temp_nl_docs = d['prompt']
-        # print(temp_nl_docs)
-        start_index = temp_nl_docs.find(r'"""')
-        if start_index == -1:
-            start_index = temp_nl_docs.find(r"'''")
-        start_index += 3
-
-        end_index = temp_nl_docs.rfind(r'"""')
-        if end_index == -1:
-            end_index = temp_nl_docs.rfind(r"'''")
-        nl_docs.append(temp_nl_docs[start_index:end_index])
-        # nl_docs.append(re.search(r'\"\"\"(.+?)\"\"\"', temp_nl_docs, re.DOTALL).group(1))
-        # print(nl_docs[-1])
+        text = d['prompt']
+        comment=find_python_comment(text)
+        nl_docs.append(comment)
     return nl_docs
 
 def process_human_eval_plus_dataset(data: list) -> list:

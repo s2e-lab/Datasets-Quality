@@ -10,7 +10,7 @@ TARGET_DATASET = [{"Source_Path":"../../datasets/CONCODE/concode_test.json", "Ou
                   {"Source_Path":"../../datasets/mbxp_humaneval/HumanEval_java_v1.1.jsonl", "Output_Path":"mbxp_humaneval_java_heuristic_results.json"},
                   {"Source_Path":"../../datasets/mbxp_mathqa/mathqa-test-python_v1.jsonl", "Output_Path":"mbxp_mathqa_python_heuristic_results.json"},
                   {"Source_Path":"../../datasets/mbxp_mathqa/mathqa-test-java_v1.jsonl", "Output_Path":"mbxp_mathqa_java_heuristic_results.json"}]
-# TARGET_DATASET = "../../datasets/HumanEval/human-eval-v2-20210705.jsonl"
+
 RESULT_FOLDER  = "../../results/"
 MAX_NUMBER_OF_HEURISTICS = 6
 global_i = 0
@@ -48,30 +48,11 @@ def apply_rules(data: object) -> None:
     elif "mbxp_mathqa" in TARGET_DATASET[global_i]["Source_Path"] and "java" in TARGET_DATASET[global_i]["Source_Path"]:
         nl_docs = process_mbxp_mathqa_java_dataset(data)
         write_path += TARGET_DATASET[global_i]["Output_Path"]
-        # write_path += "HumanEval_heuristic_results.json"
-    # nl_docs = process_human_eval_dataset(data)
-    #     # write_path += "CONCODE_heuristic_results.json"
-    # write_path += "HumanEval_heuristic_results.json"
+
     assert nl_docs != []
     results = []
-    #nl_docs=nl_docs[1:20]
-    # Open the file in write mode
-    # file_path = 'processed_file.txt'
-    # file = open(file_path, 'w')
 
-# Write content to the file
-    # file.writelines([str(item) + '\n' for item in nl_docs])
-    #file.write("This is a sample text.")
-
-# Close the file
-    # file.close()
-    file_path = 'test_file.txt'
-    with open(file_path, 'r') as file:
-    # Read all lines from the file and store them in a list
-        nl_docs_temp = file.readlines()
     for nl in tqdm(nl_docs):
-        # print()
-        # print(nl)
         result = {"nl": nl, "Heuristic": ""}
         applied_heuristics = [False for _ in range(0, MAX_NUMBER_OF_HEURISTICS)]
         if rule_p1(nl):
@@ -98,7 +79,7 @@ def apply_rules(data: object) -> None:
 
 
 def main():
-    for i in range(4, len(TARGET_DATASET)):
+    for i in range(0, len(TARGET_DATASET)):
         global global_i 
         global_i = i
         data = get_data(path=TARGET_DATASET[global_i]["Source_Path"], jsonl=True)
