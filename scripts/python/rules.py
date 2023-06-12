@@ -58,9 +58,8 @@ def rule_p3(comment:str) ->bool:
     :param comment: source code comment to be inspected
     :returns: true if the comment is incomplete.
     """
-    # core_nlp_path=r"D:"
     # Download stanford-corenlp-4.5.4.zip from https://stanfordnlp.github.io/CoreNLP/index.html
-    # Start corenlp server using: java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000
+    # Start corenlp server using: java -mx4g -cp "<path_to_the_extracted_zip_folder>/*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000
     # Create a StanfordCoreNLP object
     nlp = StanfordCoreNLP('http://localhost:9000')
     print("nlppp")
