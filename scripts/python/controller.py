@@ -1,12 +1,19 @@
 from tqdm import tqdm
-from utils import get_data, process_concode_dataset, process_human_eval_dataset, write_result
+from utils import get_data, process_concode_dataset, process_human_eval_dataset, process_mbxp_python_dataset, process_mbxp_java_dataset, process_mbxp_humaneval_java_dataset, process_mbxp_humaneval_python_dataset, process_mbxp_mathqa_python_dataset, process_mbxp_mathqa_java_dataset, write_result
 from rules import rule_p1,rule_p2,rule_p5,rule_p4,rule_p3
 
-TARGET_DATASET = "../../datasets/CONCODE/concode_test.json"
+TARGET_DATASET = [{"Source_Path":"../../datasets/CONCODE/concode_test.json", "Output_Path":"CONCODE_heuristic_results.json"},
+                  {"Source_Path":"../../datasets/HumanEval/human-eval-v2-20210705.jsonl", "Output_Path":"HumanEval_heuristic_results.json"},
+                  {"Source_Path":"../../datasets/mbxp/mbpp_release_v1.jsonl", "Output_Path":"mbxp_python_heuristic_results.json"},
+                  {"Source_Path":"../../datasets/mbxp/mbjp_release_v1.jsonl", "Output_Path":"mbxp_java_heuristic_results.json"},
+                  {"Source_Path":"../../datasets/mbxp_humaneval/HumanEval.jsonl", "Output_Path":"mbxp_humaneval_python_heuristic_results.json"},
+                  {"Source_Path":"../../datasets/mbxp_humaneval/HumanEval_java_v1.1.jsonl", "Output_Path":"mbxp_humaneval_java_heuristic_results.json"},
+                  {"Source_Path":"../../datasets/mbxp_mathqa/mathqa-test-python_v1.jsonl", "Output_Path":"mbxp_mathqa_python_heuristic_results.json"},
+                  {"Source_Path":"../../datasets/mbxp_mathqa/mathqa-test-java_v1.jsonl", "Output_Path":"mbxp_mathqa_java_heuristic_results.json"}]
 # TARGET_DATASET = "../../datasets/HumanEval/human-eval-v2-20210705.jsonl"
 RESULT_FOLDER  = "../../results/"
 MAX_NUMBER_OF_HEURISTICS = 6
-
+global_i = 0
 
 def apply_rules(data: object) -> None:
     """
@@ -17,10 +24,30 @@ def apply_rules(data: object) -> None:
 
     nl_docs = []
     write_path = RESULT_FOLDER
-    if "CONCODE" in TARGET_DATASET:
+    if "CONCODE" in TARGET_DATASET[global_i]["Source_Path"]:
         nl_docs = process_concode_dataset(data)
-        # nl_docs = process_human_eval_dataset(data)
-        write_path += "CONCODE_heuristic_results.json"
+        write_path += TARGET_DATASET[global_i]["Output_Path"]
+    elif "HumanEval" in TARGET_DATASET[global_i]["Source_Path"]:
+        nl_docs = process_human_eval_dataset(data)
+        write_path += TARGET_DATASET[global_i]["Output_Path"]
+    elif "mbxp" in TARGET_DATASET[global_i]["Source_Path"] and "mbpp" in TARGET_DATASET[global_i]["Source_Path"]:
+        nl_docs = process_mbxp_python_dataset(data)
+        write_path += TARGET_DATASET[global_i]["Output_Path"]
+    elif "mbxp" in TARGET_DATASET[global_i]["Source_Path"] and "mbjp" in TARGET_DATASET[global_i]["Source_Path"]:
+        nl_docs = process_mbxp_java_dataset(data)
+        write_path += TARGET_DATASET[global_i]["Output_Path"]
+    elif "mbxp_humaneval" in TARGET_DATASET[global_i]["Source_Path"] and not "java" in TARGET_DATASET[global_i]["Source_Path"]:
+        nl_docs = process_mbxp_humaneval_python_dataset(data)
+        write_path += TARGET_DATASET[global_i]["Output_Path"]
+    elif "mbxp_humaneval" in TARGET_DATASET[global_i]["Source_Path"] and "java" in TARGET_DATASET[global_i]["Source_Path"]:
+        nl_docs = process_mbxp_humaneval_java_dataset(data)
+        write_path += TARGET_DATASET[global_i]["Output_Path"]
+    elif "mbxp_mathqa" in TARGET_DATASET[global_i]["Source_Path"] and "python" in TARGET_DATASET[global_i]["Source_Path"]:
+        nl_docs = process_mbxp_mathqa_python_dataset(data)
+        write_path += TARGET_DATASET[global_i]["Output_Path"]
+    elif "mbxp_mathqa" in TARGET_DATASET[global_i]["Source_Path"] and "java" in TARGET_DATASET[global_i]["Source_Path"]:
+        nl_docs = process_mbxp_mathqa_java_dataset(data)
+        write_path += TARGET_DATASET[global_i]["Output_Path"]
         # write_path += "HumanEval_heuristic_results.json"
     # nl_docs = process_human_eval_dataset(data)
     #     # write_path += "CONCODE_heuristic_results.json"
@@ -71,8 +98,11 @@ def apply_rules(data: object) -> None:
 
 
 def main():
-    data = get_data(path=TARGET_DATASET, jsonl=True)
-    apply_rules(data)
+    for i in range(4, len(TARGET_DATASET)):
+        global global_i 
+        global_i = i
+        data = get_data(path=TARGET_DATASET[global_i]["Source_Path"], jsonl=True)
+        apply_rules(data)
 
 
 if __name__ == "__main__":

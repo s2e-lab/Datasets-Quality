@@ -48,10 +48,86 @@ def process_human_eval_dataset(data: list) -> list:
             end_index = temp_nl_docs.rfind(r"'''")
         nl_docs.append(temp_nl_docs[start_index:end_index])
         # nl_docs.append(re.search(r'\"\"\"(.+?)\"\"\"', temp_nl_docs, re.DOTALL).group(1))
-        print(nl_docs[-1])
+        # print(nl_docs[-1])
     return nl_docs
 
+def process_human_eval_plus_dataset(data: list) -> list:
+    nl_docs = []
+    for d in tqdm(data):
+        text = d['prompt']
+        comment=find_python_comment(text)
+        nl_docs.append(comment)
+    return nl_docs
+    
+def process_mbxp_python_dataset(data: list) -> list:
+    nl_docs = []
+    for d in tqdm(data):
+        text = d['prompt']
+        comment=find_python_comment(text)
+        nl_docs.append(comment)
+    return nl_docs
 
+def process_mbxp_humaneval_python_dataset(data: list) -> list:
+    nl_docs = []
+    for d in tqdm(data):
+        text = d['prompt']
+        comment=find_python_comment(text)
+        nl_docs.append(comment)
+    return nl_docs
+
+def process_mbxp_java_dataset(data: list) -> list:
+    nl_docs = []
+    for d in tqdm(data):
+        text = d['prompt']
+        comment=find_java_comment(text)
+        nl_docs.append(comment)
+    return nl_docs
+
+def process_mbxp_humaneval_java_dataset(data: list) -> list:
+    nl_docs = []
+    for d in tqdm(data):
+        text = d['prompt']
+        comment=find_java_comment(text)
+        nl_docs.append(comment)
+    return nl_docs
+
+def process_mbxp_mathqa_java_dataset(data: list) -> list:
+    nl_docs = []
+    for d in tqdm(data):
+        text = d['prompt']
+        comment=find_java_comment(text)
+        nl_docs.append(comment)
+    return nl_docs
+
+def process_mbxp_mathqa_python_dataset(data: list) -> list:
+    nl_docs = []
+    for d in tqdm(data):
+        text = d['prompt']
+        comment=find_python_comment(text)
+        nl_docs.append(comment)
+    return nl_docs
+    
+
+def find_python_comment(text):
+    start_index = text.find(r'"""')
+    if start_index == -1:
+            start_index = text.find(r"'''")
+    start_index += 3
+
+    end_index = text.rfind(r'"""')
+    if end_index == -1:
+        end_index = text.rfind(r"'''")
+    return text[start_index:end_index]
+
+
+def find_java_comment(text):
+    start_index = text.find(r'/*')
+    start_index += 3
+    end_index = text.rfind(r'*/')
+    
+    return text[start_index:end_index]
+
+    
 
 
 
