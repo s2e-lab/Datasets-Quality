@@ -1,0 +1,19 @@
+Returns lookup interface for maximum number of connections allowed per route.
+Returns a hash of the given files contents. Reads the file fully into memory before hashing so only use with small files.
+Obtains the ID of an object and returns it as a String. If canCreate is true it will try to create a new ID for the object if it has none.
+Creates a matcher of  {@link Comparable} object that matches when the examined object isgreater than the specified value, as reported by the compareTo method of the examined object. For example: assertThat(2, greaterThan(1))
+Returns denominator
+Not required
+Implements BundleActivator.stop(). Does nothing since the framework will automatically unregister any registered services.
+Constructs a String with all attributes in name = value format.
+Called when the activity will start interacting with the user.
+Tests for the  {@link BufferedBlockInStream#seek(long)} method.
+Obtains the release of the versioned module or informal unit. This data is read from the version information for the package.
+Tries to perform a "full" garbage collection cycle (including processing of weak references and invocation of finalize methods) and waits for it to complete.  Ensures that at least one weak reference has been cleared and one  {@code finalize} method has been run before thismethod returns.  This method may be useful when testing the garbage collection mechanism itself, or inhibiting a spontaneous GC initiation in subsequent code. In contrast, a plain call to  {@link java.lang.System#gc()} does not ensure finalizationprocessing and may run concurrently, for example, if the JVM flag  {@code -XX:+ExplicitGCInvokesConcurrent} is used.Whenever possible, it is preferable to test directly for some observable change resulting from GC, as with  {@link #awaitClear}.  Because there are no guarantees for the order of GC finalization processing, there may still be some unfinished work for the GC to do after this method returns. This method does not create any memory pressure as would be required to cause soft references to be processed.
+{@inheritDoc}
+Sets the properties and configuration before each test runs.
+This function returns the documentation in C-style comment format.
+Returns the transaction that was found to be non-standard, or null.
+Get the log level for reporting the selection of the new alternative address or endpoint
+function to search for a word
+Returns all commits that belong to a particular ref
