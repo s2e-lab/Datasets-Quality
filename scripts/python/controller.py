@@ -37,7 +37,7 @@ def apply_rules(current_dataset: dict,data: object) -> None:
         write_path += current_dataset["Output_Path"]
     elif "mbxp_humaneval" in current_dataset["Source_Path"] and not "java" in current_dataset["Source_Path"]:
         nl_docs = process_mbxp_humaneval_python_dataset(data)
-        write_path += TARGET_DATASET[global_i]["Output_Path"]
+        write_path += current_dataset["Output_Path"]
     elif "mbxp_humaneval" in current_dataset["Source_Path"] and "java" in current_dataset["Source_Path"]:
         nl_docs = process_mbxp_humaneval_java_dataset(data)
         write_path += current_dataset["Output_Path"]
