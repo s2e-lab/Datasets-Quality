@@ -95,6 +95,34 @@ def process_mbxp_mathqa_python_dataset(data: list) -> list:
         nl_docs.append(comment)
     return nl_docs
     
+def process_odex_en_dataset(data: list) -> list:
+    nl_docs = []
+    for d in tqdm(data):
+        text = d['intent']
+        comment=find_python_comment_sigQ(text)
+        nl_docs.append(comment)
+    return nl_docs
+def process_pandasNumpyEval_numpy_dataset(data: list) -> list:
+    nl_docs = []
+    for d in tqdm(data):
+        text = d['prompt']
+        comment=find_python_comment_sigQ(text)
+        nl_docs.append(comment)
+    return nl_docs
+
+
+
+
+
+
+def find_python_comment_sigQ(text):
+    
+    start_index = text.find(r'"')
+    start_index += 3
+    end_index = text.rfind(r'"')
+
+    return text[start_index:end_index]
+
 
 def find_python_comment(text):
     start_index = text.find(r'"""')
