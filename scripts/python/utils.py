@@ -15,7 +15,7 @@ def get_data(path: str, jsonl = False) -> object:
                 data.append(json.loads(line))
         return data
     else:
-        with open(path, 'r') as f:
+        with open(path,'r',encoding="utf8") as f:
             data = json.load(f)
         return data
     
@@ -67,7 +67,7 @@ def process_mbxp_java_dataset(data: list) -> list:
     nl_docs = []
     for d in tqdm(data):
         text = d['prompt']
-        comment=find_java_comment(text)
+        comment=find_java_comment_multiline(text)
         nl_docs.append(comment)
     return nl_docs
 
@@ -75,7 +75,7 @@ def process_mbxp_humaneval_java_dataset(data: list) -> list:
     nl_docs = []
     for d in tqdm(data):
         text = d['prompt']
-        comment=find_java_comment(text)
+        comment=find_java_comment_multiline(text)
         nl_docs.append(comment)
     return nl_docs
 
@@ -83,7 +83,7 @@ def process_mbxp_mathqa_java_dataset(data: list) -> list:
     nl_docs = []
     for d in tqdm(data):
         text = d['prompt']
-        comment=find_java_comment(text)
+        comment=find_java_comment_multiline(text)
         nl_docs.append(comment)
     return nl_docs
 
@@ -117,23 +117,53 @@ def process_pandasNumpyEval_pandas_dataset(data: list) -> list:
         text = d['prompt']
         comment=find_python_comment_hash(text)
         print(comment)
-        print(comment)
+      
         nl_docs.append(comment)
     return nl_docs
 def process_CoderEval_python_dataset(data: list) -> list:
     nl_docs = []
+    data=data["RECORDS"]
     for d in tqdm(data):
-        text = d['test_name']
+        text = d["human_label"]
         comment=find_python_comment_sigQ(text)
         print(comment)
-        print(comment)
+        
         nl_docs.append(comment)
     return nl_docs
-
+def process_MCoNaLa_ru_test_to_en_dataset(data: list) -> list:
+    nl_docs = []
+    
+    for d in tqdm(data):
+        text = d["intent"]
+        # comment=find_python_comment_sigQ(text)
+        # print(comment)
+        # print(comment)
+        nl_docs.append(text)
+    return nl_docs
+def process_MCoNaLa_ja_test_to_en_dataset(data: list) -> list:
+    nl_docs = []
+    
+    for d in tqdm(data):
+        text = d["intent"]
+        # comment=find_python_comment_sigQ(text)
+        # print(comment)
+        # print(comment)
+        nl_docs.append(text)
+    return nl_docs
+def process_MCoNaLa_es_test_to_en_dataset(data: list) -> list:
+    nl_docs = []
+    
+    for d in tqdm(data):
+        text = d["intent"]
+        # comment=find_python_comment_sigQ(text)
+        # print(comment)
+        # print(comment)
+        nl_docs.append(text)
+    return nl_docs
 def find_python_comment_hash(text):
     
     start_index = text.find(r'#')
-    start_index += 2
+    start_index += 1
     end_index = text.rfind(r'\n')
 
     return text[start_index:end_index]
@@ -161,14 +191,20 @@ def find_python_comment(text):
     return text[start_index:end_index]
 
 
-def find_java_comment(text):
+def find_java_comment_multiline(text):
     start_index = text.find(r'/*')
-    start_index += 3
+    start_index += 2
     end_index = text.rfind(r'*/')
     
     return text[start_index:end_index]
+def find_java_comment_singleline(text):
+    start_index = text.find(r'//')
+    start_index += 2
+    end_index = text.rfind(r'\n')
 
-    
+    return text[start_index:end_index]
+
+
 
 
 
