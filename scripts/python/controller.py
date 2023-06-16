@@ -1,5 +1,6 @@
 from tqdm import tqdm
 from utils import get_data, process_concode_dataset, process_human_eval_dataset, process_mbxp_python_dataset, process_mbxp_java_dataset, process_mbxp_humaneval_java_dataset, process_mbxp_humaneval_python_dataset, process_mbxp_mathqa_python_dataset, process_mbxp_mathqa_java_dataset, process_odex_en_dataset, write_result
+from utils import process_pandasNumpyEval_numpy_dataset,process_pandasNumpyEval_pandas_dataset,process_CoderEval_python_dataset
 from rules import rule_p1,rule_p2,rule_p5,rule_p4,rule_p3
 
 TARGET_DATASET = [{"Source_Path":"../../datasets/CONCODE/concode_test.json", "Output_Path":"CONCODE_heuristic_results.json"},
@@ -11,7 +12,9 @@ TARGET_DATASET = [{"Source_Path":"../../datasets/CONCODE/concode_test.json", "Ou
                   {"Source_Path":"../../datasets/mbxp_mathqa/mathqa-test-python_v1.jsonl", "Output_Path":"mbxp_mathqa_python_heuristic_results.json"},
                   {"Source_Path":"../../datasets/mbxp_mathqa/mathqa-test-java_v1.jsonl", "Output_Path":"mbxp_mathqa_java_heuristic_results.json"},
                   {"Source_Path":"../../datasets/ODEX/en_test.jsonl", "Output_Path":"odex_en_heuristic_results.json"},
-                  {"Source_Path":"../../datasets/pandasNumpyEval/offical_numpy.jsonl", "Output_Path":"pandasNumpyEval_numpy_heuristic_results.json"}]
+                  {"Source_Path":"../../datasets/pandasNumpyEval/offical_numpy.jsonl", "Output_Path":"pandasNumpyEval_numpy_heuristic_results.json"},
+                  {"Source_Path":"../../datasets/pandasNumpyEval/offical_pandas.jsonl", "Output_Path":"pandasNumpyEval_pandas_heuristic_results.json"},
+                  {"Source_Path":"../../datasets/CoderEval/CoderEval4Python.json", "Output_Path":"CoderEval4Python__heuristic.json"}]
 
 RESULT_FOLDER  = "../../results/"
 MAX_NUMBER_OF_HEURISTICS = 6
@@ -51,6 +54,15 @@ def apply_rules(current_dataset: dict,data: object) -> None:
         write_path += current_dataset["Output_Path"]
     elif "ODEX" in current_dataset["Source_Path"] and "en" in current_dataset["Source_Path"]:
         nl_docs = process_odex_en_dataset(data)
+        write_path += current_dataset["Output_Path"]
+    elif "pandasNumpyEval" in current_dataset["Source_Path"] and "numpy" in current_dataset["Source_Path"]:
+        nl_docs = process_pandasNumpyEval_numpy_dataset(data)
+        write_path += current_dataset["Output_Path"]
+    elif "pandasNumpyEval" in current_dataset["Source_Path"] and "pandas" in current_dataset["Source_Path"]:
+        nl_docs = process_pandasNumpyEval_pandas_dataset(data)
+        write_path += current_dataset["Output_Path"]
+    elif "CoderEval" in current_dataset["Source_Path"] and "Python" in current_dataset["Source_Path"]:
+        nl_docs = process_CoderEval_python_dataset(data)
         write_path += current_dataset["Output_Path"]
 
     assert nl_docs != []
