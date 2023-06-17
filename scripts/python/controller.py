@@ -25,7 +25,8 @@ TARGET_DATASET = [{"Source_Path":"../../datasets/CONCODE/concode_test.json", "Ou
                   {"Source_Path":"../../datasets/TorchDataEval/real_torchdata_eval_v3_human_labelled_make_sense.jsonl", "Output_Path":"real_torchdata_eval_v3_human_labelled_make_sense_heuristic.json","jsonl":True},
                   {"Source_Path":"../../datasets/CodeComplex/extend_data.jsonl", "Output_Path":"CodeComplex_extend_data_heuristic.json","jsonl":True},
                   {"Source_Path":"../../datasets/CodeComplex/new_data.jsonl", "Output_Path":"CodeComplex_new_data_heuristic.json","jsonl":True},
-                  {"Source_Path":"../../datasets/HumanEval-Infilling/HumanEval-MultiLineInfilling.jsonl", "Output_Path":"HumanEval-MultiLineInfilling_heuristic.json","jsonl":True}]
+                  {"Source_Path":"../../datasets/HumanEval-Infilling/HumanEval-MultiLineInfilling.jsonl", "Output_Path":"HumanEval-MultiLineInfilling_heuristic.json","jsonl":True},
+                  {"Source_Path":"../../datasets/MBPP/sanitized-mbpp.json", "Output_Path":"sanitized-mbpp_heuristic.json","jsonl":False}]
 
 RESULT_FOLDER  = "../../results/"
 MAX_NUMBER_OF_HEURISTICS = 6
@@ -107,7 +108,9 @@ def apply_rules(current_dataset: dict,data: object) -> None:
     elif "HumanEval-Infilling" in current_dataset["Source_Path"] and "MultiLineInfilling" in current_dataset["Source_Path"]:
         nl_docs = process_HumanEval_Infilling_MultiLineInfilling_dataset(data)
         write_path += current_dataset["Output_Path"]
-    
+    elif "MBPP" in current_dataset["Source_Path"] and "sanitized-mbpp" in current_dataset["Source_Path"]:
+        nl_docs = process_sanitized_mbpp_dataset(data)
+        write_path += current_dataset["Output_Path"]
     
 
     assert nl_docs != []
