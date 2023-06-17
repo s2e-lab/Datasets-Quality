@@ -96,9 +96,11 @@ def apply_rules(current_dataset: dict,data: object) -> None:
         nl_docs = process_torch_data_makesense_eval_v3_dataset(data)
         write_path += current_dataset["Output_Path"]
     elif "CodeComplex" in current_dataset["Source_Path"] and "extend_data" in current_dataset["Source_Path"]:
+        
         nl_docs = process_CodeComplex_extend_data_dataset(data)
         write_path += current_dataset["Output_Path"]
     elif "CodeComplex" in current_dataset["Source_Path"] and "new_data" in current_dataset["Source_Path"]:
+        
         nl_docs = process_CodeComplex_new_data_dataset(data)
         write_path += current_dataset["Output_Path"]
     
@@ -138,6 +140,7 @@ def main():
     for current_dataset in TARGET_DATASET:
         
         data = get_data(path=current_dataset["Source_Path"], jsonl=current_dataset["jsonl"])
+       
         apply_rules(current_dataset,data)
 
 

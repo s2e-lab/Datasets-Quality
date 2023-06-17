@@ -200,22 +200,30 @@ def process_torch_data_makesense_eval_v3_dataset(data: list) -> list:
 
 def process_CodeComplex_extend_data_dataset(data: list) -> list:
     nl_docs = []
-    
+    #print("here")
     for d in tqdm(data):
         text = d["src"]
         comment1=find_java_comment_multiline(text)
+        #print("hereeee")
         comment2=find_java_comment_singleline(text)
         nl_docs.extend(comment1)
         nl_docs.extend(comment2)
+        
     return nl_docs
 
 def process_CodeComplex_new_data_dataset(data: list) -> list:
     nl_docs = []
-    
+    data=data[0]
     for d in tqdm(data):
-        text = d[0]["src"]
+        text = d["src"]
+        
         comment1=find_java_comment_multiline(text)
+        # print("hereee")
+        # print(comment1)
         comment2=find_java_comment_singleline(text)
+        
+        # print(comment1)
+        # print(comment2)
         nl_docs.extend(comment1)
         nl_docs.extend(comment2)
     return nl_docs
@@ -240,8 +248,11 @@ def find_python_comment(text):
 
 
 def find_java_comment_multiline(text):
-    pattern = r'/*(.*?)*/'
+    #print(text)
+    #print("hereeee")
+    pattern = r"/\*(.*?)\*/"
     comments = re.findall(pattern, text, re.DOTALL)
+    
     return comments
     
 def find_java_comment_singleline(text):    
