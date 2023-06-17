@@ -27,7 +27,8 @@ TARGET_DATASET = [{"Source_Path":"../../datasets/CONCODE/concode_test.json", "Ou
                   {"Source_Path":"../../datasets/CodeComplex/new_data.jsonl", "Output_Path":"CodeComplex_new_data_heuristic.json","jsonl":True},
                   {"Source_Path":"../../datasets/HumanEval-Infilling/HumanEval-MultiLineInfilling.jsonl", "Output_Path":"HumanEval-MultiLineInfilling_heuristic.json","jsonl":True},
                   {"Source_Path":"../../datasets/JigsawDataset/PandasEval1.json", "Output_Path":"JigsawDataset_pandas_eval1_heuristic.json","jsonl":False},
-                  {"Source_Path":"../../datasets/JigsawDataset/PandasEval2.json", "Output_Path":"JigsawDataset_pandas_eval2_heuristic.json","jsonl":False}]
+                  {"Source_Path":"../../datasets/JigsawDataset/PandasEval2.json", "Output_Path":"JigsawDataset_pandas_eval2_heuristic.json","jsonl":False},
+                  {"Source_Path":"../../datasets/MBPP/sanitized-mbpp.json", "Output_Path":"sanitized-mbpp_heuristic.json","jsonl":False}]
 
 RESULT_FOLDER  = "../../results/"
 MAX_NUMBER_OF_HEURISTICS = 6
@@ -115,7 +116,9 @@ def apply_rules(current_dataset: dict,data: object) -> None:
     elif "JigsawDataset" in current_dataset["Source_Path"] and "PandasEval2" in current_dataset["Source_Path"]:
         nl_docs = process_Jigsaw_PandasEval2_dataset(data)
         write_path += current_dataset["Output_Path"]
-    
+    elif "MBPP" in current_dataset["Source_Path"] and "sanitized-mbpp" in current_dataset["Source_Path"]:
+        nl_docs = process_sanitized_mbpp_dataset(data)
+        write_path += current_dataset["Output_Path"]
     
 
     assert nl_docs != []

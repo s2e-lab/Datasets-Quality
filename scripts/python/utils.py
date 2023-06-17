@@ -102,7 +102,7 @@ def process_odex_en_dataset(data: list) -> list:
     nl_docs = []
     for d in tqdm(data):
         text = d['intent']
-        comment=find_python_comment_sigQ(text)
+        comment=text
         nl_docs.extend(comment)
     return nl_docs
 def process_pandasNumpyEval_numpy_dataset(data: list) -> list:
@@ -127,7 +127,7 @@ def process_CoderEval_python_dataset(data: list) -> list:
     data=data["RECORDS"]
     for d in tqdm(data):
         text = d["human_label"]
-        comment=find_python_comment_sigQ(text)
+        comment=text
         nl_docs.extend(comment)
     return nl_docs
 
@@ -240,6 +240,7 @@ def process_HumanEval_Infilling_MultiLineInfilling_dataset(data: list) -> list:
         text = d["prompt"]
         comment=find_python_comment(text)
         nl_docs.extend(comment)
+
         #print(d)
     return nl_docs
 
@@ -259,6 +260,17 @@ def process_Jigsaw_PandasEval2_dataset(data: list) -> list:
             for query_data in set_data['queries']:
                 nl_docs.append(query_data['query'])
         
+
+    return nl_docs
+
+def process_sanitized_mbpp_dataset(data: list) -> list:
+    nl_docs = []
+    
+    for d in tqdm(data):
+        text = d["prompt"]
+        comment=text
+        nl_docs.extend(comment)
+
     return nl_docs
 
 def find_python_comment_hash(text):
@@ -268,10 +280,10 @@ def find_python_comment_hash(text):
 
 
 
-def find_python_comment_sigQ(text):
-    pattern = r'"(.*?)"'
-    comments = re.findall(pattern, text, re.DOTALL)
-    return comments
+# def find_python_comment_sigQ(text):
+#     pattern = r'"(.*?)"'
+#     comments = re.findall(pattern, text, re.DOTALL)
+#     return comments
 
 
 def find_python_comment(text):
