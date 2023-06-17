@@ -18,7 +18,13 @@ TARGET_DATASET = [{"Source_Path":"../../datasets/CONCODE/concode_test.json", "Ou
                   {"Source_Path":"../../datasets/CoderEval/CoderEval4Python.json", "Output_Path":"CoderEval4Python__heuristic.json","jsonl":False},
                   {"Source_Path":"../../datasets/MCoNaLa/test/flores101/es_test_to_en.json", "Output_Path":"MCoNaLa_es_test_to_en__heuristic.json","jsonl":False},
                   {"Source_Path":"../../datasets/MCoNaLa/test/flores101/ja_test_to_en.json", "Output_Path":"MCoNaLa_ja_test_to_en__heuristic.json","jsonl":False},
-                  {"Source_Path":"../../datasets/MCoNaLa/test/flores101/ru_test_to_en.json", "Output_Path":"MCoNaLa_ru_test_to_en__heuristic.json","jsonl":False}]
+                  {"Source_Path":"../../datasets/MCoNaLa/test/flores101/ru_test_to_en.json", "Output_Path":"MCoNaLa_ru_test_to_en__heuristic.json","jsonl":False},
+                  {"Source_Path":"../../datasets/TorchDataEval/real_beatnum_eval_v3_human_labelled.jsonl", "Output_Path":"real_beatnum_eval_v3_human_labelled_heuristic.json","jsonl":True},
+                  {"Source_Path":"../../datasets/TorchDataEval/real_monkey_eval_v3_human_labelled.jsonl", "Output_Path":"real_monkey_eval_v3_human_labelled_heuristic.json","jsonl":True},
+                  {"Source_Path":"../../datasets/TorchDataEval/real_torchdata_eval_v3_human_labelled.jsonl", "Output_Path":"real_torchdata_eval_v3_human_labelled_heuristic.json","jsonl":True},
+                  {"Source_Path":"../../datasets/TorchDataEval/real_torchdata_eval_v3_human_labelled_make_sense.jsonl", "Output_Path":"real_torchdata_eval_v3_human_labelled_make_sense_heuristic.json","jsonl":True},
+                  {"Source_Path":"../../datasets/CodeComplex/extend_data.jsonl", "Output_Path":"CodeComplex_extend_data_heuristic.json","jsonl":True},
+                  {"Source_Path":"../../datasets/CodeComplex/new_data.jsonl", "Output_Path":"CodeComplex_new_data_heuristic.json","jsonl":True}]
 
 RESULT_FOLDER  = "../../results/"
 MAX_NUMBER_OF_HEURISTICS = 6
@@ -77,6 +83,26 @@ def apply_rules(current_dataset: dict,data: object) -> None:
     elif "MCoNaLa" in current_dataset["Source_Path"] and "ru_test_to_en" in current_dataset["Source_Path"]:
         nl_docs = process_MCoNaLa_ru_test_to_en_dataset(data)
         write_path += current_dataset["Output_Path"]
+    elif "TorchDataEval" in current_dataset["Source_Path"] and "beatnum" in current_dataset["Source_Path"]:
+        nl_docs = process_torch_data_beatnum_eval_v3_dataset(data)
+        write_path += current_dataset["Output_Path"]
+    elif "TorchDataEval" in current_dataset["Source_Path"] and "monkey" in current_dataset["Source_Path"]:
+        nl_docs = process_torch_data_monkey_eval_v3_dataset(data)
+        write_path += current_dataset["Output_Path"]
+    elif "TorchDataEval" in current_dataset["Source_Path"] and "torchdata" in current_dataset["Source_Path"]:
+        nl_docs = process_torch_data_torchdata_eval_v3_dataset(data)
+        write_path += current_dataset["Output_Path"]
+    elif "TorchDataEval" in current_dataset["Source_Path"] and "make_sense" in current_dataset["Source_Path"]:
+        nl_docs = process_torch_data_makesense_eval_v3_dataset(data)
+        write_path += current_dataset["Output_Path"]
+    elif "CodeComplex" in current_dataset["Source_Path"] and "extend_data" in current_dataset["Source_Path"]:
+        nl_docs = process_CodeComplex_extend_data_dataset(data)
+        write_path += current_dataset["Output_Path"]
+    elif "CodeComplex" in current_dataset["Source_Path"] and "new_data" in current_dataset["Source_Path"]:
+        nl_docs = process_CodeComplex_new_data_dataset(data)
+        write_path += current_dataset["Output_Path"]
+    
+    
 
     assert nl_docs != []
     results = []
@@ -88,8 +114,8 @@ def apply_rules(current_dataset: dict,data: object) -> None:
             applied_heuristics[0] = True
         if rule_p2(nl):
             applied_heuristics[1] = True
-        # if rule_p3(nl):
-        #     applied_heuristics[2]=True
+        if rule_p3(nl):
+            applied_heuristics[2]=True
         if rule_p4(nl):
             applied_heuristics[3] = True
         if rule_p5(nl):

@@ -2,6 +2,7 @@ import language_tool_python as lt
 import tokenize          
 import re
 import sys
+import spacy
 sys.path.append('..')
 from patterns import AUTO_GEN_PATTERNS, HACK_PATTERNS
 #from corenlp import StanfordCoreNLP
@@ -61,19 +62,19 @@ def rule_p3(comment:str) ->bool:
     # Download stanford-corenlp-4.5.4.zip from https://stanfordnlp.github.io/CoreNLP/index.html
     # Start corenlp server using: java -mx4g -cp "<path_to_the_extracted_zip_folder>/*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000
     # Create a StanfordCoreNLP object
-    nlp = StanfordCoreNLP('http://localhost:9000')
-    print("nlppp")
-    #nlp=StanfordCoreNLP('http://localhost:9000',9000)
-    #nlp.close()
-    output = nlp.annotate(comment, properties={'annotators': 'parse', 'outputFormat': 'json'})
-    print(output)
-    parse_tree = eval(output)["sentences"][0]["parse"]
+    # nlp = StanfordCoreNLP('http://localhost:9000')
+    # print("nlppp")
+    # #nlp=StanfordCoreNLP('http://localhost:9000',9000)
+    # #nlp.close()
+    # output = nlp.annotate(comment, properties={'annotators': 'parse', 'outputFormat': 'json'})
+    # print(output)
+    # parse_tree = eval(output)["sentences"][0]["parse"]
 
-    # Check if the top-level constituent under ROOT is a FRAG
-    if parse_tree.startswith('(ROOT (FRAG'):
-        print("Incomplete")
-        return True
-    return False
+    # # Check if the top-level constituent under ROOT is a FRAG
+    # if parse_tree.startswith('(ROOT (FRAG'):
+    #     print("Incomplete")
+    #     return True
+    # return False
 
     # Perform parsing and get constituency parse trees
     #result = nlp.annotate(comment, properties={'annotators': 'tokenize,ssplit,pos,parse', 'outputFormat': 'json'})
@@ -90,6 +91,28 @@ def rule_p3(comment:str) ->bool:
     #return False
 
     # Check if the top-level constituent is FRAG
+    
+    
+    # python -m spacy download en_core_web_sm
+    # https://stackoverflow.com/questions/72858984/mkl-service-package-failed-to-import-therefore-intelr-mkl-initialization-ensu
+    
+
+    nlp = spacy.load("en_core_web_sm")
+
+    text = """
+    This is a complete sentence. Partial sentence without a verb. Another complete sentence.
+    """
+
+    doc = nlp(text)
+
+    partial_sentences = []
+
+    for sentence in doc.sents:
+        if len(sentence) > 1 and not any(token.dep_ == 'ROOT' for token in sentence):
+            partial_sentences.append(sentence.text.strip())
+
+    for partial_sentence in partial_sentences:
+        print(partial_sentence)
     
     
     
