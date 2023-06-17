@@ -15,7 +15,8 @@ def get_data(path: str, jsonl = False) -> object:
                 data.append(json.loads(line))
         return data
     else:
-        with open(path,'r',encoding="utf8") as f:
+        # with open(path,'r',encoding="utf8") as f:
+        with open(path,'r') as f:
             data = json.load(f)
         return data
     
@@ -218,6 +219,18 @@ def process_CodeComplex_new_data_dataset(data: list) -> list:
         comment2=find_java_comment_singleline(text)
         nl_docs.extend(comment1)
         nl_docs.extend(comment2)
+    return nl_docs
+
+
+
+def process_HumanEval_Infilling_MultiLineInfilling_dataset(data: list) -> list:
+    nl_docs = []
+    
+    for d in tqdm(data):
+        text = d["prompt"]
+        comment=find_python_comment(text)
+        nl_docs.extend(comment)
+        print(d)
     return nl_docs
 
 def find_python_comment_hash(text):

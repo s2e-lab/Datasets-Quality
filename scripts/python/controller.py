@@ -4,7 +4,7 @@ from utils import *
 #from utils import process_pandasNumpyEval_numpy_dataset,process_pandasNumpyEval_pandas_dataset,process_CoderEval_python_dataset
 from rules import rule_p1,rule_p2,rule_p5,rule_p4,rule_p3
 
-TARGET_DATASET = [{"Source_Path":"../../datasets/CONCODE/concode_test.json", "Output_Path":"CONCODE_heuristic_results.json","jsonl":False},
+TARGET_DATASET = [{"Source_Path":"../../datasets/CONCODE/concode_test.json", "Output_Path":"CONCODE_heuristic_results.json","jsonl":True},
                   {"Source_Path":"../../datasets/HumanEval/human-eval-v2-20210705.jsonl", "Output_Path":"HumanEval_heuristic_results.json","jsonl":True},
                   {"Source_Path":"../../datasets/mbxp/mbpp_release_v1.jsonl", "Output_Path":"mbxp_python_heuristic_results.json","jsonl":True},
                   {"Source_Path":"../../datasets/mbxp/mbjp_release_v1.jsonl", "Output_Path":"mbxp_java_heuristic_results.json","jsonl":True},
@@ -24,7 +24,8 @@ TARGET_DATASET = [{"Source_Path":"../../datasets/CONCODE/concode_test.json", "Ou
                   {"Source_Path":"../../datasets/TorchDataEval/real_torchdata_eval_v3_human_labelled.jsonl", "Output_Path":"real_torchdata_eval_v3_human_labelled_heuristic.json","jsonl":True},
                   {"Source_Path":"../../datasets/TorchDataEval/real_torchdata_eval_v3_human_labelled_make_sense.jsonl", "Output_Path":"real_torchdata_eval_v3_human_labelled_make_sense_heuristic.json","jsonl":True},
                   {"Source_Path":"../../datasets/CodeComplex/extend_data.jsonl", "Output_Path":"CodeComplex_extend_data_heuristic.json","jsonl":True},
-                  {"Source_Path":"../../datasets/CodeComplex/new_data.jsonl", "Output_Path":"CodeComplex_new_data_heuristic.json","jsonl":True}]
+                  {"Source_Path":"../../datasets/CodeComplex/new_data.jsonl", "Output_Path":"CodeComplex_new_data_heuristic.json","jsonl":True},
+                  {"Source_Path":"../../datasets/HumanEval-Infilling/HumanEval-MultiLineInfilling.jsonl", "Output_Path":"HumanEval-MultiLineInfilling_heuristic.json","jsonl":True}]
 
 RESULT_FOLDER  = "../../results/"
 MAX_NUMBER_OF_HEURISTICS = 6
@@ -100,6 +101,9 @@ def apply_rules(current_dataset: dict,data: object) -> None:
         write_path += current_dataset["Output_Path"]
     elif "CodeComplex" in current_dataset["Source_Path"] and "new_data" in current_dataset["Source_Path"]:
         nl_docs = process_CodeComplex_new_data_dataset(data)
+        write_path += current_dataset["Output_Path"]
+    elif "HumanEval-Infilling" in current_dataset["Source_Path"] and "MultiLineInfilling" in current_dataset["Source_Path"]:
+        nl_docs = process_HumanEval_Infilling_MultiLineInfilling_dataset(data)
         write_path += current_dataset["Output_Path"]
     
     
