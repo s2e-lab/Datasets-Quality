@@ -8,6 +8,7 @@ def get_data(path: str, jsonl = False) -> object:
     :param jsonl: indicates whether it is a JSONL format (defaults to False)
     :returns: the parsed JSON data.
     """
+    #print(path)
     if jsonl:
         data = []
         with open(path, 'r') as f:
@@ -19,6 +20,7 @@ def get_data(path: str, jsonl = False) -> object:
         with open(path,'r') as f:
             data = json.load(f)
         return data
+    
     
 def process_concode_dataset(data: list) -> list:
     """
@@ -238,7 +240,25 @@ def process_HumanEval_Infilling_MultiLineInfilling_dataset(data: list) -> list:
         text = d["prompt"]
         comment=find_python_comment(text)
         nl_docs.extend(comment)
-        print(d)
+        #print(d)
+    return nl_docs
+
+def process_Jigsaw_PandasEval1_dataset(data: list) -> list:
+   nl_docs = []
+    
+   for entry in tqdm(data.values()):
+        for set_data in entry['sets'].values():
+            for query_data in set_data['queries']:
+                nl_docs.append(query_data['query'])
+   return nl_docs
+def process_Jigsaw_PandasEval2_dataset(data: list) -> list:
+    nl_docs = []
+    
+    for entry in tqdm(data.values()):
+        for set_data in entry['sets'].values():
+            for query_data in set_data['queries']:
+                nl_docs.append(query_data['query'])
+        
     return nl_docs
 
 def find_python_comment_hash(text):

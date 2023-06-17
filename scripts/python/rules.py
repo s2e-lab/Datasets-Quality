@@ -52,6 +52,7 @@ def rule_p2(comment: str) ->bool:
 
 
 def rule_p3(comment:str) ->bool:
+    print("in rule 3")
     
     """
     Check if the comment is incomplete.
@@ -98,21 +99,17 @@ def rule_p3(comment:str) ->bool:
     
 
     nlp = spacy.load("en_core_web_sm")
-
-    text = """
-    This is a complete sentence. Partial sentence without a verb. Another complete sentence.
-    """
-
-    doc = nlp(text)
-
+    #text = "This is a complete sentence. Partial sentence without a verb. Another complete sentence."
+    doc = nlp(comment)
     partial_sentences = []
-
     for sentence in doc.sents:
         if len(sentence) > 1 and not any(token.dep_ == 'ROOT' for token in sentence):
+            #print("hereeee")
             partial_sentences.append(sentence.text.strip())
-
-    for partial_sentence in partial_sentences:
-        print(partial_sentence)
+    if len(partial_sentences)>=1:
+        #print("ret")
+        return True
+    return False
     
     
     
