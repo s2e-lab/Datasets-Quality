@@ -26,12 +26,15 @@ TARGET_DATASET = [{"Source_Path":"../../datasets/CONCODE/concode_test.json", "Ou
                   {"Source_Path":"../../datasets/CodeComplex/extend_data.jsonl", "Output_Path":"CodeComplex_extend_data_heuristic.json","jsonl":True},
                   {"Source_Path":"../../datasets/CodeComplex/new_data.jsonl", "Output_Path":"CodeComplex_new_data_heuristic.json","jsonl":True},
                   {"Source_Path":"../../datasets/HumanEval-Infilling/HumanEval-MultiLineInfilling.jsonl", "Output_Path":"HumanEval-MultiLineInfilling_heuristic.json","jsonl":True},
+                  {"Source_Path":"../../datasets/JigsawDataset/PandasEval1.json", "Output_Path":"JigsawDataset_pandas_eval1_heuristic.json","jsonl":False},
+                  {"Source_Path":"../../datasets/JigsawDataset/PandasEval2.json", "Output_Path":"JigsawDataset_pandas_eval2_heuristic.json","jsonl":False},
                   {"Source_Path":"../../datasets/MBPP/sanitized-mbpp.json", "Output_Path":"sanitized-mbpp_heuristic.json","jsonl":False}]
 
 RESULT_FOLDER  = "../../results/"
 MAX_NUMBER_OF_HEURISTICS = 6
 
 def apply_rules(current_dataset: dict,data: object) -> None:
+    
     """
     Executes the heuristics on the JSON data passed as inout.
     
@@ -42,6 +45,10 @@ def apply_rules(current_dataset: dict,data: object) -> None:
     write_path = RESULT_FOLDER
     if "CONCODE" in current_dataset["Source_Path"]:
         nl_docs = process_concode_dataset(data)
+        write_path += current_dataset["Output_Path"]
+    elif "HumanEval-Infilling" in current_dataset["Source_Path"]:
+        #print("hereeein")
+        nl_docs = process_HumanEval_Infilling_MultiLineInfilling_dataset(data)
         write_path += current_dataset["Output_Path"]
     elif "HumanEval" in current_dataset["Source_Path"]:
         nl_docs = process_human_eval_dataset(data)
@@ -98,15 +105,16 @@ def apply_rules(current_dataset: dict,data: object) -> None:
         nl_docs = process_torch_data_makesense_eval_v3_dataset(data)
         write_path += current_dataset["Output_Path"]
     elif "CodeComplex" in current_dataset["Source_Path"] and "extend_data" in current_dataset["Source_Path"]:
-        
         nl_docs = process_CodeComplex_extend_data_dataset(data)
         write_path += current_dataset["Output_Path"]
     elif "CodeComplex" in current_dataset["Source_Path"] and "new_data" in current_dataset["Source_Path"]:
-        
         nl_docs = process_CodeComplex_new_data_dataset(data)
         write_path += current_dataset["Output_Path"]
-    elif "HumanEval-Infilling" in current_dataset["Source_Path"] and "MultiLineInfilling" in current_dataset["Source_Path"]:
-        nl_docs = process_HumanEval_Infilling_MultiLineInfilling_dataset(data)
+    elif "JigsawDataset" in current_dataset["Source_Path"] and "PandasEval1" in current_dataset["Source_Path"]:
+        nl_docs = process_Jigsaw_PandasEval1_dataset(data)
+        write_path += current_dataset["Output_Path"]
+    elif "JigsawDataset" in current_dataset["Source_Path"] and "PandasEval2" in current_dataset["Source_Path"]:
+        nl_docs = process_Jigsaw_PandasEval2_dataset(data)
         write_path += current_dataset["Output_Path"]
     elif "MBPP" in current_dataset["Source_Path"] and "sanitized-mbpp" in current_dataset["Source_Path"]:
         nl_docs = process_sanitized_mbpp_dataset(data)
@@ -145,9 +153,10 @@ def apply_rules(current_dataset: dict,data: object) -> None:
 def main():
     TARGET_DATASET.reverse()
     for current_dataset in TARGET_DATASET:
+        #print(current_dataset["Source_Path"])
         
         data = get_data(path=current_dataset["Source_Path"], jsonl=current_dataset["jsonl"])
-       
+        
         apply_rules(current_dataset,data)
 
 
