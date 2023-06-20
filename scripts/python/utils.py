@@ -70,7 +70,7 @@ def process_mbxp_java_dataset(data: list) -> list:
     nl_docs = []
     for d in tqdm(data):
         text = d['prompt']
-        comment=find_java_comment_multiline(text)
+        comment=find_java_comment(text)
         nl_docs.extend(comment)
     return nl_docs
 
@@ -78,7 +78,7 @@ def process_mbxp_humaneval_java_dataset(data: list) -> list:
     nl_docs = []
     for d in tqdm(data):
         text = d['prompt']
-        comment=find_java_comment_multiline(text)
+        comment=find_java_comment(text)
         nl_docs.extend(comment)
     return nl_docs
 
@@ -86,7 +86,7 @@ def process_mbxp_mathqa_java_dataset(data: list) -> list:
     nl_docs = []
     for d in tqdm(data):
         text = d['prompt']
-        comment=find_java_comment_multiline(text)
+        comment=find_java_comment(text)
         nl_docs.extend(comment)
     return nl_docs
 
@@ -109,7 +109,7 @@ def process_pandasNumpyEval_numpy_dataset(data: list) -> list:
     nl_docs = []
     for d in tqdm(data):
         text = d['prompt']
-        comment=find_python_comment_hash(text)
+        comment=find_python_comment(text)
         
         nl_docs.extend(comment)
     return nl_docs
@@ -118,7 +118,7 @@ def process_pandasNumpyEval_pandas_dataset(data: list) -> list:
     nl_docs = []
     for d in tqdm(data):
         text = d['prompt']
-        comment=find_python_comment_hash(text)
+        comment=find_python_comment(text)
         
         nl_docs.extend(comment)
     return nl_docs
@@ -159,7 +159,7 @@ def process_torch_data_beatnum_eval_v3_dataset(data: list) -> list:
     
     for d in tqdm(data):
         text = d["prompt"]
-        comment=find_python_comment_hash(text)
+        comment=find_python_comment(text)
         nl_docs.extend(comment)
     return nl_docs
 
@@ -168,7 +168,7 @@ def process_torch_data_beatnum_eval_v3_dataset(data: list) -> list:
     
     for d in tqdm(data):
         text = d["prompt"]
-        comment=find_python_comment_hash(text)
+        comment=find_python_comment(text)
         nl_docs.extend(comment)
     return nl_docs
 
@@ -178,7 +178,7 @@ def process_torch_data_monkey_eval_v3_dataset(data: list) -> list:
     for d in tqdm(data):
         text = d["prompt"]
         comment1=find_python_comment(text)
-        comment2=find_python_comment_hash(text)
+        comment2=find_python_comment(text)
         nl_docs.extend(comment1)
         nl_docs.extend(comment2)
     return nl_docs
@@ -188,7 +188,7 @@ def process_torch_data_torchdata_eval_v3_dataset(data: list) -> list:
     
     for d in tqdm(data):
         text = d["prompt"]
-        comment=find_python_comment_hash(text)
+        comment=find_python_comment(text)
         nl_docs.extend(comment)
     return nl_docs
 
@@ -197,7 +197,7 @@ def process_torch_data_makesense_eval_v3_dataset(data: list) -> list:
     
     for d in tqdm(data):
         text = d["prompt"]
-        comment=find_python_comment_hash(text)
+        comment=find_python_comment(text)
         nl_docs.extend(comment)
     return nl_docs
 
@@ -206,11 +206,11 @@ def process_CodeComplex_extend_data_dataset(data: list) -> list:
     #print("here")
     for d in tqdm(data):
         text = d["src"]
-        comment1=find_java_comment_multiline(text)
+        comments=find_java_comment(text)
         #print("hereeee")
-        comment2=find_java_comment_singleline(text)
-        nl_docs.extend(comment1)
-        nl_docs.extend(comment2)
+        #comment2=find_java_comment_singleline(text)
+        nl_docs.extend(comments)
+        #nl_docs.extend(comment2)
         
     return nl_docs
 
@@ -220,15 +220,15 @@ def process_CodeComplex_new_data_dataset(data: list) -> list:
     for d in tqdm(data):
         text = d["src"]
         
-        comment1=find_java_comment_multiline(text)
-        # print("hereee")
-        # print(comment1)
-        comment2=find_java_comment_singleline(text)
-        
+        # comment1=find_java_comment_multiline(text)
+        # # print("hereee")
+        # # print(comment1)
+        # comment2=find_java_comment_singleline(text)
+        comments=find_java_comment(text)
         # print(comment1)
         # print(comment2)
-        nl_docs.extend(comment1)
-        nl_docs.extend(comment2)
+        nl_docs.extend(comments)
+        #nl_docs.extend(comment2)
     return nl_docs
 
 
@@ -273,10 +273,10 @@ def process_sanitized_mbpp_dataset(data: list) -> list:
 
     return nl_docs
 
-def find_python_comment_hash(text):
-    pattern = r'#(.*?)\n'
-    comments = re.findall(pattern, text, re.DOTALL)
-    return comments
+# def find_python_comment_hash(text):
+#     pattern = r'#(.*?)\n'
+#     comments = re.findall(pattern, text, re.DOTALL)
+#     return comments
 
 
 
@@ -287,23 +287,27 @@ def find_python_comment_hash(text):
 
 
 def find_python_comment(text):
-    pattern = r'"""(.*?)"""'
-    comments = re.findall(pattern, text, re.DOTALL)
+    pattern_single_double_quote = r'(?:"""|\'\'\')(.*?)(?:"""|\'\'\')'
+    comments = re.findall(pattern_single_double_quote, text, re.DOTALL)
+    pattern_hash = r'#(.*?)\n'
+    comments.extend(re.findall(pattern_hash, text, re.DOTALL))
     return comments
 
 
-def find_java_comment_multiline(text):
+def find_java_comment(text):
     #print(text)
     #print("hereeee")
-    pattern = r"/\*(.*?)\*/"
-    comments = re.findall(pattern, text, re.DOTALL)
+    pattern_multiline = r"/\*(.*?)\*/"
+    comments = re.findall(pattern_multiline, text, re.DOTALL)
+    pattern_single_line = r'//(.*?)\n'
+    comments.extend(re.findall(pattern_single_line, text, re.DOTALL))
     
     return comments
     
-def find_java_comment_singleline(text):    
-    pattern = r'//(.*?)\n'
-    comments = re.findall(pattern, text, re.DOTALL)
-    return comments
+# def find_java_comment_singleline(text):    
+#     pattern = r'//(.*?)\n'
+#     comments = re.findall(pattern, text, re.DOTALL)
+#     return comments
 
 def write_result(filepath: str, data: object) -> None:
     """
