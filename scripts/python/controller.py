@@ -160,7 +160,8 @@ def apply_rules(current_dataset: dict,data: object) -> None:
 
 def main():
     TARGET_DATASET.reverse()
-    for current_dataset in TARGET_DATASET:
+    DATASET=TARGET_DATASET[4:]
+    for current_dataset in DATASET:
         #print(current_dataset["Source_Path"])
         
         data = get_data(path=current_dataset["Source_Path"], jsonl=current_dataset["jsonl"])

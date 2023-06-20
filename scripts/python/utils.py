@@ -39,6 +39,7 @@ def process_human_eval_dataset(data: list) -> list:
     for d in tqdm(data):
         text = d['prompt']
         comment=find_python_comment(text)
+        #print(comment)
         nl_docs.extend(comment)
     return nl_docs
 
@@ -273,35 +274,23 @@ def process_sanitized_mbpp_dataset(data: list) -> list:
 
     return nl_docs
 
-# def find_python_comment_hash(text):
-#     pattern = r'#(.*?)\n'
-#     comments = re.findall(pattern, text, re.DOTALL)
-#     return comments
-
-
-
-# def find_python_comment_sigQ(text):
-#     pattern = r'"(.*?)"'
-#     comments = re.findall(pattern, text, re.DOTALL)
-#     return comments
 
 
 def find_python_comment(text):
-    pattern_single_double_quote = r'(?:"""|\'\'\')(.*?)(?:"""|\'\'\')'
-    comments = re.findall(pattern_single_double_quote, text, re.DOTALL)
-    pattern_hash = r'#(.*?)\n'
-    comments.extend(re.findall(pattern_hash, text, re.DOTALL))
+    pattern_hash = r'(#.*?\n)'
+    comments=(re.findall(pattern_hash, text, re.DOTALL))
+    pattern_single_double_quote = r"(['\"]{3}.*?['\"]{3})"
+    comments.extend(re.findall(pattern_single_double_quote, text, re.DOTALL))
     return comments
 
 
 def find_java_comment(text):
     #print(text)
     #print("hereeee")
-    pattern_multiline = r"/\*(.*?)\*/"
+    pattern_multiline = r"(/\*.*?\*/)"
     comments = re.findall(pattern_multiline, text, re.DOTALL)
-    pattern_single_line = r'//(.*?)\n'
+    pattern_single_line = r'(//.*?\n)'
     comments.extend(re.findall(pattern_single_line, text, re.DOTALL))
-    
     return comments
     
 # def find_java_comment_singleline(text):    

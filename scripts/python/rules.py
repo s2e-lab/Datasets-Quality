@@ -22,6 +22,7 @@ def tokenize_text(text) -> str:
     return " ".join([m.group(0) for m in matches])
 
 def rule_p1(comment: str) -> bool:
+    print(comment)
     """
     Check if the comment contains a grammar mistake.
     
@@ -140,6 +141,12 @@ def rule_p5(comment:str) ->bool:
         print("auto generated")
     return found
 
+def  rule_p7(comment:str) ->bool:
+    """
+    Check if the comment is not using standard JavaDoc (Java) or docstring (Python)
+    """
+
+
 
 def rule_p9(comment:str) ->bool:
     """
@@ -229,6 +236,9 @@ def rule_p12(comment:str) ->bool:
         if sentence.text.strip().endswith('?')
     ]
 
-    for question_sentence in question_sentences:
-        print(question_sentence)
+    # for question_sentence in question_sentences:
+    #     print(question_sentence)
+    if len(question_sentences)>0:
+        return True
+    return False
     
