@@ -2,7 +2,7 @@ from tqdm import tqdm
 #from utils import get_data, process_concode_dataset, process_human_eval_dataset, process_mbxp_python_dataset, process_mbxp_java_dataset, process_mbxp_humaneval_java_dataset, process_mbxp_humaneval_python_dataset, process_mbxp_mathqa_python_dataset, process_mbxp_mathqa_java_dataset, process_odex_en_dataset, write_result
 from utils import *
 #from utils import process_pandasNumpyEval_numpy_dataset,process_pandasNumpyEval_pandas_dataset,process_CoderEval_python_dataset
-from rules import rule_p1,rule_p2,rule_p5,rule_p4,rule_p3
+from rules import rule_p1,rule_p2,rule_p5,rule_p4,rule_p3,rule_p9,rule_p10,rule_p11,rule_p12
 
 TARGET_DATASET = [{"Source_Path":"../../datasets/CONCODE/concode_test.json", "Output_Path":"CONCODE_heuristic_results.json","jsonl":True},
                   {"Source_Path":"../../datasets/HumanEval/human-eval-v2-20210705.jsonl", "Output_Path":"HumanEval_heuristic_results.json","jsonl":True},
@@ -31,7 +31,7 @@ TARGET_DATASET = [{"Source_Path":"../../datasets/CONCODE/concode_test.json", "Ou
                   {"Source_Path":"../../datasets/MBPP/sanitized-mbpp.json", "Output_Path":"sanitized-mbpp_heuristic.json","jsonl":False}]
 
 RESULT_FOLDER  = "../../results/"
-MAX_NUMBER_OF_HEURISTICS = 6
+MAX_NUMBER_OF_HEURISTICS = 12
 
 def apply_rules(current_dataset: dict,data: object) -> None:
     
@@ -132,11 +132,19 @@ def apply_rules(current_dataset: dict,data: object) -> None:
         if rule_p2(nl):
             applied_heuristics[1] = True
         if rule_p3(nl):
-            applied_heuristics[2]=True
+            applied_heuristics[2] = True
         if rule_p4(nl):
             applied_heuristics[3] = True
         if rule_p5(nl):
-            applied_heuristics[4]=True
+            applied_heuristics[4] = True
+        if rule_p9(nl):
+            applied_heuristics[8] = True
+        if rule_p10(nl):
+            applied_heuristics[9] = True
+        if rule_p11(nl):
+            applied_heuristics[10] = True
+        if rule_p12(nl):
+            applied_heuristics[11] = True
         
         
 

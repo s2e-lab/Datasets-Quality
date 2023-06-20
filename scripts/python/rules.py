@@ -141,5 +141,94 @@ def rule_p5(comment:str) ->bool:
     return found
 
 
-# def rule_p6()
+def rule_p9(comment:str) ->bool:
+    """
+    Check if the comment is URL Link or reference.
+    
+    :param comment: source code comment to be inspected
+    :returns: true if the comment contains URL.
+    """
+    # tokenized_comment = tokenize_text(comment).lower()
+    # print(len(comment))
+    # print(comment)
+    # pattern = "^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$"
+    protocol_pattern = r'\b((?:https?|ftp):\/\/[^\s/$.?#].[^\s]*)\b'
+    # non_protocol_pattern = "[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)"
+    comments = re.findall(protocol_pattern, comment, re.DOTALL)
+    # print(comments)
+    # comments.extend(re.findall(non_protocol_pattern, comment, re.DOTALL))
+    # print(comments)
+    
+    if(len(comments) > 0):
+        # print(comments)
+        return True
+    return False
+
+def rule_p10(comment:str) ->bool:
+    """
+    Check if the comment is HTML Tags.
+    
+    :param comment: source code comment to be inspected
+    :returns: true if the comment contains HTML Tags.
+    """
+    
+    pattern = r"<[^>]+>"
+
+    comments = re.findall(pattern, comment, re.DOTALL)
+
+    # print(comments)
+    
+    if(len(comments) > 0):
+        print(comments)
+        return True
+    return False
+
+def rule_p11(comment:str) ->bool:
+    """
+    Check if the comment is JavaDoc Tags.
+    
+    :param comment: source code comment to be inspected
+    :returns: true if the comment contains JavaDoc Tags.
+    """
+    
+    pattern = r"\{@link\s+([\w.#\s$]+)\}"
+
+    tags = re.findall(pattern, comment, re.DOTALL)
+
+    # print(comments)
+    
+    if(len(tags) > 0):
+        print(tags)
+        return True
+    return False
+
+
+def rule_p12(comment:str) ->bool:
+    """
+    Check if the comment Interrogation.
+    
+    :param comment: source code comment to be inspected
+    :returns: true if the comment contains Interrogation.
+    """
+    
+
+
+    nlp = spacy.load("en_core_web_sm")
+
+    python_comment = """
+    This function calculates the sum of two numbers.
+    What are the parameters of this function?
+    How does this function handle errors?
+    """
+
+    doc = nlp(comment)
+
+    question_sentences = [
+        sentence.text.strip()
+        for sentence in doc.sents
+        if sentence.text.strip().endswith('?')
+    ]
+
+    for question_sentence in question_sentences:
+        print(question_sentence)
     

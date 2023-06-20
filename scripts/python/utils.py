@@ -103,7 +103,7 @@ def process_odex_en_dataset(data: list) -> list:
     for d in tqdm(data):
         text = d['intent']
         comment=text
-        nl_docs.extend(comment)
+        nl_docs.append(comment)
     return nl_docs
 def process_pandasNumpyEval_numpy_dataset(data: list) -> list:
     nl_docs = []
@@ -128,7 +128,7 @@ def process_CoderEval_python_dataset(data: list) -> list:
     for d in tqdm(data):
         text = d["human_label"]
         comment=text
-        nl_docs.extend(comment)
+        nl_docs.append(comment)
     return nl_docs
 
 def process_MCoNaLa_ru_test_to_en_dataset(data: list) -> list:
@@ -269,7 +269,7 @@ def process_sanitized_mbpp_dataset(data: list) -> list:
     for d in tqdm(data):
         text = d["prompt"]
         comment=text
-        nl_docs.extend(comment)
+        nl_docs.append(comment)
 
     return nl_docs
 
