@@ -2,7 +2,7 @@ from tqdm import tqdm
 #from utils import get_data, process_concode_dataset, process_human_eval_dataset, process_mbxp_python_dataset, process_mbxp_java_dataset, process_mbxp_humaneval_java_dataset, process_mbxp_humaneval_python_dataset, process_mbxp_mathqa_python_dataset, process_mbxp_mathqa_java_dataset, process_odex_en_dataset, write_result
 from utils import *
 #from utils import process_pandasNumpyEval_numpy_dataset,process_pandasNumpyEval_pandas_dataset,process_CoderEval_python_dataset
-from rules import rule_p1,rule_p2,rule_p5,rule_p4,rule_p3,rule_p9,rule_p10,rule_p11,rule_p12,rule_p7
+from rules import rule_p1,rule_p2,rule_p5,rule_p4,rule_p3,rule_p9,rule_p12,rule_p7
 
 TARGET_DATASET = [{"Source_Path":"../../datasets/CONCODE/concode_test.json", "Output_Path":"CONCODE_heuristic_results.json","jsonl":True},
                   {"Source_Path":"../../datasets/HumanEval/human-eval-v2-20210705.jsonl", "Output_Path":"HumanEval_heuristic_results.json","jsonl":True},
@@ -47,7 +47,7 @@ def apply_rules(current_dataset: dict,data: object) -> None:
         nl_docs = process_concode_dataset(data)
         write_path += current_dataset["Output_Path"]
     elif "HumanEval-Infilling" in current_dataset["Source_Path"]:
-        #print("hereeein")
+       
         nl_docs = process_HumanEval_Infilling_MultiLineInfilling_dataset(data)
         write_path += current_dataset["Output_Path"]
     elif "HumanEval" in current_dataset["Source_Path"]:
@@ -141,10 +141,10 @@ def apply_rules(current_dataset: dict,data: object) -> None:
             applied_heuristics[6] = True
         if rule_p9(nl):
             applied_heuristics[8] = True
-        if rule_p10(nl):
-            applied_heuristics[9] = True
-        if rule_p11(nl):
-            applied_heuristics[10] = True
+        # if rule_p10(nl):
+        #     applied_heuristics[9] = True
+        # if rule_p11(nl):
+        #     applied_heuristics[10] = True
         if rule_p12(nl):
             applied_heuristics[11] = True
         
@@ -162,9 +162,9 @@ def apply_rules(current_dataset: dict,data: object) -> None:
 
 def main():
     #TARGET_DATASET.reverse()
-    DATASET=TARGET_DATASET[1:]
-    for current_dataset in DATASET:
-        #print(current_dataset["Source_Path"])
+    
+    for current_dataset in TARGET_DATASET:
+      
         
         data = get_data(path=current_dataset["Source_Path"], jsonl=current_dataset["jsonl"])
         

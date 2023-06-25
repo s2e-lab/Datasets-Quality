@@ -8,7 +8,7 @@ def get_data(path: str, jsonl = False) -> object:
     :param jsonl: indicates whether it is a JSONL format (defaults to False)
     :returns: the parsed JSON data.
     """
-    #print(path)
+   
     if jsonl:
         data = []
         with open(path, 'r') as f:
@@ -39,7 +39,7 @@ def process_human_eval_dataset(data: list) -> list:
     for d in tqdm(data):
         text = d['prompt']
         comment=find_python_comment(text)
-        #print(comment)
+        
         nl_docs.extend(comment)
     return nl_docs
 
@@ -204,14 +204,13 @@ def process_torch_data_makesense_eval_v3_dataset(data: list) -> list:
 
 def process_CodeComplex_extend_data_dataset(data: list) -> list:
     nl_docs = []
-    #print("here")
+    
     for d in tqdm(data):
         text = d["src"]
         comments=find_java_comment(text)
-        #print("hereeee")
-        #comment2=find_java_comment_singleline(text)
+       
         nl_docs.extend(comments)
-        #nl_docs.extend(comment2)
+        
         
     return nl_docs
 
@@ -220,16 +219,8 @@ def process_CodeComplex_new_data_dataset(data: list) -> list:
     data=data[0]
     for d in tqdm(data):
         text = d["src"]
-        
-        # comment1=find_java_comment_multiline(text)
-        # # print("hereee")
-        # # print(comment1)
-        # comment2=find_java_comment_singleline(text)
         comments=find_java_comment(text)
-        # print(comment1)
-        # print(comment2)
         nl_docs.extend(comments)
-        #nl_docs.extend(comment2)
     return nl_docs
 
 
@@ -242,7 +233,7 @@ def process_HumanEval_Infilling_MultiLineInfilling_dataset(data: list) -> list:
         comment=find_python_comment(text)
         nl_docs.extend(comment)
 
-        #print(d)
+        
     return nl_docs
 
 def process_Jigsaw_PandasEval1_dataset(data: list) -> list:
@@ -285,18 +276,13 @@ def find_python_comment(text):
 
 
 def find_java_comment(text):
-    #print(text)
-    #print("hereeee")
+    
     pattern_multiline = r"(/\*.*?\*/)"
     comments = re.findall(pattern_multiline, text, re.DOTALL)
     pattern_single_line = r'(//.*?\n)'
     comments.extend(re.findall(pattern_single_line, text, re.DOTALL))
     return comments
     
-# def find_java_comment_singleline(text):    
-#     pattern = r'//(.*?)\n'
-#     comments = re.findall(pattern, text, re.DOTALL)
-#     return comments
 
 def write_result(filepath: str, data: object) -> None:
     """
