@@ -22,7 +22,7 @@ def tokenize_text(text) -> str:
     return " ".join([m.group(0) for m in matches])
 
 def rule_p1(comment: str) -> bool:
-    print(comment)
+    #print(comment)
     """
     Check if the comment contains a grammar mistake.
     
@@ -145,6 +145,29 @@ def  rule_p7(comment:str) ->bool:
     """
     Check if the comment is not using standard JavaDoc (Java) or docstring (Python)
     """
+    # start_pattern = ["#", "//", "/"", "'"]
+    # if comment[0] in start_pattern:
+    #     standard_java_pattern = r"/\*\*(.*?)\*/"
+    #     standard_python_multi_pattern = r'(?:"""|\'\'\')(.*?)(?:"""|\'\'\')'
+    #     standard_python_single_pattern = r'(#.*?\n)'
+    #     patterns = [standard_java_pattern, standard_python_multi_pattern, standard_python_single_pattern]
+    #     for pattern in patterns:
+    #         if re.findall(pattern, comment, re.DOTALL):
+    #             return True 
+    # else:
+    #     return False
+    if comment.startswith('#'):
+        print("here in")
+        return True
+    elif comment.startswith('/*'):
+        standard_java_pattern = r"/\*\*(.*?)\*/"
+        if re.findall(standard_java_pattern,comment,re.DOTALL):
+            return False
+        else:
+            print("here in")
+            return True
+    else:
+        return False
 
 
 
@@ -186,7 +209,7 @@ def rule_p10(comment:str) ->bool:
     # print(comments)
     
     if(len(comments) > 0):
-        print(comments)
+        #print(comments)
         return True
     return False
 
@@ -199,13 +222,9 @@ def rule_p11(comment:str) ->bool:
     """
     
     pattern = r"\{@link\s+([\w.#\s$]+)\}"
-
     tags = re.findall(pattern, comment, re.DOTALL)
-
-    # print(comments)
-    
     if(len(tags) > 0):
-        print(tags)
+     
         return True
     return False
 
