@@ -2,6 +2,7 @@ import language_tool_python as lt
 import tokenize          
 import re
 import sys
+import spacy
 sys.path.append('..')
 from patterns import AUTO_GEN_PATTERNS, HACK_PATTERNS
 #from corenlp import StanfordCoreNLP
@@ -49,41 +50,23 @@ def rule_p2(comment: str) ->bool:
 
 def rule_p3(comment:str) ->bool:
     
+    
     """
     Check if the comment is incomplete.
-    
-    :param comment: source code comment to be inspected
-    :returns: true if the comment is incomplete.
     """
-    # Download stanford-corenlp-4.5.4.zip from https://stanfordnlp.github.io/CoreNLP/index.html
-    # Start corenlp server using: java -mx4g -cp "<path_to_the_extracted_zip_folder>/*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000
-    # Create a StanfordCoreNLP object
-    nlp = StanfordCoreNLP('http://localhost:9000')
-    #nlp=StanfordCoreNLP('http://localhost:9000',9000)
-    #nlp.close()
-    output = nlp.annotate(comment, properties={'annotators': 'parse', 'outputFormat': 'json'})
-    parse_tree = eval(output)["sentences"][0]["parse"]
+    
+    # python -m spacy download en_core_web_sm
+    # https://stackoverflow.com/questions/72858984/mkl-service-package-failed-to-import-therefore-intelr-mkl-initialization-ensu
 
-    # Check if the top-level constituent under ROOT is a FRAG
-    if parse_tree.startswith('(ROOT (FRAG'):
+    nlp = spacy.load("en_core_web_sm")
+    doc = nlp(comment)
+    partial_sentences = []
+    for sentence in doc.sents:
+        if len(sentence) > 1 and not any(token.dep_ == 'ROOT' for token in sentence):
+            partial_sentences.append(sentence.text.strip())
+    if len(partial_sentences)>=1:
         return True
     return False
-
-    # Perform parsing and get constituency parse trees
-    #result = nlp.annotate(comment, properties={'annotators': 'tokenize,ssplit,pos,parse', 'outputFormat': 'json'})
-    
-    # # Iterate over sentences
-    # for sentence in result['sentences']:
-    #     parse_tree = sentence['parse']
-    #     root_constituent = parse_tree['root']['child'][0]
-    #     if root_constituent['value'] == 'FRAG':
-    #         print("Incomplete sentence")
-    #         nlp.close()
-    #         return True
-    # nlp.close()
-    #return False
-
-    # Check if the top-level constituent is FRAG
     
     
     
@@ -112,6 +95,98 @@ def rule_p5(comment:str) ->bool:
     found = any(pattern in tokenized_comment for pattern in lower_case_auto_gen_patterns)
     return found
 
+def  rule_p7(comment:str) ->bool:
+    """
+    Check if the comment is not using standard JavaDoc (Java) or docstring (Python)
+    """
+    if comment.startswith('#'):
+        
+        return True
+    elif comment.startswith('/*'):
+        standard_java_pattern = r"/\*\*(.*?)\*/"
+        if re.findall(standard_java_pattern,comment,re.DOTALL):
+            return False
+        else:
+           
+            return True
+    else:
+        return False
 
-# def rule_p6()
+
+
+def rule_p9(comment:str) ->bool:
+    """
+    Check if the comment is URL Link or reference.
+    
+    :param comment: source code comment to be inspected
+    :returns: true if the comment contains URL.
+    """
+    
+    protocol_pattern = r'\b((?:https?|ftp):\/\/[^\s/$.?#].[^\s]*)\b'
+    comments = re.findall(protocol_pattern, comment, re.DOTALL)
+    if(len(comments) > 0):
+       
+        return True
+    return False
+
+# def rule_p10(comment:str) ->bool:
+#     """
+#     Check if the comment is HTML Tags.
+    
+#     :param comment: source code comment to be inspected
+#     :returns: true if the comment contains HTML Tags.
+#     """
+    
+#     pattern = r"<[^>]+>"
+
+#     comments = re.findall(pattern, comment, re.DOTALL)
+
+   
+    
+#     if(len(comments) > 0):
+        
+#         return True
+#     return False
+
+# def rule_p11(comment:str) ->bool:
+#     """
+#     Check if the comment is JavaDoc Tags.
+    
+#     :param comment: source code comment to be inspected
+#     :returns: true if the comment contains JavaDoc Tags.
+#     """
+    
+#     pattern = r"\{@link\s+([\w.#\s$]+)\}"
+#     tags = re.findall(pattern, comment, re.DOTALL)
+#     if(len(tags) > 0):
+     
+#         return True
+#     return False
+
+
+def rule_p12(comment:str) ->bool:
+    """
+    Check if the comment Interrogation.
+    
+    :param comment: source code comment to be inspected
+    :returns: true if the comment contains Interrogation.
+    """
+    
+
+
+    nlp = spacy.load("en_core_web_sm")
+
+
+    doc = nlp(comment)
+
+    question_sentences = [
+        sentence.text.strip()
+        for sentence in doc.sents
+        if sentence.text.strip().endswith('?')
+    ]
+
+   
+    if len(question_sentences)>0:
+        return True
+    return False
     
