@@ -163,12 +163,11 @@ def apply_rules(current_dataset: dict,data: object) -> None:
 def main():
     #TARGET_DATASET.reverse()
     
-    for current_dataset in TARGET_DATASET:
-      
+    for current_dataset in TARGET_DATASET:      
         
         data = get_data(path=current_dataset["Source_Path"], jsonl=current_dataset["jsonl"])
-        
         apply_rules(current_dataset,data)
+        print("Done processing dataset: ", current_dataset["Source_Path"])
 
 
 

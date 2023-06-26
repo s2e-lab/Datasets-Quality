@@ -1,3 +1,4 @@
 tqdm==4.64.1
 language-tool-python==2.7.1
 pycorenlp==0.3.0
+stanfordcorenlp==3.9.1.1
