@@ -43,7 +43,7 @@ def process_human_eval_dataset(data: list) -> list:
         text = d["prompt"]
         comments = find_python_comment(text)
         for comment in comments:
-            nl_docs.append({"comment": comment})
+            nl_docs.append({"id": d["task_id"], "comment": comment})
     return nl_docs
 
 
@@ -53,7 +53,7 @@ def process_human_eval_plus_dataset(data: list) -> list:
         text = d["prompt"]
         comments = find_python_comment(text)
         for comment in comments:
-            nl_docs.append({"comment": comment})
+            nl_docs.append({"id": d["task_id"], "comment": comment})
     return nl_docs
 
 
@@ -63,7 +63,7 @@ def process_mbxp_python_dataset(data: list) -> list:
         text = d["prompt"]
         comments = find_python_comment(text)
         for comment in comments:
-            nl_docs.append({"comment": comment})
+            nl_docs.append({"id": d["task_id"], "comment": comment})
     return nl_docs
 
 
@@ -73,7 +73,7 @@ def process_mbxp_humaneval_python_dataset(data: list) -> list:
         text = d["prompt"]
         comments = find_python_comment(text)
         for comment in comments:
-            nl_docs.append({"comment": comment})
+            nl_docs.append({"id": d["task_id"], "comment": comment})
     return nl_docs
 
 
@@ -83,7 +83,7 @@ def process_mbxp_java_dataset(data: list) -> list:
         text = d["prompt"]
         comments = find_java_comment(text)
         for comment in comments:
-            nl_docs.append({"comment": comment})
+            nl_docs.append({"id": d["task_id"], "comment": comment})
     return nl_docs
 
 
@@ -93,7 +93,7 @@ def process_mbxp_humaneval_java_dataset(data: list) -> list:
         text = d["prompt"]
         comments = find_java_comment(text)
         for comment in comments:
-            nl_docs.append({"comment": comment})
+            nl_docs.append({"id": d["task_id"], "comment": comment})
     return nl_docs
 
 
@@ -103,7 +103,7 @@ def process_mbxp_mathqa_java_dataset(data: list) -> list:
         text = d["prompt"]
         comments = find_java_comment(text)
         for comment in comments:
-            nl_docs.append({"comment": comment})
+            nl_docs.append({"id": d["task_id"], "comment": comment})
     return nl_docs
 
 
@@ -113,7 +113,7 @@ def process_mbxp_mathqa_python_dataset(data: list) -> list:
         text = d["prompt"]
         comments = find_python_comment(text)
         for comment in comments:
-            nl_docs.append({"comment": comment})
+            nl_docs.append({"id": d["task_id"], "comment": comment})
     return nl_docs
 
 
@@ -122,7 +122,7 @@ def process_odex_en_dataset(data: list) -> list:
     for d in tqdm(data):
         text = d["intent"]
         comment = text
-        nl_docs.append({"comment": comment})
+        nl_docs.append({"id": d["task_id"], "comment": comment})
     return nl_docs
 
 
@@ -155,7 +155,7 @@ def process_CoderEval_python_dataset(data: list) -> list:
     for d in tqdm(data):
         text = d["human_label"]
         comment = text
-        nl_docs.append({"comment": comment})
+        nl_docs.append({"id": d["_id"], "comment": comment})
     return nl_docs
 
 
@@ -164,7 +164,7 @@ def process_MCoNaLa_ru_test_to_en_dataset(data: list) -> list:
 
     for d in tqdm(data):
         text = d["intent"]
-        nl_docs.append({"comment": text})
+        nl_docs.append({"id": d["question_id"], "comment": text})
     return nl_docs
 
 
@@ -173,7 +173,7 @@ def process_MCoNaLa_ja_test_to_en_dataset(data: list) -> list:
 
     for d in tqdm(data):
         text = d["intent"]
-        nl_docs.append({"comment": text})
+        nl_docs.append({"id": d["question_id"], "comment": text})
     return nl_docs
 
 
@@ -181,7 +181,7 @@ def process_MCoNaLa_es_test_to_en_dataset(data: list) -> list:
     nl_docs = []
     for d in tqdm(data):
         text = d["intent"]
-        nl_docs.append({"comment": text})
+        nl_docs.append({"id": d["question_id"], "comment": text})
     return nl_docs
 
 
@@ -192,7 +192,7 @@ def process_torch_data_beatnum_eval_v3_dataset(data: list) -> list:
         text = d["prompt"]
         comments = find_python_comment(text)
         for comment in comments:
-            nl_docs.append({"comment": comment})
+            nl_docs.append({"id": d["task_id"], "comment": comment})
     return nl_docs
 
 
@@ -203,7 +203,7 @@ def process_torch_data_beatnum_eval_v3_dataset(data: list) -> list:
         text = d["prompt"]
         comments = find_python_comment(text)
         for comment in comments:
-            nl_docs.append({"comment": comment})
+            nl_docs.append({"id": d["task_id"], "comment": comment})
     return nl_docs
 
 
@@ -212,13 +212,10 @@ def process_torch_data_monkey_eval_v3_dataset(data: list) -> list:
 
     for d in tqdm(data):
         text = d["prompt"]
-        comments1 = find_python_comment(text)
-        comments2 = find_python_comment(text)
-        for comment1 in comments1:
-            nl_docs.append({"comment": comment1})
-        for comment2 in comments2:
-            nl_docs.append({"comment": comment2})
-    return nl_docs
+        comments = find_python_comment(text)
+        for comment in comments:
+            nl_docs.append({"id": d["task_id"], "comment": comment})
+        return nl_docs
 
 
 def process_torch_data_torchdata_eval_v3_dataset(data: list) -> list:
@@ -228,7 +225,7 @@ def process_torch_data_torchdata_eval_v3_dataset(data: list) -> list:
         text = d["prompt"]
         comments = find_python_comment(text)
         for comment in comments:
-            nl_docs.append({"comment": comment})
+            nl_docs.append({"id": d["task_id"], "comment": comment})
     return nl_docs
 
 
@@ -239,18 +236,19 @@ def process_torch_data_makesense_eval_v3_dataset(data: list) -> list:
         text = d["prompt"]
         comments = find_python_comment(text)
         for comment in comments:
-            nl_docs.append({"comment": comment})
+            nl_docs.append({"id": d["task_id"], "comment": comment})
     return nl_docs
 
 
 def process_CodeComplex_extend_data_dataset(data: list) -> list:
     nl_docs = []
-
+    id = 0
     for d in tqdm(data):
         text = d["src"]
         comments = find_java_comment(text)
         for comment in comments:
-            nl_docs.append({"comment": comment})
+            nl_docs.append({"id": id, "comment": comment})
+        id += 1
 
     return nl_docs
 
@@ -258,11 +256,13 @@ def process_CodeComplex_extend_data_dataset(data: list) -> list:
 def process_CodeComplex_new_data_dataset(data: list) -> list:
     nl_docs = []
     data = data[0]
+    id = 0
     for d in tqdm(data):
         text = d["src"]
         comments = find_java_comment(text)
         for comment in comments:
-            nl_docs.append({"comment": comment})
+            nl_docs.append({"id": id, "comment": comment})
+        id += 1
     return nl_docs
 
 
@@ -273,39 +273,43 @@ def process_HumanEval_Infilling_MultiLineInfilling_dataset(data: list) -> list:
         text = d["prompt"]
         comments = find_python_comment(text)
         for comment in comments:
-            nl_docs.append({"comment": comment})
+            nl_docs.append({"id": d["task_id"], "comment": comment})
 
     return nl_docs
 
 
 def process_Jigsaw_PandasEval1_dataset(data: list) -> list:
     nl_docs = []
-
+    id = 0
     for entry in tqdm(data.values()):
         for set_data in entry["sets"].values():
             for query_data in set_data["queries"]:
-                nl_docs.append({"comment": query_data["query"]})
+                nl_docs.append({"id": id, "comment": query_data["query"]})
+        id += 1
+
     return nl_docs
 
 
 def process_Jigsaw_PandasEval2_dataset(data: list) -> list:
     nl_docs = []
-
+    id = 0
     for entry in tqdm(data.values()):
         for set_data in entry["sets"].values():
             for query_data in set_data["queries"]:
-                nl_docs.append({"comment": query_data["query"]})
+                nl_docs.append({"id": id, "comment": query_data["query"]})
+        id += 1
 
     return nl_docs
 
 
 def process_sanitized_mbpp_dataset(data: list) -> list:
     nl_docs = []
-
+    id = 0
     for d in tqdm(data):
         text = d["prompt"]
         comment = text
-        nl_docs.append({"comment": comment})
+        nl_docs.append({"id": id, "comment": comment})
+        id += 1
 
     return nl_docs
 
