@@ -6,8 +6,8 @@ import spacy
 sys.path.append('..')
 from patterns import AUTO_GEN_PATTERNS, HACK_PATTERNS
 #from corenlp import StanfordCoreNLP
-from stanfordcorenlp import StanfordCoreNLP
-from pycorenlp import StanfordCoreNLP
+# from stanfordcorenlp import StanfordCoreNLP
+# from pycorenlp import StanfordCoreNLP
 # grammar checker is global because it is too costly to open/close all the time P1 is invoked
 LANG_TOOL = lt.LanguageTool('en-US')
 
@@ -189,4 +189,3 @@ def rule_p12(comment:str) ->bool:
     if len(question_sentences)>0:
         return True
     return False
-    
