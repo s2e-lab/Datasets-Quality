@@ -16,11 +16,11 @@ from rules import (
 )
 
 TARGET_DATASET = [
-    # {
-    #     "Source_Path": "../../datasets/CONCODE/concode_test.json",
-    #     "Output_Path": "CONCODE_heuristic_results.json",
-    #     "jsonl": True,
-    # },
+    {
+        "Source_Path": "../../datasets/CONCODE/concode_test.json",
+        "Output_Path": "CONCODE_heuristic_results.json",
+        "jsonl": True,
+    },
     {
         "Source_Path": "../../datasets/HumanEval/human-eval-v2-20210705.jsonl",
         "Output_Path": "HumanEval_heuristic_results.json",
@@ -117,7 +117,7 @@ TARGET_DATASET = [
         "jsonl": True,
     },
     {
-        "Source_Path": "../../datasets/CodeComplex/new_data.jsonl",
+        "Source_Path": "../../datasets/CodeComplex/new_data.json",
         "Output_Path": "CodeComplex_new_data_heuristic.json",
         "jsonl": True,
     },
@@ -161,9 +161,6 @@ def apply_rules(current_dataset: dict, data: object) -> None:
         write_path += current_dataset["Output_Path"]
     elif "HumanEval-Infilling" in current_dataset["Source_Path"]:
         nl_docs = process_HumanEval_Infilling_MultiLineInfilling_dataset(data)
-        write_path += current_dataset["Output_Path"]
-    elif "HumanEval" in current_dataset["Source_Path"]:
-        nl_docs = process_human_eval_dataset(data)
         write_path += current_dataset["Output_Path"]
     elif (
         "mbxp" in current_dataset["Source_Path"]
@@ -247,6 +244,7 @@ def apply_rules(current_dataset: dict, data: object) -> None:
         "TorchDataEval" in current_dataset["Source_Path"]
         and "beatnum" in current_dataset["Source_Path"]
     ):
+        
         nl_docs = process_torch_data_beatnum_eval_v3_dataset(data)
         write_path += current_dataset["Output_Path"]
     elif (
@@ -255,6 +253,7 @@ def apply_rules(current_dataset: dict, data: object) -> None:
     ):
         nl_docs = process_torch_data_monkey_eval_v3_dataset(data)
         write_path += current_dataset["Output_Path"]
+        
     elif (
         "TorchDataEval" in current_dataset["Source_Path"]
         and "torchdata" in current_dataset["Source_Path"]
@@ -296,6 +295,9 @@ def apply_rules(current_dataset: dict, data: object) -> None:
         and "sanitized-mbpp" in current_dataset["Source_Path"]
     ):
         nl_docs = process_sanitized_mbpp_dataset(data)
+        write_path += current_dataset["Output_Path"]
+    elif "HumanEval" in current_dataset["Source_Path"]:
+        nl_docs = process_human_eval_dataset(data)
         write_path += current_dataset["Output_Path"]
 
     assert nl_docs != []

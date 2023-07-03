@@ -215,7 +215,7 @@ def process_torch_data_monkey_eval_v3_dataset(data: list) -> list:
         comments = find_python_comment(text)
         for comment in comments:
             nl_docs.append({"id": d["task_id"], "comment": comment})
-        return nl_docs
+    return nl_docs
 
 
 def process_torch_data_torchdata_eval_v3_dataset(data: list) -> list:

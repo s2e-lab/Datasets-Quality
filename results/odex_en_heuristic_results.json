@@ -1,1 +1,3847 @@
-[{"nl": {"id": 3283984, "comment": "decode a hex string '4a4b4c' to UTF-8."}, "Heuristic": ["H1"]}, {"nl": {"id": 3844801, "comment": "check if all elements in list `myList` are identical"}, "Heuristic": ["H1"]}, {"nl": {"id": 4302166, "comment": "format number of spaces between strings `Python`, `:` and `Very Good` to be `20`"}, "Heuristic": ["H1"]}, {"nl": {"id": 7555335, "comment": "convert a string `d` from CP-1251 to UTF-8"}, "Heuristic": ["H1"]}, {"nl": {"id": 2544710, "comment": "get rid of None values in dictionary `kwargs`"}, "Heuristic": ["H1"]}, {"nl": {"id": 2544710, "comment": "get rid of None values in dictionary `kwargs`"}, "Heuristic": ["H1"]}, {"nl": {"id": 14971373, "comment": "capture final output of a chain of system commands `ps -ef | grep something | wc -l`"}, "Heuristic": ["H1"]}, {"nl": {"id": 6726636, "comment": "concatenate a list of strings `['a', 'b', 'c']`"}, "Heuristic": ["H1"]}, {"nl": {"id": 18079563, "comment": "find intersection data between series `s1` and series `s2`"}, "Heuristic": ["H1"]}, {"nl": {"id": 8315209, "comment": "sending http headers to `client`"}, "Heuristic": ["H1"]}, {"nl": {"id": 26153795, "comment": "Format a datetime string `when` to extract date only"}, "Heuristic": ["H1"]}, {"nl": {"id": 172439, "comment": "split a multi-line string `inputString` into separate strings"}, "Heuristic": ["H1"]}, {"nl": {"id": 172439, "comment": "Split a multi-line string ` a \\n b \\r\\n c ` by new line character `\\n`"}, "Heuristic": []}, {"nl": {"id": 13954222, "comment": "concatenate elements of list `b` by a colon \":\""}, "Heuristic": ["H1"]}, {"nl": {"id": 13567345, "comment": "Calculate sum over all rows of 2D numpy array `a`"}, "Heuristic": ["H1"]}, {"nl": {"id": 29784889, "comment": "enable warnings using action 'always'"}, "Heuristic": ["H1"]}, {"nl": {"id": 13550423, "comment": "concatenate items of list `l` with a space ' '"}, "Heuristic": ["H1"]}, {"nl": {"id": 698223, "comment": "parse a time string '30/03/09 16:31:32.123' containing milliseconds in it"}, "Heuristic": ["H1"]}, {"nl": {"id": 6633523, "comment": "convert a string `my_string` with dot and comma into a float number `my_float`"}, "Heuristic": ["H1"]}, {"nl": {"id": 6633523, "comment": "convert a string `123,456.908` with dot and comma into a floating number"}, "Heuristic": ["H1"]}, {"nl": {"id": 3108285, "comment": "set python path '/path/to/whatever' in python script"}, "Heuristic": ["H1"]}, {"nl": {"id": 2195340, "comment": "split string 'Words, words, words.' using a regex '(\\\\W+)'"}, "Heuristic": ["H1"]}, {"nl": {"id": 17977584, "comment": "open a file `Output.txt` in append mode"}, "Heuristic": ["H1"]}, {"nl": {"id": 22676, "comment": "download a file \"http://www.example.com/songs/mp3.mp3\" over HTTP and save to \"mp3.mp3\""}, "Heuristic": ["H1", "H9"]}, {"nl": {"id": 22676, "comment": "download a file 'http://www.example.com/' over HTTP"}, "Heuristic": ["H1", "H9"]}, {"nl": {"id": 22676, "comment": "download a file `url` over HTTP"}, "Heuristic": ["H1"]}, {"nl": {"id": 22676, "comment": "download a file `url` over HTTP and save to \"10MB\""}, "Heuristic": ["H1"]}, {"nl": {"id": 15405636, "comment": "argparse add argument with flag '--version' and version action of '%(prog)s 2.0' to parser `parser`"}, "Heuristic": ["H1"]}, {"nl": {"id": 17665809, "comment": "remove key 'c' from dictionary `d`"}, "Heuristic": ["H1"]}, {"nl": {"id": 41861705, "comment": "Create new DataFrame object by merging columns \"key\" of  dataframes `split_df` and `csv_df` and rename the columns from dataframes `split_df` and `csv_df` with suffix `_left` and `_right` respectively"}, "Heuristic": ["H1"]}, {"nl": {"id": 10697757, "comment": "Split a string `s` by space with `4` splits"}, "Heuristic": []}, {"nl": {"id": 16344756, "comment": "enable debug mode on Flask application `app`"}, "Heuristic": ["H1"]}, {"nl": {"id": 40133826, "comment": "python save list `mylist` to file object 'save.txt'"}, "Heuristic": ["H1"]}, {"nl": {"id": 4490961, "comment": "Multiply a matrix `P` with a 3d tensor `T` in scipy"}, "Heuristic": ["H1"]}, {"nl": {"id": 2173087, "comment": "Create 3d array of zeroes of size `(3,3,3)`"}, "Heuristic": []}, {"nl": {"id": 6266727, "comment": "cut off the last word of a sentence `content`"}, "Heuristic": ["H1"]}, {"nl": {"id": 30385151, "comment": "convert scalar `x` to array"}, "Heuristic": ["H1"]}, {"nl": {"id": 15856127, "comment": "sum all elements of nested list `L`"}, "Heuristic": ["H1"]}, {"nl": {"id": 1592158, "comment": "convert hex string '470FC614' to a float number"}, "Heuristic": ["H1"]}, {"nl": {"id": 5010536, "comment": "Multiple each value by `2` for all keys in a dictionary `my_dict`"}, "Heuristic": []}, {"nl": {"id": 13745648, "comment": "running bash script 'sleep.sh'"}, "Heuristic": ["H1"]}, {"nl": {"id": 44778, "comment": "Join elements of list `l` with a comma `,`"}, "Heuristic": ["H1"]}, {"nl": {"id": 44778, "comment": "make a comma-separated string from a list `myList`"}, "Heuristic": ["H1"]}, {"nl": {"id": 7286365, "comment": "reverse the list that contains 1 to 10"}, "Heuristic": ["H1"]}, {"nl": {"id": 18454570, "comment": "remove substring 'bag,' from a string 'lamp, bag, mirror'"}, "Heuristic": ["H1"]}, {"nl": {"id": 4357787, "comment": "Reverse the order of words, delimited by `.`, in string `s`"}, "Heuristic": []}, {"nl": {"id": 21787496, "comment": "convert epoch time represented as milliseconds `s` to string using format '%Y-%m-%d %H:%M:%S.%f'"}, "Heuristic": ["H1"]}, {"nl": {"id": 21787496, "comment": "parse milliseconds epoch time '1236472051807' to format '%Y-%m-%d %H:%M:%S'"}, "Heuristic": ["H1"]}, {"nl": {"id": 20573459, "comment": "get the date 7 days before the current date"}, "Heuristic": ["H1"]}, {"nl": {"id": 15352457, "comment": "sum elements at index `column` of each list in list `data`"}, "Heuristic": ["H1"]}, {"nl": {"id": 15352457, "comment": "sum columns of a list `array`"}, "Heuristic": ["H1"]}, {"nl": {"id": 23164058, "comment": "encode binary string 'your string' to base64 code"}, "Heuristic": ["H1"]}, {"nl": {"id": 11533274, "comment": "combine list of dictionaries `dicts` with the same keys in each list to a single dictionary"}, "Heuristic": ["H1"]}, {"nl": {"id": 11533274, "comment": "Merge a nested dictionary `dicts` into a flat dictionary by concatenating nested values with the same key `k`"}, "Heuristic": ["H1"]}, {"nl": {"id": 14026704, "comment": "get the url parameter 'myParam' in a Flask view"}, "Heuristic": ["H1"]}, {"nl": {"id": 11236006, "comment": "identify duplicate values in list `mylist`"}, "Heuristic": ["H1"]}, {"nl": {"id": 20211942, "comment": "Insert a 'None' value into a SQLite3 table."}, "Heuristic": ["H1"]}, {"nl": {"id": 406121, "comment": "flatten list `list_of_menuitems`"}, "Heuristic": ["H1"]}, {"nl": {"id": 4741537, "comment": "append elements of a set `b` to a list `a`"}, "Heuristic": ["H1"]}, {"nl": {"id": 15851568, "comment": "Split a string `x` by last occurrence of character `-`"}, "Heuristic": []}, {"nl": {"id": 15851568, "comment": "get the last part of a string before the character '-'"}, "Heuristic": ["H1"]}, {"nl": {"id": 17438096, "comment": "upload file using FTP"}, "Heuristic": ["H1"]}, {"nl": {"id": 28742436, "comment": "create array containing the maximum value of respective elements of array `[2, 3, 4]` and array `[1, 5, 2]`"}, "Heuristic": ["H1"]}, {"nl": {"id": 34280147, "comment": "print a list `l` and move first 3 elements to the end of the list"}, "Heuristic": ["H1"]}, {"nl": {"id": 4172131, "comment": "create a random list of integers"}, "Heuristic": ["H1"]}, {"nl": {"id": 6677332, "comment": "Using %f with strftime() in Python to get microseconds"}, "Heuristic": ["H1"]}, {"nl": {"id": 15325182, "comment": "filter rows in pandas starting with alphabet 'f' using regular expression."}, "Heuristic": ["H1"]}, {"nl": {"id": 583557, "comment": "print a 2 dimensional list `tab` as a table with delimiters"}, "Heuristic": ["H1"]}, {"nl": {"id": 38535931, "comment": "pandas: delete rows in dataframe `df` based on multiple columns values"}, "Heuristic": ["H1"]}, {"nl": {"id": 13945749, "comment": "format the variables `goals` and `penalties` using string formatting"}, "Heuristic": ["H1"]}, {"nl": {"id": 13945749, "comment": "format string \"({} goals, ${})\" with variables `goals` and `penalties`"}, "Heuristic": ["H1"]}, {"nl": {"id": 18524642, "comment": "convert list of lists `L` to list of integers"}, "Heuristic": ["H1"]}, {"nl": {"id": 18524642, "comment": "convert a list of lists `L` to list of integers"}, "Heuristic": ["H1"]}, {"nl": {"id": 7138686, "comment": "write the elements of list `lines` concatenated by special character '\\n' to file `myfile`"}, "Heuristic": ["H1"]}, {"nl": {"id": 17238587, "comment": "Remove duplicate words from a string `text` using regex"}, "Heuristic": []}, {"nl": {"id": 26053849, "comment": "count non zero values in each column in pandas data frame `df`"}, "Heuristic": ["H1"]}, {"nl": {"id": 15534223, "comment": "search for string that matches regular expression pattern '(?<!Distillr)\\\\\\\\AcroTray\\\\.exe' in string 'C:\\\\SomeDir\\\\AcroTray.exe'"}, "Heuristic": ["H1"]}, {"nl": {"id": 5453026, "comment": "split string 'QH QD JC KD JS' into a list on white spaces"}, "Heuristic": ["H1"]}, {"nl": {"id": 18168684, "comment": "search for occurrences of regex pattern '>.*<' in xml string `line`"}, "Heuristic": ["H1"]}, {"nl": {"id": 4914277, "comment": "erase all the contents of a file `filename`"}, "Heuristic": ["H1"]}, {"nl": {"id": 19068269, "comment": "convert a string `string_date` into datetime using the format '%Y-%m-%d %H:%M:%S.%f'"}, "Heuristic": ["H1"]}, {"nl": {"id": 20683167, "comment": "find the index of a list with the first element equal to '332' within the list of lists `thelist`"}, "Heuristic": ["H1"]}, {"nl": {"id": 30693804, "comment": "lower a string `text` and remove non-alphanumeric characters aside from space"}, "Heuristic": ["H1"]}, {"nl": {"id": 30693804, "comment": "remove all non-alphanumeric characters except space from a string `text` and lower it"}, "Heuristic": ["H1"]}, {"nl": {"id": 17138464, "comment": "subscript text 'H20' with '2' as subscripted in matplotlib labels for arrays 'x' and 'y'."}, "Heuristic": ["H1"]}, {"nl": {"id": 17138464, "comment": "subscript text 'H20' with '2' as subscripted in matplotlib labels for arrays 'x' and 'y'."}, "Heuristic": ["H1"]}, {"nl": {"id": 9138112, "comment": "loop over a list `mylist` if sublists length equals 3"}, "Heuristic": ["H1"]}, {"nl": {"id": 1807026, "comment": "initialize a list `lst` of 100 objects Object()"}, "Heuristic": ["H1"]}, {"nl": {"id": 13793321, "comment": "joining data from dataframe `df1` with data from dataframe `df2` based on matching values of column 'Date_Time' in both dataframes"}, "Heuristic": ["H1"]}, {"nl": {"id": 3367288, "comment": "use `%s` operator to print variable values `str1` inside a string"}, "Heuristic": ["H1"]}, {"nl": {"id": 3475251, "comment": "Split a string '2.MATCHES $$TEXT$$ STRING' by a delimiter '$$TEXT$$'"}, "Heuristic": ["H1"]}, {"nl": {"id": 273192, "comment": "check if directory `directory ` exists and create it if necessary"}, "Heuristic": ["H1"]}, {"nl": {"id": 273192, "comment": "check if a directory `path` exists and create it if necessary"}, "Heuristic": ["H1"]}, {"nl": {"id": 273192, "comment": "check if a directory `path` exists and create it if necessary"}, "Heuristic": ["H1"]}, {"nl": {"id": 18785032, "comment": "Replace a separate word 'H3' by 'H1' in a string 'text'"}, "Heuristic": ["H1"]}, {"nl": {"id": 1450897, "comment": "substitute ASCII letters in string 'aas30dsa20' with empty string ''"}, "Heuristic": ["H1"]}, {"nl": {"id": 1450897, "comment": "get digits only from a string `aas30dsa20` using lambda function"}, "Heuristic": ["H1"]}, {"nl": {"id": 14435268, "comment": "access a tag called \"name\" in beautifulsoup `soup`"}, "Heuristic": ["H1"]}, {"nl": {"id": 20180210, "comment": "Create new matrix object  by concatenating data from matrix A and matrix B"}, "Heuristic": ["H1"]}, {"nl": {"id": 20180210, "comment": "concat two matrices `A` and `B` in numpy"}, "Heuristic": ["H1"]}, {"nl": {"id": 2011048, "comment": "Get the characters count in a file `filepath`"}, "Heuristic": ["H1"]}, {"nl": {"id": 2600191, "comment": "count the occurrences of item \"a\" in list `l`"}, "Heuristic": ["H1"]}, {"nl": {"id": 2600191, "comment": "count the occurrences of items in list `l`"}, "Heuristic": ["H1"]}, {"nl": {"id": 2600191, "comment": "count the occurrences of items in list `l`"}, "Heuristic": ["H1"]}, {"nl": {"id": 2600191, "comment": "count the occurrences of items in list `l`"}, "Heuristic": ["H1"]}, {"nl": {"id": 2600191, "comment": "count the occurrences of item \"b\" in list `l`"}, "Heuristic": ["H1"]}, {"nl": {"id": 12842997, "comment": "copy file `srcfile` to directory `dstdir`"}, "Heuristic": ["H1"]}, {"nl": {"id": 1555968, "comment": "find the key associated with the largest value in dictionary `x` whilst key is non-zero value"}, "Heuristic": ["H1"]}, {"nl": {"id": 17021863, "comment": "Put the curser at beginning of the file"}, "Heuristic": ["H1"]}, {"nl": {"id": 38152389, "comment": "combine values from column 'b' and column 'a' of dataframe `df`  into column 'c' of datafram `df`"}, "Heuristic": ["H1"]}, {"nl": {"id": 4175686, "comment": "remove key 'ele' from dictionary `d`"}, "Heuristic": ["H1"]}, {"nl": {"id": 11574195, "comment": "merge list `['it']` and list `['was']` and list `['annoying']` into one list"}, "Heuristic": ["H1"]}, {"nl": {"id": 587647, "comment": "increment a value with leading zeroes in a number `x`"}, "Heuristic": ["H1"]}, {"nl": {"id": 17315881, "comment": "check if a pandas dataframe `df`'s index is sorted"}, "Heuristic": ["H1"]}, {"nl": {"id": 16296643, "comment": "Convert tuple `t` to list"}, "Heuristic": []}, {"nl": {"id": 16296643, "comment": "Convert list `t` to tuple"}, "Heuristic": []}, {"nl": {"id": 16296643, "comment": "Convert tuple `level1` to list"}, "Heuristic": []}, {"nl": {"id": 3880399, "comment": "send the output of pprint object `dataobject` to file `logFile`"}, "Heuristic": ["H1"]}, {"nl": {"id": 21800169, "comment": "get index of rows in column 'BoolCol'"}, "Heuristic": ["H1"]}, {"nl": {"id": 21800169, "comment": "Create a list containing the indexes of rows where the value of column 'BoolCol' in dataframe `df` are equal to True"}, "Heuristic": ["H1"]}, {"nl": {"id": 21800169, "comment": "from dataframe `df` get list of indexes of rows where column 'BoolCol' values match True"}, "Heuristic": ["H1"]}, {"nl": {"id": 21800169, "comment": "get index of rows in dataframe `df` which column 'BoolCol' matches value True"}, "Heuristic": ["H1"]}, {"nl": {"id": 299446, "comment": "change working directory to the directory `owd`"}, "Heuristic": ["H1"]}, {"nl": {"id": 14695134, "comment": "insert data from a string `testfield` to sqlite db `c`"}, "Heuristic": ["H1"]}, {"nl": {"id": 24242433, "comment": "decode string \"\\\\x89\\\\n\" into a normal string"}, "Heuristic": ["H1"]}, {"nl": {"id": 24242433, "comment": "convert a raw string `raw_string` into a normal string"}, "Heuristic": ["H1"]}, {"nl": {"id": 24242433, "comment": "convert a raw string `raw_byte_string` into a normal string"}, "Heuristic": ["H1"]}, {"nl": {"id": 22882922, "comment": "split a string `s` with into all strings of repeated characters"}, "Heuristic": ["H1"]}, {"nl": {"id": 4143502, "comment": "scatter a plot with x, y position of `np.random.randn(100)` and face color equal to none"}, "Heuristic": ["H1"]}, {"nl": {"id": 4143502, "comment": "do a scatter plot with empty circles"}, "Heuristic": ["H1"]}, {"nl": {"id": 32063985, "comment": "remove a div from `soup` with a id `main-content` using beautifulsoup"}, "Heuristic": ["H1"]}, {"nl": {"id": 27975069, "comment": "filter rows of datafram `df` containing key word `ball` in column `ids`"}, "Heuristic": ["H1"]}, {"nl": {"id": 20461165, "comment": "convert index at level 0 into a column in dataframe `df`"}, "Heuristic": ["H1"]}, {"nl": {"id": 20461165, "comment": "Add indexes in a data frame `df` to a column `index1`"}, "Heuristic": ["H1"]}, {"nl": {"id": 20461165, "comment": "convert pandas index in a dataframe `df` to columns"}, "Heuristic": ["H1"]}, {"nl": {"id": 4685571, "comment": "Get reverse of list items from list 'b' using extended slicing"}, "Heuristic": []}, {"nl": {"id": 17960441, "comment": "join each element in array `a` with element at the same index in array `b` as a tuple"}, "Heuristic": ["H1"]}, {"nl": {"id": 17960441, "comment": "zip two 2-d arrays `a` and `b`"}, "Heuristic": ["H1"]}, {"nl": {"id": 438684, "comment": "convert list `list_of_ints` into a comma separated string"}, "Heuristic": ["H1"]}, {"nl": {"id": 8519922, "comment": "Send a post request with raw data `DATA` and basic authentication with `username` and `password`"}, "Heuristic": []}, {"nl": {"id": 26443308, "comment": "Find last occurrence of character '}' in string \"abcd}def}\""}, "Heuristic": ["H1"]}, {"nl": {"id": 22365172, "comment": "Iterate ove list `[1, 2, 3]` using list comprehension"}, "Heuristic": ["H1"]}, {"nl": {"id": 12300912, "comment": "extract all the values with keys 'x' and 'y' from a list of dictionaries `d` to list of tuples"}, "Heuristic": ["H1"]}, {"nl": {"id": 678236, "comment": "get the filename without the extension from file 'hemanth.txt'"}, "Heuristic": ["H1"]}, {"nl": {"id": 7895449, "comment": "create a list containing flattened list `[['A', 'B', 'C'], ['D', 'E', 'F'], ['G', 'H', 'I']]`"}, "Heuristic": ["H1"]}, {"nl": {"id": 31617845, "comment": "select rows in a dataframe `df` column 'closing_price' between two values 99 and 101"}, "Heuristic": ["H1"]}, {"nl": {"id": 25698710, "comment": "replace all occurences of newlines `\\n` with `<br>` in dataframe `df`"}, "Heuristic": ["H1"]}, {"nl": {"id": 25698710, "comment": "replace all occurrences of a string `\\n` by string `<br>` in a pandas data frame `df`"}, "Heuristic": ["H1"]}, {"nl": {"id": 41923858, "comment": "create a list containing each two adjacent letters in string `word` as its elements"}, "Heuristic": ["H1"]}, {"nl": {"id": 41923858, "comment": "Get a list of pairs from a string `word` using lambda function"}, "Heuristic": []}, {"nl": {"id": 9760588, "comment": "extract a url from a string `myString`"}, "Heuristic": ["H1"]}, {"nl": {"id": 9760588, "comment": "extract a url from a string `myString`"}, "Heuristic": ["H1"]}, {"nl": {"id": 5843518, "comment": "remove all special characters, punctuation and spaces from a string `mystring` using regex"}, "Heuristic": ["H1"]}, {"nl": {"id": 36674519, "comment": "create a DatetimeIndex containing 13 periods of the second friday of each month starting from date '2016-01-01'"}, "Heuristic": ["H1"]}, {"nl": {"id": 508657, "comment": "Create multidimensional array `matrix` with 3 rows and 2 columns in python"}, "Heuristic": []}, {"nl": {"id": 1007481, "comment": "replace spaces with underscore in string `mystring`"}, "Heuristic": ["H1"]}, {"nl": {"id": 1249786, "comment": "split string `my_string` on white spaces"}, "Heuristic": ["H1"]}, {"nl": {"id": 4444923, "comment": "get filename without extension from file `filename`"}, "Heuristic": ["H1"]}, {"nl": {"id": 13728486, "comment": "get a list containing the sum of each element `i` in list `l` plus the previous elements"}, "Heuristic": ["H1"]}, {"nl": {"id": 9743134, "comment": "split a string `Docs/src/Scripts/temp` by `/` keeping `/` in the result"}, "Heuristic": ["H1"]}, {"nl": {"id": 20546419, "comment": "shuffle columns of an numpy array 'r'"}, "Heuristic": ["H1"]}, {"nl": {"id": 32675861, "comment": "copy all values in a column 'B' to a new column 'D' in a pandas data frame 'df'"}, "Heuristic": ["H1"]}, {"nl": {"id": 14227561, "comment": "find a value within nested json 'data' where the key inside another key 'B' is unknown."}, "Heuristic": ["H1"]}, {"nl": {"id": 14858916, "comment": "check characters of string `string` are true predication of function `predicate`"}, "Heuristic": ["H1"]}, {"nl": {"id": 574236, "comment": "determine number of files on a drive with python"}, "Heuristic": ["H1"]}, {"nl": {"id": 7011291, "comment": "how to get a single result from a SQLite query from `cursor`"}, "Heuristic": ["H1"]}, {"nl": {"id": 6378889, "comment": "convert string `user_input` into a list of integers `user_list`"}, "Heuristic": ["H1"]}, {"nl": {"id": 6378889, "comment": "Get a list of integers by splitting  a string `user` with comma"}, "Heuristic": ["H1"]}, {"nl": {"id": 5212870, "comment": "Sorting a Python list `list` by the first item ascending and last item descending"}, "Heuristic": []}, {"nl": {"id": 403421, "comment": "sort a list of objects `ut`, based on a function `cmpfun` in descending order"}, "Heuristic": ["H1"]}, {"nl": {"id": 403421, "comment": "reverse list `ut` based on the `count` attribute of each object"}, "Heuristic": ["H1"]}, {"nl": {"id": 3944876, "comment": "cast an int `i` to a string and concat to string 'ME'"}, "Heuristic": ["H1"]}, {"nl": {"id": 40903174, "comment": "Sorting data in Pandas DataFrame `df` with columns 'System_num' and 'Dis'"}, "Heuristic": ["H1"]}, {"nl": {"id": 4454298, "comment": "prepend the line '#test firstline\\n' to the contents of file 'infile' and save as the file 'outfile'"}, "Heuristic": ["H1"]}, {"nl": {"id": 19729928, "comment": "sort a list `l` by length of value in tuple"}, "Heuristic": ["H1"]}, {"nl": {"id": 31371879, "comment": "split string `s` by words that ends with 'd'"}, "Heuristic": ["H1"]}, {"nl": {"id": 9012008, "comment": "return `True` if string `foobarrrr` contains regex `ba[rzd]`"}, "Heuristic": ["H1"]}, {"nl": {"id": 7961363, "comment": "Removing duplicates in list `t`"}, "Heuristic": []}, {"nl": {"id": 7961363, "comment": "Removing duplicates in list `source_list`"}, "Heuristic": []}, {"nl": {"id": 7961363, "comment": "Removing duplicates in list `abracadabra`"}, "Heuristic": []}, {"nl": {"id": 5183533, "comment": "Convert array `a` into a list"}, "Heuristic": []}, {"nl": {"id": 5183533, "comment": "Convert the first row of numpy matrix `a` to a list"}, "Heuristic": ["H1"]}, {"nl": {"id": 5999747, "comment": "In `soup`, get the content of the sibling of the `td`  tag with text content `Address:`"}, "Heuristic": ["H1"]}, {"nl": {"id": 4284648, "comment": "convert elements of each tuple in list `l` into a string  separated by character `@`"}, "Heuristic": ["H1"]}, {"nl": {"id": 4284648, "comment": "convert each tuple in list `l` to a string with '@' separating the tuples' elements"}, "Heuristic": ["H1"]}, {"nl": {"id": 29696641, "comment": "Get all matches with regex pattern `\\\\d+[xX]` in list of string `teststr`"}, "Heuristic": ["H1"]}, {"nl": {"id": 15315452, "comment": "select values from column 'A' for which corresponding values in column 'B' will be greater than 50, and in column 'C' - equal 900 in dataframe `df`"}, "Heuristic": ["H1"]}, {"nl": {"id": 4642501, "comment": "Sort dictionary `o` in ascending order based on its keys and items"}, "Heuristic": []}, {"nl": {"id": 4642501, "comment": "get sorted list of keys of dict `d`"}, "Heuristic": ["H1"]}, {"nl": {"id": 4642501, "comment": "sort dictionaries `d` by keys"}, "Heuristic": ["H1"]}, {"nl": {"id": 642154, "comment": "convert string \"1\" into integer"}, "Heuristic": ["H1"]}, {"nl": {"id": 642154, "comment": "convert items in `T1` to integers"}, "Heuristic": ["H1"]}, {"nl": {"id": 3777301, "comment": "call a shell script `./test.sh` using subprocess"}, "Heuristic": ["H1"]}, {"nl": {"id": 3777301, "comment": "call a shell script `notepad` using subprocess"}, "Heuristic": ["H1"]}, {"nl": {"id": 7946798, "comment": "combine lists `l1` and `l2`  by alternating their elements"}, "Heuristic": ["H1"]}, {"nl": {"id": 8908287, "comment": "encode string 'data to be encoded'"}, "Heuristic": ["H1"]}, {"nl": {"id": 8908287, "comment": "encode a string `data to be encoded` to `ascii` encoding"}, "Heuristic": ["H1"]}, {"nl": {"id": 7856296, "comment": "parse tab-delimited CSV file 'text.txt' into a list"}, "Heuristic": ["H1"]}, {"nl": {"id": 9035479, "comment": "Get attribute `my_str` of object `my_object`"}, "Heuristic": ["H1"]}, {"nl": {"id": 5558418, "comment": "group a list of dicts `LD` into one dict by key"}, "Heuristic": ["H1"]}, {"nl": {"id": 638048, "comment": "sum the first value in each tuple in a list of tuples `list_of_pairs` in python"}, "Heuristic": ["H1"]}, {"nl": {"id": 14950260, "comment": "convert unicode string u\"{'code1':1,'code2':1}\" into dictionary"}, "Heuristic": ["H1"]}, {"nl": {"id": 11416772, "comment": "find all words in a string `mystring` that start with the `$` sign"}, "Heuristic": ["H1"]}, {"nl": {"id": 11331982, "comment": "remove any url within string `text`"}, "Heuristic": ["H1"]}, {"nl": {"id": 34945274, "comment": "replace all elements in array `A` that are not present in array `[1, 3, 4]` with zeros"}, "Heuristic": ["H1"]}, {"nl": {"id": 15819980, "comment": "calculate mean across dimension in a 2d array `a`"}, "Heuristic": ["H1"]}, {"nl": {"id": 19894365, "comment": "running r script '/pathto/MyrScript.r' from python"}, "Heuristic": ["H1"]}, {"nl": {"id": 19894365, "comment": "run r script '/usr/bin/Rscript --vanilla /pathto/MyrScript.r'"}, "Heuristic": ["H1"]}, {"nl": {"id": 33058590, "comment": "replacing nan in the dataframe `df` with row average"}, "Heuristic": ["H1"]}, {"nl": {"id": 12400256, "comment": "Convert unix timestamp '1347517370' to formatted string '%Y-%m-%d %H:%M:%S'"}, "Heuristic": ["H1"]}, {"nl": {"id": 23359886, "comment": "selecting rows in Numpy ndarray 'a', where the value in the first column is 0 and value in the second column is 1"}, "Heuristic": ["H1"]}, {"nl": {"id": 4383082, "comment": "separate words delimited by one or more spaces into a list"}, "Heuristic": ["H1"]}, {"nl": {"id": 14637696, "comment": "length of longest element in list `words`"}, "Heuristic": ["H1"]}, {"nl": {"id": 3933478, "comment": "get the value associated with unicode key 'from_user' of first dictionary in list `result`"}, "Heuristic": ["H1"]}, {"nl": {"id": 39112645, "comment": "Retrieve each line from a file 'File.txt' as a list"}, "Heuristic": []}, {"nl": {"id": 1031851, "comment": "swap keys with values in a dictionary `a`"}, "Heuristic": ["H1"]}, {"nl": {"id": 8577137, "comment": "Open a file `path/to/FILE_NAME.ext` in write mode"}, "Heuristic": []}, {"nl": {"id": 17926273, "comment": "count distinct values in a column 'col3' of a pandas dataframe `df` group by objects in 'col1' and 'col2'"}, "Heuristic": ["H1"]}, {"nl": {"id": 3735814, "comment": "Check if any key in the dictionary `dict1` starts with the string `EMP$$`"}, "Heuristic": ["H1"]}, {"nl": {"id": 3735814, "comment": "create list of values from dictionary `dict1` that have a key that starts with 'EMP$$'"}, "Heuristic": ["H1"]}, {"nl": {"id": 26097916, "comment": "convert a pandas series `sf` into a pandas dataframe `df` with columns `email` and `list`"}, "Heuristic": ["H1"]}, {"nl": {"id": 4048964, "comment": "concatenate elements of list `list` by tabs `\t`"}, "Heuristic": ["H1"]}, {"nl": {"id": 3182716, "comment": "print unicode string '\\xd0\\xbf\\xd1\\x80\\xd0\\xb8' with utf-8"}, "Heuristic": ["H1"]}, {"nl": {"id": 3182716, "comment": "Encode a latin character in string `Sopet\\xc3\\xb3n` properly"}, "Heuristic": ["H1"]}, {"nl": {"id": 35622945, "comment": "regex, find \"n\"s only in the middle of string `s`"}, "Heuristic": ["H1"]}, {"nl": {"id": 5306756, "comment": "display the float `1/3*100` as a percentage"}, "Heuristic": ["H1"]}, {"nl": {"id": 2878084, "comment": "sort a list of dictionary `mylist` by the key `title`"}, "Heuristic": ["H1"]}, {"nl": {"id": 2878084, "comment": "sort a list `l` of dicts by dict value 'title'"}, "Heuristic": ["H1"]}, {"nl": {"id": 2878084, "comment": "sort a list of dictionaries by the value of keys 'title', 'title_url', 'id' in ascending order."}, "Heuristic": ["H1"]}, {"nl": {"id": 9323159, "comment": "find 10 largest differences between each respective elements of list `l1` and list `l2`"}, "Heuristic": ["H1"]}, {"nl": {"id": 29877663, "comment": "BeautifulSoup find all 'span' elements in HTML string `soup` with class of 'starGryB sp'"}, "Heuristic": ["H1"]}, {"nl": {"id": 24189150, "comment": "write records in dataframe `df` to table 'test' in schema 'a_schema' with `engine`"}, "Heuristic": ["H1"]}, {"nl": {"id": 30766151, "comment": "Extract brackets from string `s`"}, "Heuristic": []}, {"nl": {"id": 1143379, "comment": "remove duplicate elements from list 'L'"}, "Heuristic": ["H1"]}, {"nl": {"id": 12330522, "comment": "read a file `file` without newlines"}, "Heuristic": ["H1"]}, {"nl": {"id": 364621, "comment": "get the position of item 1 in `testlist`"}, "Heuristic": ["H1"]}, {"nl": {"id": 364621, "comment": "get the position of item 1 in `testlist`"}, "Heuristic": ["H1"]}, {"nl": {"id": 364621, "comment": "get the position of item `element` in list `testlist`"}, "Heuristic": ["H1"]}, {"nl": {"id": 13145368, "comment": "find the first element of the tuple with the maximum second element in a list of tuples `lis`"}, "Heuristic": ["H1"]}, {"nl": {"id": 13145368, "comment": "get the item at index 0 from the tuple that has maximum value at index 1 in list `lis`"}, "Heuristic": ["H1"]}, {"nl": {"id": 2689189, "comment": "Make a delay of 1 second"}, "Heuristic": []}, {"nl": {"id": 12485244, "comment": "convert list of tuples `L` to a string"}, "Heuristic": ["H1"]}, {"nl": {"id": 755857, "comment": "Django set default value of field `b` equal to '0000000'"}, "Heuristic": []}, {"nl": {"id": 16193578, "comment": "Sort lis `list5` in ascending order based on the degrees value of its elements"}, "Heuristic": ["H1"]}, {"nl": {"id": 16041405, "comment": "convert a list `l` into a generator object"}, "Heuristic": ["H1"]}, {"nl": {"id": 18837607, "comment": "remove elements from list `oldlist` that have an index number mentioned in list `removelist`"}, "Heuristic": ["H1"]}, {"nl": {"id": 4710067, "comment": "Open a file `yourfile.txt` in write mode"}, "Heuristic": []}, {"nl": {"id": 7373219, "comment": "get attribute 'attr' from object `obj`"}, "Heuristic": ["H1"]}, {"nl": {"id": 8171751, "comment": "convert tuple of tuples `(('aa',), ('bb',), ('cc',))` to tuple"}, "Heuristic": ["H1"]}, {"nl": {"id": 8171751, "comment": "convert tuple of tuples `(('aa',), ('bb',), ('cc',))` to list in one line"}, "Heuristic": ["H1"]}, {"nl": {"id": 28986489, "comment": "replace a characters in a column of a dataframe `df`"}, "Heuristic": ["H1"]}, {"nl": {"id": 19339, "comment": "unzip the list `[('a', 1), ('b', 2), ('c', 3), ('d', 4)]`"}, "Heuristic": ["H1"]}, {"nl": {"id": 19339, "comment": "unzip list `original`"}, "Heuristic": ["H1"]}, {"nl": {"id": 19339, "comment": "unzip list `original` and return a generator"}, "Heuristic": ["H1"]}, {"nl": {"id": 19339, "comment": "unzip list `[('a', 1), ('b', 2), ('c', 3), ('d', 4), ('e', )]`"}, "Heuristic": ["H1"]}, {"nl": {"id": 19339, "comment": "unzip list `[('a', 1), ('b', 2), ('c', 3), ('d', 4), ('e', )]` and fill empty results with None"}, "Heuristic": ["H1"]}, {"nl": {"id": 1960516, "comment": "encode `Decimal('3.9')` to a JSON string"}, "Heuristic": ["H1"]}, {"nl": {"id": 1024847, "comment": "Add key \"mynewkey\" to dictionary `d` with value \"mynewvalue\""}, "Heuristic": ["H1"]}, {"nl": {"id": 1024847, "comment": "Add key 'a' to dictionary `data` with value 1"}, "Heuristic": []}, {"nl": {"id": 1024847, "comment": "Add key 'a' to dictionary `data` with value 1"}, "Heuristic": []}, {"nl": {"id": 1024847, "comment": "Add key 'a' to dictionary `data` with value 1"}, "Heuristic": []}, {"nl": {"id": 35837346, "comment": "find maximal value in matrix `matrix`"}, "Heuristic": ["H1"]}, {"nl": {"id": 20457038, "comment": "Round number `answer` to 2 precision after the decimal point"}, "Heuristic": []}, {"nl": {"id": 2890896, "comment": "extract ip address `ip` from an html string `s`"}, "Heuristic": ["H1"]}, {"nl": {"id": 29836836, "comment": "filter dataframe `df` by values in column `A` that appear more than once"}, "Heuristic": ["H1"]}, {"nl": {"id": 2545397, "comment": "append each line in file `myfile` into a list"}, "Heuristic": ["H1"]}, {"nl": {"id": 2545397, "comment": "Get a list of integers `lst` from a file `filename.txt`"}, "Heuristic": ["H1"]}, {"nl": {"id": 35420052, "comment": "add color bar with image `mappable` to plot `plt`"}, "Heuristic": ["H1"]}, {"nl": {"id": 29903025, "comment": "count most frequent 100 words in column 'text' of dataframe `df`"}, "Heuristic": ["H1"]}, {"nl": {"id": 7378180, "comment": "generate all 2-element subsets of tuple `(1, 2, 3)`"}, "Heuristic": ["H1"]}, {"nl": {"id": 4530069, "comment": "get a value of datetime.today() in the UTC time zone"}, "Heuristic": ["H1"]}, {"nl": {"id": 4842956, "comment": "Get a new list `list2`by removing empty list from a list of lists `list1`"}, "Heuristic": []}, {"nl": {"id": 4842956, "comment": "Create `list2` to contain the lists from list `list1` excluding the empty lists from `list1`"}, "Heuristic": []}, {"nl": {"id": 9262278, "comment": "Django response with JSON `data`"}, "Heuristic": []}, {"nl": {"id": 17284947, "comment": "get all text that is not enclosed within square brackets in string `example_str`"}, "Heuristic": ["H1"]}, {"nl": {"id": 17284947, "comment": "Use a regex to get all text in a string `example_str` that is not surrounded by square brackets"}, "Heuristic": ["H1"]}, {"nl": {"id": 14182339, "comment": "get whatever is between parentheses as a single match, and any char outside as an individual match in string '(zyx)bc'"}, "Heuristic": ["H1"]}, {"nl": {"id": 14182339, "comment": "match regex '\\\\((.*?)\\\\)|(\\\\w)' with string '(zyx)bc'"}, "Heuristic": ["H1"]}, {"nl": {"id": 14182339, "comment": "match multiple regex patterns with the alternation operator `|` in a string `(zyx)bc`"}, "Heuristic": ["H1"]}, {"nl": {"id": 7126916, "comment": "formate each string cin list `elements` into pattern '%{0}%'"}, "Heuristic": ["H1"]}, {"nl": {"id": 3595685, "comment": "Open a background process 'background-process' with arguments 'arguments'"}, "Heuristic": []}, {"nl": {"id": 18453566, "comment": "get list of values from dictionary 'mydict' w.r.t. list of keys 'mykeys'"}, "Heuristic": ["H1"]}, {"nl": {"id": 12692135, "comment": "convert list `[('Name', 'Joe'), ('Age', 22)]` into a dictionary"}, "Heuristic": ["H1"]}, {"nl": {"id": 14401047, "comment": "average each two columns of array `data`"}, "Heuristic": ["H1"]}, {"nl": {"id": 18886596, "comment": "double backslash escape all double quotes in string `s`"}, "Heuristic": ["H1"]}, {"nl": {"id": 5932059, "comment": "split a string `s` into a list of words and whitespace"}, "Heuristic": ["H1"]}, {"nl": {"id": 9938130, "comment": "plotting stacked barplots on a panda data frame `df`"}, "Heuristic": ["H1"]}, {"nl": {"id": 35945473, "comment": "reverse the keys and values in a dictionary `myDictionary`"}, "Heuristic": ["H1"]}, {"nl": {"id": 30729735, "comment": "finding the index of elements containing substring 'how' and 'what' in a list of strings 'myList'."}, "Heuristic": ["H1"]}, {"nl": {"id": 1303243, "comment": "check if object `obj` is a string"}, "Heuristic": ["H1"]}, {"nl": {"id": 1303243, "comment": "check if object `o` is a string"}, "Heuristic": ["H1"]}, {"nl": {"id": 1303243, "comment": "check if object `o` is a string"}, "Heuristic": ["H1"]}, {"nl": {"id": 1303243, "comment": "check if `obj_to_test` is a string"}, "Heuristic": ["H1"]}, {"nl": {"id": 8177079, "comment": "append list `list1` to `list2`"}, "Heuristic": ["H1"]}, {"nl": {"id": 8177079, "comment": "append list `mylog` to `list1`"}, "Heuristic": ["H1"]}, {"nl": {"id": 8177079, "comment": "append list `a` to `c`"}, "Heuristic": ["H1"]}, {"nl": {"id": 8177079, "comment": "append items in list `mylog` to `list1`"}, "Heuristic": ["H1"]}, {"nl": {"id": 4126227, "comment": "append a tuple of elements from list `a` with indexes '[0][0] [0][2]' to list `b`"}, "Heuristic": ["H1"]}, {"nl": {"id": 34902378, "comment": "Initialize `SECRET_KEY` in flask config with `Your_secret_string `"}, "Heuristic": []}, {"nl": {"id": 22799300, "comment": "unpack a series of tuples in pandas `out` into a DataFrame with column names 'out-1' and 'out-2'"}, "Heuristic": ["H1"]}, {"nl": {"id": 1762484, "comment": "find the index of an element 'MSFT' in a list `stocks_list`"}, "Heuristic": ["H1"]}, {"nl": {"id": 3464359, "comment": "rotate the xtick `labels` of matplotlib plot `ax` by `45` degrees to make long labels readable"}, "Heuristic": ["H1"]}, {"nl": {"id": 875968, "comment": "remove symbols from a string `s`"}, "Heuristic": ["H1"]}, {"nl": {"id": 34750084, "comment": "Find octal characters matches from a string `s` using regex"}, "Heuristic": []}, {"nl": {"id": 13209288, "comment": "split string `input` based on occurrences of regex pattern '[ ](?=[A-Z]+\\\\b)'"}, "Heuristic": ["H1"]}, {"nl": {"id": 13209288, "comment": "Split string `input` at every space followed by an upper-case letter"}, "Heuristic": []}, {"nl": {"id": 24642040, "comment": "send multipart encoded file `files` to url `url` with headers `headers` and metadata `data`"}, "Heuristic": ["H1"]}, {"nl": {"id": 4290716, "comment": "write bytes `bytes_` to a file `filename` in python 3"}, "Heuristic": ["H1"]}, {"nl": {"id": 33078554, "comment": "get a list from a list `lst` with values mapped into a dictionary `dct`"}, "Heuristic": ["H1"]}, {"nl": {"id": 15247628, "comment": "find duplicate names in column 'name' of the dataframe `x`"}, "Heuristic": ["H1"]}, {"nl": {"id": 783897, "comment": "truncate float 1.923328437452 to 3 decimal places"}, "Heuristic": ["H1"]}, {"nl": {"id": 22859493, "comment": "sort list `li` in descending order based on the date value in second element of each list in list `li`"}, "Heuristic": ["H1"]}, {"nl": {"id": 29394552, "comment": "place the radial ticks in plot `ax` at 135 degrees"}, "Heuristic": ["H1"]}, {"nl": {"id": 3320406, "comment": "check if path `my_path` is an absolute path"}, "Heuristic": ["H1"]}, {"nl": {"id": 2212433, "comment": "get number of keys in dictionary `yourdict`"}, "Heuristic": ["H1"]}, {"nl": {"id": 2212433, "comment": "count the number of keys in dictionary `yourdictfile`"}, "Heuristic": ["H1"]}, {"nl": {"id": 20067636, "comment": "pandas dataframe `df` get first row of each group by 'id'"}, "Heuristic": ["H1"]}, {"nl": {"id": 40924332, "comment": "split a list in first column into multiple columns keeping other columns as well in pandas data frame `df`"}, "Heuristic": ["H1"]}, {"nl": {"id": 30759776, "comment": "extract attributes 'src=\"js/([^\"]*\\\\bjquery\\\\b[^\"]*)\"' from string `data`"}, "Heuristic": ["H1"]}, {"nl": {"id": 25388796, "comment": "Sum integers contained in strings in list `['', '3.4', '', '', '1.0']`"}, "Heuristic": []}, {"nl": {"id": 804995, "comment": "Call a subprocess with arguments `c:\\\\Program Files\\\\VMware\\\\VMware Server\\\\vmware-cmd.bat` that may contain spaces"}, "Heuristic": ["H1"]}, {"nl": {"id": 26441253, "comment": "reverse a priority queue `q` in python without using classes"}, "Heuristic": ["H1"]}, {"nl": {"id": 18897261, "comment": "make a barplot of data in column `group` of dataframe `df` colour-coded according to list `color`"}, "Heuristic": ["H1"]}, {"nl": {"id": 373194, "comment": "find all matches of regex pattern '([a-fA-F\\\\d]{32})' in string `data`"}, "Heuristic": ["H1"]}, {"nl": {"id": 518021, "comment": "Get the length of list `my_list`"}, "Heuristic": []}, {"nl": {"id": 518021, "comment": "Getting the length of array `l`"}, "Heuristic": []}, {"nl": {"id": 518021, "comment": "Getting the length of array `s`"}, "Heuristic": []}, {"nl": {"id": 518021, "comment": "Getting the length of `my_tuple`"}, "Heuristic": []}, {"nl": {"id": 518021, "comment": "Getting the length of `my_string`"}, "Heuristic": []}, {"nl": {"id": 40452956, "comment": "remove escape character from string \"\\\\a\""}, "Heuristic": ["H1"]}, {"nl": {"id": 8687018, "comment": "replace each 'a' with 'b' and each 'b' with 'a' in the string 'obama' in a single pass."}, "Heuristic": ["H1"]}, {"nl": {"id": 303200, "comment": "remove directory tree '/folder_name'"}, "Heuristic": ["H1"]}, {"nl": {"id": 13740672, "comment": "create a new column `weekday` in pandas data frame `data` based on the values in column `my_dt`"}, "Heuristic": ["H1"]}, {"nl": {"id": 20950650, "comment": "reverse sort Counter `x` by values"}, "Heuristic": ["H1"]}, {"nl": {"id": 20950650, "comment": "reverse sort counter `x` by value"}, "Heuristic": ["H1"]}, {"nl": {"id": 9775297, "comment": "append a numpy array 'b' to a numpy array 'a'"}, "Heuristic": ["H1"]}, {"nl": {"id": 21887754, "comment": "numpy concatenate two arrays `a` and `b` along the first axis"}, "Heuristic": ["H1"]}, {"nl": {"id": 21887754, "comment": "numpy concatenate two arrays `a` and `b` along the second axis"}, "Heuristic": ["H1"]}, {"nl": {"id": 21887754, "comment": "numpy concatenate two arrays `a` and `b` along the first axis"}, "Heuristic": ["H1"]}, {"nl": {"id": 21887754, "comment": "numpy concatenate two arrays `a` and `b` along the first axis"}, "Heuristic": ["H1"]}, {"nl": {"id": 2805231, "comment": "fetch address information for host 'google.com' ion port 80"}, "Heuristic": ["H1"]}, {"nl": {"id": 17552997, "comment": "add a column 'day' with value 'sat' to dataframe `df`"}, "Heuristic": ["H1"]}, {"nl": {"id": 4356842, "comment": "return a 401 unauthorized in django"}, "Heuristic": ["H1"]}, {"nl": {"id": 13598363, "comment": "Flask set folder 'wherever' as the default template folder"}, "Heuristic": []}, {"nl": {"id": 3398589, "comment": "sort a list of lists 'c2' such that third row comes first"}, "Heuristic": ["H1"]}, {"nl": {"id": 3398589, "comment": "sort a list of lists 'c2' in reversed row order"}, "Heuristic": ["H1"]}, {"nl": {"id": 3398589, "comment": "Sorting a list of lists `c2`, each by the third and second row"}, "Heuristic": []}, {"nl": {"id": 10960463, "comment": "set font `Arial` to display non-ascii characters in matplotlib"}, "Heuristic": ["H1"]}, {"nl": {"id": 20576618, "comment": "Convert  DateTime column 'date' of pandas dataframe 'df' to ordinal"}, "Heuristic": ["H1"]}, {"nl": {"id": 31793195, "comment": "Get the integer location of a key `bob` in a pandas data frame `df`"}, "Heuristic": ["H1"]}, {"nl": {"id": 10487278, "comment": "add an item with key 'third_key' and value 1 to an dictionary `my_dict`"}, "Heuristic": ["H1"]}, {"nl": {"id": 10487278, "comment": "declare an array `my_list`"}, "Heuristic": ["H1"]}, {"nl": {"id": 10487278, "comment": "Insert item `12` to a list `my_list`"}, "Heuristic": []}, {"nl": {"id": 10155684, "comment": "add an entry 'wuggah' at the beginning of list `myList`"}, "Heuristic": ["H1"]}, {"nl": {"id": 3519125, "comment": "convert a hex-string representation `hex_str` to actual bytes"}, "Heuristic": ["H1"]}, {"nl": {"id": 40144769, "comment": "select the last column of dataframe `df`"}, "Heuristic": ["H1"]}, {"nl": {"id": 30787901, "comment": "get the first value from dataframe `df` where column 'Letters' is equal to 'C'"}, "Heuristic": ["H1"]}, {"nl": {"id": 18730044, "comment": "converting two lists `[1, 2, 3]` and `[4, 5, 6]` into a matrix"}, "Heuristic": ["H1"]}, {"nl": {"id": 402504, "comment": "get the type of `i`"}, "Heuristic": ["H1"]}, {"nl": {"id": 402504, "comment": "determine the type of variable `v`"}, "Heuristic": ["H1"]}, {"nl": {"id": 402504, "comment": "determine the type of variable `v`"}, "Heuristic": ["H1"]}, {"nl": {"id": 402504, "comment": "get the type of variable `variable_name`"}, "Heuristic": ["H1"]}, {"nl": {"id": 2300756, "comment": "get the 5th item of a generator `g`"}, "Heuristic": ["H1"]}, {"nl": {"id": 20056548, "comment": "return a string `word` with string format"}, "Heuristic": ["H1"]}, {"nl": {"id": 8546245, "comment": "join a list of strings `list` using a space ' '"}, "Heuristic": ["H1"]}, {"nl": {"id": 2276416, "comment": "create list `y` containing two empty lists"}, "Heuristic": ["H1"]}, {"nl": {"id": 3925614, "comment": "read a file `filename` into a list `data`"}, "Heuristic": ["H1"]}, {"nl": {"id": 22187233, "comment": "delete all occurrences of character 'i' in string 'it is icy'"}, "Heuristic": ["H1"]}, {"nl": {"id": 22187233, "comment": "delete all instances of a character 'i' in a string 'it is icy'"}, "Heuristic": ["H1"]}, {"nl": {"id": 22187233, "comment": "delete all characters \"i\" in string \"it is icy\""}, "Heuristic": ["H1"]}, {"nl": {"id": 13413590, "comment": "Drop rows of pandas dataframe `df` having NaN in column at index \"1\""}, "Heuristic": ["H1"]}, {"nl": {"id": 598398, "comment": "get elements from list `myList`, that have a field `n` value 30"}, "Heuristic": ["H1"]}, {"nl": {"id": 10351772, "comment": "converting list of strings `intstringlist` to list of integer `nums`"}, "Heuristic": ["H1"]}, {"nl": {"id": 493386, "comment": "print \".\" without newline"}, "Heuristic": ["H1"]}, {"nl": {"id": 6569528, "comment": "round off the float that is the product of `2.52 * 100` and convert it to an int"}, "Heuristic": ["H1"]}, {"nl": {"id": 3964681, "comment": "Find all files `files` in directory '/mydir' with extension '.txt'"}, "Heuristic": ["H1"]}, {"nl": {"id": 3964681, "comment": "Find all files in directory \"/mydir\" with extension \".txt\""}, "Heuristic": ["H1"]}, {"nl": {"id": 3964681, "comment": "Find all files in directory \"/mydir\" with extension \".txt\""}, "Heuristic": ["H1"]}, {"nl": {"id": 20865487, "comment": "plot dataframe `df` without a legend"}, "Heuristic": ["H1"]}, {"nl": {"id": 13368659, "comment": "loop through the IP address range \"192.168.x.x\""}, "Heuristic": ["H1"]}, {"nl": {"id": 4065737, "comment": "Sum the corresponding decimal values for binary values of each boolean element in list `x`"}, "Heuristic": []}, {"nl": {"id": 8691311, "comment": "write multiple strings `line1`, `line2` and `line3` in one line in a file `target`"}, "Heuristic": ["H1"]}, {"nl": {"id": 10632111, "comment": "Convert list of lists `data` into a flat list"}, "Heuristic": []}, {"nl": {"id": 15392730, "comment": "Print new line character as `\\n` in a string `foo\\nbar`"}, "Heuristic": ["H1"]}, {"nl": {"id": 1010961, "comment": "remove last comma character ',' in string `s`"}, "Heuristic": ["H1"]}, {"nl": {"id": 23855976, "comment": "calculate the mean of each element in array `x` with the element previous to it"}, "Heuristic": ["H1"]}, {"nl": {"id": 23855976, "comment": "get an array of the mean of each two consecutive values in numpy array `x`"}, "Heuristic": ["H1"]}, {"nl": {"id": 6375343, "comment": "load data containing `utf-8` from file `new.txt` into numpy array `arr`"}, "Heuristic": ["H1"]}, {"nl": {"id": 1547733, "comment": "reverse sort list of dicts `l` by value for key `time`"}, "Heuristic": ["H1"]}, {"nl": {"id": 1547733, "comment": "Sort a list of dictionary `l` based on key `time` in descending order"}, "Heuristic": []}, {"nl": {"id": 37080612, "comment": "get rows of dataframe `df` that match regex '(Hel|Just)'"}, "Heuristic": ["H1"]}, {"nl": {"id": 14716342, "comment": "find the string in `your_string` between two special characters \"[\" and \"]\""}, "Heuristic": ["H1"]}, {"nl": {"id": 18684076, "comment": "create a list of date string in 'yyyymmdd' format with Python Pandas from '20130226' to '20130302'"}, "Heuristic": ["H1"]}, {"nl": {"id": 1666700, "comment": "count number of times string 'brown' occurred in string 'The big brown fox is brown'"}, "Heuristic": ["H1"]}, {"nl": {"id": 18979111, "comment": "decode json string `request_body` to python dict"}, "Heuristic": ["H1"]}, {"nl": {"id": 7243750, "comment": "download the file from url `url` and save it under file `file_name`"}, "Heuristic": ["H1"]}, {"nl": {"id": 743806, "comment": "split string `text` by space"}, "Heuristic": ["H1"]}, {"nl": {"id": 743806, "comment": "split string `text` by \",\""}, "Heuristic": ["H1"]}, {"nl": {"id": 743806, "comment": "Split string `line` into a list by whitespace"}, "Heuristic": []}, {"nl": {"id": 35044115, "comment": "replace dot characters  '.' associated with ascii letters in list `s` with space ' '"}, "Heuristic": ["H1"]}, {"nl": {"id": 38388799, "comment": "sort list `list_of_strings` based on second index of each string `s`"}, "Heuristic": ["H1"]}, {"nl": {"id": 37004138, "comment": "eliminate non-integer items from list `lst`"}, "Heuristic": ["H1"]}, {"nl": {"id": 37004138, "comment": "get all the elements except strings from the list 'lst'."}, "Heuristic": ["H1"]}, {"nl": {"id": 72899, "comment": "Sort a list of dictionaries `list_to_be_sorted` by the value of the dictionary key `name`"}, "Heuristic": []}, {"nl": {"id": 72899, "comment": "sort a list of dictionaries `l` by values in key `name` in descending order"}, "Heuristic": ["H1"]}, {"nl": {"id": 72899, "comment": "sort a list of dictionaries `list_of_dicts` by `name` values of the dictionary"}, "Heuristic": ["H1"]}, {"nl": {"id": 72899, "comment": "sort a list of dictionaries `list_of_dicts` by `age` values of the dictionary"}, "Heuristic": ["H1"]}, {"nl": {"id": 36402748, "comment": "sort a Dataframe `df` by the total ocurrences in a column 'scores' group by 'prots'"}, "Heuristic": ["H1"]}, {"nl": {"id": 29881993, "comment": "join together with \",\" elements inside a list indexed with 'category' within a dictionary `trans`"}, "Heuristic": ["H1"]}, {"nl": {"id": 34158494, "comment": "concatenate array of strings `['A', 'B', 'C', 'D']` into a string"}, "Heuristic": ["H1"]}, {"nl": {"id": 12666897, "comment": "Remove all strings from a list a strings `sents` where the values starts with `@$\\t` or `#`"}, "Heuristic": ["H1"]}, {"nl": {"id": 5944630, "comment": "sort a list of dictionary `list` first by key `points` and then by `time`"}, "Heuristic": ["H1"]}, {"nl": {"id": 7852855, "comment": "convert datetime object `(1970, 1, 1)` to seconds"}, "Heuristic": ["H1"]}, {"nl": {"id": 2763750, "comment": "insert `_suff` before the file extension in `long.file.name.jpg` or replace `_a` with `suff` if it precedes the extension."}, "Heuristic": ["H1"]}, {"nl": {"id": 6420361, "comment": "reload a module `module`"}, "Heuristic": ["H1"]}, {"nl": {"id": 19546911, "comment": "Convert integer `number` into an unassigned integer"}, "Heuristic": []}, {"nl": {"id": 9746522, "comment": "convert int values in list `numlist` to float"}, "Heuristic": ["H1"]}, {"nl": {"id": 20107570, "comment": "write dataframe `df`, excluding index, to a csv file `filename`"}, "Heuristic": ["H1"]}, {"nl": {"id": 8740353, "comment": "convert a urllib unquoted string `unescaped` to a json data `json_data`"}, "Heuristic": ["H1"]}, {"nl": {"id": 5891453, "comment": "Create a list containing all ascii characters as its elements"}, "Heuristic": ["H1"]}, {"nl": {"id": 18367007, "comment": "write `newFileBytes` to a binary file `newFile`"}, "Heuristic": ["H1"]}, {"nl": {"id": 21805490, "comment": "python regex - check for a capital letter with a following lowercase in string `string`"}, "Heuristic": ["H1"]}, {"nl": {"id": 16125229, "comment": "get the last key of dictionary `dict`"}, "Heuristic": ["H1"]}, {"nl": {"id": 6159900, "comment": "write line \"hi there\" to file `f`"}, "Heuristic": ["H1"]}, {"nl": {"id": 6159900, "comment": "write line \"hi there\" to file `myfile`"}, "Heuristic": ["H1"]}, {"nl": {"id": 6159900, "comment": "write line \"Hello\" to file `somefile.txt`"}, "Heuristic": ["H1"]}, {"nl": {"id": 19527279, "comment": "convert unicode string `s` to ascii"}, "Heuristic": ["H1"]}, {"nl": {"id": 356483, "comment": "Find all numbers and dots from a string `text` using regex"}, "Heuristic": []}, {"nl": {"id": 38081866, "comment": "execute script 'script.ps1' using 'powershell.exe' shell"}, "Heuristic": ["H1"]}, {"nl": {"id": 7349646, "comment": "Sort a list of tuples `b` by third item in the tuple"}, "Heuristic": []}, {"nl": {"id": 10607688, "comment": "create a datetime with the current date & time"}, "Heuristic": ["H1"]}, {"nl": {"id": 30843103, "comment": "get the index of an integer `1` from a list `lst` if the list also contains boolean items"}, "Heuristic": ["H1"]}, {"nl": {"id": 4918425, "comment": "subtract 13 from every number in a list `a`"}, "Heuristic": ["H1"]}, {"nl": {"id": 17794266, "comment": "get the highest element in absolute value in a numpy matrix `x`"}, "Heuristic": ["H1"]}, {"nl": {"id": 30551576, "comment": "Get all urls within text `s`"}, "Heuristic": ["H1"]}, {"nl": {"id": 113534, "comment": "split a string `mystring` considering the spaces ' '"}, "Heuristic": ["H1"]}, {"nl": {"id": 5838735, "comment": "open file `path` with mode 'r'"}, "Heuristic": ["H1"]}, {"nl": {"id": 36003967, "comment": "sum elements at the same index in list `data`"}, "Heuristic": ["H1"]}, {"nl": {"id": 7635237, "comment": "add a new axis to array `a`"}, "Heuristic": ["H1"]}]
+[
+    {
+        "nl": {
+            "id": 3283984,
+            "comment": "decode a hex string '4a4b4c' to UTF-8."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 3844801,
+            "comment": "check if all elements in list `myList` are identical"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 4302166,
+            "comment": "format number of spaces between strings `Python`, `:` and `Very Good` to be `20`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 7555335,
+            "comment": "convert a string `d` from CP-1251 to UTF-8"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 2544710,
+            "comment": "get rid of None values in dictionary `kwargs`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 2544710,
+            "comment": "get rid of None values in dictionary `kwargs`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 14971373,
+            "comment": "capture final output of a chain of system commands `ps -ef | grep something | wc -l`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 6726636,
+            "comment": "concatenate a list of strings `['a', 'b', 'c']`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 18079563,
+            "comment": "find intersection data between series `s1` and series `s2`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 8315209,
+            "comment": "sending http headers to `client`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 26153795,
+            "comment": "Format a datetime string `when` to extract date only"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 172439,
+            "comment": "split a multi-line string `inputString` into separate strings"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 172439,
+            "comment": "Split a multi-line string ` a \\n b \\r\\n c ` by new line character `\\n`"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 13954222,
+            "comment": "concatenate elements of list `b` by a colon \":\""
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 13567345,
+            "comment": "Calculate sum over all rows of 2D numpy array `a`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 29784889,
+            "comment": "enable warnings using action 'always'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 13550423,
+            "comment": "concatenate items of list `l` with a space ' '"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 698223,
+            "comment": "parse a time string '30/03/09 16:31:32.123' containing milliseconds in it"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 6633523,
+            "comment": "convert a string `my_string` with dot and comma into a float number `my_float`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 6633523,
+            "comment": "convert a string `123,456.908` with dot and comma into a floating number"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 3108285,
+            "comment": "set python path '/path/to/whatever' in python script"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 2195340,
+            "comment": "split string 'Words, words, words.' using a regex '(\\\\W+)'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 17977584,
+            "comment": "open a file `Output.txt` in append mode"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 22676,
+            "comment": "download a file \"http://www.example.com/songs/mp3.mp3\" over HTTP and save to \"mp3.mp3\""
+        },
+        "Heuristic": [
+            "H1",
+            "H9"
+        ]
+    },
+    {
+        "nl": {
+            "id": 22676,
+            "comment": "download a file 'http://www.example.com/' over HTTP"
+        },
+        "Heuristic": [
+            "H1",
+            "H9"
+        ]
+    },
+    {
+        "nl": {
+            "id": 22676,
+            "comment": "download a file `url` over HTTP"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 22676,
+            "comment": "download a file `url` over HTTP and save to \"10MB\""
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 15405636,
+            "comment": "argparse add argument with flag '--version' and version action of '%(prog)s 2.0' to parser `parser`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 17665809,
+            "comment": "remove key 'c' from dictionary `d`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 41861705,
+            "comment": "Create new DataFrame object by merging columns \"key\" of  dataframes `split_df` and `csv_df` and rename the columns from dataframes `split_df` and `csv_df` with suffix `_left` and `_right` respectively"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 10697757,
+            "comment": "Split a string `s` by space with `4` splits"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 16344756,
+            "comment": "enable debug mode on Flask application `app`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 40133826,
+            "comment": "python save list `mylist` to file object 'save.txt'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 4490961,
+            "comment": "Multiply a matrix `P` with a 3d tensor `T` in scipy"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 2173087,
+            "comment": "Create 3d array of zeroes of size `(3,3,3)`"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 6266727,
+            "comment": "cut off the last word of a sentence `content`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 30385151,
+            "comment": "convert scalar `x` to array"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 15856127,
+            "comment": "sum all elements of nested list `L`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 1592158,
+            "comment": "convert hex string '470FC614' to a float number"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 5010536,
+            "comment": "Multiple each value by `2` for all keys in a dictionary `my_dict`"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 13745648,
+            "comment": "running bash script 'sleep.sh'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 44778,
+            "comment": "Join elements of list `l` with a comma `,`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 44778,
+            "comment": "make a comma-separated string from a list `myList`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 7286365,
+            "comment": "reverse the list that contains 1 to 10"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 18454570,
+            "comment": "remove substring 'bag,' from a string 'lamp, bag, mirror'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 4357787,
+            "comment": "Reverse the order of words, delimited by `.`, in string `s`"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 21787496,
+            "comment": "convert epoch time represented as milliseconds `s` to string using format '%Y-%m-%d %H:%M:%S.%f'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 21787496,
+            "comment": "parse milliseconds epoch time '1236472051807' to format '%Y-%m-%d %H:%M:%S'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 20573459,
+            "comment": "get the date 7 days before the current date"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 15352457,
+            "comment": "sum elements at index `column` of each list in list `data`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 15352457,
+            "comment": "sum columns of a list `array`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 23164058,
+            "comment": "encode binary string 'your string' to base64 code"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 11533274,
+            "comment": "combine list of dictionaries `dicts` with the same keys in each list to a single dictionary"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 11533274,
+            "comment": "Merge a nested dictionary `dicts` into a flat dictionary by concatenating nested values with the same key `k`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 14026704,
+            "comment": "get the url parameter 'myParam' in a Flask view"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 11236006,
+            "comment": "identify duplicate values in list `mylist`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 20211942,
+            "comment": "Insert a 'None' value into a SQLite3 table."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 406121,
+            "comment": "flatten list `list_of_menuitems`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 4741537,
+            "comment": "append elements of a set `b` to a list `a`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 15851568,
+            "comment": "Split a string `x` by last occurrence of character `-`"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 15851568,
+            "comment": "get the last part of a string before the character '-'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 17438096,
+            "comment": "upload file using FTP"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 28742436,
+            "comment": "create array containing the maximum value of respective elements of array `[2, 3, 4]` and array `[1, 5, 2]`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 34280147,
+            "comment": "print a list `l` and move first 3 elements to the end of the list"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 4172131,
+            "comment": "create a random list of integers"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 6677332,
+            "comment": "Using %f with strftime() in Python to get microseconds"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 15325182,
+            "comment": "filter rows in pandas starting with alphabet 'f' using regular expression."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 583557,
+            "comment": "print a 2 dimensional list `tab` as a table with delimiters"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 38535931,
+            "comment": "pandas: delete rows in dataframe `df` based on multiple columns values"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 13945749,
+            "comment": "format the variables `goals` and `penalties` using string formatting"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 13945749,
+            "comment": "format string \"({} goals, ${})\" with variables `goals` and `penalties`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 18524642,
+            "comment": "convert list of lists `L` to list of integers"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 18524642,
+            "comment": "convert a list of lists `L` to list of integers"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 7138686,
+            "comment": "write the elements of list `lines` concatenated by special character '\\n' to file `myfile`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 17238587,
+            "comment": "Remove duplicate words from a string `text` using regex"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 26053849,
+            "comment": "count non zero values in each column in pandas data frame `df`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 15534223,
+            "comment": "search for string that matches regular expression pattern '(?<!Distillr)\\\\\\\\AcroTray\\\\.exe' in string 'C:\\\\SomeDir\\\\AcroTray.exe'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 5453026,
+            "comment": "split string 'QH QD JC KD JS' into a list on white spaces"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 18168684,
+            "comment": "search for occurrences of regex pattern '>.*<' in xml string `line`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 4914277,
+            "comment": "erase all the contents of a file `filename`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 19068269,
+            "comment": "convert a string `string_date` into datetime using the format '%Y-%m-%d %H:%M:%S.%f'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 20683167,
+            "comment": "find the index of a list with the first element equal to '332' within the list of lists `thelist`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 30693804,
+            "comment": "lower a string `text` and remove non-alphanumeric characters aside from space"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 30693804,
+            "comment": "remove all non-alphanumeric characters except space from a string `text` and lower it"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 17138464,
+            "comment": "subscript text 'H20' with '2' as subscripted in matplotlib labels for arrays 'x' and 'y'."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 17138464,
+            "comment": "subscript text 'H20' with '2' as subscripted in matplotlib labels for arrays 'x' and 'y'."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 9138112,
+            "comment": "loop over a list `mylist` if sublists length equals 3"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 1807026,
+            "comment": "initialize a list `lst` of 100 objects Object()"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 13793321,
+            "comment": "joining data from dataframe `df1` with data from dataframe `df2` based on matching values of column 'Date_Time' in both dataframes"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 3367288,
+            "comment": "use `%s` operator to print variable values `str1` inside a string"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 3475251,
+            "comment": "Split a string '2.MATCHES $$TEXT$$ STRING' by a delimiter '$$TEXT$$'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 273192,
+            "comment": "check if directory `directory ` exists and create it if necessary"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 273192,
+            "comment": "check if a directory `path` exists and create it if necessary"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 273192,
+            "comment": "check if a directory `path` exists and create it if necessary"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 18785032,
+            "comment": "Replace a separate word 'H3' by 'H1' in a string 'text'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 1450897,
+            "comment": "substitute ASCII letters in string 'aas30dsa20' with empty string ''"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 1450897,
+            "comment": "get digits only from a string `aas30dsa20` using lambda function"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 14435268,
+            "comment": "access a tag called \"name\" in beautifulsoup `soup`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 20180210,
+            "comment": "Create new matrix object  by concatenating data from matrix A and matrix B"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 20180210,
+            "comment": "concat two matrices `A` and `B` in numpy"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 2011048,
+            "comment": "Get the characters count in a file `filepath`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 2600191,
+            "comment": "count the occurrences of item \"a\" in list `l`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 2600191,
+            "comment": "count the occurrences of items in list `l`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 2600191,
+            "comment": "count the occurrences of items in list `l`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 2600191,
+            "comment": "count the occurrences of items in list `l`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 2600191,
+            "comment": "count the occurrences of item \"b\" in list `l`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 12842997,
+            "comment": "copy file `srcfile` to directory `dstdir`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 1555968,
+            "comment": "find the key associated with the largest value in dictionary `x` whilst key is non-zero value"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 17021863,
+            "comment": "Put the curser at beginning of the file"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 38152389,
+            "comment": "combine values from column 'b' and column 'a' of dataframe `df`  into column 'c' of datafram `df`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 4175686,
+            "comment": "remove key 'ele' from dictionary `d`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 11574195,
+            "comment": "merge list `['it']` and list `['was']` and list `['annoying']` into one list"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 587647,
+            "comment": "increment a value with leading zeroes in a number `x`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 17315881,
+            "comment": "check if a pandas dataframe `df`'s index is sorted"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 16296643,
+            "comment": "Convert tuple `t` to list"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 16296643,
+            "comment": "Convert list `t` to tuple"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 16296643,
+            "comment": "Convert tuple `level1` to list"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 3880399,
+            "comment": "send the output of pprint object `dataobject` to file `logFile`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 21800169,
+            "comment": "get index of rows in column 'BoolCol'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 21800169,
+            "comment": "Create a list containing the indexes of rows where the value of column 'BoolCol' in dataframe `df` are equal to True"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 21800169,
+            "comment": "from dataframe `df` get list of indexes of rows where column 'BoolCol' values match True"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 21800169,
+            "comment": "get index of rows in dataframe `df` which column 'BoolCol' matches value True"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 299446,
+            "comment": "change working directory to the directory `owd`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 14695134,
+            "comment": "insert data from a string `testfield` to sqlite db `c`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 24242433,
+            "comment": "decode string \"\\\\x89\\\\n\" into a normal string"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 24242433,
+            "comment": "convert a raw string `raw_string` into a normal string"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 24242433,
+            "comment": "convert a raw string `raw_byte_string` into a normal string"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 22882922,
+            "comment": "split a string `s` with into all strings of repeated characters"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 4143502,
+            "comment": "scatter a plot with x, y position of `np.random.randn(100)` and face color equal to none"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 4143502,
+            "comment": "do a scatter plot with empty circles"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 32063985,
+            "comment": "remove a div from `soup` with a id `main-content` using beautifulsoup"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 27975069,
+            "comment": "filter rows of datafram `df` containing key word `ball` in column `ids`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 20461165,
+            "comment": "convert index at level 0 into a column in dataframe `df`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 20461165,
+            "comment": "Add indexes in a data frame `df` to a column `index1`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 20461165,
+            "comment": "convert pandas index in a dataframe `df` to columns"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 4685571,
+            "comment": "Get reverse of list items from list 'b' using extended slicing"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 17960441,
+            "comment": "join each element in array `a` with element at the same index in array `b` as a tuple"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 17960441,
+            "comment": "zip two 2-d arrays `a` and `b`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 438684,
+            "comment": "convert list `list_of_ints` into a comma separated string"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 8519922,
+            "comment": "Send a post request with raw data `DATA` and basic authentication with `username` and `password`"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 26443308,
+            "comment": "Find last occurrence of character '}' in string \"abcd}def}\""
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 22365172,
+            "comment": "Iterate ove list `[1, 2, 3]` using list comprehension"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 12300912,
+            "comment": "extract all the values with keys 'x' and 'y' from a list of dictionaries `d` to list of tuples"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 678236,
+            "comment": "get the filename without the extension from file 'hemanth.txt'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 7895449,
+            "comment": "create a list containing flattened list `[['A', 'B', 'C'], ['D', 'E', 'F'], ['G', 'H', 'I']]`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 31617845,
+            "comment": "select rows in a dataframe `df` column 'closing_price' between two values 99 and 101"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 25698710,
+            "comment": "replace all occurences of newlines `\\n` with `<br>` in dataframe `df`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 25698710,
+            "comment": "replace all occurrences of a string `\\n` by string `<br>` in a pandas data frame `df`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 41923858,
+            "comment": "create a list containing each two adjacent letters in string `word` as its elements"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 41923858,
+            "comment": "Get a list of pairs from a string `word` using lambda function"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 9760588,
+            "comment": "extract a url from a string `myString`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 9760588,
+            "comment": "extract a url from a string `myString`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 5843518,
+            "comment": "remove all special characters, punctuation and spaces from a string `mystring` using regex"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 36674519,
+            "comment": "create a DatetimeIndex containing 13 periods of the second friday of each month starting from date '2016-01-01'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 508657,
+            "comment": "Create multidimensional array `matrix` with 3 rows and 2 columns in python"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 1007481,
+            "comment": "replace spaces with underscore in string `mystring`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 1249786,
+            "comment": "split string `my_string` on white spaces"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 4444923,
+            "comment": "get filename without extension from file `filename`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 13728486,
+            "comment": "get a list containing the sum of each element `i` in list `l` plus the previous elements"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 9743134,
+            "comment": "split a string `Docs/src/Scripts/temp` by `/` keeping `/` in the result"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 20546419,
+            "comment": "shuffle columns of an numpy array 'r'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 32675861,
+            "comment": "copy all values in a column 'B' to a new column 'D' in a pandas data frame 'df'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 14227561,
+            "comment": "find a value within nested json 'data' where the key inside another key 'B' is unknown."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 14858916,
+            "comment": "check characters of string `string` are true predication of function `predicate`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 574236,
+            "comment": "determine number of files on a drive with python"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 7011291,
+            "comment": "how to get a single result from a SQLite query from `cursor`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 6378889,
+            "comment": "convert string `user_input` into a list of integers `user_list`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 6378889,
+            "comment": "Get a list of integers by splitting  a string `user` with comma"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 5212870,
+            "comment": "Sorting a Python list `list` by the first item ascending and last item descending"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 403421,
+            "comment": "sort a list of objects `ut`, based on a function `cmpfun` in descending order"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 403421,
+            "comment": "reverse list `ut` based on the `count` attribute of each object"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 3944876,
+            "comment": "cast an int `i` to a string and concat to string 'ME'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 40903174,
+            "comment": "Sorting data in Pandas DataFrame `df` with columns 'System_num' and 'Dis'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 4454298,
+            "comment": "prepend the line '#test firstline\\n' to the contents of file 'infile' and save as the file 'outfile'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 19729928,
+            "comment": "sort a list `l` by length of value in tuple"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 31371879,
+            "comment": "split string `s` by words that ends with 'd'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 9012008,
+            "comment": "return `True` if string `foobarrrr` contains regex `ba[rzd]`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 7961363,
+            "comment": "Removing duplicates in list `t`"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 7961363,
+            "comment": "Removing duplicates in list `source_list`"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 7961363,
+            "comment": "Removing duplicates in list `abracadabra`"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 5183533,
+            "comment": "Convert array `a` into a list"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 5183533,
+            "comment": "Convert the first row of numpy matrix `a` to a list"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 5999747,
+            "comment": "In `soup`, get the content of the sibling of the `td`  tag with text content `Address:`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 4284648,
+            "comment": "convert elements of each tuple in list `l` into a string  separated by character `@`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 4284648,
+            "comment": "convert each tuple in list `l` to a string with '@' separating the tuples' elements"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 29696641,
+            "comment": "Get all matches with regex pattern `\\\\d+[xX]` in list of string `teststr`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 15315452,
+            "comment": "select values from column 'A' for which corresponding values in column 'B' will be greater than 50, and in column 'C' - equal 900 in dataframe `df`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 4642501,
+            "comment": "Sort dictionary `o` in ascending order based on its keys and items"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 4642501,
+            "comment": "get sorted list of keys of dict `d`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 4642501,
+            "comment": "sort dictionaries `d` by keys"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 642154,
+            "comment": "convert string \"1\" into integer"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 642154,
+            "comment": "convert items in `T1` to integers"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 3777301,
+            "comment": "call a shell script `./test.sh` using subprocess"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 3777301,
+            "comment": "call a shell script `notepad` using subprocess"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 7946798,
+            "comment": "combine lists `l1` and `l2`  by alternating their elements"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 8908287,
+            "comment": "encode string 'data to be encoded'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 8908287,
+            "comment": "encode a string `data to be encoded` to `ascii` encoding"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 7856296,
+            "comment": "parse tab-delimited CSV file 'text.txt' into a list"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 9035479,
+            "comment": "Get attribute `my_str` of object `my_object`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 5558418,
+            "comment": "group a list of dicts `LD` into one dict by key"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 638048,
+            "comment": "sum the first value in each tuple in a list of tuples `list_of_pairs` in python"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 14950260,
+            "comment": "convert unicode string u\"{'code1':1,'code2':1}\" into dictionary"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 11416772,
+            "comment": "find all words in a string `mystring` that start with the `$` sign"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 11331982,
+            "comment": "remove any url within string `text`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 34945274,
+            "comment": "replace all elements in array `A` that are not present in array `[1, 3, 4]` with zeros"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 15819980,
+            "comment": "calculate mean across dimension in a 2d array `a`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 19894365,
+            "comment": "running r script '/pathto/MyrScript.r' from python"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 19894365,
+            "comment": "run r script '/usr/bin/Rscript --vanilla /pathto/MyrScript.r'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 33058590,
+            "comment": "replacing nan in the dataframe `df` with row average"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 12400256,
+            "comment": "Convert unix timestamp '1347517370' to formatted string '%Y-%m-%d %H:%M:%S'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 23359886,
+            "comment": "selecting rows in Numpy ndarray 'a', where the value in the first column is 0 and value in the second column is 1"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 4383082,
+            "comment": "separate words delimited by one or more spaces into a list"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 14637696,
+            "comment": "length of longest element in list `words`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 3933478,
+            "comment": "get the value associated with unicode key 'from_user' of first dictionary in list `result`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 39112645,
+            "comment": "Retrieve each line from a file 'File.txt' as a list"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 1031851,
+            "comment": "swap keys with values in a dictionary `a`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 8577137,
+            "comment": "Open a file `path/to/FILE_NAME.ext` in write mode"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 17926273,
+            "comment": "count distinct values in a column 'col3' of a pandas dataframe `df` group by objects in 'col1' and 'col2'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 3735814,
+            "comment": "Check if any key in the dictionary `dict1` starts with the string `EMP$$`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 3735814,
+            "comment": "create list of values from dictionary `dict1` that have a key that starts with 'EMP$$'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 26097916,
+            "comment": "convert a pandas series `sf` into a pandas dataframe `df` with columns `email` and `list`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 4048964,
+            "comment": "concatenate elements of list `list` by tabs `\t`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 3182716,
+            "comment": "print unicode string '\\xd0\\xbf\\xd1\\x80\\xd0\\xb8' with utf-8"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 3182716,
+            "comment": "Encode a latin character in string `Sopet\\xc3\\xb3n` properly"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 35622945,
+            "comment": "regex, find \"n\"s only in the middle of string `s`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 5306756,
+            "comment": "display the float `1/3*100` as a percentage"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 2878084,
+            "comment": "sort a list of dictionary `mylist` by the key `title`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 2878084,
+            "comment": "sort a list `l` of dicts by dict value 'title'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 2878084,
+            "comment": "sort a list of dictionaries by the value of keys 'title', 'title_url', 'id' in ascending order."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 9323159,
+            "comment": "find 10 largest differences between each respective elements of list `l1` and list `l2`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 29877663,
+            "comment": "BeautifulSoup find all 'span' elements in HTML string `soup` with class of 'starGryB sp'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 24189150,
+            "comment": "write records in dataframe `df` to table 'test' in schema 'a_schema' with `engine`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 30766151,
+            "comment": "Extract brackets from string `s`"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 1143379,
+            "comment": "remove duplicate elements from list 'L'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 12330522,
+            "comment": "read a file `file` without newlines"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 364621,
+            "comment": "get the position of item 1 in `testlist`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 364621,
+            "comment": "get the position of item 1 in `testlist`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 364621,
+            "comment": "get the position of item `element` in list `testlist`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 13145368,
+            "comment": "find the first element of the tuple with the maximum second element in a list of tuples `lis`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 13145368,
+            "comment": "get the item at index 0 from the tuple that has maximum value at index 1 in list `lis`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 2689189,
+            "comment": "Make a delay of 1 second"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 12485244,
+            "comment": "convert list of tuples `L` to a string"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 755857,
+            "comment": "Django set default value of field `b` equal to '0000000'"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 16193578,
+            "comment": "Sort lis `list5` in ascending order based on the degrees value of its elements"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 16041405,
+            "comment": "convert a list `l` into a generator object"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 18837607,
+            "comment": "remove elements from list `oldlist` that have an index number mentioned in list `removelist`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 4710067,
+            "comment": "Open a file `yourfile.txt` in write mode"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 7373219,
+            "comment": "get attribute 'attr' from object `obj`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 8171751,
+            "comment": "convert tuple of tuples `(('aa',), ('bb',), ('cc',))` to tuple"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 8171751,
+            "comment": "convert tuple of tuples `(('aa',), ('bb',), ('cc',))` to list in one line"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 28986489,
+            "comment": "replace a characters in a column of a dataframe `df`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 19339,
+            "comment": "unzip the list `[('a', 1), ('b', 2), ('c', 3), ('d', 4)]`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 19339,
+            "comment": "unzip list `original`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 19339,
+            "comment": "unzip list `original` and return a generator"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 19339,
+            "comment": "unzip list `[('a', 1), ('b', 2), ('c', 3), ('d', 4), ('e', )]`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 19339,
+            "comment": "unzip list `[('a', 1), ('b', 2), ('c', 3), ('d', 4), ('e', )]` and fill empty results with None"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 1960516,
+            "comment": "encode `Decimal('3.9')` to a JSON string"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 1024847,
+            "comment": "Add key \"mynewkey\" to dictionary `d` with value \"mynewvalue\""
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 1024847,
+            "comment": "Add key 'a' to dictionary `data` with value 1"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 1024847,
+            "comment": "Add key 'a' to dictionary `data` with value 1"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 1024847,
+            "comment": "Add key 'a' to dictionary `data` with value 1"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 35837346,
+            "comment": "find maximal value in matrix `matrix`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 20457038,
+            "comment": "Round number `answer` to 2 precision after the decimal point"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 2890896,
+            "comment": "extract ip address `ip` from an html string `s`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 29836836,
+            "comment": "filter dataframe `df` by values in column `A` that appear more than once"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 2545397,
+            "comment": "append each line in file `myfile` into a list"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 2545397,
+            "comment": "Get a list of integers `lst` from a file `filename.txt`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 35420052,
+            "comment": "add color bar with image `mappable` to plot `plt`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 29903025,
+            "comment": "count most frequent 100 words in column 'text' of dataframe `df`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 7378180,
+            "comment": "generate all 2-element subsets of tuple `(1, 2, 3)`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 4530069,
+            "comment": "get a value of datetime.today() in the UTC time zone"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 4842956,
+            "comment": "Get a new list `list2`by removing empty list from a list of lists `list1`"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 4842956,
+            "comment": "Create `list2` to contain the lists from list `list1` excluding the empty lists from `list1`"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 9262278,
+            "comment": "Django response with JSON `data`"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 17284947,
+            "comment": "get all text that is not enclosed within square brackets in string `example_str`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 17284947,
+            "comment": "Use a regex to get all text in a string `example_str` that is not surrounded by square brackets"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 14182339,
+            "comment": "get whatever is between parentheses as a single match, and any char outside as an individual match in string '(zyx)bc'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 14182339,
+            "comment": "match regex '\\\\((.*?)\\\\)|(\\\\w)' with string '(zyx)bc'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 14182339,
+            "comment": "match multiple regex patterns with the alternation operator `|` in a string `(zyx)bc`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 7126916,
+            "comment": "formate each string cin list `elements` into pattern '%{0}%'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 3595685,
+            "comment": "Open a background process 'background-process' with arguments 'arguments'"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 18453566,
+            "comment": "get list of values from dictionary 'mydict' w.r.t. list of keys 'mykeys'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 12692135,
+            "comment": "convert list `[('Name', 'Joe'), ('Age', 22)]` into a dictionary"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 14401047,
+            "comment": "average each two columns of array `data`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 18886596,
+            "comment": "double backslash escape all double quotes in string `s`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 5932059,
+            "comment": "split a string `s` into a list of words and whitespace"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 9938130,
+            "comment": "plotting stacked barplots on a panda data frame `df`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 35945473,
+            "comment": "reverse the keys and values in a dictionary `myDictionary`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 30729735,
+            "comment": "finding the index of elements containing substring 'how' and 'what' in a list of strings 'myList'."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 1303243,
+            "comment": "check if object `obj` is a string"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 1303243,
+            "comment": "check if object `o` is a string"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 1303243,
+            "comment": "check if object `o` is a string"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 1303243,
+            "comment": "check if `obj_to_test` is a string"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 8177079,
+            "comment": "append list `list1` to `list2`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 8177079,
+            "comment": "append list `mylog` to `list1`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 8177079,
+            "comment": "append list `a` to `c`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 8177079,
+            "comment": "append items in list `mylog` to `list1`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 4126227,
+            "comment": "append a tuple of elements from list `a` with indexes '[0][0] [0][2]' to list `b`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 34902378,
+            "comment": "Initialize `SECRET_KEY` in flask config with `Your_secret_string `"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 22799300,
+            "comment": "unpack a series of tuples in pandas `out` into a DataFrame with column names 'out-1' and 'out-2'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 1762484,
+            "comment": "find the index of an element 'MSFT' in a list `stocks_list`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 3464359,
+            "comment": "rotate the xtick `labels` of matplotlib plot `ax` by `45` degrees to make long labels readable"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 875968,
+            "comment": "remove symbols from a string `s`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 34750084,
+            "comment": "Find octal characters matches from a string `s` using regex"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 13209288,
+            "comment": "split string `input` based on occurrences of regex pattern '[ ](?=[A-Z]+\\\\b)'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 13209288,
+            "comment": "Split string `input` at every space followed by an upper-case letter"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 24642040,
+            "comment": "send multipart encoded file `files` to url `url` with headers `headers` and metadata `data`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 4290716,
+            "comment": "write bytes `bytes_` to a file `filename` in python 3"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 33078554,
+            "comment": "get a list from a list `lst` with values mapped into a dictionary `dct`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 15247628,
+            "comment": "find duplicate names in column 'name' of the dataframe `x`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 783897,
+            "comment": "truncate float 1.923328437452 to 3 decimal places"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 22859493,
+            "comment": "sort list `li` in descending order based on the date value in second element of each list in list `li`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 29394552,
+            "comment": "place the radial ticks in plot `ax` at 135 degrees"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 3320406,
+            "comment": "check if path `my_path` is an absolute path"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 2212433,
+            "comment": "get number of keys in dictionary `yourdict`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 2212433,
+            "comment": "count the number of keys in dictionary `yourdictfile`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 20067636,
+            "comment": "pandas dataframe `df` get first row of each group by 'id'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 40924332,
+            "comment": "split a list in first column into multiple columns keeping other columns as well in pandas data frame `df`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 30759776,
+            "comment": "extract attributes 'src=\"js/([^\"]*\\\\bjquery\\\\b[^\"]*)\"' from string `data`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 25388796,
+            "comment": "Sum integers contained in strings in list `['', '3.4', '', '', '1.0']`"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 804995,
+            "comment": "Call a subprocess with arguments `c:\\\\Program Files\\\\VMware\\\\VMware Server\\\\vmware-cmd.bat` that may contain spaces"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 26441253,
+            "comment": "reverse a priority queue `q` in python without using classes"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 18897261,
+            "comment": "make a barplot of data in column `group` of dataframe `df` colour-coded according to list `color`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 373194,
+            "comment": "find all matches of regex pattern '([a-fA-F\\\\d]{32})' in string `data`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 518021,
+            "comment": "Get the length of list `my_list`"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 518021,
+            "comment": "Getting the length of array `l`"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 518021,
+            "comment": "Getting the length of array `s`"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 518021,
+            "comment": "Getting the length of `my_tuple`"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 518021,
+            "comment": "Getting the length of `my_string`"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 40452956,
+            "comment": "remove escape character from string \"\\\\a\""
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 8687018,
+            "comment": "replace each 'a' with 'b' and each 'b' with 'a' in the string 'obama' in a single pass."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 303200,
+            "comment": "remove directory tree '/folder_name'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 13740672,
+            "comment": "create a new column `weekday` in pandas data frame `data` based on the values in column `my_dt`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 20950650,
+            "comment": "reverse sort Counter `x` by values"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 20950650,
+            "comment": "reverse sort counter `x` by value"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 9775297,
+            "comment": "append a numpy array 'b' to a numpy array 'a'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 21887754,
+            "comment": "numpy concatenate two arrays `a` and `b` along the first axis"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 21887754,
+            "comment": "numpy concatenate two arrays `a` and `b` along the second axis"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 21887754,
+            "comment": "numpy concatenate two arrays `a` and `b` along the first axis"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 21887754,
+            "comment": "numpy concatenate two arrays `a` and `b` along the first axis"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 2805231,
+            "comment": "fetch address information for host 'google.com' ion port 80"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 17552997,
+            "comment": "add a column 'day' with value 'sat' to dataframe `df`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 4356842,
+            "comment": "return a 401 unauthorized in django"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 13598363,
+            "comment": "Flask set folder 'wherever' as the default template folder"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 3398589,
+            "comment": "sort a list of lists 'c2' such that third row comes first"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 3398589,
+            "comment": "sort a list of lists 'c2' in reversed row order"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 3398589,
+            "comment": "Sorting a list of lists `c2`, each by the third and second row"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 10960463,
+            "comment": "set font `Arial` to display non-ascii characters in matplotlib"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 20576618,
+            "comment": "Convert  DateTime column 'date' of pandas dataframe 'df' to ordinal"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 31793195,
+            "comment": "Get the integer location of a key `bob` in a pandas data frame `df`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 10487278,
+            "comment": "add an item with key 'third_key' and value 1 to an dictionary `my_dict`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 10487278,
+            "comment": "declare an array `my_list`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 10487278,
+            "comment": "Insert item `12` to a list `my_list`"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 10155684,
+            "comment": "add an entry 'wuggah' at the beginning of list `myList`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 3519125,
+            "comment": "convert a hex-string representation `hex_str` to actual bytes"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 40144769,
+            "comment": "select the last column of dataframe `df`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 30787901,
+            "comment": "get the first value from dataframe `df` where column 'Letters' is equal to 'C'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 18730044,
+            "comment": "converting two lists `[1, 2, 3]` and `[4, 5, 6]` into a matrix"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 402504,
+            "comment": "get the type of `i`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 402504,
+            "comment": "determine the type of variable `v`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 402504,
+            "comment": "determine the type of variable `v`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 402504,
+            "comment": "get the type of variable `variable_name`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 2300756,
+            "comment": "get the 5th item of a generator `g`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 20056548,
+            "comment": "return a string `word` with string format"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 8546245,
+            "comment": "join a list of strings `list` using a space ' '"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 2276416,
+            "comment": "create list `y` containing two empty lists"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 3925614,
+            "comment": "read a file `filename` into a list `data`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 22187233,
+            "comment": "delete all occurrences of character 'i' in string 'it is icy'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 22187233,
+            "comment": "delete all instances of a character 'i' in a string 'it is icy'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 22187233,
+            "comment": "delete all characters \"i\" in string \"it is icy\""
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 13413590,
+            "comment": "Drop rows of pandas dataframe `df` having NaN in column at index \"1\""
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 598398,
+            "comment": "get elements from list `myList`, that have a field `n` value 30"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 10351772,
+            "comment": "converting list of strings `intstringlist` to list of integer `nums`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 493386,
+            "comment": "print \".\" without newline"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 6569528,
+            "comment": "round off the float that is the product of `2.52 * 100` and convert it to an int"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 3964681,
+            "comment": "Find all files `files` in directory '/mydir' with extension '.txt'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 3964681,
+            "comment": "Find all files in directory \"/mydir\" with extension \".txt\""
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 3964681,
+            "comment": "Find all files in directory \"/mydir\" with extension \".txt\""
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 20865487,
+            "comment": "plot dataframe `df` without a legend"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 13368659,
+            "comment": "loop through the IP address range \"192.168.x.x\""
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 4065737,
+            "comment": "Sum the corresponding decimal values for binary values of each boolean element in list `x`"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 8691311,
+            "comment": "write multiple strings `line1`, `line2` and `line3` in one line in a file `target`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 10632111,
+            "comment": "Convert list of lists `data` into a flat list"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 15392730,
+            "comment": "Print new line character as `\\n` in a string `foo\\nbar`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 1010961,
+            "comment": "remove last comma character ',' in string `s`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 23855976,
+            "comment": "calculate the mean of each element in array `x` with the element previous to it"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 23855976,
+            "comment": "get an array of the mean of each two consecutive values in numpy array `x`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 6375343,
+            "comment": "load data containing `utf-8` from file `new.txt` into numpy array `arr`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 1547733,
+            "comment": "reverse sort list of dicts `l` by value for key `time`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 1547733,
+            "comment": "Sort a list of dictionary `l` based on key `time` in descending order"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 37080612,
+            "comment": "get rows of dataframe `df` that match regex '(Hel|Just)'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 14716342,
+            "comment": "find the string in `your_string` between two special characters \"[\" and \"]\""
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 18684076,
+            "comment": "create a list of date string in 'yyyymmdd' format with Python Pandas from '20130226' to '20130302'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 1666700,
+            "comment": "count number of times string 'brown' occurred in string 'The big brown fox is brown'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 18979111,
+            "comment": "decode json string `request_body` to python dict"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 7243750,
+            "comment": "download the file from url `url` and save it under file `file_name`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 743806,
+            "comment": "split string `text` by space"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 743806,
+            "comment": "split string `text` by \",\""
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 743806,
+            "comment": "Split string `line` into a list by whitespace"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 35044115,
+            "comment": "replace dot characters  '.' associated with ascii letters in list `s` with space ' '"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 38388799,
+            "comment": "sort list `list_of_strings` based on second index of each string `s`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 37004138,
+            "comment": "eliminate non-integer items from list `lst`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 37004138,
+            "comment": "get all the elements except strings from the list 'lst'."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 72899,
+            "comment": "Sort a list of dictionaries `list_to_be_sorted` by the value of the dictionary key `name`"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 72899,
+            "comment": "sort a list of dictionaries `l` by values in key `name` in descending order"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 72899,
+            "comment": "sort a list of dictionaries `list_of_dicts` by `name` values of the dictionary"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 72899,
+            "comment": "sort a list of dictionaries `list_of_dicts` by `age` values of the dictionary"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 36402748,
+            "comment": "sort a Dataframe `df` by the total ocurrences in a column 'scores' group by 'prots'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 29881993,
+            "comment": "join together with \",\" elements inside a list indexed with 'category' within a dictionary `trans`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 34158494,
+            "comment": "concatenate array of strings `['A', 'B', 'C', 'D']` into a string"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 12666897,
+            "comment": "Remove all strings from a list a strings `sents` where the values starts with `@$\\t` or `#`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 5944630,
+            "comment": "sort a list of dictionary `list` first by key `points` and then by `time`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 7852855,
+            "comment": "convert datetime object `(1970, 1, 1)` to seconds"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 2763750,
+            "comment": "insert `_suff` before the file extension in `long.file.name.jpg` or replace `_a` with `suff` if it precedes the extension."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 6420361,
+            "comment": "reload a module `module`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 19546911,
+            "comment": "Convert integer `number` into an unassigned integer"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 9746522,
+            "comment": "convert int values in list `numlist` to float"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 20107570,
+            "comment": "write dataframe `df`, excluding index, to a csv file `filename`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 8740353,
+            "comment": "convert a urllib unquoted string `unescaped` to a json data `json_data`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 5891453,
+            "comment": "Create a list containing all ascii characters as its elements"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 18367007,
+            "comment": "write `newFileBytes` to a binary file `newFile`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 21805490,
+            "comment": "python regex - check for a capital letter with a following lowercase in string `string`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 16125229,
+            "comment": "get the last key of dictionary `dict`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 6159900,
+            "comment": "write line \"hi there\" to file `f`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 6159900,
+            "comment": "write line \"hi there\" to file `myfile`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 6159900,
+            "comment": "write line \"Hello\" to file `somefile.txt`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 19527279,
+            "comment": "convert unicode string `s` to ascii"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 356483,
+            "comment": "Find all numbers and dots from a string `text` using regex"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 38081866,
+            "comment": "execute script 'script.ps1' using 'powershell.exe' shell"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 7349646,
+            "comment": "Sort a list of tuples `b` by third item in the tuple"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": 10607688,
+            "comment": "create a datetime with the current date & time"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 30843103,
+            "comment": "get the index of an integer `1` from a list `lst` if the list also contains boolean items"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 4918425,
+            "comment": "subtract 13 from every number in a list `a`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 17794266,
+            "comment": "get the highest element in absolute value in a numpy matrix `x`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 30551576,
+            "comment": "Get all urls within text `s`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 113534,
+            "comment": "split a string `mystring` considering the spaces ' '"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 5838735,
+            "comment": "open file `path` with mode 'r'"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 36003967,
+            "comment": "sum elements at the same index in list `data`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": 7635237,
+            "comment": "add a new axis to array `a`"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    }
+]
