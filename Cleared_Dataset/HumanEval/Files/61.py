@@ -1,6 +1,6 @@
 
 
-def correct_bracketing(brackets: str):
+def correct_bracketing(brackets: str) -> bool:
     """ 
     Brackets are a string of "(" and ")."
     Return True if every opening bracket has a corresponding closing bracket.

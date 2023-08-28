@@ -1,5 +1,5 @@
 
-def numerical_letter_grade(grades):
+def numerical_letter_grade(grades) -> list:
     """
     It is the last week of the semester, and the teacher has to give the grades
     to students. The teacher has been making her own algorithm for grading.
@@ -21,7 +21,8 @@ def numerical_letter_grade(grades):
             > 0.0                D-
               0.0                E
     
-
-    Example:
-    grade_equation([4.0, 3, 1.7, 2, 3.5]) ==> ['A+', 'B', 'C-', 'C', 'A-']
+    >>> numerical_letter_grade([4.0, 3, 1.7, 2, 3.5])
+    ['A+', 'B', 'C-', 'C', 'A-']
+    >>> numerical_letter_grade([3.5, 3.5, 3.5, 3.5, 3.5])
+    ['A-', 'A-', 'A-', 'A-', 'A-']
     """

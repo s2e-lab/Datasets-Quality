@@ -1,5 +1,5 @@
 
-def unique_digits(x):
+def unique_digits(x) -> list:
     """
     Given a list of positive integers x. Return a sorted list of all 
     elements that haven't any even digit.

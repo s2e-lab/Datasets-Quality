@@ -1,6 +1,6 @@
 
 
-def prime_fib(n: int):
+def prime_fib(n: int) -> int:
     """
     prime_fib returns the n-th number, which is a Fibonacci number, and it's also prime.
     >>> prime_fib(1)

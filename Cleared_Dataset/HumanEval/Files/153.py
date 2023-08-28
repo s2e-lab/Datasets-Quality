@@ -1,5 +1,5 @@
 
-def Strongest_Extension(class_name, extensions):
+def Strongest_Extension(class_name, extensions) -> str:
     """
     You will be given the name of a class (a string) and a list of extensions.
     The extensions are to be used to load additional classes to the class. The
@@ -14,6 +14,9 @@ def Strongest_Extension(class_name, extensions):
     extensions: ['SErviNGSliCes', 'Cheese', 'StuFfed'], then you should
     return 'Slices.SErviNGSliCes' since 'SErviNGSliCes' is the strongest extension 
     (its strength is -1).
-    Example:
-    for Strongest_Extension('my_class', ['AA', 'Be', 'CC']) == 'my_class.AA'
+
+    >>> Strongest_Extension('my_class', ['AA', 'Be', 'CC'])
+    'my_class.AA'
+    >>> Strongest_Extension('my_class', ['AA', 'Be', 'CC', 'DD'])
+    'my_class.AA'
     """

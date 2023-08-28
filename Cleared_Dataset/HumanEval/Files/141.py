@@ -1,5 +1,5 @@
 
-def file_name_check(file_name):
+def file_name_check(file_name) -> str:
     """
     Create a function that takes a string representing a file's name and returns
     'Yes' if the file's name is valid and returns 'No' otherwise.
@@ -10,7 +10,9 @@ def file_name_check(file_name):
         - The substring before the dot should not be empty, and it starts with a letter from 
         the Latin alphabet ('a'-'z' and 'A'-'Z').
         - The substring after the dot should be one of these: ['txt', 'exe', 'dll']
-    Examples:
-    file_name_check("example.txt") # => 'Yes'
-    file_name_check("1example.dll") # => 'No' (the name should start with a latin alphapet letter)
+
+    >>> file_name_check("example.txt")
+    'Yes'
+    >>> file_name_check("1example.dll")
+    'No' (the name should start with a latin alphapet letter)
     """

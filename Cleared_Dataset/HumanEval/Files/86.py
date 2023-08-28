@@ -1,5 +1,5 @@
 
-def anti_shuffle(s):
+def anti_shuffle(s) -> str:
     """
     Write a function that takes a string and returns an ordered version of it.
     An ordered version of a string is a string where all words (separated by space)
@@ -7,8 +7,10 @@ def anti_shuffle(s):
     ascending order based on ASCII value.
     Note: You should keep the order of words and blank spaces in the sentence.
 
-    For example:
-    anti_shuffle('Hi') returns 'Hi'
-    anti_shuffle('hello') returns 'ehllo'
-    anti_shuffle('Hello World!!!') returns 'Hello !!!Wdlor'
+    >>> anti_shuffle('Hi')
+    'Hi'
+    >>> anti_shuffle('hello')
+    'ehllo'
+    >>> anti_shuffle('Hello World!!!')
+    'Hello !!!Wdlor'
     """

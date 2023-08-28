@@ -1,8 +1,8 @@
 
 
-def encode_cyclic(s: str):
+def encode_cyclic(s: str) -> str:
     """
-    returns encoded string by cycling groups of three characters.
+    Returns encoded string by cycling groups of three characters.
     """
     # split string to groups. Each of length 3.
     groups = [s[(3 * i):min((3 * i + 3), len(s))] for i in range((len(s) + 2) // 3)]
@@ -11,7 +11,12 @@ def encode_cyclic(s: str):
     return "".join(groups)
 
 
-def decode_cyclic(s: str):
+def decode_cyclic(s: str) -> str:
     """
-    takes as input string encoded with encode_cyclic function. Returns decoded string.
+    Takes as input string encoded with encode_cyclic function. Returns decoded string.
+    >>> decode_cyclic("abc")
+    'abc'
+    >>> decode_cyclic("abcd")
+    'dabc'
     """
+

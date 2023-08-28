@@ -1,6 +1,6 @@
 
 
-def sort_third(l: list):
+def sort_third(l: list) -> list:
     """
     This function takes a list l and returns a list l' such that
     l' is identical to l in the indices that are not divisible by three, while its values in the indices that are divisible by three are equal

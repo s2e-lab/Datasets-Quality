@@ -1,6 +1,6 @@
 
 
-def incr_list(l: list):
+def incr_list(l: list) -> list:
     """
     Return the list with elements incremented by 1.
     >>> incr_list([1, 2, 3])

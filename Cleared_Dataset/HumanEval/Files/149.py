@@ -1,5 +1,5 @@
 
-def sorted_list_sum(lst):
+def sorted_list_sum(lst) -> list:
     """
     Write a function that accepts a list of strings as a parameter,
     deletes the strings that have odd lengths from it,
@@ -11,7 +11,9 @@ def sorted_list_sum(lst):
     If two words have the same length, sort the list alphabetically.
     The function should return a list of strings in sorted order.
     You may assume that all words will have the same length.    
-    For example:
-    assert list_sort(["aa", "a", "aaa"]) => ["aa"]
-    assert list_sort(["ab", "a", "aaa", "cd"]) => ["ab", "cd"]
+
+    >>> sorted_list_sum(["aa", "a", "aaa"])
+    ['aa']
+    >>> sorted_list_sum(["ab", "a", "aaa", "cd"])
+    ['ab', 'cd']
     """

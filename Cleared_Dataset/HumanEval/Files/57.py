@@ -1,6 +1,6 @@
 
 
-def monotonic(l: list):
+def monotonic(l: list) -> bool:
     """
     Return True is a list of elements that are monotonically increasing or decreasing.
     >>> monotonic([1, 2, 4, 20])

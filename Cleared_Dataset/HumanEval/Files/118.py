@@ -1,5 +1,5 @@
 
-def get_closest_vowel(word):
+def get_closest_vowel(word) -> str:
     """
     You are given a word. Your task is to find the closest vowel that stands between 
     two consonants from the right side of the word (case sensitive).
@@ -9,10 +9,12 @@ def get_closest_vowel(word):
 
     You may assume that the given string contains English letters only.
 
-
-    Example:
-    get_closest_vowel("yogurt") ==> "u"
-    get_closest_vowel("FULL") ==> "U"
-    get_closest_vowel("quick") ==> ""
-    get_closest_vowel("ab") ==> ""
+    >>> get_closest_vowel("yogurt")
+    'u'
+    >>> get_closest_vowel("FULL")
+    'U'
+    >>> get_closest_vowel("quick")
+    ''
+    >>> get_closest_vowel("ab")
+    ''
     """

@@ -1,5 +1,5 @@
 
-def match_parens(lst):
+def match_parens(lst) -> str:
     """
     You are given a list of two strings, and both strings consist of open
     parentheses '(' or close parentheses ')' only.
@@ -10,8 +10,8 @@ def match_parens(lst):
     '())' is not.
     Return 'Yes' if there's a way to make a good string, and return 'No' otherwise.
 
-
-    Examples:
-    match_parens(['()(', ')']) == 'Yes'
-    match_parens([')', ')']) == 'No'
+    >>> match_parens(['()(', ')'])
+    'Yes'
+    >>> match_parens([')', ')'])
+    'No'
     """

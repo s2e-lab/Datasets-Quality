@@ -1,6 +1,6 @@
 
-def bf(planet1, planet2):
-    '''
+def bf(planet1, planet2) -> tuple:
+    """
     There are eight planets in our solar system: the closest to the Sun 
     is Mercury, the next one is Venus, then Earth, Mars, Jupiter, Saturn, 
     Uranus, Neptune.
@@ -9,8 +9,12 @@ def bf(planet1, planet2):
     located between the orbit of planet1 and the orbit of planet2, sorted by 
     the proximity to the Sun. 
     The function should return an empty tuple if planet1 or planet2
-    are not correct planet names.     Examples
-    bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
-    bf("Earth", "Mercury") ==> ("Venus")
-    bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
-    '''
+    are not correct planet names.     
+
+    >>> bf("Jupiter", "Neptune")
+    ('Saturn', 'Uranus')
+    >>> bf("Earth", "Mercury")
+    ('Venus')
+    >>> bf("Mercury", "Uranus")
+    ('Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn')
+    """

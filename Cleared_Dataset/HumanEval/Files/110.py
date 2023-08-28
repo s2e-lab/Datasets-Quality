@@ -1,5 +1,5 @@
 
-def exchange(lst1, lst2):
+def exchange(lst1, lst2) -> str:
     """
     In this problem, you will implement a function that takes two lists of numbers,
     and determines whether it is possible to perform an exchange of elements
@@ -8,8 +8,10 @@ def exchange(lst1, lst2):
     If it is possible to exchange elements between lst1 and lst2 to make
     all the elements of lst1 even, return "YES."
     Otherwise, return "NO".
-    For example:
-    exchange([1, 2, 3, 4], [1, 2, 3, 4]) => "YES"
-    exchange([1, 2, 3, 4], [1, 5, 3, 4]) => "NO"
     It is assumed that the input lists will be non-empty.
+
+    >>> exchange([1, 2, 3, 4], [1, 2, 3, 4])
+    'YES'
+    >>> exchange([1, 2, 3, 4], [1, 5, 3, 4])
+    'NO'
     """

@@ -1,5 +1,5 @@
 
-def intersection(interval1, interval2):
+def intersection(interval1, interval2) -> str:
     """
     You are given two intervals,
     where each interval is a pair of integers. For example, interval = (start, end) = (1, 2).
@@ -14,9 +14,10 @@ def intersection(interval1, interval2):
     otherwise, return "NO".
     If the two intervals don't intersect, return "NO".
 
-
-    [input/output] samples:
-    intersection((1, 2), (2, 3)) ==> "NO"
-    intersection((-1, 1), (0, 4)) ==> "NO"
-    intersection((-3, -1), (-5, 5)) ==> "YES"
+    >>> intersection((1, 2), (2, 3))
+    'NO'
+    >>> intersection((-1, 1), (0, 4))
+    'NO'
+    >>> intersection((-3, -1), (-5, 5))
+    'YES'
     """
