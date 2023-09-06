@@ -5,7 +5,6 @@ def rounded_avg(n, m) -> str:
     average of the integers from n through m (including n and m). 
     Round the answer to the nearest integer and convert that to binary.
     If n is greater than m, return -1.
-
     >>> rounded_avg(1, 5)
     '0b11'
     >>> rounded_avg(7, 5)

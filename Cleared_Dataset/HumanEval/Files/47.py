@@ -1,5 +1,4 @@
 
-
 def median(l: list) -> int:
     """
     Return the median of elements in the list l.

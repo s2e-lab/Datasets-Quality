@@ -1,5 +1,4 @@
 
-
 def strlen(string: str) -> int:
     """ 
     Return the length of a given string.

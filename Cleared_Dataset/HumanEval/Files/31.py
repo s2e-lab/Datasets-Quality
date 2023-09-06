@@ -1,5 +1,4 @@
 
-
 def is_prime(n: int) -> bool:
     """
     Return true if a given number is prime and false otherwise.

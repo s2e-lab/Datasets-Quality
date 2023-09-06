@@ -5,7 +5,6 @@ def check_if_last_char_is_a_letter(txt) -> bool:
     of a given string is an alphabetical character and is not
     a part of a word, and False otherwise.
     Note: "word" is a group of characters separated by space.
-
     >>> check_if_last_char_is_a_letter("apple pie")
     False
     >>> check_if_last_char_is_a_letter("apple pi e")

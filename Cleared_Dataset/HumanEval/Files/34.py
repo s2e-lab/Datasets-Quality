@@ -1,5 +1,4 @@
 
-
 def unique(l: list) -> list:
     """
     Return sorted unique elements in a list.

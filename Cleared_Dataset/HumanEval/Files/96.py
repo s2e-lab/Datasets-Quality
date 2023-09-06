@@ -3,7 +3,6 @@ def count_up_to(n) -> list:
     """
     Implement a function that takes a non-negative integer and returns an array of the first n
     integers that are prime numbers and less than n.
-
     >>> count_up_to(5)
     [2, 3]
     >>> count_up_to(11)

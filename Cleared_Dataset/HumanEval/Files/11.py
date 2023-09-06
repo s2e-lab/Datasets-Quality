@@ -1,6 +1,5 @@
 from typing import List
 
-
 def string_xor(a: str, b: str) -> str:
     """ 
     Input are two strings, a and b, consisting only of 1s and 0s.

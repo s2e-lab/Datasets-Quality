@@ -1,5 +1,4 @@
 
-
 def get_positive(l: list) -> list:
     """
     Return only positive numbers in the list.

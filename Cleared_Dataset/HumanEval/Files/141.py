@@ -10,7 +10,6 @@ def file_name_check(file_name) -> str:
         - The substring before the dot should not be empty, and it starts with a letter from 
         the Latin alphabet ('a'-'z' and 'A'-'Z').
         - The substring after the dot should be one of these: ['txt', 'exe', 'dll']
-
     >>> file_name_check("example.txt")
     'Yes'
     >>> file_name_check("1example.dll")

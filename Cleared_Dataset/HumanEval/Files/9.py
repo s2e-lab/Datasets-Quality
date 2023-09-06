@@ -1,6 +1,5 @@
 from typing import List, Tuple
 
-
 def rolling_max(numbers: List[int]) -> List[int]:
     """ 
     From a given list of integers, generate a list of rolling maximum elements found until the given moment

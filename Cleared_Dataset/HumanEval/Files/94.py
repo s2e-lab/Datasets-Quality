@@ -1,10 +1,8 @@
 
-
 def skjkasdkd(lst) -> int:
     """
     You are given a list of integers.
     You need to find the largest prime value and return the sum of its digits.
-
     >>> skjkasdkd(0, 3, 2, 1, 3, 5, 7, 4, 5, 5, 5, 2, 181, 32, 4, 32, 3, 2, 32, 324, 4, 3)
     10
     >>> skjkasdkd(1, 0, 1, 8, 2, 4597, 2, 1, 3, 40, 1, 2, 1, 2, 4, 2, 5, 1)

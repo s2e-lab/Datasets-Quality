@@ -6,7 +6,6 @@ def encode(message) -> str:
     the message with the letter that appears 2 places ahead of that 
     vowel in the English alphabet. 
     Assume only letters. 
-
     >>> encode('test')
     'TGST'
     >>> encode('This is a message')

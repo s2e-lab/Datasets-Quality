@@ -4,10 +4,8 @@ def sort_array(array) -> list:
     Given an array of non-negative integers, return a copy of the given array after sorting,
     You will sort the given array in ascending order if the sum( first index value, last index value) is odd,
     or sort it in descending order if the sum( first index value, last index value) is even.
-
     Note:
     * Don't change the given array.
-
     >>> sort_array([])
     []
     >>> sort_array([5])

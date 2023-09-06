@@ -1,5 +1,4 @@
 
-
 def fib(n: int) -> int:
     """
     Return n-th Fibonacci number.

@@ -1,6 +1,5 @@
 from typing import List
 
-
 def factorize(n: int) -> List[int]:
     """ 
     Return the list of prime factors of the given integer in the order from smallest to largest.

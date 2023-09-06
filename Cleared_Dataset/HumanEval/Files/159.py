@@ -6,7 +6,6 @@ def eat(number, need, remaining) -> list:
     You should return an array of [ total number of eaten carrots after your meals,
                                     the number of carrots left after your meals ]
     if there are not enough remaining carrots, you will eat all remaining carrots, but will still be hungry.
-
     Variables:
     @number : integer
         the number of carrots that you have eaten.
@@ -19,7 +18,6 @@ def eat(number, need, remaining) -> list:
     * 0 <= number <= 1000
     * 0 <= need <= 1000
     * 0 <= remaining <= 1000
-
     >>> eat(5, 6, 10)
     [11, 4]
     >>> eat(4, 8, 9)

@@ -9,7 +9,6 @@ def match_parens(lst) -> str:
     are balanced. For example: the string '(())()' is good, while the string
     '())' is not.
     Return 'Yes' if there's a way to make a good string, and return 'No' otherwise.
-
     >>> match_parens(['()(', ')'])
     'Yes'
     >>> match_parens([')', ')'])

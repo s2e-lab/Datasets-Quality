@@ -6,7 +6,6 @@ def f(n) -> list:
     or the sum of numbers from 1 to i otherwise.
     i start from 1.
     The factorial of i is the multiplication of the numbers from 1 to i (1 * 2 * ... * i).
-
     >>> f(1)
     [1]
     >>> f(5)

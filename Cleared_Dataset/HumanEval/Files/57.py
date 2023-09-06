@@ -1,5 +1,4 @@
 
-
 def monotonic(l: list) -> bool:
     """
     Return True is a list of elements that are monotonically increasing or decreasing.

@@ -8,7 +8,6 @@ def valid_date(date) -> bool:
         2. The number of days is not less than 1 or higher than 31 days for months 1,3,5,7,8,10,12. And the number of days is not less than 1 or higher than 30 days for months 4,6,9,11. And, the number of days is not less than 1 or higher than 29 for the month 2.
         3. The months should not be less than 1 or higher than 12.
         4. The date should be in the format mm-dd-yyyy
-
     >>> valid_date('03-11-2000')
     True
     >>> valid_date('15-01-2012')

@@ -13,7 +13,6 @@ def intersection(interval1, interval2) -> str:
     If the length of the intersection is a prime number, return "YES,"
     otherwise, return "NO".
     If the two intervals don't intersect, return "NO".
-
     >>> intersection((1, 2), (2, 3))
     'NO'
     >>> intersection((-1, 1), (0, 4))

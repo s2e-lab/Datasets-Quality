@@ -1,5 +1,4 @@
 
-
 def car_race_collision(n: int) -> int:
     """
     Imagine a road that's a perfectly straight, infinitely long line.
@@ -9,7 +8,6 @@ def car_race_collision(n: int) -> int:
     when a car that's moving left to right hits a car that's moving right to left.
     However, the cars are infinitely sturdy and strong; as a result, they continue moving
     in their trajectory as if they did not collide.
-
     This function outputs the number of such collisions.
     >>> car_race_collision(2)
     4

@@ -1,5 +1,4 @@
 
-
 def triangle_area(a, h) -> float:
     """
     Given the length of a side and the high return area for a triangle.

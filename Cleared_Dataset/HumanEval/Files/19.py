@@ -1,6 +1,5 @@
 from typing import List
 
-
 def sort_numbers(numbers: str) -> str:
     """ 
     Input is a space-delimited string of numerals from 'zero' to 'nine'.

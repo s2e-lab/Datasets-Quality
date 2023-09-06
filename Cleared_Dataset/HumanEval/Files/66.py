@@ -4,7 +4,6 @@ def digitSum(s) -> int:
     Task
     Write a function that takes a string as input and returns the sum of the upper characters only
     ASCII codes.
-
     >>> digitSum("")
     0
     >>> digitSum("abAB")

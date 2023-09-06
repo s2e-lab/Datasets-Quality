@@ -14,7 +14,6 @@ def tri(n) -> list:
            = 2 + 3 + 3 = 8 
     You are given a non-negative integer number n, you have to a return a list of the 
     first n + 1 numbers of the Tribonacci sequence.
-
     >>> tri(3)
     [1, 3, 2, 8]
     >>> tri(5)

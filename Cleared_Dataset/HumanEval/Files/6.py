@@ -1,6 +1,5 @@
 from typing import List
 
-
 def parse_nested_parens(paren_string: str) -> List[int]:
     """ 
     Input to this function is a string represented by multiple groups for nested parentheses separated by spaces.

@@ -6,9 +6,7 @@ def get_closest_vowel(word) -> str:
  
     Vowels in the beginning and ending don't count. Return an empty string if you didn't
     ind any vowel that met the above condition. 
-
     You may assume that the given string contains English letters only.
-
     >>> get_closest_vowel("yogurt")
     'u'
     >>> get_closest_vowel("FULL")

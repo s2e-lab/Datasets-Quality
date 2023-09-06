@@ -9,7 +9,6 @@ def exchange(lst1, lst2) -> str:
     all the elements of lst1 even, return "YES."
     Otherwise, return "NO".
     It is assumed that the input lists will be non-empty.
-
     >>> exchange([1, 2, 3, 4], [1, 2, 3, 4])
     'YES'
     >>> exchange([1, 2, 3, 4], [1, 5, 3, 4])

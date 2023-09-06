@@ -4,7 +4,6 @@ def minPath(grid, k) -> List[int]:
     Given a grid with N rows and N columns (N >= 2) and a positive integer k, 
     each cell of the grid contains a value. Every integer in the range [1, N * N]
     inclusive appears exactly once on the cells of the grid.
-
     You have to find the minimum path of length k in the grid. You can start
     from any cell, and in each step, you can move to any of the neighbor cells,
     in other words, you can go to cells that share an edge with your current
@@ -20,7 +19,6 @@ def minPath(grid, k) -> List[int]:
     lst_A[j] = lst_B[j].
     It is guaranteed that the answer is unique.
     Return an ordered list of the values on the cells that the minimum path goes through.
-
     >>> minPath([[1,2,3], [4,5,6], [7,8,9]], 3)
     [1, 2, 1]
     >>> minPath([[5,9,3], [4,1,6], [7,8,2]], 1)

@@ -9,7 +9,6 @@ def make_a_pile(n) -> list:
     Return the number of stones in each level in a list, where the element at the index
     i represents the number of stones in the level (i+1).
 
-
     Examples:
     >>> make_a_pile(3)
     [3, 5, 7]

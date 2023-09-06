@@ -6,7 +6,6 @@ def triangle_area(a, b, c) -> float:
     Otherwise, return -1
     Three sides make a valid triangle when the sum of any two sides is greater 
     then the third side.
-
     >>> triangle_area(3, 4, 5)
     6.0
     >>> triangle_area(1, 2, 10)

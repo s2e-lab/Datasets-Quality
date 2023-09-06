@@ -10,7 +10,6 @@ def bf(planet1, planet2) -> tuple:
     the proximity to the Sun. 
     The function should return an empty tuple if planet1 or planet2
     are not correct planet names.     
-
     >>> bf("Jupiter", "Neptune")
     ('Saturn', 'Uranus')
     >>> bf("Earth", "Mercury")

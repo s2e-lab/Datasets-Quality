@@ -1,5 +1,4 @@
 
-
 def remove_vowels(text) -> str:
     """
     remove_vowels is a function that takes a string and returns a string without vowels.

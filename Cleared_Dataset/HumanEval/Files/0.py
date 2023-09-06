@@ -1,6 +1,5 @@
 from typing import List
 
-
 def has_close_elements(numbers: List[float], threshold: float) -> bool:
     """ 
     Check if, in a given list of numbers, any two numbers are closer to each other than the 

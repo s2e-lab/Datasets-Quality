@@ -8,7 +8,6 @@ def solve(N) -> str:
              Constraints: 0 ≤ N ≤ 10000.
     Output:
          a string of binary number
-
     >>> solve(1000)
     '1'
     >>> solve(150)

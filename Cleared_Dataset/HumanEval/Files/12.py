@@ -1,6 +1,5 @@
 from typing import List, Optional
 
-
 def longest(strings: List[str]) -> Optional[str]:
     """ 
     Out of the list of strings, return the longest one. Return the first one in case of multiple

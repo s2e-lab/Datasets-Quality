@@ -11,7 +11,6 @@ def sorted_list_sum(lst) -> list:
     If two words have the same length, sort the list alphabetically.
     The function should return a list of strings in sorted order.
     You may assume that all words will have the same length.    
-
     >>> sorted_list_sum(["aa", "a", "aaa"])
     ['aa']
     >>> sorted_list_sum(["ab", "a", "aaa", "cd"])

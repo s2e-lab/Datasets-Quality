@@ -6,7 +6,6 @@ def select_words(s, n) -> list:
     n consonants, in order these words appear in the string s.
     If the string s is empty, then the function should return an empty list.
     Note: You may assume the input string contains only letters and spaces.
-
     >>> select_words("Mary had a little lamb", 4)
     ['little']
     >>> select_words("Mary had a little lamb", 3)

@@ -1,5 +1,4 @@
 
-
 def max_element(l: list) -> int:
     """
     Return the maximum element in the list.

@@ -5,9 +5,7 @@ def simplify(x, n) -> bool:
     x * n. The function returns True if x * n evaluates to a whole number and False
     otherwise. Both x and n, are string representations of a fraction and have the following format,
     <numerator>/<denominator> where both numerator and denominator are positive whole numbers.
-
     You can assume that x, and n are valid fractions and do not have zero as the denominator.
-
     >>> simplify("1/5", "5/1")
     True
     >>> simplify("1/6", "2/1")

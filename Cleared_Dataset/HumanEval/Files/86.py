@@ -6,7 +6,6 @@ def anti_shuffle(s) -> str:
     are replaced by a new word where all the characters are arranged in
     ascending order based on ASCII value.
     Note: You should keep the order of words and blank spaces in the sentence.
-
     >>> anti_shuffle('Hi')
     'Hi'
     >>> anti_shuffle('hello')

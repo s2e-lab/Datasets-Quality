@@ -1,6 +1,5 @@
 from typing import List
 
-
 def remove_duplicates(numbers: List[int]) -> List[int]:
     """ 
     From a list of integers, remove all elements that occur more than once.

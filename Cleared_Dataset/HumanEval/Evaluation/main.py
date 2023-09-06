@@ -10,7 +10,7 @@ import torch
 torch.cuda.empty_cache()
 
 # Code Generation Configuration Parameters
-MODEL = "Salesforce/codegen-350M-mono"
+MODEL = "Salesforce/codegen-2B-mono"
 TEMPERATURE = 1e-5
 TOP_P = 1
 DO_SAMPLE = False
@@ -23,7 +23,7 @@ STOP_TOKENS = "<|endoftext|>"
 
 
 def setup_model():
-    tokenizer = AutoTokenizer.from_pretrained(MODEL)
+    tokenizer = AutoTokenizer.from_pretrained(MODEL, use_fast=False)
     model = AutoModelForCausalLM.from_pretrained(MODEL, device_map="auto")
     print(model.hf_device_map)
     tokenizer.pad_token = tokenizer.eos_token
@@ -35,7 +35,7 @@ def setup_model():
 def entry_point(
     problem_file: str,
     sample_file: str,
-    k: str = "1,10,100",
+    k: str = "1,10",
     n_workers: int = 4,
     timeout: float = 3.0,
 ):
@@ -149,12 +149,13 @@ def evaluate(tokenizer, model, data_path: str) -> dict:
                 for i, c in enumerate(completion):
                     output_code = c + "\n"
             output_code = fix_indents(output_code)
-            sample = dict(task_id=task_id, completion=filter_code(output_code))
+            new_code = output_code.split(prompt)[-1]
+            sample = dict(task_id=task_id, completion= filter_code(new_code))
             if i == 0:
                 print("Prompt: ", "-" * 100)
                 print(prompt)
                 print("Completion: ", "-" * 100)
-                print(filter_code(output_code))
+                print( prompt + '\n' + filter_code(new_code))
             samples.append(sample)
             progress_bar.update(1)
     progress_bar.close()

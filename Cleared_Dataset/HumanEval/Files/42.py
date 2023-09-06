@@ -1,5 +1,4 @@
 
-
 def incr_list(l: list) -> list:
     """
     Return the list with elements incremented by 1.

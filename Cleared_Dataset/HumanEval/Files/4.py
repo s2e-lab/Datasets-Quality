@@ -1,6 +1,5 @@
 from typing import List
 
-
 def mean_absolute_deviation(numbers: List[float]) -> float:
     """ 
     For a given list of input numbers, calculate the Mean Absolute Deviation

@@ -5,7 +5,6 @@ def get_max_triples(n) -> int:
         For each i (1 ≤ i ≤ n), the value of a[i] = i * i - i + 1.
         Return the number of triples (a[i], a[j], a[k]) of a where i < j < k, 
     and a[i] + a[j] + a[k] is a multiple of 3.
-
     >>> get_max_triples(5)
     1
     >>> get_max_triples(10)

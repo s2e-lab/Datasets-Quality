@@ -6,11 +6,9 @@ def words_in_sentence(sentence) -> str:
     and you have to return a string that contains the words from the original sentence,
     whose lengths are prime numbers,
     the order of the words in the new string should be the same as the original one.
-
     Constraints:
         * 1 <= len(sentence) <= 100
         * sentence contains only letters
-
     >>> words_in_sentence("This is a test")
     'is'
     >>> words_in_sentence("lets go for swimming")

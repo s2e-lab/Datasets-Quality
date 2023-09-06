@@ -10,13 +10,10 @@ def move_one_ball(arr) -> bool:
     One right shift operation means shifting all elements of the array by one
     position in the right direction. The last element of the array will be moved to
     the starting position in the array, i.e., the 0th index. 
-
     If it is possible to obtain the sorted array by performing the above operation
     then return True, else return False.
     If the given array is empty, then return True.
-
     Note: The given list is guaranteed to have unique elements.
-
     For Example:
     >>> move_one_ball([3, 4, 5, 1, 2])
     True

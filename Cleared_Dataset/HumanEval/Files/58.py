@@ -1,5 +1,4 @@
 
-
 def common(l1: list, l2: list) -> list:
     """
     Return sorted unique common elements for two lists.

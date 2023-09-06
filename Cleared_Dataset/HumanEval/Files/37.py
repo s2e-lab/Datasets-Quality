@@ -1,5 +1,4 @@
 
-
 def sort_even(l: list) -> list:
     """
     This function takes a list l and returns a list l' such that

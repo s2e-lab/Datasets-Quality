@@ -8,14 +8,12 @@ def max_fill(grid, capacity) -> int:
     and all buckets have the same capacity.
     Your task is to use the buckets to empty the wells.
     Output the number of times you need to lower the buckets.
-
     Constraints:
         * all wells have the same length
         * 1 <= grid.length <= 10^2
         * 1 <= grid[:,1].length <= 10^2
         * grid[i][j] -> 0 | 1
         * 1 <= capacity <= 10
-
     >>> max_fill([[0,0,1,0], [0,1,0,0], [1,1,1,1]], 1)
     6
     >>> max_fill([[0,0,1,1], [0,0,0,0], [1,1,1,1], [0,1,1,1]], 2)

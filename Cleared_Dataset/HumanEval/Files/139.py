@@ -6,7 +6,6 @@ def special_factorial(n) -> int:
     where n > 0.
     The function will receive an integer as input and should return the special
     factorial of this integer.
-
     For example:
     >>> special_factorial(4)
     288

@@ -14,7 +14,6 @@ def Strongest_Extension(class_name, extensions) -> str:
     extensions: ['SErviNGSliCes', 'Cheese', 'StuFfed'], then you should
     return 'Slices.SErviNGSliCes' since 'SErviNGSliCes' is the strongest extension 
     (its strength is -1).
-
     >>> Strongest_Extension('my_class', ['AA', 'Be', 'CC'])
     'my_class.AA'
     >>> Strongest_Extension('my_class', ['AA', 'Be', 'CC', 'DD'])

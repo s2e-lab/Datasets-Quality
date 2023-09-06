@@ -1,5 +1,4 @@
 
-
 def is_palindrome(text: str) -> bool:
     """
     Checks if the given string is a palindrome
