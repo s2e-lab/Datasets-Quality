@@ -149,13 +149,13 @@ def evaluate(tokenizer, model, data_path: str) -> dict:
                 for i, c in enumerate(completion):
                     output_code = c + "\n"
             output_code = fix_indents(output_code)
-            new_code = output_code.split(prompt)[-1]
-            sample = dict(task_id=task_id, completion= filter_code(new_code))
+            # new_code = output_code.split(prompt)[-1]
+            sample = dict(task_id=task_id, completion= output_code)
             if i == 0:
                 print("Prompt: ", "-" * 100)
                 print(prompt)
                 print("Completion: ", "-" * 100)
-                print( prompt + '\n' + filter_code(new_code))
+                print( output_code)
             samples.append(sample)
             progress_bar.update(1)
     progress_bar.close()
@@ -168,14 +168,22 @@ def evaluate(tokenizer, model, data_path: str) -> dict:
     return result
 
 
+# def main():
+#     tokenizer, model = setup_model()
+
+#     data_path: str = "../HumanEval_Clear.jsonl"
+#     result = evaluate(tokenizer, model, data_path)
+#     print(result)
+#     return result["pass@1"]
+
+
 def main():
-    tokenizer, model = setup_model()
 
-    data_path: str = "../HumanEval_Clear.jsonl"
-    result = evaluate(tokenizer, model, data_path)
+    data_path: str = "./HumanEval_Clear.jsonl"
+    pred_filename: str = "./humaneval_clear_Salesforce_codegen-2B-mono_predictions_cleared.jsonl"
+
+    result = entry_point(problem_file=data_path, sample_file=pred_filename)
     print(result)
-    return result["pass@1"]
-
 
 """
 p humaneval.py main  --model_name llama --model_path decapoda-research/llama-7b-hf --n_sample 1
