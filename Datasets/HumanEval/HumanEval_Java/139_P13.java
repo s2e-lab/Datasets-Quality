@@ -16,6 +16,7 @@ class SpecialFactorial {
 
      * The function will receive an integer as input and should return the special
      * factorial of this integer.
-     *
+     * @param n an input integer
+     * @return the special factorial of n
      */
     public static long specialFactorial(int n) {

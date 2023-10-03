@@ -15,6 +15,7 @@ class IsBored {
      * 0
      * >>> is_bored("The sky is blue. The sun is shining. I love this weather")
      * 1
-     *
+     * @param s an input string
+     * @return the count of boredoms
      */
     public static int isBored(String s) {

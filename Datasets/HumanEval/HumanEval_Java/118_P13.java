@@ -19,6 +19,8 @@ class GetClosestVowel {
      * get_closest_vowel("FULL") ==> "U"
      * get_closest_vowel("quick") ==> ""
      * get_closest_vowel("ab") ==> ""
+     * @param word an input string
+     * @return find the closest vowel that stands between two consonants from the right side of word 
      *
      */
     public static String getClosestVowel(String word) {

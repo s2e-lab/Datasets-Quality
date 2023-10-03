@@ -26,6 +26,9 @@ class EvenOddPalindrome {
      * Note:
      *     1. 1 <= n <= 10^3
      *     2. returned tuple has the number of even and odd integer palindromes respectively.
+     * 
+     * @param n a positive integer
+     * @return a a tuple that has the number of even and odd integer palindromes that fall within the range(1, n), inclusive.
      *
      */
     public static List<Integer> evenOddPalindrome(int n) {

@@ -15,6 +15,9 @@ class RoundedAvg {
      * rounded_avg(7, 5) => -1
      * rounded_avg(10, 20) => "0b1111"
      * rounded_avg(20, 33) => "0b11010"
+     * @param n a positive integer
+     * @param m a positive integer
+     * @return the binary representation of the average of the integers from n through m after rounding to the nearest integer
      *
      */
     public static Object roundedAvg(int n, int m) {

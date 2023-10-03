@@ -20,6 +20,7 @@ class GetOddCollatz {
 
      * For example:
      * get_odd_collatz(5) returns [1, 5] # The collatz sequence for 5 is [5, 16, 8, 4, 2, 1], so the odd numbers are only 1, and 5.
-     *
+     * @param n a positive integer
+     * @return a sorted list that has the odd numbers in collatz sequence of n
      */
     public static List<Integer> getOddCollatz(int n) {

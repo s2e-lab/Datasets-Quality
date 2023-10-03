@@ -16,6 +16,8 @@ class Histogram {
      * histogram('a b c a b') == {'a': 2, 'b': 2}
      * histogram('b b b b a') == {'b': 4}
      * histogram('') == {}
+     * @param test a string representing space separated lowercase letters
+     * @return a dictionary of the letter with the most repetition and containing the corresponding count
 
      *
      */

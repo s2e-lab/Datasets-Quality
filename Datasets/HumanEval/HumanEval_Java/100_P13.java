@@ -17,6 +17,7 @@ class MakeAPile {
      * Examples:
      * >>> make_a_pile(3)
      * [3, 5, 7]
-     *
+     * @param n a positive integer denoting number of levels of stone in a pile
+     * @return the number of stones in each level as a list, where element at index i represents the number of stones in the level (i+1).
      */
     public static List<Integer> makeAPile(int n) {

@@ -16,6 +16,9 @@ class CheckIfLastCharIsALetter {
      * check_if_last_char_is_a_letter("apple pi e") ➞ True
      * check_if_last_char_is_a_letter("apple pi e ") ➞ False
      * check_if_last_char_is_a_letter("") ➞ False 
+     * @param txt an input string
+     * @return true if the last character of txt is an alphabetical character and is not
+     * a part of a word, false otherwise
      *
      */
     public static Boolean checkIfLastCharIsALetter(String txt) {

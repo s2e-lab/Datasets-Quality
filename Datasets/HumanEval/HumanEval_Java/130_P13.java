@@ -21,6 +21,8 @@ class Tri {
      * first n + 1 numbers of the Tribonacci sequence.
      * Examples:
      * tri(3) = [1, 3, 2, 8]
+     * @param n a non-negative integer
+     * @return return a list of the first n + 1 numbers of the Tribonacci sequence.
      *
      */
     public static List<Number> tri(int n) {

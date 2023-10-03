@@ -15,6 +15,8 @@ class ProdSigns {
      * >>> prod_signs([1, 2, 2, -4]) == -9
      * >>> prod_signs([0, 1]) == 0
      * >>> prod_signs([]) == None
-     *
+     * @param arr a list of integers
+     * @return the sum of magnitudes of integers  multiplied by product of all signs
+     * of each number in arr, represented by 1, -1 or 0.
      */
     public static Integer prodSigns(List<Object> arr) {

@@ -17,6 +17,10 @@ class Encode {
      * 'TGST'
      * >>> encode('This is a message')
      * 'tHKS KS C MGSSCGG'
+     * @param message an input string
+     * @return the string encoded in such a way that it swaps case of all letters, replaces all vowels in 
+     * the message with the letter that appears 2 places ahead of that 
+     * vowel in the english alphabet. 
      *
      */
     public static String encode(String message) {

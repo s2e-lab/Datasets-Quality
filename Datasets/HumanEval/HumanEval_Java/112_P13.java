@@ -15,6 +15,12 @@ class ReverseDelete {
      * For s = "abcde", c = "ae", the result should be ('bcd',False)
      * For s = "abcdef", c = "b"  the result should be ('acdef',False)
      * For s = "abcdedcba", c = "ab", the result should be ('cdedc',True)
+     * 
+     * @param s an input string
+     * @param c an input string 
+     * @return a tuple containing the result string after deleting all the characters in s that are equal to any character in c and 
+     * True/False for the check if the result string is palindrome.
+     * 
      *
      */
     public static List<Object> reverseDelete(String s, String c) {

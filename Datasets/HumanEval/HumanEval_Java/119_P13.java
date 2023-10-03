@@ -18,6 +18,8 @@ class MatchParens {
      * Examples:
      * match_parens(['()(', ')']) == 'Yes'
      * match_parens([')', ')']) == 'No'
-     *
+     * @param lst list of two strings, both strings consist of open parentheses '(' or close parentheses ')' only
+     * @return 'Yes' if it is possible to concatenate the two strings of lst in some order, that the resulting string will be good,
+     * 'No' otherwise.
      */
     public static String matchParens(List<String> lst) {

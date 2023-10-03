@@ -15,6 +15,7 @@ class CheckDictCase {
      * check_dict_case({"a":"apple", 8:"banana", "a":"apple"}) should return False.
      * check_dict_case({"Name":"John", "Age":"36", "City":"Houston"}) should return False.
      * check_dict_case({"STATE":"NC", "ZIP":"12345" }) should return True.
-     *
+     * @param dict a dictionary 
+     * @return true if all keys are in dict strings in lower case or all keys are strings in upper case, false otherwise
      */
     public static Boolean checkDictCase(Object dict) {

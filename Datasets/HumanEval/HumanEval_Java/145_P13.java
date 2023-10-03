@@ -14,6 +14,7 @@ class OrderByPoints {
      * For example:
      * >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]
      * >>> order_by_points([]) == []
-     *
+     * @param nums a list of integers
+     * @return a list after sorting the entries of nums in ascending order according to the sum of their digits
      */
     public static List<Object> orderByPoints(List<Object> nums) {

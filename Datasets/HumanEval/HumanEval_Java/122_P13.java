@@ -17,6 +17,8 @@ class AddElements {
      * Constraints:
      *     1. 1 <= len(arr) <= 100
      *     2. 1 <= k <= len(arr)
-     *
+     * @param arr a non-empty list of integers
+     * @param k an input integer
+     * @return the sum of the elements with at most two digits from the first k elements of arr
      */
     public static int addElements(List<Integer> arr, int k) {

@@ -16,6 +16,8 @@ class Simplify {
      * simplify("1/5", "5/1") = True
      * simplify("1/6", "2/1") = False
      * simplify("7/10", "10/2") = False
-     *
+     * @param x a string representing a fraction having the format <numerator>/<denominator>
+     * where both numerator and denominator are positive whole numbers
+     * @return true if x * n evaluates to a whole number, false otherwise
      */
     public static Boolean simplify(String x, String n) {

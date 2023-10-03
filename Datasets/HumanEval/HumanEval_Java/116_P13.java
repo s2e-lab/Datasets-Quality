@@ -14,6 +14,8 @@ class SortArray {
      * >>> sort_array([1, 5, 2, 3, 4]) == [1, 2, 3, 4, 5]
      * >>> sort_array([-2, -3, -4, -5, -6]) == [-6, -5, -4, -3, -2]
      * >>> sort_array([1, 0, 2, 3, 4]) [0, 1, 2, 3, 4]
+     * @param arr a list of non-negative integers
+     * @return a list sorted in ascending order according to the number of ones in binary representation of each element in arr. 
      *
      */
     public static List<Object> sortArray(List<Object> arr) {

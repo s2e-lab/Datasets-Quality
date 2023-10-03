@@ -16,6 +16,9 @@ class Skjkasdkd {
      * For lst = [0,724,32,71,99,32,6,0,5,91,83,0,5,6] the output should be 11
      * For lst = [0,81,12,3,1,21] the output should be 3
      * For lst = [0,8,1,2,1,7] the output should be 7
+     * 
+     * @param lst a list of integers
+     * @return the sum of digits of the largets prime value in lst
      *
      */
     public static int skjkasdkd(List<Integer> lst) {

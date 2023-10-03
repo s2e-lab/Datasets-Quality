@@ -31,6 +31,8 @@ class MoveOneBall {
      * Explanation:It is not possible to get non-decreasing order for the given
      *             array by performing any number of right shift operations.
      *             
-     *
+     * @param arr a list of N integers
+     * @return true if it is possible to get an array sorted in non-decreasing order by performing 
+     * right shift operation any number of times on arr:
      */
     public static Boolean moveOneBall(List<Object> arr) {

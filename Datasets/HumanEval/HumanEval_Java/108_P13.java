@@ -13,6 +13,7 @@ class CountNums {
      * >>> count_nums([]) == 0
      * >>> count_nums([-1, 11, -11]) == 1
      * >>> count_nums([1, 1, 2]) == 3
-     *
+     * @param arr a list of integers
+     * @return the number of elements which has a sum of digits greater than 0
      */
     public static int countNums(List<Object> arr) {

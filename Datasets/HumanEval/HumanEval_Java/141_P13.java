@@ -18,6 +18,8 @@ class FileNameCheck {
      * Examples:
      * file_name_check("example.txt") # => 'Yes'
      * file_name_check("1example.dll") # => 'No' (the name should start with a latin alphapet letter)
+     * @param fileName a string representing a file's name
+     * @return 'Yes' if the the file's name is valid according to given conditions, 'No' otherwise.
      *
      */
     public static String fileNameCheck(String fileName) {
