@@ -12,6 +12,8 @@ class Digits {
      * digits(1)  == 1
      * digits(4)  == 0
      * digits(235) == 15
+     * @param n a positive integer
+     * @return the product of the odd digits of n.
      *
      */
     public static int digits(int n) {

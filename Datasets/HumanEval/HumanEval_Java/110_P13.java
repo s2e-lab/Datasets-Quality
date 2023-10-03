@@ -17,6 +17,11 @@ class Exchange {
      * exchange([1, 2, 3, 4], [1, 2, 3, 4]) => "YES"
      * exchange([1, 2, 3, 4], [1, 5, 3, 4]) => "NO"
      * It is assumed that the input lists will be non-empty.
+     * 
+     * @param lst1 a list of integers
+     * @param lst2 a list of integers
+     * @return "YES" if it is possible to exchange elements between the lst1 and lst2 to make
+     * all the elements of lst1 to be even, "NO" otherwise
      *
      */
     public static String exchange(List<Integer> lst1, List<Integer> lst2) {

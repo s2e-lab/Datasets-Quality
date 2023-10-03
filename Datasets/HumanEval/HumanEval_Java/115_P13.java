@@ -37,6 +37,10 @@ class MaxFill {
      *     * 1 <= grid[:,1].length <= 10^2
      *     * grid[i][j] -> 0 | 1
      *     * 1 <= capacity <= 10
+     * 
+     * @param grid a nested list of integers representing a rectangular grid of wells
+     * @param capacity an input integer
+     * @return the number of times buckets need to be lowered to empty the wells.
      *
      */
     public static int maxFill(List<List<Integer>> grid, int capacity) {

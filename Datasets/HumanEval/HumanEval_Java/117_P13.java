@@ -17,6 +17,9 @@ class SelectWords {
      * select_words("simple white space", 2) ==> []
      * select_words("Hello world", 4) ==> ["world"]
      * select_words("Uncle sam", 3) ==> ["Uncle"]
+     * @param s an input string
+     * @param n an integer denoting a natural number
+     * @return a list of all words from string s that contain exactly n consonants
      *
      */
     public static List<Object> selectWords(String s, int n) {

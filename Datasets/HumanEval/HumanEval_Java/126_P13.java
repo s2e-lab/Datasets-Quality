@@ -19,6 +19,10 @@ class IsSorted {
      * is_sorted([1, 3, 2, 4, 5, 6, 7]) ➞ False
      * is_sorted([1, 2, 2, 3, 3, 4]) ➞ True
      * is_sorted([1, 2, 2, 2, 3, 4]) ➞ False
+     * 
+     * @param lst a list of integers
+     * @return true if lst is sorted in ascending order, false if lst is not sorted or 
+     * list has more than 1 duplicate of the same number
      *
      */
     public static Boolean isSorted(List<Object> lst) {

@@ -16,6 +16,12 @@ class OddCount {
      * >>> odd_count(['3',"11111111"])
      * ["the number of odd elements 1n the str1ng 1 of the 1nput.",
      *  "the number of odd elements 8n the str8ng 8 of the 8nput."]
+     * 
+     * @param lst a list of strings, where each string consists of only digits
+     * @return a list where each element i should be "the number of odd elements in the
+     * string i of lst." where all the i's should be replaced by the number
+     * of odd digits in the ith string of lst.
+     * 
      *
      */
     public static List<String> oddCount(List<String> lst) {

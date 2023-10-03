@@ -14,6 +14,9 @@ class FixSpaces {
      * fix_spaces("Example 1") == "Example_1"
      * fix_spaces(" Example 2") == "_Example_2"
      * fix_spaces(" Example   3") == "_Example-3"
+     * @param text an input string
+     * @return a string formed after replacing all spaces in text with underscores, 
+     * and if text has more than 2 consecutive spaces,then after replacing all consecutive spaces with - 
      *
      */
     public static String fixSpaces(String text) {

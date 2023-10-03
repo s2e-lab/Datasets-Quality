@@ -16,6 +16,10 @@ class IsNested {
      * is_nested('[]') ➞ False
      * is_nested('[[][]]') ➞ True
      * is_nested('[[]][[') ➞ True
+     * @param string an input string which contains only square brackets
+     * @return true if and only if there is a valid subsequence of brackets in string
+     * where at least one bracket in the subsequence is nested, false otherwise
+
      *
      */
     public static Boolean isNested(String string) {

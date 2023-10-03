@@ -15,6 +15,9 @@ class SumSquares {
      * For lst = [1,2,3] the output should be 6
      * For lst = []  the output should be 0
      * For lst = [-1,-5,2,-1,-5]  the output should be -126
+     * @param lst a list of integers
+     * @return return the sum of all entries of lst after squaring the integer entry if its index is a 
+     * multiple of 3 and cubing the integer entry if its index is a multiple of 4 and not a multiple of 3
      *
      */
     public static int sumSquares(List<Object> lst) {

@@ -33,6 +33,8 @@ class Minpath {
 
      *     Input: grid = [ [5,9,3], [4,1,6], [7,8,2]], k = 1
      *     Output: [1]
-     *
+     * @param grid a list of lists denoting a grid with N rows and N columns
+     * @param k a positive integer
+     * @return an ordered list of the values on the cells that the minimum path of length k in grid go through
      */
     public static List<Integer> minpath(List<List<Integer>> grid, int k) {

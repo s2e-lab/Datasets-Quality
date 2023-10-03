@@ -28,6 +28,10 @@ class Maximum {
      *     1. The length of the array will be in the range of [1, 1000].
      *     2. The elements in the array will be in the range of [-1000, 1000].
      *     3. 0 <= k <= len(arr)
+     * 
+     * @param arr a list of integers
+     * @param k a positive integer
+     * @return a sorted list of length k with the maximum k numbers in arr
      *
      */
     public static List<Object> maximum(List<Integer> arr, int k) {

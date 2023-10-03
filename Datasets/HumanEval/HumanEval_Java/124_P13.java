@@ -24,6 +24,7 @@ class ValidDate {
      * valid_date('06-04-2020') => True
 
      * valid_date('06/04/2020') => False
-     *
+     * @param date a string denoting a string
+     * @return true if valid according to given conditions, false otherwise
      */
     public static Boolean validDate(String date) {

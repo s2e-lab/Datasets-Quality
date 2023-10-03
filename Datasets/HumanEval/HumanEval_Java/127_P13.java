@@ -24,6 +24,9 @@ class Intersection {
      * intersection((1, 2), (2, 3)) ==> "NO"
      * intersection((-1, 1), (0, 4)) ==> "NO"
      * intersection((-3, -1), (-5, 5)) ==> "YES"
+     * @param interval1 a list denoting a closed interval
+     * @param interval2 a list denoting a closed interval
+     * @return "YES" if the length of intersection of interval1 and interval2 is a prime number, false otherwise
      *
      */
     public static String intersection(List<Integer> interval1, List<Integer> interval2) {

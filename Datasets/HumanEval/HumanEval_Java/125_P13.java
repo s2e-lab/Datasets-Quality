@@ -13,6 +13,9 @@ class SplitWords {
      * split_words("Hello world!") ➞ ["Hello", "world!"]
      * split_words("Hello,world!") ➞ ["Hello", "world!"]
      * split_words("abcdef") == 3 
-     *
+     * @param txt a string of words
+     * @return a list of words by splitting txt on whitespace.
+     * If no whitespace exists, return a list of words by splitting txt on commas ','.
+     * If no comma exists, return the number of lower-case letters in txt with odd order in the alphabet.
      */
     public static Object splitWords(String txt) {

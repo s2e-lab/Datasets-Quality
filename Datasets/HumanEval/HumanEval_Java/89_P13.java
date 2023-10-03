@@ -15,6 +15,8 @@ class Encrypt {
      * encrypt('asdfghjkl') returns 'ewhjklnop'
      * encrypt('gf') returns 'kj'
      * encrypt('et') returns 'ix'
+     * @param s an input string
+     * @return s encrypted with the alphabets rotated
      *
      */
     public static String encrypt(String s) {

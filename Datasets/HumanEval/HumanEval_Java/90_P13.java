@@ -14,6 +14,9 @@ class NextSmallest {
      * next_smallest([5, 1, 4, 3, 2]) == 2
      * next_smallest([]) == None
      * next_smallest([1, 1]) == None
+     * 
+     * @param lst a list of integers
+     * @return the 2nd smallest element of lst
      *
      */
     public static Integer nextSmallest(List<Object> lst) {

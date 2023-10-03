@@ -16,6 +16,9 @@ class UniqueDigits {
      * [1, 15, 33]
      * >>> unique_digits([152, 323, 1422, 10])
      * []
+     * 
+     * @param x a list of positive integers
+     * @return a sorted list of all elements of x that hasn't any even digit.
      *
      */
     public static List<Object> uniqueDigits(List<Integer> x) {

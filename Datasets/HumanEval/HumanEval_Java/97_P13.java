@@ -14,6 +14,9 @@ class Multiply {
      * multiply(19, 28) should return 72.
      * multiply(2020, 1851) should return 0.
      * multiply(14,-15) should return 20.
+     * @param a an input integer
+     * @param b an input integer
+     * @return the product of unit digits of a and b
      *
      */
     public static int multiply(int a, int b) {

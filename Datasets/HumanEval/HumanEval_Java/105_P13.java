@@ -25,6 +25,11 @@ class ByLength {
      *         -> sort arr -> [-1, 1, 55]
      *         -> reverse arr -> [55, 1, -1]
      *   return = ['One']
+     * 
+     *  @param arr a list of integers
+     *  @return the resulting list of strings after sorting the integers in arr that are between 1 and 9 inclusive,
+     *  reversing the resulting array, and then replacing each digit by its corresponding name from
+     *  "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"
      *
      */
     public static List<Object> byLength(List<Object> arr) {

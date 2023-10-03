@@ -23,6 +23,9 @@ class WordsInSentence {
      * Constraints:
      *     * 1 <= len(sentence) <= 100
      *     * sentence contains only letters
+     * 
+     * @param sentence a string representing a sentence
+     * @return a string that contains the words from sentence, whose lengths are prime numbers
      *
      */
     public static String wordsInSentence(String sentence) {

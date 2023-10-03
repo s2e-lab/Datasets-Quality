@@ -18,6 +18,11 @@ class AnyInt {
      * any_int(3, -2, 1) ➞ True
      * 
      * any_int(3.6, -2.2, 2) ➞ False
+     * 
+     * @param x a number
+     * @param y a  number
+     * @param z a number
+     * @return true if one of the numbers is equal to the sum of the other two, and all numbers are integers, false otherwise
   
 
      * 
