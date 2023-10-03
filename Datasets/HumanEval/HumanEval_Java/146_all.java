@@ -17,4 +17,4 @@ class Specialfilter {
      * @return the number of elements in the array that are greater than 10 and both first and last digits of a number are odd
 
      */
-    public static int specialfilter(List<Object> nums) {
+    public static int specialfilter(List<int> nums) {

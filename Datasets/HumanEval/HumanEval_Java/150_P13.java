@@ -13,6 +13,10 @@ class XOrY {
      * for x_or_y(7, 34, 12) == 34
      * for x_or_y(15, 8, 5) == 5
      * 
+     * @param n a given number
+     * @param x a given number
+     * @param y a given number
+     * @return the value of x if n is a prime number, otherwise y
      *
      */
     public static int xOrY(int n, int x, int y) {

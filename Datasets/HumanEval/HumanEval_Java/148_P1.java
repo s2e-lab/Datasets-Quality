@@ -6,7 +6,7 @@ import java.math.*;
 
 class Bf {
     /**
-     * * There are eight planets in our solar system: the closerst to the Sun 
+     * * There are eight planets in our solar system: the closest to the Sun 
      * is Mercury, the next one is Venus, then Earth, Mars, Jupiter, Saturn, 
      * Uranus, Neptune.
      * Write a function that takes two planet names as strings planet1 and planet2. 
@@ -19,11 +19,6 @@ class Bf {
      * bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
      * bf("Earth", "Mercury") ==> ("Venus")
      * bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
-     * 
-     * @param planet1 name of a planet
-     * @param planet2 name of a planet
-     * @return a tuple containing all planets whose orbits are located between the orbit of planet1 and the orbit of planet2, sorted by the proximity to the sun. 
-
      *
      */
     public static List<Object> bf(String planet1, String planet2) {

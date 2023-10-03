@@ -22,5 +22,9 @@ class StrongestExtension {
      * Example:
      * for Strongest_Extension('my_class', ['AA', 'Be', 'CC']) == 'my_class.AA'
      *
+     * 
+     * @param className name of the class
+     * @param extensions a list of extensions
+     * @return the strongest extension
      */
     public static String strongestExtension(String className, List<String> extensions) {

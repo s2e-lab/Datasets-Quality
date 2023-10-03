@@ -7,7 +7,7 @@ import java.math.*;
 class DoAlgebra {
     /**
      * * Given two lists operator, and operand. The first list has basic algebra operations, and 
-     * the second list is a list of integers. Use the two given lists to build the algebric 
+     * the second list is a list of integers. Use the two given lists to build the algebraic  
      * expression and return the evaluation of this expression.
 
      * The basic algebra operations:
@@ -22,6 +22,11 @@ class DoAlgebra {
      * array = [2, 3, 4, 5]
      * result = 2 + 3 * 4 - 5
      * => result = 9
+     * 
+     * operator['-', '*']
+     * array = [7, 3, 9]
+     * result = 7 - 3 * 9
+     * => result = -20
      * 
      * @param operator a list of basic algebra operations
      * @param operand a list of integers

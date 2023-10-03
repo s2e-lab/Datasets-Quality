@@ -20,7 +20,5 @@ class SortedListSum {
      * assert list_sort(["aa", "a", "aaa"]) => ["aa"]
      * assert list_sort(["ab", "a", "aaa", "cd"]) => ["ab", "cd"]
      *
-     * @param lst a list of strings
-     * @return a list of strings in sorted order
      */
-    public static List<Object> sortedListSum(List<String> lst) {
+    public static List<String> sortedListSum(List<String> lst) {

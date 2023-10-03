@@ -19,4 +19,4 @@ class GenerateIntegers {
      * @return the even digits between a and b, in ascending order
      *
      */
-    public static List<Object> generateIntegers(int a, int b) {
+    public static List<int> generateIntegers(int a, int b) {

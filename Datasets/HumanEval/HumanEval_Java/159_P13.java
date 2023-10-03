@@ -26,6 +26,12 @@ class Eat {
      * @remaining : integer
      *     the number of remaining carrots thet exist in stock
      * 
+     * @param number the number of carrots that you have eaten.
+     * @param need the number of carrots that you need to eat.
+     * @param remaining the number of remaining carrots thet exist in stock
+     * @return an array of [ total number of eaten carrots after your meals,
+     *                                 the number of carrots left after your meals ]
+     * 
      * Constrain:
      * * 0 <= number <= 1000
      * * 0 <= need <= 1000

@@ -17,6 +17,10 @@ class GetMaxTriples {
      *     Explanation: 
      *     a = [1, 3, 7, 13, 21]
      *     The only valid triple is (1, 7, 13).
+     * 
+     * @param n a given positive integer
+     * @return the number of triples (a[i], a[j], a[k]) of a where i < j < k, and a[i] + a[j] + a[k] is a multiple of 3.
+
      *
      */
     public static int getMaxTriples(int n) {

@@ -19,11 +19,6 @@ class Bf {
      * bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
      * bf("Earth", "Mercury") ==> ("Venus")
      * bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
-     * 
-     * @param planet1 name of a planet
-     * @param planet2 name of a planet
-     * @return a tuple containing all planets whose orbits are located between the orbit of planet1 and the orbit of planet2, sorted by the proximity to the sun. 
-
      *
      */
-    public static List<Object> bf(String planet1, String planet2) {
+    public static List<String> bf(String planet1, String planet2) {

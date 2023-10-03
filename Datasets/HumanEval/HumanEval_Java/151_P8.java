@@ -16,7 +16,5 @@ class DoubleTheDifference {
    
      * If the input list is empty, return 0.
      *
-     * @param lst a list of numbers
-     * @return the sum of squares of the numbers, in the list that are odd ignoring numbers that are negative or not integers
      */
-    public static int doubleTheDifference(List<Object> lst) {
+    public static int doubleTheDifference(List<int> lst) {

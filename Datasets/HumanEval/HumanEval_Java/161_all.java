@@ -4,7 +4,7 @@ import java.util.*;
 import java.math.*;
 
 
-class Solve {
+class reverse_case {
     /**
      * You are given a string s.
      * if s[i] is a letter, reverse its case from lower to upper or vise versa, 
@@ -12,12 +12,12 @@ class Solve {
      * If the string contains no letters, reverse the string.
      * The function should return the resulted string.
      * Examples
-     * solve("1234") = "4321"
-     * solve("ab") = "AB"
-     * solve("#a@C") = "#A@c"
+     * reverse_case("1234") = "4321"
+     * reverse_case("ab") = "AB"
+     * reverse_case("#a@C") = "#A@c"
      *
      * 
      * @param s a given string 
      * @return a reversed string from lower to upper or vise versa
      */
-    public static String solve(String s) {
+    public static String reverse_case(String s) {
