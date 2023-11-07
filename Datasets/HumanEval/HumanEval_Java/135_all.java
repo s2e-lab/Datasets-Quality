@@ -1,0 +1,22 @@
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+import java.math.*;
+
+
+class CanArrange {
+    /**
+     * Create a function which returns the largest index of an element which
+     * is not greater than or equal to the element immediately preceding it. If
+     * no such element exists then return -1. The given array will not contain
+     * duplicate values.
+
+     * Examples:
+     * can_arrange([1,2,4,3,5]) = 3
+     * can_arrange([1,2,3]) = -1
+     * @param arr a list of integers
+     * @return the largest index of an element in arr which
+     * is not greater than or equal to the element immediately preceding it, if no such element exitst return -1.
+     *
+     */
+    public static int canArrange(List<Integer> arr) {
