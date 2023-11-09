@@ -1,0 +1,18 @@
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+import java.math.*;
+
+
+class StartsOneEnds {
+    /**
+     * * Given a positive integer n, return the count of the numbers of n-digit
+     * positive integers that start or end with 1.
+     * 
+     * Examples:
+     * StartsOneEnds(2)=> 1
+     * StartsOneEnds(3)=> 10
+     * 
+     *
+     */
+    public static int startsOneEnds(int n) {
