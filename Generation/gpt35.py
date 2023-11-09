@@ -1,0 +1,68 @@
+import json
+import openai
+from tqdm import tqdm
+# from tenacity import (retry, stop_after_attempt,
+#                       wait_random_exponential, )  # for exponential backoff
+
+import time
+
+with open("./config.json") as f:
+    config_data = json.load(f)
+
+OPENAI_KEY = config_data['OPENAI_KEY']
+openai.organization = config_data['OPENAI_ORG']
+openai.api_key = OPENAI_KEY
+
+# temperatures = [0.0, 0.2, 0.4, 0.6]
+dataset = ['Java', 'Py']
+temperatures = [ 1.0]
+token_size_limits = [512]
+
+
+# @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
+def gpt35_response(prompt,temperature, token_limit):
+    try:
+        # Decide on the prompt style
+        prompt_content = prompt["prompt"]
+        prompt_content += "\n"
+
+        response = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {
+                    "role": "user",
+                    "content": prompt_content
+                }
+            ],
+            temperature=temperature,
+            max_tokens=token_limit,
+            n=10
+        )
+        prompt['output'] = response
+        time.sleep(10)
+        return prompt
+    except Exception as e:
+        print(e)
+        prompt['output'] = str(e)
+        time.sleep(30)
+        return prompt
+
+for item in dataset:
+    with open(f'./HumanEval_{item}.jsonl') as f:
+        data = [json.loads(line) for line in f.readlines()]
+    print(f'Loaded {len(data)} prompts from {item} dataset')
+
+    for temp in temperatures:
+        for token_limit in token_size_limits:
+            new_data = []
+            print(
+                    f'Processing temperature {temp} and token limit {token_limit}')
+            for item in tqdm(data):
+                updated_item = gpt35_response(item, temp, token_limit)
+                new_data.append(updated_item)
+
+                # Save to a JSON file with a filename indicating the parameters
+            filename = f'./Output/GPT3.5_Output_{temp}.json'
+            with open(filename, "w") as f:
+                    json.dump(new_data, f, indent=4)
+                    print(f'Saved to {filename}')

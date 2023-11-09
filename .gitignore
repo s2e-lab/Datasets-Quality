@@ -99,3 +99,4 @@ fabric.properties
 # Ignores Icon? files that get created on Mac OS
 Icon
 
+Generation/config.json
