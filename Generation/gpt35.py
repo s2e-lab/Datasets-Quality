@@ -36,7 +36,7 @@ def gpt35_response(prompt,temperature, token_limit):
             ],
             temperature=temperature,
             max_tokens=token_limit,
-            n=10
+            n=20
         )
         prompt['output'] = response
         time.sleep(10)
@@ -62,7 +62,7 @@ for item in dataset:
                 new_data.append(updated_item)
 
                 # Save to a JSON file with a filename indicating the parameters
-            filename = f'./Output/GPT3.5_Output_{temp}.json'
+            filename = f'./Output/GPT3.5_Output_{item}_{temp}.json'
             with open(filename, "w") as f:
                     json.dump(new_data, f, indent=4)
                     print(f'Saved to {filename}')
