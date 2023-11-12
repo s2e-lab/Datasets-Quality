@@ -79,7 +79,7 @@ def count_indent(text: str) -> int:
     return count
 
 
-def fix_indents(text: str, multiple: int = 2):
+def fix_indents(text: str, multiple: int = 4):
     outputs = []
     for line in text.split("\n"):
         while count_indent(line) % multiple != 0:
