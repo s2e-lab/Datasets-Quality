@@ -1,0 +1,1788 @@
+[
+    {
+        "nl": {
+            "id": "6367676d1a6d9265ec018229",
+            "comment": "Trim each element in the given string array and return the resulting array."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367670b1a6d9265ec017a00",
+            "comment": "Check whether the length of the given two byte arrays is the same."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766a91a6d9265ec0175c2",
+            "comment": "Pop an abstract type from the output frame stack and return its value."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767081a6d9265ec017989",
+            "comment": "Convert the given Boolean array to primitives. Return ArrayUtils.EMPTY_BOOLEAN_ARRAY for an empty array, return null for null array."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "6367672d1a6d9265ec017c73",
+            "comment": " If the message does not exist in the dict messages, or it exists but the timestamp (seconds) difference is bigger than 10, put the message and timestamp into messages and return true, otherwise return false."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766f81a6d9265ec01775c",
+            "comment": "Return the string representation of the given object, return an empty string if the object is null."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367667f1a6d9265ec017457",
+            "comment": "Decode octets to characters with UTF-8, append them to the given StringBuilder, and return the index to the next unchecked character."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766aa1a6d9265ec0175ce",
+            "comment": "Init a currentFrame with the given offset, numLocal and numStack, return 3 finally."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767191a6d9265ec017c0f",
+            "comment": "Enlarge the byte vector data, by increasing it by the given size."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767821a6d9265ec0183a0",
+            "comment": "Delete the given file if it exists"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767691a6d9265ec0181aa",
+            "comment": "Compute the hash code of the whole array, by accumulating the multiplication of each element hash code and the  MULTIPLIER."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767441a6d9265ec017cc1",
+            "comment": "Perform a right node rotation on the AVL tree."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367667f1a6d9265ec01745c",
+            "comment": "Add all the jar files in the given dir to the classpath. The classpath is represented as a Vector of URLs."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "6367677e1a6d9265ec01830f",
+            "comment": "Format the buffered string with the pattern converter, and return the result."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767031a6d9265ec0178dd",
+            "comment": "Compute and return the length of the request content header, return the content length if NumberFormatException happens."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766f11a6d9265ec017658",
+            "comment": "Return the index of the last directory separator character, under Unix or Windows."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767121a6d9265ec017b0a",
+            "comment": "Parse the header part starting from the given end position and return the index of the enter sequence. "
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766f61a6d9265ec017701",
+            "comment": "Find the last index of the searchStr in str, and return INDEXNOTFOUND if str is empty."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "6367670b1a6d9265ec0179fe",
+            "comment": "Write the given byte array b into the output stream that this class represents."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767df1a6d9265ec01873c",
+            "comment": "Return the id by concatenating the point and the entity id with id connector."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636766f91a6d9265ec01777f",
+            "comment": "Convert a Boolean to a boolean handling null by returning false."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367675f1a6d9265ec0180d3",
+            "comment": "Compute and return an identity automorphism for the given graph."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766fe1a6d9265ec017833",
+            "comment": "Delete the file or the whole directory when exiting."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767791a6d9265ec018257",
+            "comment": "Add a log record message to be displayed in the LogTable, with the SwingUtilities."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767641a6d9265ec01817d",
+            "comment": "Construct a complete bipartite graph from partitions A and B."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766ff1a6d9265ec017851",
+            "comment": "Searche for a byte of the specified value in the buffer, starting at the specified position."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767a41a6d9265ec018582",
+            "comment": "Use ProtobufOutput and the LinkedBuffer to write the message into the given OutputStream out, and return the message size."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767001a6d9265ec01787e",
+            "comment": "Return the string built by this string builder."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767781a6d9265ec01823d",
+            "comment": "Write the message in the event into a temp file."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766ef1a6d9265ec01761a",
+            "comment": "Add a new type entry of the given value into the type table of this symbol table. Does nothing if the type table already contains a similar type. Return the index of the type entry in the symbol table."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766821a6d9265ec0174b6",
+            "comment": "Resolve and return the arguments for the genericType using the type variable information for the targetType. Returns null if  genericType is not parameterized or if arguments cannot be resolved."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767e11a6d9265ec018781",
+            "comment": "Accept the data into the buffer if its id does not exist in the buffer. Otherwise try to combine it with the existing value, and remove it if the combined is abandoned."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767531a6d9265ec017efb",
+            "comment": "Insert this bucket in the data structure before the given bucket."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766f11a6d9265ec017641",
+            "comment": "Check the available space of this InputStream according to the index."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767de1a6d9265ec018706",
+            "comment": "Return mappings with fields that do not exist in the input mappings. The input mappings should be history mapping from the current index."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767dd1a6d9265ec0186e5",
+            "comment": "Add the given target channels to the consumeTargets."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767871a6d9265ec01846d",
+            "comment": "Create the \"lf5\" directory in the Documents and Settings directory on Windows machines, or the user.home variable points on all other platforms."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636766f81a6d9265ec01775b",
+            "comment": "Read a signed long value."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767a51a6d9265ec01859d",
+            "comment": "Return true if the contents of the internal array bytes and the provided array data match."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367670b1a6d9265ec0179ff",
+            "comment": "Return an EMPTY_BYTE_OBJECT_ARRAY array for a null or empty input array."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "6367677f1a6d9265ec018347",
+            "comment": "Send a message to each of the connections in telnet-friendly output. "
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367670a1a6d9265ec0179e8",
+            "comment": "Return an EMPTY_BOOLEAN_OBJECT_ARRAY array for a null or empty input array."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "6367677f1a6d9265ec01834b",
+            "comment": "Place a  LoggingEvent in the buffer buf."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767df1a6d9265ec018744",
+            "comment": "Split time ranges to insure the start time and end time is small than FETCH_DATA_DURATION."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767031a6d9265ec0178e6",
+            "comment": "Convert an array of object Bytes to primitives, return null for a null input array."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767dc1a6d9265ec0186be",
+            "comment": "Follow the dayStep to reformat the time bucket with TIME_BUCKET_FORMATTER. For example, if dayStep == 11, 20000105 re-formatted time bucket is 20000101, 20000115 re-formatted time bucket is 20000112, 20000123 re-formatted time bucket is 20000123."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767a41a6d9265ec01856c",
+            "comment": "Compute the size of the utf8 string beginning at the specified  index  with the specified length."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636766f01a6d9265ec017639",
+            "comment": "Convert an array to list, return empty list for null array."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367672d1a6d9265ec017c74",
+            "comment": "Remove a value from the values if the map keys contains the val. Returns true if actually removed, and false otherwise."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "6367676b1a6d9265ec0181df",
+            "comment": "Return true if the given string starts with the specified case-insensitive prefix, false otherwise."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367674b1a6d9265ec017dc0",
+            "comment": "Compute all vertices by iterating over the edges of this graph."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767001a6d9265ec017873",
+            "comment": "Reverse the given String as per."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766ff1a6d9265ec01783b",
+            "comment": "Get a substring from the specified String avoiding exceptions. "
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367671a1a6d9265ec017c15",
+            "comment": "Put an array of bytes into this byte vector, enlarge the byte vector automatically if necessary."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766821a6d9265ec0174d2",
+            "comment": "Wrap an HttpServletRequest with the Builder."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767ab1a6d9265ec01867b",
+            "comment": "Write the utf8-encoded bytes from the string into the LinkedBuffer."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367675c1a6d9265ec01805b",
+            "comment": "Remove this edge from both doubly linked lists of the tree edges."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767791a6d9265ec01826d",
+            "comment": "Find the value corresponding to key in props, then perform variable substitution on the found value. Return the substitution result, or the value in case of exception. "
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767001a6d9265ec01787f",
+            "comment": "Append the detail of an int array to the buffer, starting with arrayStart and ending with arrayEnd, and separating with arraySeparator."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766fe1a6d9265ec017834",
+            "comment": "Return the servlet session id"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636766ff1a6d9265ec01784b",
+            "comment": "Check whether a character string is a dight. If yes, true is returned. Otherwise, false is returned."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636766fc1a6d9265ec0177da",
+            "comment": "Check whether a character is a parameter separator. If yes, true is returned. Otherwise, false is returned."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367670c1a6d9265ec017a35",
+            "comment": "Determines whether a character string ends with a specified suffix."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367667f1a6d9265ec01745d",
+            "comment": "Decode the raw path."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766f11a6d9265ec017651",
+            "comment": "If array is null or its length is 0, convert array to EMPTY_CHARACTER_OBJECT_ARRAY. Otherwise, return array itself."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767821a6d9265ec0183ab",
+            "comment": "Check whether there is a thrown"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767831a6d9265ec0183c9",
+            "comment": "Return the value at the top of the stack"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767de1a6d9265ec01871c",
+            "comment": "Add the value to the original value of the key."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766811a6d9265ec017496",
+            "comment": "If the stack is not empty, the last element of the stack is returned. Otherwise, null is returned."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367677e1a6d9265ec01832e",
+            "comment": "Check if the named logger exists. If so return its reference, otherwise returns null."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367670a1a6d9265ec0179e7",
+            "comment": "Check whether the specified converter exists in converters. If yes, converter is returned. If no, null is returned."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767a41a6d9265ec018572",
+            "comment": "Read raw varint"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767021a6d9265ec0178bb",
+            "comment": "If the double type array is null or its length is 0, convert array to EMPTY_CHARACTER_OBJECT_ARRAY. Otherwise, return array itself."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767021a6d9265ec0178b2",
+            "comment": "Pop the various value according to the first character of the descriptor."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766f91a6d9265ec01776e",
+            "comment": "Write bytes of length len from a byte array"
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767551a6d9265ec017f3f",
+            "comment": "Swap values at indexes i and j in arr"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766ae1a6d9265ec0175dc",
+            "comment": "Determine whether the actual response is a Partial Content"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766f01a6d9265ec01762e",
+            "comment": "Check whether the array of the double type is empty."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367667e1a6d9265ec01743a",
+            "comment": "Check whether lastwrite is - 1. If yes, return - 1. Otherwise, return System.currentTimeMillis()."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767601a6d9265ec0180fd",
+            "comment": "Add an edge whose start point is sourceVertex and end point is targetVertex to touchingVerticesToEdgeMap."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766821a6d9265ec0174c9",
+            "comment": "Creates an array of the file type based on all file names in java.class.path and returns the array."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767041a6d9265ec0178f8",
+            "comment": "Copy the source string and transfer each character to lowecase."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767521a6d9265ec017ecc",
+            "comment": "Divide a box into two equal boxes on the x axis."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636766a91a6d9265ec0175c1",
+            "comment": "Convert the original data array to a longer array."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767781a6d9265ec018238",
+            "comment": "Check whether appender elements exist in appenderList. If yes, true is returned. Otherwise, false is returned."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "6367674a1a6d9265ec017dab",
+            "comment": "Compares two values. If the difference between the two values is less than epsilon, 0 is returned. Otherwise, Double.compare is invoked."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "6367672d1a6d9265ec017c78",
+            "comment": "If the key whose value is val does not exist in the map, add (val, val) to the map and return true. Otherwise, return false."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767dc1a6d9265ec0186c6",
+            "comment": "Check whether all fields exist in properties."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766821a6d9265ec0174bf",
+            "comment": "Converts a name of the string type to a character array and converts the first letter to an uppercase letter."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767aa1a6d9265ec01865a",
+            "comment": "Write the content into the LinkedBuffer."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766f21a6d9265ec017677",
+            "comment": "Check whether the parameter bool is not true."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "6367674f1a6d9265ec017e74",
+            "comment": "Convert a value in a vs array to a string"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367675c1a6d9265ec018058",
+            "comment": "Create a string supplier which returns unique integer strings starting from the given start."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367677b1a6d9265ec0182bd",
+            "comment": "Formats LoggingEvent as a fixed-format string"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766ff1a6d9265ec017842",
+            "comment": "If the length of the array is 0, return EMPTY_DOUBLE_ARAY. Otherwise, convert the array to an array of the double type."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636766fa1a6d9265ec0177a9",
+            "comment": "Add abstractType to the initializations variable."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "6367670a1a6d9265ec0179dc",
+            "comment": "Add the elements indexed from start to end in currentFrame to Frame."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766801a6d9265ec017482",
+            "comment": "Read from the buffer."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367670a1a6d9265ec0179d8",
+            "comment": "Write the byte array b to the buffer based on the encoding."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766a81a6d9265ec01757b",
+            "comment": "Converts the content in JSONWriter to a string."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767021a6d9265ec0178bf",
+            "comment": "If the length of the value string is 0, the default type is returned. Otherwise, the element at the first position of the string is returned."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367670b1a6d9265ec017a0f",
+            "comment": "Check whether str contains elements in searchStrArray. If yes, true is returned. If no, false is returned."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636766a81a6d9265ec01758e",
+            "comment": "Returns the element at the location specified by desiredCapacity in primeCapacities."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367670a1a6d9265ec0179cf",
+            "comment": "Obtains the character value of ch. If ch is null, defaultValue is returned."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367676b1a6d9265ec0181e2",
+            "comment": "Returns the first element in candidates that matches the source."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367676b1a6d9265ec0181ee",
+            "comment": "Trim the end space of the str."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767dc1a6d9265ec0186cb",
+            "comment": "Initializes a directory."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767a31a6d9265ec018552",
+            "comment": "Read string from a buffer."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767a61a6d9265ec0185b7",
+            "comment": "Obtains the number corresponding to the character c."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767e01a6d9265ec018755",
+            "comment": "Put the \"content\" from the  jsonObject to the content."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "6367667f1a6d9265ec017458",
+            "comment": "Remove the mapping from atmosphereHandlers."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767a21a6d9265ec018517",
+            "comment": "Copy bytes from LinkedBuffer and return."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367667d1a6d9265ec017401",
+            "comment": "Unescapes Java that found in the String."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766f01a6d9265ec01763e",
+            "comment": "Translate a MIME standard charset name into the Java equivalent."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "6367676a1a6d9265ec0181bf",
+            "comment": "Check whether an obj variable is of the String type."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767501a6d9265ec017e86",
+            "comment": "Returns the previous ListNode."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766f21a6d9265ec017667",
+            "comment": "Read a short value from classFileBuffer"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767031a6d9265ec0178ef",
+            "comment": "Copy the given array and add a default value at the end."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767431a6d9265ec017c8d",
+            "comment": "Calculate the floor of the logarithmic value of the given value in base 2."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767611a6d9265ec018116",
+            "comment": "Return the intersection between two sets."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766f71a6d9265ec017730",
+            "comment": "If collection is null, convert collection to EMPTY_STRING_ARRAY. Otherwise, convert collection to an array of strings and return the array. ???"
+        },
+        "Heuristic": [
+            "H12"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767081a6d9265ec0179a2",
+            "comment": "Check whether a character string is all consist of zero. "
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766821a6d9265ec0174b3",
+            "comment": "Filter and return null for the null and abort message in BroadcastAction, return the action message otherwise. "
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767e01a6d9265ec018764",
+            "comment": "Convert process properties to the JsonObject."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "6367677e1a6d9265ec018314",
+            "comment": "Remove any inactive nodes from the Category tree and return the number of removed nodes."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766ff1a6d9265ec017853",
+            "comment": "Return the label by the given bytecode offset if it has been created. Otherwise, creat a new label and return it."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "6367677d1a6d9265ec0182fd",
+            "comment": "Check whether a string is true or false after ignore cases and trim the whitespaces at both ends. If so, its boolean value is returned. Otherwise, dEfault is returned."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "6367676a1a6d9265ec0181cd",
+            "comment": "Trim the leading whitespaces in a string."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636766fe1a6d9265ec01782a",
+            "comment": "Read a CONSTANT_Utf8 constant pool entry in the classFileBuffer."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766851a6d9265ec01751b",
+            "comment": "Convert a hexadecimal number to binary and return its character type."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766f21a6d9265ec01767d",
+            "comment": "Convert object to string  if the object is not null. Otherwise, null is returned."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767581a6d9265ec017fc4",
+            "comment": "Calculate the factorial of the given number."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767511a6d9265ec017eb6",
+            "comment": "Find a circulator to the node that satisfies the Interface predicate."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767841a6d9265ec0183e8",
+            "comment": "Add an event as the last event in the buffer."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767a41a6d9265ec01857e",
+            "comment": "Compare two numbers."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767691a6d9265ec0181ae",
+            "comment": "Convert an enumeration to a string array."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766a91a6d9265ec0175ae",
+            "comment": "Add a byte array into the byte vector."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766f11a6d9265ec01764f",
+            "comment": "Return an unmodifiable list that contains all methods in the BeanMap."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766f81a6d9265ec017758",
+            "comment": "Compute a hash code according to the type."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367676c1a6d9265ec01820b",
+            "comment": "Delete characters that exists in the intersection between two character strings of the first character string and return the first character string that is modified."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766861a6d9265ec01755a",
+            "comment": "If the match between the url and the pattern occurs, return the match result. Otherwise, return null."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636766f91a6d9265ec01777d",
+            "comment": "Convert an ASCII encoded character to hex."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766801a6d9265ec017477",
+            "comment": "Add files in the stack in reverse order."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767de1a6d9265ec01871e",
+            "comment": "Check whether the key contains null."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766f81a6d9265ec01774b",
+            "comment": "Read the next buffer in the buffer."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766851a6d9265ec017515",
+            "comment": "Suspend the AtmosphereResource based on its transport value."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767611a6d9265ec018106",
+            "comment": "Return the sum of the weights entering a vertex."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767841a6d9265ec0183f2",
+            "comment": "Compare two events by their timeStamp."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767861a6d9265ec01844c",
+            "comment": "Remove the appender by the given name from the list of appenders."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767781a6d9265ec018242",
+            "comment": "Call the doAppend method on all attached appenders. "
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "6367670c1a6d9265ec017a2a",
+            "comment": "Convert the given Integer array to primitives. Return ArrayUtils.EMPTY_INT_ARRAY for an empty array, return null for null array."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767041a6d9265ec017911",
+            "comment": "Register the value in REGISTRY if the value is not null."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767511a6d9265ec017eb0",
+            "comment": "Return the number of non-zero entries of a row."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367676c1a6d9265ec018223",
+            "comment": "Check whether the element exists in the collection. "
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766fa1a6d9265ec01779d",
+            "comment": "Check whether the character is ASCII 7 bit control."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367670b1a6d9265ec0179f2",
+            "comment": "Check whether a map contains a mapping for the specified key."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766fa1a6d9265ec017796",
+            "comment": "Convert an array of primitive booleans to objects."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767aa1a6d9265ec01864a",
+            "comment": "Copy bytes to a byte array."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767561a6d9265ec017f7c",
+            "comment": "Convert a set representation to a graph path."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367670a1a6d9265ec0179f1",
+            "comment": "Convert an array of primitive shorts to objects."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766fe1a6d9265ec017823",
+            "comment": "Add constant information generated by its name and type to the constant pool and return the index of the constant."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767461a6d9265ec017d17",
+            "comment": "Unescape a dot identifier string."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367676c1a6d9265ec018204",
+            "comment": "Concatenate two string arrays into one."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767641a6d9265ec018190",
+            "comment": "Move all vertices from the minimum label bucket to the bucket with label 0 and clear the minimum label bucket."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367676a1a6d9265ec0181d4",
+            "comment": "Append a string to a string array."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367676b1a6d9265ec0181dd",
+            "comment": "Return the frequencies that the substring appears in the string."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766811a6d9265ec017499",
+            "comment": "Check whether there is at least one instance of the implementation class in the lists. If so, true is returned. Otherwise, false is returned."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766fe1a6d9265ec017821",
+            "comment": "Append a byte array to a buffer."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767561a6d9265ec017f63",
+            "comment": "Check whether there are unvisited vertices. If so, return true. Otherwise, return false."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766a81a6d9265ec017586",
+            "comment": "Pop the given number of elements from the stack."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767e11a6d9265ec018795",
+            "comment": "Check whether the existed buckets are the same as the buckets."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767791a6d9265ec018263",
+            "comment": "Find class by the given class name."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767611a6d9265ec018112",
+            "comment": "Get next vertext from a graph."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767131a6d9265ec017b23",
+            "comment": "Add the number of lines. "
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367675a1a6d9265ec018010",
+            "comment": "Remove the doubly linked list node that call the function."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767dd1a6d9265ec0186f3",
+            "comment": "Change the elements whose values are oldName to newName in column"
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767631a6d9265ec018171",
+            "comment": "Remove the doubly circular linked list node.If success return true,otherwise return false."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767de1a6d9265ec018726",
+            "comment": "Return a list whose nodes are sequences,and the sequences'lower bound are all minSequence,and the length increases sequentially with SEQUENCE_RANGE_BATCH_SIZE but the upper bound is maxSequence."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "6367667c1a6d9265ec0173f7",
+            "comment": "If dataBytes is equal to null,return false,otherwise return true."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "6367676c1a6d9265ec018220",
+            "comment": "Return the path without the extension."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766fe1a6d9265ec017838",
+            "comment": "Return a string which is consist of the values of elements in the given array.If array is equal to null,return null,or return ArrayUtils.EMPTY_CHAR_ARRAY if the size of array is equal to zero."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636766fa1a6d9265ec01779c",
+            "comment": "Parses out a token until any of the given terminators is encountered and then return the token."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767691a6d9265ec0181a7",
+            "comment": "Trim all the characters which are equal to the given character and appear at the beginning of the given string,and return the trimmed string."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767041a6d9265ec01790f",
+            "comment": "Return an array of Integer objects which are converted from an array of primitive ints."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636766fa1a6d9265ec0177a4",
+            "comment": "Return an array of Double objects which are converted from an array of primitive doubles."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767461a6d9265ec017d0e",
+            "comment": "Return a pair of the list of suffix sum and the sum of all elements of bounds."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767491a6d9265ec017d90",
+            "comment": "Reverse the order of the given elements in the specified range."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367674a1a6d9265ec017da9",
+            "comment": "Move the nodes of the given doubly linked list to a new list sequentially."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767151a6d9265ec017b6b",
+            "comment": "Return true if the given string has the specified prefix with optional cases which can be ignored,or both string and prefix are null.Otherwise return false. "
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636766fe1a6d9265ec01781c",
+            "comment": "Return the Character object converted from the given character."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766fb1a6d9265ec0177c1",
+            "comment": "Return true if the character is ASCII alphabetic upper case.Otherwise return false."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767781a6d9265ec018250",
+            "comment": "Return a decision based on the message generated by the event and whether the given string is matched."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766861a6d9265ec017553",
+            "comment": "Return true if the given name is a member variable of this template,otherwise return false."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767071a6d9265ec017962",
+            "comment": "Put all of the both readable and writable methods from the given map to this map."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "6367670a1a6d9265ec0179d9",
+            "comment": "Return the given string's length.If the string is null,and zero will be returned."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767ab1a6d9265ec018676",
+            "comment": "Return true if the given character is a hex digit,otherwise return false."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636766f81a6d9265ec017748",
+            "comment": "Decoding a string follow the Base64 regular to an array,and return a string  constructed from the array according to UTF_8."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636766f11a6d9265ec017663",
+            "comment": "Return true if the length of array1 is the same as the length of array2 or both them are null,otherwise return false."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "6367667d1a6d9265ec0173ff",
+            "comment": "Return a Meteor object based on the HttpServletRequest r."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767691a6d9265ec0181a6",
+            "comment": "Split the given string toSplit at the first occurrence of the given delimiter,and return two substrings that don't include the delimiter."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767601a6d9265ec0180e2",
+            "comment": "Select an edge which isn't a circle in the graph,compute the list of the minimal separators in the neighborhood of the edge and put the pair of list and edge into the return list.Repeat for each edge in the graph and then return the final list."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636766f31a6d9265ec01768f",
+            "comment": "Return a clone of the given array."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766831a6d9265ec0174eb",
+            "comment": "Put the given array of files into a stack in reverse order. "
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767841a6d9265ec0183ff",
+            "comment": "Select the specified row in the given JTable and scroll the given JScrollPane to the row. "
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766a81a6d9265ec017596",
+            "comment": "Divide an int into four bytes and put the bytes into a byte vector called data in big endian order.The vector will be enlarged if necessary.And return the object."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636766fd1a6d9265ec017814",
+            "comment": "Given two arrays with the given length count,return true if the array a is equal to array b,otherwise return false."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767861a6d9265ec018440",
+            "comment": "The given name can be split into several substrings by \".\",and abbreviate the name in the buf by deleting the first count substrings. "
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "6367667d1a6d9265ec01741d",
+            "comment": "Resolve the class of the first bound for the typeVariable recursively,return Unknown.class if it can't be resolved.Otherwise return the bound."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "6367675f1a6d9265ec0180cf",
+            "comment": "Return true if the subgraph of the given graph induced by the given vertices is a clique,otherwise return false."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767431a6d9265ec017c88",
+            "comment": "The type of key has several lower bounds conducted by different function,this function will return a list of the maximum lower bound of each key in the given list."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636766a91a6d9265ec0175c4",
+            "comment": "Pop different value of type based on the first character of the given descriptor."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636766fb1a6d9265ec0177c3",
+            "comment": "Return true if the given character is a ASCII seven bit character,otherwise return false."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767581a6d9265ec017fb4",
+            "comment": "The type of key has several upper bounds conducted by different function,this function will return a list of the minimum upper bound of each key in the given list."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636766801a6d9265ec017487",
+            "comment": "Encoding the given string by changing '{' and '}' to the specified character for each,return the string after encoding."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767531a6d9265ec017ef1",
+            "comment": "Using TOLERANCE_DOUBLE_COMPARATOR to compare two points for equality,return true the point p1 is equal to another point p2,otherwise return false."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "6367667c1a6d9265ec0173fb",
+            "comment": "Adding an instance of AtmosphereResourceEventListener e into a list and return the  AtmosphereResource object which call the function."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767691a6d9265ec0181ac",
+            "comment": "Combine the substring before FOLDER_SEPARATOR of the given path with the given relative path to construct a new full file path,and return the full file path."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767021a6d9265ec0178bc",
+            "comment": "Return the first index of the searchStr in the given string."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636766fc1a6d9265ec0177ef",
+            "comment": "Return a new array of strings converted from the elements which are not null of the given array,if the size of the array is zero,it will throw an exception."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767061a6d9265ec01794a",
+            "comment": "Return the last index of the extension separator in the given filename,it will return -1 if the filename doesn't have the separator or there is a directory separator after it."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767dd1a6d9265ec0186de",
+            "comment": "Return true if the timestamp minus the lastUpdateTimestamp is greater than expiredThreshold,otherwise return false."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "6367675d1a6d9265ec018082",
+            "comment": "Return the edge connecting the previously returned node with the current node."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "6367676b1a6d9265ec0181e9",
+            "comment": "Return true if starting at the given index,the given string matches the given substring.Otherwise return false."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767781a6d9265ec01823e",
+            "comment": "Haddling a logging event by using layout.format(),and if layout.ignoresThrowable() is true,it will continue to send the StrRep of the event."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "6367670b1a6d9265ec017a05",
+            "comment": "Return the String object that contains the given character."
+        },
+        "Heuristic": []
+    },
+    {
+        "nl": {
+            "id": "636767a31a6d9265ec01854f",
+            "comment": "Check if the field should be packed,if so,read the field and update the internal state. It will throw an exception when the process of reading is wrong."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767a81a6d9265ec0185fc",
+            "comment": "Return a field tag, and if reach the EOF the tag will be zero.It will throw an exception when the tag is equal to zero after logical shift right  TAG_TYPE_BITS."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636766a81a6d9265ec017595",
+            "comment": "Put two bytes into a byte vector called data.The vector will be enlarged if necessary.And return the ByteVector object."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636766ae1a6d9265ec0175d8",
+            "comment": "Return the string that contains the content range from offset to limit(when limit is zero,the upper bound will be count-1) and count."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    },
+    {
+        "nl": {
+            "id": "636767e11a6d9265ec018790",
+            "comment": "Load the thread snapshots from the given file in the specified time range,and return the list of those thread snapshots."
+        },
+        "Heuristic": [
+            "H1"
+        ]
+    }
+]

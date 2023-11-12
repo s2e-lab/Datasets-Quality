@@ -158,6 +158,14 @@ def process_CoderEval_python_dataset(data: list) -> list:
         nl_docs.append({"id": d["_id"], "comment": comment})
     return nl_docs
 
+def process_CoderEval_java_dataset(data: list) -> list:
+    nl_docs = []
+    data = data["RECORDS"]
+    for d in tqdm(data):
+        text = d["human_label"]
+        comment = text
+        nl_docs.append({"id": d["_id"], "comment": comment})
+    return nl_docs
 
 def process_MCoNaLa_ru_test_to_en_dataset(data: list) -> list:
     nl_docs = []

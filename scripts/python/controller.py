@@ -17,133 +17,140 @@ from rules import (
 
 TARGET_DATASET = [
     {
-        "Source_Path": "../../datasets/CONCODE/concode_test.json",
-        "Output_Path": "CONCODE_heuristic_results.json",
-        "jsonl": True,
-    },
-    {
-        "Source_Path": "../../datasets/HumanEval/human-eval-v2-20210705.jsonl",
-        "Output_Path": "HumanEval_heuristic_results.json",
-        "jsonl": True,
-    },
-    {
-        "Source_Path": "../../datasets/mbxp/mbpp_release_v1.jsonl",
-        "Output_Path": "mbxp_python_heuristic_results.json",
-        "jsonl": True,
-    },
-    {
-        "Source_Path": "../../datasets/mbxp/mbjp_release_v1.jsonl",
-        "Output_Path": "mbxp_java_heuristic_results.json",
-        "jsonl": True,
-    },
-    {
-        "Source_Path": "../../datasets/mbxp_humaneval/HumanEval.jsonl",
-        "Output_Path": "mbxp_humaneval_python_heuristic_results.json",
-        "jsonl": True,
-    },
-    {
-        "Source_Path": "../../datasets/mbxp_humaneval/HumanEval_java_v1.1.jsonl",
-        "Output_Path": "mbxp_humaneval_java_heuristic_results.json",
-        "jsonl": True,
-    },
-    {
-        "Source_Path": "../../datasets/mbxp_mathqa/mathqa-test-python_v1.jsonl",
-        "Output_Path": "mbxp_mathqa_python_heuristic_results.json",
-        "jsonl": True,
-    },
-    {
-        "Source_Path": "../../datasets/mbxp_mathqa/mathqa-test-java_v1.jsonl",
-        "Output_Path": "mbxp_mathqa_java_heuristic_results.json",
-        "jsonl": True,
-    },
-    {
-        "Source_Path": "../../datasets/ODEX/en_test.jsonl",
-        "Output_Path": "odex_en_heuristic_results.json",
-        "jsonl": True,
-    },
-    {
-        "Source_Path": "../../datasets/pandasNumpyEval/offical_numpy.jsonl",
-        "Output_Path": "pandasNumpyEval_numpy_heuristic_results.json",
-        "jsonl": True,
-    },
-    {
-        "Source_Path": "../../datasets/pandasNumpyEval/offical_pandas.jsonl",
-        "Output_Path": "pandasNumpyEval_pandas_heuristic_results.json",
-        "jsonl": True,
-    },
-    {
-        "Source_Path": "../../datasets/CoderEval/CoderEval4Python.json",
-        "Output_Path": "CoderEval4Python__heuristic.json",
-        "jsonl": False,
-    },
-    {
-        "Source_Path": "../../datasets/MCoNaLa/test/flores101/es_test_to_en.json",
-        "Output_Path": "MCoNaLa_es_test_to_en__heuristic.json",
-        "jsonl": False,
-    },
-    {
-        "Source_Path": "../../datasets/MCoNaLa/test/flores101/ja_test_to_en.json",
-        "Output_Path": "MCoNaLa_ja_test_to_en__heuristic.json",
-        "jsonl": False,
-    },
-    {
-        "Source_Path": "../../datasets/MCoNaLa/test/flores101/ru_test_to_en.json",
-        "Output_Path": "MCoNaLa_ru_test_to_en__heuristic.json",
-        "jsonl": False,
-    },
-    {
-        "Source_Path": "../../datasets/TorchDataEval/real_beatnum_eval_v3_human_labelled.jsonl",
-        "Output_Path": "real_beatnum_eval_v3_human_labelled_heuristic.json",
-        "jsonl": True,
-    },
-    {
-        "Source_Path": "../../datasets/TorchDataEval/real_monkey_eval_v3_human_labelled.jsonl",
-        "Output_Path": "real_monkey_eval_v3_human_labelled_heuristic.json",
-        "jsonl": True,
-    },
-    {
-        "Source_Path": "../../datasets/TorchDataEval/real_torchdata_eval_v3_human_labelled.jsonl",
-        "Output_Path": "real_torchdata_eval_v3_human_labelled_heuristic.json",
-        "jsonl": True,
-    },
-    {
-        "Source_Path": "../../datasets/TorchDataEval/real_torchdata_eval_v3_human_labelled_make_sense.jsonl",
-        "Output_Path": "real_torchdata_eval_v3_human_labelled_make_sense_heuristic.json",
-        "jsonl": True,
-    },
-    {
-        "Source_Path": "../../datasets/CodeComplex/extend_data.jsonl",
-        "Output_Path": "CodeComplex_extend_data_heuristic.json",
-        "jsonl": True,
-    },
-    {
-        "Source_Path": "../../datasets/CodeComplex/new_data.json",
-        "Output_Path": "CodeComplex_new_data_heuristic.json",
-        "jsonl": True,
-    },
-    {
-        "Source_Path": "../../datasets/HumanEval-Infilling/HumanEval-MultiLineInfilling.jsonl",
-        "Output_Path": "HumanEval-MultiLineInfilling_heuristic.json",
-        "jsonl": True,
-    },
-    {
-        "Source_Path": "../../datasets/JigsawDataset/PandasEval1.json",
-        "Output_Path": "JigsawDataset_pandas_eval1_heuristic.json",
-        "jsonl": False,
-    },
-    {
-        "Source_Path": "../../datasets/JigsawDataset/PandasEval2.json",
-        "Output_Path": "JigsawDataset_pandas_eval2_heuristic.json",
-        "jsonl": False,
-    },
-    {
-        "Source_Path": "../../datasets/MBPP/sanitized-mbpp.json",
-        "Output_Path": "sanitized-mbpp_heuristic.json",
-        "jsonl": False,
-    },
+    "Source_Path": "../../datasets/CoderEval/CoderEval4Java.json",
+    "Output_Path": "CoderEval4Java_heuristic.json",
+    "jsonl": False,
+    }
+
+
+    # {
+    #     "Source_Path": "../../datasets/CONCODE/concode_test.json",
+    #     "Output_Path": "CONCODE_heuristic_results.json",
+    #     "jsonl": True,
+    # },
+    # {
+    #     "Source_Path": "../../datasets/HumanEval/human-eval-v2-20210705.jsonl",
+    #     "Output_Path": "HumanEval_heuristic_results.json",
+    #     "jsonl": True,
+    # },
+    # {
+    #     "Source_Path": "../../datasets/mbxp/mbpp_release_v1.jsonl",
+    #     "Output_Path": "mbxp_python_heuristic_results.json",
+    #     "jsonl": True,
+    # },
+    # {
+    #     "Source_Path": "../../datasets/mbxp/mbjp_release_v1.jsonl",
+    #     "Output_Path": "mbxp_java_heuristic_results.json",
+    #     "jsonl": True,
+    # },
+    # {
+    #     "Source_Path": "../../datasets/mbxp_humaneval/HumanEval.jsonl",
+    #     "Output_Path": "mbxp_humaneval_python_heuristic_results.json",
+    #     "jsonl": True,
+    # },
+    # {
+    #     "Source_Path": "../../datasets/mbxp_humaneval/HumanEval_java_v1.1.jsonl",
+    #     "Output_Path": "mbxp_humaneval_java_heuristic_results.json",
+    #     "jsonl": True,
+    # },
+    # {
+    #     "Source_Path": "../../datasets/mbxp_mathqa/mathqa-test-python_v1.jsonl",
+    #     "Output_Path": "mbxp_mathqa_python_heuristic_results.json",
+    #     "jsonl": True,
+    # },
+    # {
+    #     "Source_Path": "../../datasets/mbxp_mathqa/mathqa-test-java_v1.jsonl",
+    #     "Output_Path": "mbxp_mathqa_java_heuristic_results.json",
+    #     "jsonl": True,
+    # },
+    # {
+    #     "Source_Path": "../../datasets/ODEX/en_test.jsonl",
+    #     "Output_Path": "odex_en_heuristic_results.json",
+    #     "jsonl": True,
+    # },
+    # {
+    #     "Source_Path": "../../datasets/pandasNumpyEval/offical_numpy.jsonl",
+    #     "Output_Path": "pandasNumpyEval_numpy_heuristic_results.json",
+    #     "jsonl": True,
+    # },
+    # {
+    #     "Source_Path": "../../datasets/pandasNumpyEval/offical_pandas.jsonl",
+    #     "Output_Path": "pandasNumpyEval_pandas_heuristic_results.json",
+    #     "jsonl": True,
+    # },
+    # {
+    #     "Source_Path": "../../datasets/CoderEval/CoderEval4Python.json",
+    #     "Output_Path": "CoderEval4Python__heuristic.json",
+    #     "jsonl": False,
+    # },
+    # {
+    #     "Source_Path": "../../datasets/MCoNaLa/test/flores101/es_test_to_en.json",
+    #     "Output_Path": "MCoNaLa_es_test_to_en__heuristic.json",
+    #     "jsonl": False,
+    # },
+    # {
+    #     "Source_Path": "../../datasets/MCoNaLa/test/flores101/ja_test_to_en.json",
+    #     "Output_Path": "MCoNaLa_ja_test_to_en__heuristic.json",
+    #     "jsonl": False,
+    # },
+    # {
+    #     "Source_Path": "../../datasets/MCoNaLa/test/flores101/ru_test_to_en.json",
+    #     "Output_Path": "MCoNaLa_ru_test_to_en__heuristic.json",
+    #     "jsonl": False,
+    # },
+    # {
+    #     "Source_Path": "../../datasets/TorchDataEval/real_beatnum_eval_v3_human_labelled.jsonl",
+    #     "Output_Path": "real_beatnum_eval_v3_human_labelled_heuristic.json",
+    #     "jsonl": True,
+    # },
+    # {
+    #     "Source_Path": "../../datasets/TorchDataEval/real_monkey_eval_v3_human_labelled.jsonl",
+    #     "Output_Path": "real_monkey_eval_v3_human_labelled_heuristic.json",
+    #     "jsonl": True,
+    # },
+    # {
+    #     "Source_Path": "../../datasets/TorchDataEval/real_torchdata_eval_v3_human_labelled.jsonl",
+    #     "Output_Path": "real_torchdata_eval_v3_human_labelled_heuristic.json",
+    #     "jsonl": True,
+    # },
+    # {
+    #     "Source_Path": "../../datasets/TorchDataEval/real_torchdata_eval_v3_human_labelled_make_sense.jsonl",
+    #     "Output_Path": "real_torchdata_eval_v3_human_labelled_make_sense_heuristic.json",
+    #     "jsonl": True,
+    # },
+    # {
+    #     "Source_Path": "../../datasets/CodeComplex/extend_data.jsonl",
+    #     "Output_Path": "CodeComplex_extend_data_heuristic.json",
+    #     "jsonl": True,
+    # },
+    # {
+    #     "Source_Path": "../../datasets/CodeComplex/new_data.json",
+    #     "Output_Path": "CodeComplex_new_data_heuristic.json",
+    #     "jsonl": True,
+    # },
+    # {
+    #     "Source_Path": "../../datasets/HumanEval-Infilling/HumanEval-MultiLineInfilling.jsonl",
+    #     "Output_Path": "HumanEval-MultiLineInfilling_heuristic.json",
+    #     "jsonl": True,
+    # },
+    # {
+    #     "Source_Path": "../../datasets/JigsawDataset/PandasEval1.json",
+    #     "Output_Path": "JigsawDataset_pandas_eval1_heuristic.json",
+    #     "jsonl": False,
+    # },
+    # {
+    #     "Source_Path": "../../datasets/JigsawDataset/PandasEval2.json",
+    #     "Output_Path": "JigsawDataset_pandas_eval2_heuristic.json",
+    #     "jsonl": False,
+    # },
+    # {
+    #     "Source_Path": "../../datasets/MBPP/sanitized-mbpp.json",
+    #     "Output_Path": "sanitized-mbpp_heuristic.json",
+    #     "jsonl": False,
+    # },
 ]
 
-RESULT_FOLDER = "../../results/"
+RESULT_FOLDER = "../../Automated_Analysis_Results/"
 MAX_NUMBER_OF_HEURISTICS = 12
 
 
@@ -221,6 +228,12 @@ def apply_rules(current_dataset: dict, data: object) -> None:
         and "Python" in current_dataset["Source_Path"]
     ):
         nl_docs = process_CoderEval_python_dataset(data)
+        write_path += current_dataset["Output_Path"]
+    elif (
+        "CoderEval" in current_dataset["Source_Path"]
+        and "Java" in current_dataset["Source_Path"]
+    ):
+        nl_docs = process_CoderEval_java_dataset(data)
         write_path += current_dataset["Output_Path"]
     elif (
         "MCoNaLa" in current_dataset["Source_Path"]
