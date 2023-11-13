@@ -14,7 +14,8 @@ openai.organization = config_data['OPENAI_ORG']
 openai.api_key = OPENAI_KEY
 
 # temperatures = [0.0, 0.2, 0.4, 0.6]
-dataset = ['Java', 'Py']
+# dataset = ['Java', 'Py']
+dataset = ['Java']
 temperatures = [ 1.0]
 token_size_limits = [512]
 
@@ -47,10 +48,10 @@ def gpt35_response(prompt,temperature, token_limit):
         time.sleep(30)
         return prompt
 
-for item in dataset:
-    with open(f'./HumanEval_{item}.jsonl') as f:
+for d in dataset:
+    with open(f'./HumanEval_{d}_new.jsonl') as f:
         data = [json.loads(line) for line in f.readlines()]
-    print(f'Loaded {len(data)} prompts from {item} dataset')
+    print(f'Loaded {len(data)} prompts from {d} dataset')
 
     for temp in temperatures:
         for token_limit in token_size_limits:
@@ -62,7 +63,7 @@ for item in dataset:
                 new_data.append(updated_item)
 
                 # Save to a JSON file with a filename indicating the parameters
-            filename = f'./Output/GPT3.5_Output_{item}_{temp}.json'
+            filename = f'./Output/GPT3.5_Output_{d}_new_{temp}.json'
             with open(filename, "w") as f:
                     json.dump(new_data, f, indent=4)
                     print(f'Saved to {filename}')
