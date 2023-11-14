@@ -1,0 +1,206 @@
+<clones>
+<systeminfo processor="nicad6" system="Original_Files" system2="Files" granularity="functions-blind" threshold="30%" minlines="10" maxlines="2500"/>
+<cloneinfo npcs="9957" npairs="40"/>
+<runinfo ncompares="598610" cputime="100000"/>
+
+<clone nlines="30" similarity="100">
+<source file="./systems/Original_Files/81.py" startline="2" endline="58" pcid="120"></source>
+<source file="./systems/Files/81_5.py" startline="28" endline="57" pcid="6734"></source>
+</clone>
+
+<clone nlines="30" similarity="93">
+<source file="./systems/Original_Files/81.py" startline="2" endline="58" pcid="120"></source>
+<source file="./systems/Files/81_P8_17.py" startline="28" endline="58" pcid="2357"></source>
+</clone>
+
+<clone nlines="30" similarity="96">
+<source file="./systems/Original_Files/81.py" startline="2" endline="58" pcid="120"></source>
+<source file="./systems/Files/81_P8_0.py" startline="28" endline="57" pcid="2322"></source>
+</clone>
+
+<clone nlines="30" similarity="100">
+<source file="./systems/Original_Files/81.py" startline="2" endline="58" pcid="120"></source>
+<source file="./systems/Files/81_11.py" startline="28" endline="58" pcid="3954"></source>
+</clone>
+
+<clone nlines="30" similarity="93">
+<source file="./systems/Original_Files/81.py" startline="2" endline="58" pcid="120"></source>
+<source file="./systems/Files/81_P8_9.py" startline="28" endline="57" pcid="6217"></source>
+</clone>
+
+<clone nlines="30" similarity="100">
+<source file="./systems/Original_Files/81.py" startline="2" endline="58" pcid="120"></source>
+<source file="./systems/Files/81_P8_16.py" startline="28" endline="59" pcid="497"></source>
+</clone>
+
+<clone nlines="30" similarity="96">
+<source file="./systems/Original_Files/81.py" startline="2" endline="58" pcid="120"></source>
+<source file="./systems/Files/81_4.py" startline="28" endline="57" pcid="6098"></source>
+</clone>
+
+<clone nlines="30" similarity="96">
+<source file="./systems/Original_Files/81.py" startline="2" endline="58" pcid="120"></source>
+<source file="./systems/Files/81_16.py" startline="28" endline="58" pcid="5816"></source>
+</clone>
+
+<clone nlines="30" similarity="100">
+<source file="./systems/Original_Files/81.py" startline="2" endline="58" pcid="120"></source>
+<source file="./systems/Files/81_12.py" startline="28" endline="58" pcid="5114"></source>
+</clone>
+
+<clone nlines="30" similarity="100">
+<source file="./systems/Original_Files/81.py" startline="2" endline="58" pcid="120"></source>
+<source file="./systems/Files/81_14.py" startline="28" endline="58" pcid="2760"></source>
+</clone>
+
+<clone nlines="30" similarity="100">
+<source file="./systems/Original_Files/81.py" startline="2" endline="58" pcid="120"></source>
+<source file="./systems/Files/81_10.py" startline="28" endline="57" pcid="3341"></source>
+</clone>
+
+<clone nlines="30" similarity="96">
+<source file="./systems/Original_Files/81.py" startline="2" endline="58" pcid="120"></source>
+<source file="./systems/Files/81_2.py" startline="28" endline="58" pcid="3591"></source>
+</clone>
+
+<clone nlines="30" similarity="96">
+<source file="./systems/Original_Files/81.py" startline="2" endline="58" pcid="120"></source>
+<source file="./systems/Files/81_P8_18.py" startline="28" endline="57" pcid="3826"></source>
+</clone>
+
+<clone nlines="30" similarity="96">
+<source file="./systems/Original_Files/81.py" startline="2" endline="58" pcid="120"></source>
+<source file="./systems/Files/81_7.py" startline="28" endline="57" pcid="4920"></source>
+</clone>
+
+<clone nlines="29" similarity="90">
+<source file="./systems/Original_Files/81.py" startline="2" endline="58" pcid="120"></source>
+<source file="./systems/Files/81_9.py" startline="28" endline="55" pcid="1862"></source>
+</clone>
+
+<clone nlines="15" similarity="70">
+<source file="./systems/Original_Files/19.py" startline="4" endline="24" pcid="131"></source>
+<source file="./systems/Files/19_all_9.py" startline="12" endline="33" pcid="441"></source>
+</clone>
+
+<clone nlines="14" similarity="80">
+<source file="./systems/Original_Files/19.py" startline="4" endline="24" pcid="131"></source>
+<source file="./systems/Files/19_P8_16.py" startline="4" endline="33" pcid="1264"></source>
+</clone>
+
+<clone nlines="13" similarity="76">
+<source file="./systems/Original_Files/110.py" startline="2" endline="27" pcid="52"></source>
+<source file="./systems/Files/110_P8_14.py" startline="24" endline="39" pcid="9648"></source>
+</clone>
+
+<clone nlines="13" similarity="84">
+<source file="./systems/Original_Files/25.py" startline="4" endline="28" pcid="46"></source>
+<source file="./systems/Files/25_P1_5.py" startline="27" endline="38" pcid="4759"></source>
+</clone>
+
+<clone nlines="12" similarity="84">
+<source file="./systems/Original_Files/96.py" startline="2" endline="24" pcid="150"></source>
+<source file="./systems/Files/96_P6_9.py" startline="14" endline="35" pcid="8722"></source>
+</clone>
+
+<clone nlines="12" similarity="75">
+<source file="./systems/Original_Files/107.py" startline="2" endline="37" pcid="65"></source>
+<source file="./systems/Files/107_5.py" startline="26" endline="40" pcid="8687"></source>
+</clone>
+
+<clone nlines="12" similarity="75">
+<source file="./systems/Original_Files/107.py" startline="2" endline="37" pcid="65"></source>
+<source file="./systems/Files/107_17.py" startline="39" endline="53" pcid="321"></source>
+</clone>
+
+<clone nlines="12" similarity="75">
+<source file="./systems/Original_Files/107.py" startline="2" endline="37" pcid="65"></source>
+<source file="./systems/Files/107_13.py" startline="26" endline="65" pcid="1014"></source>
+</clone>
+
+<clone nlines="12" similarity="75">
+<source file="./systems/Original_Files/74.py" startline="2" endline="28" pcid="38"></source>
+<source file="./systems/Files/74_19.py" startline="17" endline="30" pcid="2161"></source>
+</clone>
+
+<clone nlines="12" similarity="75">
+<source file="./systems/Original_Files/110.py" startline="2" endline="27" pcid="52"></source>
+<source file="./systems/Files/110_1.py" startline="21" endline="33" pcid="9562"></source>
+</clone>
+
+<clone nlines="12" similarity="75">
+<source file="./systems/Original_Files/107.py" startline="2" endline="37" pcid="65"></source>
+<source file="./systems/Files/107_4.py" startline="26" endline="63" pcid="9300"></source>
+</clone>
+
+<clone nlines="11" similarity="90">
+<source file="./systems/Original_Files/96.py" startline="2" endline="24" pcid="150"></source>
+<source file="./systems/Files/96_P6_7.py" startline="14" endline="24" pcid="5458"></source>
+</clone>
+
+<clone nlines="11" similarity="72">
+<source file="./systems/Original_Files/96.py" startline="2" endline="24" pcid="150"></source>
+<source file="./systems/Files/96_3.py" startline="14" endline="24" pcid="3291"></source>
+</clone>
+
+<clone nlines="11" similarity="90">
+<source file="./systems/Original_Files/96.py" startline="2" endline="24" pcid="150"></source>
+<source file="./systems/Files/96_P6_8.py" startline="14" endline="32" pcid="9325"></source>
+</clone>
+
+<clone nlines="11" similarity="81">
+<source file="./systems/Original_Files/96.py" startline="2" endline="24" pcid="150"></source>
+<source file="./systems/Files/96_all_14.py" startline="14" endline="24" pcid="4931"></source>
+</clone>
+
+<clone nlines="11" similarity="90">
+<source file="./systems/Original_Files/96.py" startline="2" endline="24" pcid="150"></source>
+<source file="./systems/Files/96_P6_12.py" startline="14" endline="25" pcid="8610"></source>
+</clone>
+
+<clone nlines="11" similarity="90">
+<source file="./systems/Original_Files/96.py" startline="2" endline="24" pcid="150"></source>
+<source file="./systems/Files/96_P6_17.py" startline="14" endline="24" pcid="9918"></source>
+</clone>
+
+<clone nlines="11" similarity="90">
+<source file="./systems/Original_Files/96.py" startline="2" endline="24" pcid="150"></source>
+<source file="./systems/Files/96_all_18.py" startline="14" endline="26" pcid="9875"></source>
+</clone>
+
+<clone nlines="11" similarity="81">
+<source file="./systems/Original_Files/96.py" startline="2" endline="24" pcid="150"></source>
+<source file="./systems/Files/96_18.py" startline="14" endline="34" pcid="1972"></source>
+</clone>
+
+<clone nlines="10" similarity="90">
+<source file="./systems/Original_Files/56.py" startline="3" endline="25" pcid="88"></source>
+<source file="./systems/Files/56_10.py" startline="26" endline="37" pcid="7478"></source>
+</clone>
+
+<clone nlines="10" similarity="80">
+<source file="./systems/Original_Files/56.py" startline="3" endline="25" pcid="88"></source>
+<source file="./systems/Files/56_P8_8.py" startline="25" endline="36" pcid="2815"></source>
+</clone>
+
+<clone nlines="10" similarity="90">
+<source file="./systems/Original_Files/61.py" startline="3" endline="25" pcid="49"></source>
+<source file="./systems/Files/56_10.py" startline="26" endline="37" pcid="7478"></source>
+</clone>
+
+<clone nlines="10" similarity="80">
+<source file="./systems/Original_Files/61.py" startline="3" endline="25" pcid="49"></source>
+<source file="./systems/Files/56_P8_8.py" startline="25" endline="36" pcid="2815"></source>
+</clone>
+
+<clone nlines="10" similarity="70">
+<source file="./systems/Original_Files/6.py" startline="13" endline="24" pcid="15"></source>
+<source file="./systems/Files/132_4.py" startline="28" endline="40" pcid="351"></source>
+</clone>
+
+<clone nlines="10" similarity="70">
+<source file="./systems/Original_Files/6.py" startline="13" endline="24" pcid="15"></source>
+<source file="./systems/Files/132_13.py" startline="22" endline="31" pcid="8389"></source>
+</clone>
+
+</clones>

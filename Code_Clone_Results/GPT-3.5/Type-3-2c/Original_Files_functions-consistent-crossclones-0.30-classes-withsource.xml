@@ -1,0 +1,711 @@
+<clones>
+<systeminfo processor="nicad6" system="Original_Files" system2="Files" granularity="functions-consistent" threshold="30%" minlines="10" maxlines="2500"/>
+<cloneinfo npcs="9957" npairs="21"/>
+<runinfo ncompares="598610" cputime="90000"/>
+<classinfo nclasses="4"/>
+
+<class classid="1" nclones="3" nlines="10" similarity="90">
+<source file="./systems/Original_Files/61.py" startline="3" endline="25" pcid="49">
+def correct_bracketing(brackets: str):
+    """ brackets is a string of "(" and ")".
+    return True if every opening bracket has a corresponding closing bracket.
+
+    >>> correct_bracketing("(")
+    False
+    >>> correct_bracketing("()")
+    True
+    >>> correct_bracketing("(()())")
+    True
+    >>> correct_bracketing(")(()")
+    False
+    """
+
+    depth = 0
+    for b in brackets:
+        if b == "(":
+            depth += 1
+        else:
+            depth -= 1
+        if depth < 0:
+            return False
+    return depth == 0
+</source>
+<source file="./systems/Files/56_10.py" startline="26" endline="37" pcid="7478">
+def correct_bracketing(brackets: str):
+    open_brackets = 0
+    for b in brackets:
+        if b == '<':
+            open_brackets += 1
+        elif b == '>':
+            open_brackets -= 1
+            if open_brackets < 0:
+                return False
+    return open_brackets == 0
+
+# Test cases:
+</source>
+<source file="./systems/Original_Files/56.py" startline="3" endline="25" pcid="88">
+def correct_bracketing(brackets: str):
+    """ brackets is a string of "<" and ">".
+    return True if every opening bracket has a corresponding closing bracket.
+
+    >>> correct_bracketing("<")
+    False
+    >>> correct_bracketing("<>")
+    True
+    >>> correct_bracketing("<<><>>")
+    True
+    >>> correct_bracketing("><<>")
+    False
+    """
+
+    depth = 0
+    for b in brackets:
+        if b == "<":
+            depth += 1
+        else:
+            depth -= 1
+        if depth < 0:
+            return False
+    return depth == 0
+</source>
+</class>
+
+<class classid="2" nclones="12" nlines="29" similarity="90">
+<source file="./systems/Original_Files/81.py" startline="2" endline="58" pcid="120">
+def numerical_letter_grade(grades):
+    """It is the last week of the semester and the teacher has to give the grades
+    to students. The teacher has been making her own algorithm for grading.
+    The only problem is, she has lost the code she used for grading.
+    She has given you a list of GPAs for some students and you have to write 
+    a function that can output a list of letter grades using the following table:
+             GPA       |    Letter grade
+              4.0                A+
+            > 3.7                A 
+            > 3.3                A- 
+            > 3.0                B+
+            > 2.7                B 
+            > 2.3                B-
+            > 2.0                C+
+            > 1.7                C
+            > 1.3                C-
+            > 1.0                D+ 
+            > 0.7                D 
+            > 0.0                D-
+              0.0                E
+    
+
+    Example:
+    grade_equation([4.0, 3, 1.7, 2, 3.5]) ==> ['A+', 'B', 'C-', 'C', 'A-']
+    """
+
+
+   
+    letter_grade = []
+    for gpa in grades:
+        if gpa == 4.0:
+            letter_grade.append("A+")
+        elif gpa > 3.7:
+            letter_grade.append("A")
+        elif gpa > 3.3:
+            letter_grade.append("A-")
+        elif gpa > 3.0:
+            letter_grade.append("B+")
+        elif gpa > 2.7:
+            letter_grade.append("B")
+        elif gpa > 2.3:
+            letter_grade.append("B-")
+        elif gpa > 2.0:
+            letter_grade.append("C+")
+        elif gpa > 1.7:
+            letter_grade.append("C")
+        elif gpa > 1.3:
+            letter_grade.append("C-")
+        elif gpa > 1.0:
+            letter_grade.append("D+")
+        elif gpa > 0.7:
+            letter_grade.append("D")
+        elif gpa > 0.0:
+            letter_grade.append("D-")
+        else:
+            letter_grade.append("E")
+    return letter_grade
+</source>
+<source file="./systems/Files/81_11.py" startline="28" endline="58" pcid="3954">
+def numerical_letter_grade(grades):
+    letter_grades = []
+    for gpa in grades:
+        if gpa == 4.0:
+            letter_grades.append('A+')
+        elif gpa > 3.7:
+            letter_grades.append('A')
+        elif gpa > 3.3:
+            letter_grades.append('A-')
+        elif gpa > 3.0:
+            letter_grades.append('B+')
+        elif gpa > 2.7:
+            letter_grades.append('B')
+        elif gpa > 2.3:
+            letter_grades.append('B-')
+        elif gpa > 2.0:
+            letter_grades.append('C+')
+        elif gpa > 1.7:
+            letter_grades.append('C')
+        elif gpa > 1.3:
+            letter_grades.append('C-')
+        elif gpa > 1.0:
+            letter_grades.append('D+')
+        elif gpa > 0.7:
+            letter_grades.append('D')
+        elif gpa > 0.0:
+            letter_grades.append('D-')
+        else:
+            letter_grades.append('E')
+    return letter_grades
+
+</source>
+<source file="./systems/Files/81_5.py" startline="28" endline="57" pcid="6734">
+def numerical_letter_grade(grades):
+    letter_grades = []
+    for grade in grades:
+        if grade == 4.0:
+            letter_grades.append('A+')
+        elif grade > 3.7:
+            letter_grades.append('A')
+        elif grade > 3.3:
+            letter_grades.append('A-')
+        elif grade > 3.0:
+            letter_grades.append('B+')
+        elif grade > 2.7:
+            letter_grades.append('B')
+        elif grade > 2.3:
+            letter_grades.append('B-')
+        elif grade > 2.0:
+            letter_grades.append('C+')
+        elif grade > 1.7:
+            letter_grades.append('C')
+        elif grade > 1.3:
+            letter_grades.append('C-')
+        elif grade > 1.0:
+            letter_grades.append('D+')
+        elif grade > 0.7:
+            letter_grades.append('D')
+        elif grade > 0.0:
+            letter_grades.append('D-')
+        else:
+            letter_grades.append('E')
+    return letter_grades
+</source>
+<source file="./systems/Files/81_P8_16.py" startline="28" endline="59" pcid="497">
+def numerical_letter_grade(grades):
+    letter_grades = []
+    
+    for grade in grades:
+        if grade == 4.0:
+            letter_grades.append('A+')
+        elif grade > 3.7:
+            letter_grades.append('A')
+        elif grade > 3.3:
+            letter_grades.append('A-')
+        elif grade > 3.0:
+            letter_grades.append('B+')
+        elif grade > 2.7:
+            letter_grades.append('B')
+        elif grade > 2.3:
+            letter_grades.append('B-')
+        elif grade > 2.0:
+            letter_grades.append('C+')
+        elif grade > 1.7:
+            letter_grades.append('C')
+        elif grade > 1.3:
+            letter_grades.append('C-')
+        elif grade > 1.0:
+            letter_grades.append('D+')
+        elif grade > 0.7:
+            letter_grades.append('D')
+        elif grade > 0.0:
+            letter_grades.append('D-')
+        else:
+            letter_grades.append('E')
+    
+    return letter_grades
+</source>
+<source file="./systems/Files/81_10.py" startline="28" endline="57" pcid="3341">
+def numerical_letter_grade(grades):
+    letter_grades = []
+    for grade in grades:
+        if grade == 4.0:
+            letter_grades.append('A+')
+        elif grade > 3.7:
+            letter_grades.append('A')
+        elif grade > 3.3:
+            letter_grades.append('A-')
+        elif grade > 3.0:
+            letter_grades.append('B+')
+        elif grade > 2.7:
+            letter_grades.append('B')
+        elif grade > 2.3:
+            letter_grades.append('B-')
+        elif grade > 2.0:
+            letter_grades.append('C+')
+        elif grade > 1.7:
+            letter_grades.append('C')
+        elif grade > 1.3:
+            letter_grades.append('C-')
+        elif grade > 1.0:
+            letter_grades.append('D+')
+        elif grade > 0.7:
+            letter_grades.append('D')
+        elif grade > 0.0:
+            letter_grades.append('D-')
+        else:
+            letter_grades.append('E')
+    return letter_grades
+</source>
+<source file="./systems/Files/81_4.py" startline="28" endline="57" pcid="6098">
+def numerical_letter_grade(grades):
+    letter_grades = []
+    for grade in grades:
+        if grade >= 4.0:
+            letter_grades.append("A+")
+        elif grade > 3.7:
+            letter_grades.append("A")
+        elif grade > 3.3:
+            letter_grades.append("A-")
+        elif grade > 3.0:
+            letter_grades.append("B+")
+        elif grade > 2.7:
+            letter_grades.append("B")
+        elif grade > 2.3:
+            letter_grades.append("B-")
+        elif grade > 2.0:
+            letter_grades.append("C+")
+        elif grade > 1.7:
+            letter_grades.append("C")
+        elif grade > 1.3:
+            letter_grades.append("C-")
+        elif grade > 1.0:
+            letter_grades.append("D+")
+        elif grade > 0.7:
+            letter_grades.append("D")
+        elif grade > 0.0:
+            letter_grades.append("D-")
+        else:
+            letter_grades.append("E")
+    return letter_grades
+</source>
+<source file="./systems/Files/81_9.py" startline="28" endline="55" pcid="1862">
+def numerical_letter_grade(grades):
+    letter_grades = []
+    for gpa in grades:
+        if gpa > 3.7:
+            letter_grades.append('A+')
+        elif gpa > 3.3:
+            letter_grades.append('A')
+        elif gpa > 3.0:
+            letter_grades.append('A-')
+        elif gpa > 2.7:
+            letter_grades.append('B+')
+        elif gpa > 2.3:
+            letter_grades.append('B')
+        elif gpa > 2.0:
+            letter_grades.append('B-')
+        elif gpa > 1.7:
+            letter_grades.append('C+')
+        elif gpa > 1.3:
+            letter_grades.append('C')
+        elif gpa > 1.0:
+            letter_grades.append('C-')
+        elif gpa > 0.7:
+            letter_grades.append('D+')
+        elif gpa > 0.0:
+            letter_grades.append('D')
+        else:
+            letter_grades.append('E')
+    return letter_grades
+</source>
+<source file="./systems/Files/81_16.py" startline="28" endline="58" pcid="5816">
+def numerical_letter_grade(grades):
+    letter_grades = []
+    for gpa in grades:
+        if gpa == 4.0:
+            letter_grades.append('A+')
+        elif gpa > 3.7:
+            letter_grades.append('A')
+        elif gpa > 3.3:
+            letter_grades.append('A-')
+        elif gpa > 3.0:
+            letter_grades.append('B+')
+        elif gpa > 2.7:
+            letter_grades.append('B')
+        elif gpa > 2.3:
+            letter_grades.append('B-')
+        elif gpa > 2.0:
+            letter_grades.append('C+')
+        elif gpa > 1.7:
+            letter_grades.append('C')
+        elif gpa > 1.3:
+            letter_grades.append('C-')
+        elif gpa > 1.0:
+            letter_grades.append('D+')
+        elif gpa > 0.7:
+            letter_grades.append('D')
+        elif gpa >= 0.0:
+            letter_grades.append('D-')
+        else:
+            letter_grades.append('E')
+    return letter_grades
+
+</source>
+<source file="./systems/Files/81_7.py" startline="28" endline="57" pcid="4920">
+def numerical_letter_grade(grades):
+    letter_grades = []
+    for gpa in grades:
+        if gpa >= 4.0:
+            letter_grades.append('A+')
+        elif gpa > 3.7:
+            letter_grades.append('A')
+        elif gpa > 3.3:
+            letter_grades.append('A-')
+        elif gpa > 3.0:
+            letter_grades.append('B+')
+        elif gpa > 2.7:
+            letter_grades.append('B')
+        elif gpa > 2.3:
+            letter_grades.append('B-')
+        elif gpa > 2.0:
+            letter_grades.append('C+')
+        elif gpa > 1.7:
+            letter_grades.append('C')
+        elif gpa > 1.3:
+            letter_grades.append('C-')
+        elif gpa > 1.0:
+            letter_grades.append('D+')
+        elif gpa > 0.7:
+            letter_grades.append('D')
+        elif gpa > 0.0:
+            letter_grades.append('D-')
+        else:
+            letter_grades.append('E')
+    return letter_grades
+</source>
+<source file="./systems/Files/81_12.py" startline="28" endline="58" pcid="5114">
+def numerical_letter_grade(grades):
+    letter_grades = []
+    for gpa in grades:
+        if gpa == 4.0:
+            letter_grades.append('A+')
+        elif gpa > 3.7:
+            letter_grades.append('A')
+        elif gpa > 3.3:
+            letter_grades.append('A-')
+        elif gpa > 3.0:
+            letter_grades.append('B+')
+        elif gpa > 2.7:
+            letter_grades.append('B')
+        elif gpa > 2.3:
+            letter_grades.append('B-')
+        elif gpa > 2.0:
+            letter_grades.append('C+')
+        elif gpa > 1.7:
+            letter_grades.append('C')
+        elif gpa > 1.3:
+            letter_grades.append('C-')
+        elif gpa > 1.0:
+            letter_grades.append('D+')
+        elif gpa > 0.7:
+            letter_grades.append('D')
+        elif gpa > 0.0:
+            letter_grades.append('D-')
+        else:
+            letter_grades.append('E')
+
+    return letter_grades
+</source>
+<source file="./systems/Files/81_2.py" startline="28" endline="58" pcid="3591">
+def numerical_letter_grade(grades):
+    letter_grades = []
+    for grade in grades:
+        if grade >= 4.0:
+            letter_grades.append('A+')
+        elif grade > 3.7:
+            letter_grades.append('A')
+        elif grade > 3.3:
+            letter_grades.append('A-')
+        elif grade > 3.0:
+            letter_grades.append('B+')
+        elif grade > 2.7:
+            letter_grades.append('B')
+        elif grade > 2.3:
+            letter_grades.append('B-')
+        elif grade > 2.0:
+            letter_grades.append('C+')
+        elif grade > 1.7:
+            letter_grades.append('C')
+        elif grade > 1.3:
+            letter_grades.append('C-')
+        elif grade > 1.0:
+            letter_grades.append('D+')
+        elif grade > 0.7:
+            letter_grades.append('D')
+        elif grade > 0.0:
+            letter_grades.append('D-')
+        else:
+            letter_grades.append('E')
+    return letter_grades
+
+</source>
+<source file="./systems/Files/81_14.py" startline="28" endline="58" pcid="2760">
+def numerical_letter_grade(grades):
+    letter_grades = []
+    for grade in grades:
+        if grade == 4.0:
+            letter_grades.append('A+')
+        elif grade > 3.7:
+            letter_grades.append('A')
+        elif grade > 3.3:
+            letter_grades.append('A-')
+        elif grade > 3.0:
+            letter_grades.append('B+')
+        elif grade > 2.7:
+            letter_grades.append('B')
+        elif grade > 2.3:
+            letter_grades.append('B-')
+        elif grade > 2.0:
+            letter_grades.append('C+')
+        elif grade > 1.7:
+            letter_grades.append('C')
+        elif grade > 1.3:
+            letter_grades.append('C-')
+        elif grade > 1.0:
+            letter_grades.append('D+')
+        elif grade > 0.7:
+            letter_grades.append('D')
+        elif grade > 0.0:
+            letter_grades.append('D-')
+        else:
+            letter_grades.append('E')
+    return letter_grades
+
+</source>
+</class>
+
+<class classid="3" nclones="3" nlines="14" similarity="70">
+<source file="./systems/Original_Files/19.py" startline="4" endline="24" pcid="131">
+def sort_numbers(numbers: str) -> str:
+    """ Input is a space-delimited string of numberals from 'zero' to 'nine'.
+    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' and 'nine'.
+    Return the string with numbers sorted from smallest to largest
+    >>> sort_numbers('three one five')
+    'one three five'
+    """
+
+    value_map = {
+        'zero': 0,
+        'one': 1,
+        'two': 2,
+        'three': 3,
+        'four': 4,
+        'five': 5,
+        'six': 6,
+        'seven': 7,
+        'eight': 8,
+        'nine': 9
+    }
+    return ' '.join(sorted([x for x in numbers.split(' ') if x], key=lambda x: value_map[x]))
+</source>
+<source file="./systems/Files/19_all_9.py" startline="12" endline="33" pcid="441">
+def sort_numbers(numbers: str) -> str:
+    numeral_dict = {
+        'zero': 0,
+        'one': 1,
+        'two': 2,
+        'three': 3,
+        'four': 4,
+        'five': 5,
+        'six': 6,
+        'seven': 7,
+        'eight': 8,
+        'nine': 9
+    }
+    # Split the numbers string into a list of individual numerals
+    numbers_list = numbers.split()
+    # Build a list of tuples with the numeral and its corresponding value
+    numeral_values = [(numeral, numeral_dict[numeral]) for numeral in numbers_list]
+    # Sort the list of tuples by the numeral values
+    numeral_values_sorted = sorted(numeral_values, key=lambda x: x[1])
+    # Build the sorted string by joining the sorted numerals
+    sorted_numbers = ' '.join([numeral for numeral, _ in numeral_values_sorted])
+    return sorted_numbers
+</source>
+<source file="./systems/Files/19_P8_16.py" startline="4" endline="33" pcid="1264">
+def sort_numbers(numbers: str) -> str:
+    """ Input is a space-delimited string of numberals from 'zero' to 'nine'.
+    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' and 'nine'.
+    Return the string with numbers sorted from smallest to largest
+    >>> sort_numbers('three one five')
+    'one three five'
+    """
+
+# We can start by creating a dictionary to map the numberals to their numerical values
+    numerical_values = {
+        'zero': 0,
+        'one': 1,
+        'two': 2,
+        'three': 3,
+        'four': 4,
+        'five': 5,
+        'six': 6,
+        'seven': 7,
+        'eight': 8,
+        'nine': 9
+    }
+    
+# We can split the input string into a list of individual numberals
+    numberals = numbers.split()
+    
+# We can then use the sorted() function to sort the numberals based on their corresponding numerical values
+    sorted_numberals = sorted(numberals, key=lambda x: numerical_values[x])
+    
+# Finally, we can join the sorted numberals into a string and return it
+    return ' '.join(sorted_numberals)
+</source>
+</class>
+
+<class classid="4" nclones="7" nlines="11" similarity="72">
+<source file="./systems/Original_Files/96.py" startline="2" endline="24" pcid="150">
+def count_up_to(n):
+    """Implement a function that takes an non-negative integer and returns an array of the first n
+    integers that are prime numbers and less than n.
+    for example:
+    count_up_to(5) => [2,3]
+    count_up_to(11) => [2,3,5,7]
+    count_up_to(0) => []
+    count_up_to(20) => [2,3,5,7,11,13,17,19]
+    count_up_to(1) => []
+    count_up_to(18) => [2,3,5,7,11,13,17]
+    """
+
+    primes = []
+    for i in range(2, n):
+        is_prime = True
+        for j in range(2, i):
+            if i % j == 0:
+                is_prime = False
+                break
+        if is_prime:
+            primes.append(i)
+    return primes
+
+</source>
+<source file="./systems/Files/96_P6_7.py" startline="14" endline="24" pcid="5458">
+def prime_up_to(n):
+    primes = []
+    for i in range(2, n):
+        is_prime = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                is_prime = False
+                break
+        if is_prime:
+            primes.append(i)
+    return primes
+</source>
+<source file="./systems/Files/96_P6_12.py" startline="14" endline="25" pcid="8610">
+def prime_up_to(n):
+    primes = []
+    for i in range(2, n):
+        is_prime = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                is_prime = False
+                break
+        if is_prime:
+            primes.append(i)
+    return primes
+
+</source>
+<source file="./systems/Files/96_P6_9.py" startline="14" endline="35" pcid="8722">
+def prime_up_to(n):
+    if n < 2:
+        return []
+
+    # initialize an array to store prime numbers
+    primes = []
+
+    # iterate through all numbers from 2 to n
+    for i in range(2, n):
+        is_prime = True
+
+        # check if the number is divisible by any number less than itself
+        for j in range(2, i):
+            if i % j == 0:
+                is_prime = False
+                break
+
+        # if the number is not divisible by any number less than itself, it is prime
+        if is_prime:
+            primes.append(i)
+
+    return primes
+</source>
+<source file="./systems/Files/96_P6_17.py" startline="14" endline="24" pcid="9918">
+def prime_up_to(n):
+    primes = []
+    for i in range(2, n):
+        is_prime = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                is_prime = False
+                break
+        if is_prime:
+            primes.append(i)
+    return primes
+</source>
+<source file="./systems/Files/96_P6_8.py" startline="14" endline="32" pcid="9325">
+def prime_up_to(n):
+    # Create an array to store the prime numbers
+    primes = []
+
+    # Iterate through all numbers from 2 to n-1
+    for num in range(2, n):
+        # Check if num is prime
+        is_prime = True
+        for i in range(2, int(num ** 0.5) + 1):
+            if num % i == 0:
+                is_prime = False
+                break
+
+        # If num is prime, append it to the primes array
+        if is_prime:
+            primes.append(num)
+
+    # Return the array of prime numbers
+    return primes
+</source>
+<source file="./systems/Files/96_18.py" startline="14" endline="34" pcid="1972">
+def count_up_to(n):
+    """Implement a function that takes an non-negative integer and returns an array of the first n
+    integers that are prime numbers and less than n.
+    for example:
+    count_up_to(5) => [2,3]
+    count_up_to(11) => [2,3,5,7]
+    count_up_to(0) => []
+    count_up_to(20) => [2,3,5,7,11,13,17,19]
+    count_up_to(1) => []
+    count_up_to(18) => [2,3,5,7,11,13,17]
+    """
+    primes = []
+    for num in range(2, n):
+        prime = True
+        for i in range(2, num):
+            if(num%i==0):
+                prime = False
+        if prime:
+            primes.append(num)
+    return primes
+
+</source>
+</class>
+
+</clones>
