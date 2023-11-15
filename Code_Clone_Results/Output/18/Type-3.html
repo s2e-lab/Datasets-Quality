@@ -1,0 +1,191 @@
+<html>
+<head>
+    <title>NiCad6 Clone Report</title>
+    <style type="text/css">
+        body {font-family:sans-serif;}
+        table {background-color:white; border:0px; padding:0px; border-spacing:4px; width:auto; margin-left:30px; margin-right:auto;}
+        td {background-color:rgba(192,212,238,0.8); border:0px; padding:8px; width:auto; vertical-align:top; border-radius:8px}
+        pre {background-color:white; padding:4px;}
+        a {color:darkblue;}
+    </style>
+</head>
+<body>
+<h2>NiCad6 Clone Report</h2>
+<table>
+<tr style="font-size:14pt">
+<td><b>System 1:</b> &nbsp; Original_Files</td>
+<td><b>System 2:</b> &nbsp; Files</td>
+<td><b>Clone pairs:</b> &nbsp; 9</td>
+<td><b>Clone classes:</b> &nbsp; 1</td>
+</tr>
+<tr style="font-size:12pt">
+<td style="background-color:white">Clone type: &nbsp; 3-2</td>
+<td style="background-color:white">Granularity: &nbsp; functions-blind</td>
+<td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
+<td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 29</td>
+</tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 10 fragments, nominal size 6 lines, similarity 75%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag1')" href="javascript:;">
+Original_Files/18_.py: 1-6
+</a>
+<div class="mid" id="frag1" style="display:none"><pre>
+def how_many_times(string: str, substring: str) -&gt; int:
+    times = 0
+    for i in range(len(string) - len(substring) + 1):
+        if string[i:i+len(substring)] == substring:
+            times += 1
+    return times
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag2')" href="javascript:;">
+Files/18_9.py: 1-8
+</a>
+<div class="mid" id="frag2" style="display:none"><pre>
+def how_many_times(string: str, substring: str) -&gt; int:
+    count = 0 
+    if len(substring) == 0: 
+        return 0
+    for i in range(len(string) - len(substring) + 1): 
+        if string[i:i + len(substring)] == substring: 
+            count += 1
+    return count
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag21')" href="javascript:;">
+Files/18_18.py: 1-6
+</a>
+<div class="mid" id="frag21" style="display:none"><pre>
+def how_many_times(string: str, substring: str) -&gt; int:
+    count = 0
+    for i in range(len(string) - len(substring) + 1):
+        if string[i:i+len(substring)] == substring:
+            count += 1
+    return count
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag7')" href="javascript:;">
+Files/18_8.py: 1-8
+</a>
+<div class="mid" id="frag7" style="display:none"><pre>
+def how_many_times(string: str, substring: str) -&gt; int:
+    count = 0
+    if len(substring) &gt; len(string):
+        return count
+    for i in range(len(string)-len(substring)+1):
+        if string[i:i+len(substring)] == substring:
+            count += 1
+    return count
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag13')" href="javascript:;">
+Files/18_2.py: 1-6
+</a>
+<div class="mid" id="frag13" style="display:none"><pre>
+def how_many_times(string: str, substring: str) -&gt; int:
+    count = 0
+    for i in range(len(string) - len(substring) + 1):
+        if string[i:i + len(substring)] == substring:
+            count += 1
+    return count
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag15')" href="javascript:;">
+Files/18_5.py: 1-8
+</a>
+<div class="mid" id="frag15" style="display:none"><pre>
+def how_many_times(string: str, substring: str) -&gt; int:
+    count = 0
+    if string == '' or substring == '':
+        return 0
+    for i in range(len(string) - len(substring) + 1):
+        if string[i:i + len(substring)] == substring:
+            count += 1
+    return count
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag16')" href="javascript:;">
+Files/18_P1_16.py: 1-6
+</a>
+<div class="mid" id="frag16" style="display:none"><pre>
+def how_many_times(string: str, substring: str) -&gt; int:
+    count = 0
+    for i in range(len(string) - len(substring) + 1):
+        if string[i:i + len(substring)] == substring:
+            count += 1
+    return count
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag10')" href="javascript:;">
+Files/18_7.py: 1-8
+</a>
+<div class="mid" id="frag10" style="display:none"><pre>
+def how_many_times(string: str, substring: str) -&gt; int:
+    count = 0
+    if not substring:
+        return count
+    for i in range(len(string)-len(substring)+1):
+        if string[i:i+len(substring)] == substring:
+            count += 1
+    return count
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag23')" href="javascript:;">
+Files/18_P1_13.py: 1-6
+</a>
+<div class="mid" id="frag23" style="display:none"><pre>
+def how_many_times(string: str, substring: str) -&gt; int:
+    count = 0
+    for i in range(len(string)):
+        if string[i:i+len(substring)] == substring:
+            count += 1
+    return count
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag26')" href="javascript:;">
+Files/18_P1_18.py: 1-8
+</a>
+<div class="mid" id="frag26" style="display:none"><pre>
+def how_many_times(string: str, substring: str) -&gt; int:
+    count = 0
+    if substring == '':
+        return 0
+    for i in range(len(string) - len(substring) + 1):
+        if string[i:i + len(substring)] == substring:
+            count += 1
+    return count
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<script language="JavaScript">
+function ShowHide(divId) { 
+    if(document.getElementById(divId).style.display == 'none') {
+        document.getElementById(divId).style.display='block';
+    } else { 
+        document.getElementById(divId).style.display = 'none';
+    } 
+}
+</script>
+</body>
+</html>

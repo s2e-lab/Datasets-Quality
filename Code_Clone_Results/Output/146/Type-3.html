@@ -1,0 +1,192 @@
+<html>
+<head>
+    <title>NiCad6 Clone Report</title>
+    <style type="text/css">
+        body {font-family:sans-serif;}
+        table {background-color:white; border:0px; padding:0px; border-spacing:4px; width:auto; margin-left:30px; margin-right:auto;}
+        td {background-color:rgba(192,212,238,0.8); border:0px; padding:8px; width:auto; vertical-align:top; border-radius:8px}
+        pre {background-color:white; padding:4px;}
+        a {color:darkblue;}
+    </style>
+</head>
+<body>
+<h2>NiCad6 Clone Report</h2>
+<table>
+<tr style="font-size:14pt">
+<td><b>System 1:</b> &nbsp; Original_Files</td>
+<td><b>System 2:</b> &nbsp; Files</td>
+<td><b>Clone pairs:</b> &nbsp; 8</td>
+<td><b>Clone classes:</b> &nbsp; 1</td>
+</tr>
+<tr style="font-size:12pt">
+<td style="background-color:white">Clone type: &nbsp; 3-2</td>
+<td style="background-color:white">Granularity: &nbsp; functions-blind</td>
+<td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
+<td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 37</td>
+</tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 9 fragments, nominal size 9 lines, similarity 70%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag1')" href="javascript:;">
+Original_Files/146_.py: 1-9
+</a>
+<div class="mid" id="frag1" style="display:none"><pre>
+def specialFilter(nums):
+    count = 0
+    for num in nums:
+        if num &gt; 10:
+            odd_digits = (1, 3, 5, 7, 9)
+            number_as_string = str(num)
+            if int(number_as_string[0]) in odd_digits and int(number_as_string[-1]) in odd_digits:
+                count += 1
+    return count 
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag3')" href="javascript:;">
+Files/146_16.py: 1-10
+</a>
+<div class="mid" id="frag3" style="display:none"><pre>
+def specialFilter(nums):
+    count = 0
+    for num in nums:
+        if num &gt; 10:
+            str_num = str(num)
+            if int(str_num[0]) % 2 != 0 and int(str_num[-1]) % 2 != 0:
+                count += 1
+    return count
+    print(specialFilter([15, -73, 14, -15]))
+    print(specialFilter([33, -2, -3, 45, 21, 109]))
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag9')" href="javascript:;">
+Files/146_P8_1.py: 1-8
+</a>
+<div class="mid" id="frag9" style="display:none"><pre>
+def specialFilter(nums):
+    count = 0
+    for num in nums:
+        if num &gt; 10:
+            str_num = str(num)
+            if int(str_num[0]) % 2 != 0 and int(str_num[-1]) % 2 != 0:
+                count += 1
+    return count
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag17')" href="javascript:;">
+Files/146_8.py: 1-10
+</a>
+<div class="mid" id="frag17" style="display:none"><pre>
+def specialFilter(nums):
+    count = 0
+    for num in nums:
+        if num &gt; 10:
+            num_str = str(num)
+            first_digit = int(num_str[0])
+            last_digit = int(num_str[-1])
+            if first_digit % 2 != 0 and last_digit % 2 != 0:
+                count += 1
+    return count
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag37')" href="javascript:;">
+Files/146_11.py: 1-8
+</a>
+<div class="mid" id="frag37" style="display:none"><pre>
+def specialFilter(nums):
+    count = 0
+    for num in nums:
+        if num &gt; 10:
+            num_str = str(num)
+            if int(num_str[0]) % 2 != 0 and int(num_str[-1]) % 2 != 0:
+                count += 1
+    return count
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag15')" href="javascript:;">
+Files/146_P8_4.py: 1-9
+</a>
+<div class="mid" id="frag15" style="display:none"><pre>
+def specialFilter(nums):
+    return n % 2 != 0
+    count = 0
+    for num in nums:
+        if num &gt; 10:
+            str_num = str(num)
+            if is_odd(int(str_num[0])) and is_odd(int(str_num[-1])):
+                count += 1
+    return count
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag27')" href="javascript:;">
+Files/146_P8_12.py: 1-8
+</a>
+<div class="mid" id="frag27" style="display:none"><pre>
+def specialFilter(nums):
+    count = 0
+    for num in nums:
+        if num &gt; 10:
+            num_str = str(num)
+            if int(num_str[0]) % 2 != 0 and int(num_str[-1]) % 2 != 0:
+                count += 1
+    return count
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag12')" href="javascript:;">
+Files/146_18.py: 1-8
+</a>
+<div class="mid" id="frag12" style="display:none"><pre>
+def specialFilter(nums):
+    count = 0
+    for num in nums:
+        if num &gt; 10:
+            num_str = str(num)
+            if int(num_str[0]) % 2 != 0 and int(num_str[-1]) % 2 != 0:
+                count += 1
+    return count
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag13')" href="javascript:;">
+Files/146_9.py: 1-8
+</a>
+<div class="mid" id="frag13" style="display:none"><pre>
+def specialFilter(nums):
+    count = 0
+    for num in nums:
+        if num &gt; 10:
+            num_string = str(num)
+            if int(num_string[0]) % 2 != 0 and int(num_string[-1]) % 2 != 0:
+                count += 1
+    return count
+</pre></div>
+</td>
+</tr>
+</table>
+</td></tr>
+</table>
+<script language="JavaScript">
+function ShowHide(divId) { 
+    if(document.getElementById(divId).style.display == 'none') {
+        document.getElementById(divId).style.display='block';
+    } else { 
+        document.getElementById(divId).style.display = 'none';
+    } 
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<html>
+<head>
+    <title>NiCad6 Clone Report</title>
+    <style type="text/css">
+        body {font-family:sans-serif;}
+        table {background-color:white; border:0px; padding:0px; border-spacing:4px; width:auto; margin-left:30px; margin-right:auto;}
+        td {background-color:rgba(192,212,238,0.8); border:0px; padding:8px; width:auto; vertical-align:top; border-radius:8px}
+        pre {background-color:white; padding:4px;}
+        a {color:darkblue;}
+    </style>
+</head>
+<body>
+<h2>NiCad6 Clone Report</h2>
+<table>
+<tr style="font-size:14pt">
+<td><b>System 1:</b> &nbsp; Original_Files</td>
+<td><b>System 2:</b> &nbsp; Files</td>
+<td><b>Clone pairs:</b> &nbsp; 6</td>
+<td><b>Clone classes:</b> &nbsp; 1</td>
+</tr>
+<tr style="font-size:12pt">
+<td style="background-color:white">Clone type: &nbsp; 3-2</td>
+<td style="background-color:white">Granularity: &nbsp; functions-blind</td>
+<td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
+<td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 71</td>
+</tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 7 fragments, nominal size 6 lines, similarity 71%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag1')" href="javascript:;">
+Original_Files/104_.py: 1-6
+</a>
+<div class="mid" id="frag1" style="display:none"><pre>
+def unique_digits(x):
+    odd_digit_elements = []
+    for i in x:
+        if all (int(c) % 2 == 1 for c in str(i)):
+            odd_digit_elements.append(i)
+    return sorted(odd_digit_elements)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag70')" href="javascript:;">
+Files/104_P8_1.py: 1-7
+</a>
+<div class="mid" id="frag70" style="display:none"><pre>
+def unique_digits(x):
+    result = []
+    for num in x:
+    digits = [int(digit) for digit in str(num)]
+    if all(digit % 2 != 0 for digit in digits):
+        result.append(num)
+    return sorted(result)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag68')" href="javascript:;">
+Files/104_3.py: 1-7
+</a>
+<div class="mid" id="frag68" style="display:none"><pre>
+def unique_digits(x):
+    digits = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    result = []
+    for num in x:
+        if all(d not in str(num) for d in digits):
+            result.append(num)
+    return sorted(result)
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag53')" href="javascript:;">
+Files/104_P8_16.py: 1-7
+</a>
+<div class="mid" id="frag53" style="display:none"><pre>
+def unique_digits(x):
+    result = []
+    for num in x:
+    digits = [int(digit) for digit in str(num)]
+    if all(digit%2 != 0 for digit in digits):
+        result.append(num)
+    return sorted(result)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag17')" href="javascript:;">
+Files/104_P8_7.py: 1-6
+</a>
+<div class="mid" id="frag17" style="display:none"><pre>
+def unique_digits(x):
+    result = []
+    for num in x:
+        if all(int(digit) % 2 != 0 for digit in str(num)):
+            result.append(num)
+    return sorted(result)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag18')" href="javascript:;">
+Files/104_1.py: 1-7
+</a>
+<div class="mid" id="frag18" style="display:none"><pre>
+def unique_digits(x):
+    odds = []
+    for num in x:
+    digits = [int(digit) for digit in str(num)]
+    if all(digit % 2 != 0 for digit in digits):
+        odds.append(num)
+    return sorted(odds)
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag57')" href="javascript:;">
+Files/104_6.py: 1-6
+</a>
+<div class="mid" id="frag57" style="display:none"><pre>
+def unique_digits(x):
+    result = []
+    for num in x:
+        if all(int(digit) % 2 != 0 for digit in str(num)):
+            result.append(num)
+    return sorted(result)
+</pre></div>
+</td>
+</tr>
+</table>
+</td></tr>
+</table>
+<script language="JavaScript">
+function ShowHide(divId) { 
+    if(document.getElementById(divId).style.display == 'none') {
+        document.getElementById(divId).style.display='block';
+    } else { 
+        document.getElementById(divId).style.display = 'none';
+    } 
+}
+</script>
+</body>
+</html>

@@ -104,3 +104,5 @@ Generation/Files/
 Manual_Analysis_Results/datasets_study_coderevaljava.json
 Generation/Output/
 Generation/Original_Files/
+Code_Clone_Results/Original_Files/
+Code_Clone_Results/Files/

@@ -1,0 +1,153 @@
+<html>
+<head>
+    <title>NiCad6 Clone Report</title>
+    <style type="text/css">
+        body {font-family:sans-serif;}
+        table {background-color:white; border:0px; padding:0px; border-spacing:4px; width:auto; margin-left:30px; margin-right:auto;}
+        td {background-color:rgba(192,212,238,0.8); border:0px; padding:8px; width:auto; vertical-align:top; border-radius:8px}
+        pre {background-color:white; padding:4px;}
+        a {color:darkblue;}
+    </style>
+</head>
+<body>
+<h2>NiCad6 Clone Report</h2>
+<table>
+<tr style="font-size:14pt">
+<td><b>System 1:</b> &nbsp; Original_Files</td>
+<td><b>System 2:</b> &nbsp; Files</td>
+<td><b>Clone pairs:</b> &nbsp; 5</td>
+<td><b>Clone classes:</b> &nbsp; 1</td>
+</tr>
+<tr style="font-size:12pt">
+<td style="background-color:white">Clone type: &nbsp; 3-2</td>
+<td style="background-color:white">Granularity: &nbsp; functions-blind</td>
+<td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
+<td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 26</td>
+</tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 6 fragments, nominal size 10 lines, similarity 70%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag1')" href="javascript:;">
+Original_Files/61_.py: 1-10
+</a>
+<div class="mid" id="frag1" style="display:none"><pre>
+def correct_bracketing(brackets: str):
+    depth = 0
+    for b in brackets:
+        if b == "(":
+            depth += 1
+        else:
+            depth -= 1
+        if depth &lt; 0:
+            return False
+    return depth == 0
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag4')" href="javascript:;">
+Files/61_P8_3.py: 1-10
+</a>
+<div class="mid" id="frag4" style="display:none"><pre>
+def correct_bracketing(brackets: str):
+    count = 0
+    for char in brackets:
+        if char == '(':
+            count += 1
+        elif char == ')':
+            count -= 1
+        if count &lt; 0:
+            return False
+    return count == 0
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag19')" href="javascript:;">
+Files/61_2.py: 1-10
+</a>
+<div class="mid" id="frag19" style="display:none"><pre>
+def correct_bracketing(brackets: str):
+    count = 0
+    for bracket in brackets:
+        if bracket == '(':
+            count += 1
+        elif bracket == ')':
+            if count == 0:
+                return False
+            count -= 1
+    return count == 0
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag17')" href="javascript:;">
+Files/61_6.py: 1-10
+</a>
+<div class="mid" id="frag17" style="display:none"><pre>
+def correct_bracketing(brackets: str):
+    opening_brackets = 0
+    for bracket in brackets:
+        if bracket == "(":
+            opening_brackets += 1
+        elif bracket == ")":
+            if opening_brackets == 0:
+                return False
+            opening_brackets -= 1
+    return opening_brackets == 0
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag24')" href="javascript:;">
+Files/61_P8_4.py: 1-10
+</a>
+<div class="mid" id="frag24" style="display:none"><pre>
+def correct_bracketing(brackets: str):
+    counter = 0
+    for b in brackets:
+        if b == "(":
+            counter += 1
+        elif b == ")":
+            counter -= 1
+        if counter &lt; 0:
+            return False
+    return counter == 0
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag18')" href="javascript:;">
+Files/61_12.py: 1-10
+</a>
+<div class="mid" id="frag18" style="display:none"><pre>
+def correct_bracketing(brackets: str):
+    count = 0
+    for char in brackets:
+        if char == "(":
+            count += 1
+        elif char == ")":
+            count -= 1
+        if count &lt; 0:
+            return False
+    return count == 0
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<script language="JavaScript">
+function ShowHide(divId) { 
+    if(document.getElementById(divId).style.display == 'none') {
+        document.getElementById(divId).style.display='block';
+    } else { 
+        document.getElementById(divId).style.display = 'none';
+    } 
+}
+</script>
+</body>
+</html>
