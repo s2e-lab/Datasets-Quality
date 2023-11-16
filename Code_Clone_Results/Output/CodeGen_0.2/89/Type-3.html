@@ -1,0 +1,134 @@
+<html>
+<head>
+    <title>NiCad6 Clone Report</title>
+    <style type="text/css">
+        body {font-family:sans-serif;}
+        table {background-color:white; border:0px; padding:0px; border-spacing:4px; width:auto; margin-left:30px; margin-right:auto;}
+        td {background-color:rgba(192,212,238,0.8); border:0px; padding:8px; width:auto; vertical-align:top; border-radius:8px}
+        pre {background-color:white; padding:4px;}
+        a {color:darkblue;}
+    </style>
+</head>
+<body>
+<h2>NiCad6 Clone Report</h2>
+<table>
+<tr style="font-size:14pt">
+<td><b>System 1:</b> &nbsp; Original_Files</td>
+<td><b>System 2:</b> &nbsp; Files</td>
+<td><b>Clone pairs:</b> &nbsp; 4</td>
+<td><b>Clone classes:</b> &nbsp; 1</td>
+</tr>
+<tr style="font-size:12pt">
+<td style="background-color:white">Clone type: &nbsp; 3-2</td>
+<td style="background-color:white">Granularity: &nbsp; functions-blind</td>
+<td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
+<td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 11</td>
+</tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 5 fragments, nominal size 10 lines, similarity 70%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag1')" href="javascript:;">
+Original_Files/89_.py: 1-9
+</a>
+<div class="mid" id="frag1" style="display:none"><pre>
+def encrypt(s):
+    d = 'abcdefghijklmnopqrstuvwxyz'
+    out = ''
+    for c in s:
+        if c in d:
+            out += d[(d.index(c)+2*2) % 26]
+        else:
+            out += c
+    return out
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag6')" href="javascript:;">
+Files/89_13.py: 1-10
+</a>
+<div class="mid" id="frag6" style="display:none"><pre>
+def encrypt(s):
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    encrypted = ''
+    for letter in s:
+        if letter in alphabet:
+            index = alphabet.index(letter)
+            encrypted += alphabet[index + 2]
+        else:
+            encrypted += letter
+    return encrypted
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag7')" href="javascript:;">
+Files/89_13.py: 11-20
+</a>
+<div class="mid" id="frag7" style="display:none"><pre>
+def decrypt(s):
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    decrypted = ''
+    for letter in s:
+        if letter in alphabet:
+            index = alphabet.index(letter)
+            decrypted += alphabet[index - 2]
+        else:
+            decrypted += letter
+    return decrypted
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag2')" href="javascript:;">
+Files/89_19.py: 1-10
+</a>
+<div class="mid" id="frag2" style="display:none"><pre>
+def encrypt(s):
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    encrypted = ''
+    for char in s:
+        if char.isalpha():
+            index = alphabet.index(char)
+            encrypted += alphabet[(index + 2) % 26]
+        else:
+            encrypted += char
+    return encrypted
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag3')" href="javascript:;">
+Files/89_19.py: 11-20
+</a>
+<div class="mid" id="frag3" style="display:none"><pre>
+def decrypt(s):
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    decrypted = ''
+    for char in s:
+        if char.isalpha():
+            index = alphabet.index(char)
+            decrypted += alphabet[(index - 2) % 26]
+        else:
+            decrypted += char
+    return decrypted
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<script language="JavaScript">
+function ShowHide(divId) { 
+    if(document.getElementById(divId).style.display == 'none') {
+        document.getElementById(divId).style.display='block';
+    } else { 
+        document.getElementById(divId).style.display = 'none';
+    } 
+}
+</script>
+</body>
+</html>

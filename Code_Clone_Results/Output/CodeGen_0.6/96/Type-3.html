@@ -1,0 +1,136 @@
+<html>
+<head>
+    <title>NiCad6 Clone Report</title>
+    <style type="text/css">
+        body {font-family:sans-serif;}
+        table {background-color:white; border:0px; padding:0px; border-spacing:4px; width:auto; margin-left:30px; margin-right:auto;}
+        td {background-color:rgba(192,212,238,0.8); border:0px; padding:8px; width:auto; vertical-align:top; border-radius:8px}
+        pre {background-color:white; padding:4px;}
+        a {color:darkblue;}
+    </style>
+</head>
+<body>
+<h2>NiCad6 Clone Report</h2>
+<table>
+<tr style="font-size:14pt">
+<td><b>System 1:</b> &nbsp; Original_Files</td>
+<td><b>System 2:</b> &nbsp; Files</td>
+<td><b>Clone pairs:</b> &nbsp; 4</td>
+<td><b>Clone classes:</b> &nbsp; 1</td>
+</tr>
+<tr style="font-size:12pt">
+<td style="background-color:white">Clone type: &nbsp; 3-2</td>
+<td style="background-color:white">Granularity: &nbsp; functions-blind</td>
+<td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
+<td style="background-color:white">Clone size: &nbsp; 6 - 2500 lines</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 41</td>
+</tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 5 fragments, nominal size 10 lines, similarity 72%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag1')" href="javascript:;">
+Original_Files/96_.py: 1-11
+</a>
+<div class="mid" id="frag1" style="display:none"><pre>
+def count_up_to(n):
+    primes = []
+    for i in range(2, n):
+        is_prime = True
+        for j in range(2, i):
+            if i % j == 0:
+                is_prime = False
+                break
+        if is_prime:
+            primes.append(i)
+    return primes
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag12')" href="javascript:;">
+Files/96_all_6.py: 2-12
+</a>
+<div class="mid" id="frag12" style="display:none"><pre>
+def prime_up_to(n: int) -&gt; List[int]:
+    primes = []
+    for i in range(2, n):
+        is_prime = True
+        for j in range(2, int(i / 2)):
+            if i % j == 0:
+                is_prime = False
+                break
+        if is_prime:
+            primes.append(i)
+    return primes
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag8')" href="javascript:;">
+Files/96_9.py: 1-10
+</a>
+<div class="mid" id="frag8" style="display:none"><pre>
+def count_up_to(n):
+    primes = []
+    for number in range(2, n+1):
+        is_prime = True
+        for i in range(2, number):
+            if number % i == 0:
+                is_prime = False
+        if is_prime:
+            primes.append(number)
+    return primes
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag21')" href="javascript:;">
+Files/96_all_14.py: 2-11
+</a>
+<div class="mid" id="frag21" style="display:none"><pre>
+def prime_up_to(n: int) -&gt; List[int]:
+    prime_nums = []
+    for i in range(2, n+1):
+        is_prime = True
+        for j in range(2, i):
+            if i % j == 0:
+                is_prime = False
+        if is_prime:
+            prime_nums.append(i)
+    return prime_nums
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag19')" href="javascript:;">
+Files/96_6.py: 1-9
+</a>
+<div class="mid" id="frag19" style="display:none"><pre>
+def count_up_to(n):
+    primes = []
+    for i in range(2, n):  
+        for j in range(2, i):  
+            if i % j == 0:  
+                break  
+        else:  
+            primes.append(i)
+    return primes
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<script language="JavaScript">
+function ShowHide(divId) { 
+    if(document.getElementById(divId).style.display == 'none') {
+        document.getElementById(divId).style.display='block';
+    } else { 
+        document.getElementById(divId).style.display = 'none';
+    } 
+}
+</script>
+</body>
+</html>

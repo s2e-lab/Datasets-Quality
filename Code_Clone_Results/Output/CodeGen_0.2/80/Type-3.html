@@ -1,0 +1,120 @@
+<html>
+<head>
+    <title>NiCad6 Clone Report</title>
+    <style type="text/css">
+        body {font-family:sans-serif;}
+        table {background-color:white; border:0px; padding:0px; border-spacing:4px; width:auto; margin-left:30px; margin-right:auto;}
+        td {background-color:rgba(192,212,238,0.8); border:0px; padding:8px; width:auto; vertical-align:top; border-radius:8px}
+        pre {background-color:white; padding:4px;}
+        a {color:darkblue;}
+    </style>
+</head>
+<body>
+<h2>NiCad6 Clone Report</h2>
+<table>
+<tr style="font-size:14pt">
+<td><b>System 1:</b> &nbsp; Original_Files</td>
+<td><b>System 2:</b> &nbsp; Files</td>
+<td><b>Clone pairs:</b> &nbsp; 4</td>
+<td><b>Clone classes:</b> &nbsp; 1</td>
+</tr>
+<tr style="font-size:12pt">
+<td style="background-color:white">Clone type: &nbsp; 3-2</td>
+<td style="background-color:white">Granularity: &nbsp; functions-blind</td>
+<td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
+<td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 7</td>
+</tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 5 fragments, nominal size 7 lines, similarity 71%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag1')" href="javascript:;">
+Original_Files/80_.py: 1-7
+</a>
+<div class="mid" id="frag1" style="display:none"><pre>
+def is_happy(s):
+    if len(s) &lt; 3:
+      return False
+    for i in range(len(s) - 2):
+      if s[i] == s[i+1] or s[i+1] == s[i+2] or s[i] == s[i+2]:
+        return False
+    return True
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag2')" href="javascript:;">
+Files/80_2.py: 1-7
+</a>
+<div class="mid" id="frag2" style="display:none"><pre>
+def is_happy(s):
+    if len(s) &lt; 3:
+        return False
+    for i in range(0, len(s), 3):
+        if s[i] == s[i+1] == s[i+2]:
+            return False
+    return True
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag6')" href="javascript:;">
+Files/80_6.py: 8-14
+</a>
+<div class="mid" id="frag6" style="display:none"><pre>
+def is_happy_2(s):
+    if len(s) &lt; 3:
+        return False
+    for i in range(0, len(s), 3):
+        if s[i] == s[i + 1] == s[i + 2]:
+            return False
+    return True
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag3')" href="javascript:;">
+Files/80_2.py: 8-14
+</a>
+<div class="mid" id="frag3" style="display:none"><pre>
+def is_happy_2(s):
+    if len(s) &lt; 3:
+        return False
+    for i in range(0, len(s), 3):
+        if s[i] == s[i+1] == s[i+2]:
+            return False
+    return True
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag5')" href="javascript:;">
+Files/80_6.py: 1-7
+</a>
+<div class="mid" id="frag5" style="display:none"><pre>
+def is_happy(s):
+    if len(s) &lt; 3:
+        return False
+    for i in range(0, len(s), 3):
+        if s[i] == s[i + 1] == s[i + 2]:
+            return False
+    return True
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<script language="JavaScript">
+function ShowHide(divId) { 
+    if(document.getElementById(divId).style.display == 'none') {
+        document.getElementById(divId).style.display='block';
+    } else { 
+        document.getElementById(divId).style.display = 'none';
+    } 
+}
+</script>
+</body>
+</html>
