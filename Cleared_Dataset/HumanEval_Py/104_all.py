@@ -5,6 +5,13 @@ def unique_digits(x: List[int]) -> List[int]:
     elements that haven't any even digit.
 
     Note: Returned list should be sorted in increasing order.
+
+
+    args:
+        x: list of positive integers
+
+    returns:
+        sorted list of all elements that hasn't any even digit.
     
     For example:
     >>> unique_digits([15, 33, 1422, 1])

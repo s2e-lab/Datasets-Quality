@@ -6,7 +6,15 @@ def fruit_distribution(s: str, n: int) -> int:
     apples, oranges, and mango fruits. Given the string that represents the total number of 
     the oranges and apples and an integer that represent the total number of the fruits 
     in the basket return the number of the mango fruits in the basket.
-    for example:
+    
+    args:
+        s: string that represents a number of apples and oranges
+        n: integer that represent the total number of the fruits in the basket
+
+    returns:
+        integer that represent the number of the mango fruits in the basket
+        
+    example:
     fruit_distribution("5 apples and 6 oranges", 19) ->19 - 5 - 6 = 8
     fruit_distribution("0 apples and 1 oranges",3) -> 3 - 0 - 1 = 2
     fruit_distribution("2 apples and 3 oranges", 100) -> 100 - 2 - 3 = 95

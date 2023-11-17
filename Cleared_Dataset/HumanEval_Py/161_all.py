@@ -5,7 +5,14 @@ def reverse_case(s: str) -> str:
     otherwise keep it as it is.
     If the string contains no letters, reverse the string.
     The function should return the resulted string.
-    Examples
+    
+    args:
+        s: string
+
+    returns:
+        string with reversed case of letters
+
+    Examples:
     reverse_case("1234") = "4321"
     reverse_case("ab") = "AB"
     reverse_case("#a@C") = "#A@c"

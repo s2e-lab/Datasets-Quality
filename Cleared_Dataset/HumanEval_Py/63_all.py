@@ -7,6 +7,14 @@ def fibfib(n: int) -> int:
     fibfib(2) == 1
     fibfib(n) == fibfib(n-1) + fibfib(n-2) + fibfib(n-3).
     Please write a function to efficiently compute the n-th element of the fibfib number sequence.
+
+    args:
+        n: integer
+
+    returns:
+        the n-th element of the fibfib number sequence
+
+    examples:
     >>> fibfib(1)
     0
     >>> fibfib(5)

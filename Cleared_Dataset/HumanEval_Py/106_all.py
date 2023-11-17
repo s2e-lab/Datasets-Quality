@@ -6,6 +6,16 @@ def fact_sum(n: int) -> List[int]:
     or the sum of numbers from 1 to i otherwise.
     i starts from 1.
     the factorial of i is the multiplication of the numbers from 1 to i (1 * 2 * ... * i).
+
+    args:
+        n: positive integer
+    
+    returns:
+        list of size n, such that the value of the element at index i is the factorial of i if i is even
+        or the sum of numbers from 1 to i otherwise.
+        i starts from 1.
+        the factorial of i is the multiplication of the numbers from 1 to i (1 * 2 * ... * i).
+        
     Example:
     fact_sum(5) == [1, 2, 6, 24, 15]
     fact_sum(6) == [1, 2, 6, 24, 15, 720]

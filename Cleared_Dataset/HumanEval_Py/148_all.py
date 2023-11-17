@@ -11,6 +11,18 @@ def bf(planet1: str, planet2: str) -> Tuple[str, str]:
     the proximity to the sun. 
     The function should return an empty tuple if planet1 or planet2
     are not correct planet names. 
+
+    args:
+        planet1: string
+        planet2: string
+
+    returns:
+        tuple containing all planets whose orbits are 
+        located between the orbit of planet1 and the orbit of planet2, sorted by 
+        the proximity to the sun. 
+        The function should return an empty tuple if planet1 or planet2
+        are not correct planet names.
+        
     Examples
     bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
     bf("Earth", "Mercury") ==> ("Venus")

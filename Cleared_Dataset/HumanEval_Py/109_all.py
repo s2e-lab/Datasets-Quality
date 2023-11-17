@@ -17,6 +17,14 @@ def move_one_ball(arr: List[int]) -> bool:
 
     Note: The given list is guaranteed to have unique elements.
 
+
+    args:
+        arr: array of integers
+
+    returns:
+        True if it is possible to obtain the sorted array by performing the above
+        operation else return False.
+
     For Example:
     
     move_one_ball([3, 4, 5, 1, 2])==>True

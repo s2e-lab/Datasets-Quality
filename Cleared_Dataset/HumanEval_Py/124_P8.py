@@ -8,6 +8,12 @@ def valid_date(date: str) -> bool:
     3. The months should not be less than 1 or higher than 12.
     4. The date should be in the format: mm-dd-yyyy
 
+    args:
+        date: string
+
+    returns:
+        True if the date is valid otherwise False
+
     for example: 
     valid_date('03-11-2000') => True
 

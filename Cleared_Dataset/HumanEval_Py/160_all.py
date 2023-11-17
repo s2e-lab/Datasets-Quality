@@ -13,6 +13,14 @@ def do_algebra(operator: List[str], operand: List[int]) -> int:
     Floor division ( // ) 
     Exponentiation ( ** ) 
 
+
+    args:
+        operator: list of strings
+        operand: list of integers
+
+    returns:
+        integer: the evaluation of the algebric expression
+
     Example:
     operator['+', '*', '-']
     array = [2, 3, 4, 5]

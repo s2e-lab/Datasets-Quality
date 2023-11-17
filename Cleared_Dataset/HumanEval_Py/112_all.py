@@ -6,7 +6,16 @@ def reverse_delete(s: str, c: str) -> Tuple[str, bool]:
     then check if the result string is palindrome.
     A string is called palindrome if it reads the same backward as forward.
     You should return a tuple containing the result string and True/False for the check.
-    Example
+
+
+    args:
+        s: string
+        c: string
+
+    returns:
+        a tuple containing the result string and True/False for the check.
+    
+    Example:
     For s = "abcde", c = "ae", the result should be ('bcd',False)
     For s = "abcdef", c = "b"  the result should be ('acdef',False)
     For s = "abcdedcba", c = "ab", the result should be ('cdedc',True)

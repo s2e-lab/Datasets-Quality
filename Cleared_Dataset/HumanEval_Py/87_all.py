@@ -10,6 +10,14 @@ def get_row(lst: List[List[int]], x: int) -> List[Tuple[int]]:
     each tuple is a coordinate - (row, columns), starting with 0.
     Sort coordinates initially by rows in ascending order.
     Also, sort coordinates of the row by columns in descending order.
+
+
+    args:
+        lst: list of lists of integers
+        x: integer
+    
+    returns:
+        list of tuples of integers
     
     Examples:
     get_row([

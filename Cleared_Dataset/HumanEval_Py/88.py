@@ -8,6 +8,12 @@ def sort_array(array):
     Note:
     * don't change the given array.
 
+    args:
+        array: list of integers
+
+    returns:
+        list of integers
+
     Examples:
     * sort_array([]) => []
     * sort_array([5]) => [5]
