@@ -15,16 +15,55 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 0</td>
-<td><b>Clone classes:</b> &nbsp; 0</td>
+<td><b>Clone pairs:</b> &nbsp; 1</td>
+<td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
 <td style="background-color:white">Clone type: &nbsp; 1</td>
 <td style="background-color:white">Granularity: &nbsp; functions</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 0%</td>
 <td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
-<td style="background-color:white">Total functions: &nbsp; 6</td>
+<td style="background-color:white">Total functions: &nbsp; 17</td>
 </tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 2 fragments, nominal size 7 lines, similarity 100%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag1')" href="javascript:;">
+Original_Files/40_.py: 1-7
+</a>
+<div class="mid" id="frag1" style="display:none"><pre>
+def triples_sum_to_zero(l: list):
+    for i in range(len(l)):
+        for j in range(i + 1, len(l)):
+            for k in range(j + 1, len(l)):
+                if l[i] + l[j] + l[k] == 0:
+                    return True
+    return False
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag2')" href="javascript:;">
+Files/40_P13_15.py: 1-7
+</a>
+<div class="mid" id="frag2" style="display:none"><pre>
+def triples_sum_to_zero(l: list):
+    for i in range(len(l)):
+        for j in range(i + 1, len(l)):
+            for k in range(j + 1, len(l)):
+                if l[i] + l[j] + l[k] == 0:
+                    return True
+    return False
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
 </table>
 <script language="JavaScript">
 function ShowHide(divId) { 

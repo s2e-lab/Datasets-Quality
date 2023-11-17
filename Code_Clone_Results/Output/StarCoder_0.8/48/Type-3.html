@@ -15,16 +15,51 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 0</td>
-<td><b>Clone classes:</b> &nbsp; 0</td>
+<td><b>Clone pairs:</b> &nbsp; 1</td>
+<td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
 <td style="background-color:white">Clone type: &nbsp; 3-2</td>
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
 <td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 9</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 17</td>
 </tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 2 fragments, nominal size 5 lines, similarity 80%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag1')" href="javascript:;">
+Original_Files/48_.py: 1-5
+</a>
+<div class="mid" id="frag1" style="display:none"><pre>
+def is_palindrome(text: str):
+    for i in range(len(text)):
+        if text[i] != text[len(text) - 1 - i]:
+            return False
+    return True
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag3')" href="javascript:;">
+Files/48_P13_1.py: 1-5
+</a>
+<div class="mid" id="frag3" style="display:none"><pre>
+def is_palindrome(text: str):
+    for i in range(len(text)):
+        if text[i]!= text[-1-i]:
+            return False
+    return True
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
 </table>
 <script language="JavaScript">
 function ShowHide(divId) { 
