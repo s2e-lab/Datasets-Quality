@@ -15,7 +15,7 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 5</td>
+<td><b>Clone pairs:</b> &nbsp; 8</td>
 <td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
@@ -23,13 +23,13 @@
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
 <td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 28</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 46</td>
 </tr>
 </table>
 <br>
 <table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
 <tr><td style="background-color:white">
-<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 6 fragments, nominal size 9 lines, similarity 77%</p>
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 9 fragments, nominal size 9 lines, similarity 77%</p>
 <table cellpadding=4 border=2>
 <tr>
 <td width="auto">
@@ -49,10 +49,42 @@ def even_odd_count(num):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag2')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag31')" href="javascript:;">
+Files/155_6.py: 1-9
+</a>
+<div class="mid" id="frag31" style="display:none"><pre>
+def even_odd_count(num):
+    even_count = 0
+    odd_count = 0
+    for digit in str(num):
+        if int(digit) % 2 == 0:
+            even_count += 1
+        else:
+            odd_count += 1
+    return even_count, odd_count
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag32')" href="javascript:;">
+Files/155_6.py: 10-18
+</a>
+<div class="mid" id="frag32" style="display:none"><pre>
+def get_even_odd_count(num):
+    even_count = 0
+    odd_count = 0
+    for digit in str(num):
+        if int(digit) % 2 == 0:
+            even_count += 1
+        else:
+            odd_count += 1
+    return even_count, odd_count
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag8')" href="javascript:;">
 Files/155_10.py: 1-9
 </a>
-<div class="mid" id="frag2" style="display:none"><pre>
+<div class="mid" id="frag8" style="display:none"><pre>
 def even_odd_count(num):
     even = 0
     odd = 0
@@ -64,11 +96,60 @@ def even_odd_count(num):
     return even, odd
 </pre></div>
 </td>
+</tr><tr>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag23')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag39')" href="javascript:;">
+Files/155_P13_1.py: 1-9
+</a>
+<div class="mid" id="frag39" style="display:none"><pre>
+def even_odd_count(num):
+    even_count = 0
+    odd_count = 0
+    for digit in str(num):
+        if int(digit) % 2 == 0:
+            even_count += 1
+        else:
+            odd_count += 1
+    return even_count, odd_count
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag22')" href="javascript:;">
+Files/155_P13_12.py: 1-9
+</a>
+<div class="mid" id="frag22" style="display:none"><pre>
+def even_odd_count(num):
+    even = 0
+    odd = 0
+    for i in str(num):
+        if int(i) % 2 == 0:
+            even += 1
+        else:
+            odd += 1
+    return even, odd
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag13')" href="javascript:;">
+Files/155_11.py: 1-9
+</a>
+<div class="mid" id="frag13" style="display:none"><pre>
+def even_odd_count(num):
+    even = 0
+    odd = 0
+    for i in str(num):
+        if int(i) % 2 == 0:
+            even += 1
+        else:
+            odd += 1
+    return even, odd
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag33')" href="javascript:;">
 Files/155_6.py: 19-27
 </a>
-<div class="mid" id="frag23" style="display:none"><pre>
+<div class="mid" id="frag33" style="display:none"><pre>
 def get_even_odd_count_2(num):
     even_count = 0
     odd_count = 0
@@ -82,26 +163,10 @@ def get_even_odd_count_2(num):
 </td>
 </tr><tr>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag22')" href="javascript:;">
-Files/155_6.py: 10-18
+<a onclick="javascript:ShowHide('frag35')" href="javascript:;">
+Files/155_P13_15.py: 1-9
 </a>
-<div class="mid" id="frag22" style="display:none"><pre>
-def get_even_odd_count(num):
-    even_count = 0
-    odd_count = 0
-    for digit in str(num):
-        if int(digit) % 2 == 0:
-            even_count += 1
-        else:
-            odd_count += 1
-    return even_count, odd_count
-</pre></div>
-</td>
-<td width="auto">
-<a onclick="javascript:ShowHide('frag21')" href="javascript:;">
-Files/155_6.py: 1-9
-</a>
-<div class="mid" id="frag21" style="display:none"><pre>
+<div class="mid" id="frag35" style="display:none"><pre>
 def even_odd_count(num):
     even_count = 0
     odd_count = 0
@@ -113,23 +178,6 @@ def even_odd_count(num):
     return even_count, odd_count
 </pre></div>
 </td>
-<td width="auto">
-<a onclick="javascript:ShowHide('frag7')" href="javascript:;">
-Files/155_11.py: 1-9
-</a>
-<div class="mid" id="frag7" style="display:none"><pre>
-def even_odd_count(num):
-    even = 0
-    odd = 0
-    for i in str(num):
-        if int(i) % 2 == 0:
-            even += 1
-        else:
-            odd += 1
-    return even, odd
-</pre></div>
-</td>
-</tr><tr>
 </tr>
 </table>
 </td></tr>

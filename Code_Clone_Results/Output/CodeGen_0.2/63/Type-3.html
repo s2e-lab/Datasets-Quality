@@ -15,7 +15,7 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 1</td>
+<td><b>Clone pairs:</b> &nbsp; 3</td>
 <td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
@@ -23,13 +23,13 @@
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
 <td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 66</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 85</td>
 </tr>
 </table>
 <br>
 <table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
 <tr><td style="background-color:white">
-<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 2 fragments, nominal size 8 lines, similarity 100%</p>
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 4 fragments, nominal size 8 lines, similarity 75%</p>
 <table cellpadding=4 border=2>
 <tr>
 <td width="auto">
@@ -48,10 +48,39 @@ def fibfib(n: int):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag42')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag51')" href="javascript:;">
 Files/63_4.py: 1-8
 </a>
-<div class="mid" id="frag42" style="display:none"><pre>
+<div class="mid" id="frag51" style="display:none"><pre>
+def fibfib(n: int):
+    if n == 0:
+        return 0
+    if n == 1:
+        return 0
+    if n == 2:
+        return 1
+    return fibfib(n - 1) + fibfib(n - 2) + fibfib(n - 3)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag20')" href="javascript:;">
+Files/63_P13_3.py: 9-15
+</a>
+<div class="mid" id="frag20" style="display:none"><pre>
+def fibfib_memo(n: int, memo: dict):
+    if n == 0:
+        return 0
+    if n == 1:
+        return 0
+    if n == 2:
+        return 1
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag19')" href="javascript:;">
+Files/63_P13_3.py: 1-8
+</a>
+<div class="mid" id="frag19" style="display:none"><pre>
 def fibfib(n: int):
     if n == 0:
         return 0

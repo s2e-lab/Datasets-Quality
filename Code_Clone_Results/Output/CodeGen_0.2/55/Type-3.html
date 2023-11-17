@@ -15,16 +15,70 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 0</td>
-<td><b>Clone classes:</b> &nbsp; 0</td>
+<td><b>Clone pairs:</b> &nbsp; 2</td>
+<td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
 <td style="background-color:white">Clone type: &nbsp; 3-2</td>
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
 <td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 36</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 50</td>
 </tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 3 fragments, nominal size 7 lines, similarity 75%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag1')" href="javascript:;">
+Original_Files/55_.py: 1-6
+</a>
+<div class="mid" id="frag1" style="display:none"><pre>
+def fib(n: int):
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    return fib(n - 1) + fib(n - 2)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag30')" href="javascript:;">
+Files/55_P13_17.py: 1-8
+</a>
+<div class="mid" id="frag30" style="display:none"><pre>
+def fib(n: int):
+    if n &lt; 0:
+        raise ValueError("n must be &gt;= 0")
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    return fib(n - 1) + fib(n - 2)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag37')" href="javascript:;">
+Files/55_P13_16.py: 1-8
+</a>
+<div class="mid" id="frag37" style="display:none"><pre>
+def fib(n: int):
+    if n &lt; 0:
+        raise ValueError("n must be &gt;= 0")
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    return fib(n - 1) + fib(n - 2)
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
 </table>
 <script language="JavaScript">
 function ShowHide(divId) { 
