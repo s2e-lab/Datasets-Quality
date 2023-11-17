@@ -15,7 +15,7 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 5</td>
+<td><b>Clone pairs:</b> &nbsp; 12</td>
 <td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
@@ -23,13 +23,13 @@
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
 <td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 29</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 52</td>
 </tr>
 </table>
 <br>
 <table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
 <tr><td style="background-color:white">
-<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 6 fragments, nominal size 6 lines, similarity 71%</p>
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 13 fragments, nominal size 6 lines, similarity 71%</p>
 <table cellpadding=4 border=2>
 <tr>
 <td width="auto">
@@ -46,10 +46,38 @@ def circular_shift(x, shift):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag3')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag15')" href="javascript:;">
+Files/65_P13_16.py: 1-7
+</a>
+<div class="mid" id="frag15" style="display:none"><pre>
+def circular_shift(x, shift):
+    x_str = str(x)
+    if shift &gt; len(x_str):
+        return x_str[::-1]
+    else:
+        shifted_digits = x_str[shift:] + x_str[:shift]
+        return shifted_digits
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag2')" href="javascript:;">
+Files/65_P13_6.py: 1-6
+</a>
+<div class="mid" id="frag2" style="display:none"><pre>
+def circular_shift(x, shift):
+    x_str = str(x)
+    if shift &gt; len(x_str):
+        return x_str[::-1]
+    else:
+        return x_str[-shift:]+x_str[:-shift]
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag4')" href="javascript:;">
 Files/65_P8_16.py: 1-7
 </a>
-<div class="mid" id="frag3" style="display:none"><pre>
+<div class="mid" id="frag4" style="display:none"><pre>
 def circular_shift(x, shift):
     x_str = str(x)
     if shift &gt; len(x_str):
@@ -61,9 +89,37 @@ def circular_shift(x, shift):
 </td>
 <td width="auto">
 <a onclick="javascript:ShowHide('frag10')" href="javascript:;">
-Files/65_9.py: 1-6
+Files/65_2.py: 1-6
 </a>
 <div class="mid" id="frag10" style="display:none"><pre>
+def circular_shift(x, shift):
+    x = str(x)
+    if shift &gt; len(x):
+        return x[::-1]
+    else:
+        return x[-shift:] + x[:-shift]
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag34')" href="javascript:;">
+Files/65_all_5.py: 1-7
+</a>
+<div class="mid" id="frag34" style="display:none"><pre>
+def circular_shift(x, shift):
+    x_str = str(x)
+    if shift &gt; len(x_str):
+        return x_str[::-1]
+    else:
+        shifted_str = x_str[-shift:] + x_str[:-shift]
+        return shifted_str
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag52')" href="javascript:;">
+Files/65_19.py: 1-6
+</a>
+<div class="mid" id="frag52" style="display:none"><pre>
 def circular_shift(x, shift):
     digits = str(x)
     if shift &gt; len(digits):
@@ -72,12 +128,51 @@ def circular_shift(x, shift):
         return digits[-shift:] + digits[:-shift]
 </pre></div>
 </td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag32')" href="javascript:;">
+Files/65_P13_14.py: 1-6
+</a>
+<div class="mid" id="frag32" style="display:none"><pre>
+def circular_shift(x, shift):
+    x = str(x)
+    if shift &gt; len(x):
+        return x[::-1]
+    else:
+        return x[-shift:] + x[:-shift]
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag24')" href="javascript:;">
+Files/65_P13_9.py: 1-6
+</a>
+<div class="mid" id="frag24" style="display:none"><pre>
+def circular_shift(x, shift):
+    x_string = str(x)
+    if shift &gt; len(x_string):
+        return x_string[::-1]
+    else:
+        return x_string[-shift:] + x_string[:-shift]
+</pre></div>
+</td>
 </tr><tr>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag8')" href="javascript:;">
-Files/65_6.py: 1-6
+<a onclick="javascript:ShowHide('frag18')" href="javascript:;">
+Files/65_9.py: 1-6
 </a>
-<div class="mid" id="frag8" style="display:none"><pre>
+<div class="mid" id="frag18" style="display:none"><pre>
+def circular_shift(x, shift):
+    digits = str(x)
+    if shift &gt; len(digits):
+        return digits[::-1]
+    else:
+        return digits[-shift:] + digits[:-shift]
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag38')" href="javascript:;">
+Files/65_all_4.py: 1-6
+</a>
+<div class="mid" id="frag38" style="display:none"><pre>
 def circular_shift(x, shift):
     x_str = str(x)
     if shift &gt; len(x_str):
@@ -87,32 +182,32 @@ def circular_shift(x, shift):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag29')" href="javascript:;">
-Files/65_19.py: 1-6
+<a onclick="javascript:ShowHide('frag20')" href="javascript:;">
+Files/65_P13_8.py: 1-6
 </a>
-<div class="mid" id="frag29" style="display:none"><pre>
+<div class="mid" id="frag20" style="display:none"><pre>
 def circular_shift(x, shift):
-    digits = str(x)
-    if shift &gt; len(digits):
-        return digits[::-1]
+    x_str = str(x)
+    if shift &gt; len(x_str):
+        return x_str[::-1]
     else:
-        return digits[-shift:] + digits[:-shift]
-</pre></div>
-</td>
-<td width="auto">
-<a onclick="javascript:ShowHide('frag7')" href="javascript:;">
-Files/65_2.py: 1-6
-</a>
-<div class="mid" id="frag7" style="display:none"><pre>
-def circular_shift(x, shift):
-    x = str(x)
-    if shift &gt; len(x):
-        return x[::-1]
-    else:
-        return x[-shift:] + x[:-shift]
+        return x_str[-shift:] + x_str[:-shift]
 </pre></div>
 </td>
 </tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag13')" href="javascript:;">
+Files/65_6.py: 1-6
+</a>
+<div class="mid" id="frag13" style="display:none"><pre>
+def circular_shift(x, shift):
+    x_str = str(x)
+    if shift &gt; len(x_str):
+        return x_str[::-1]
+    else:
+        return x_str[-shift:] + x_str[:-shift]
+</pre></div>
+</td>
 </tr>
 </table>
 </td></tr>

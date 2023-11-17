@@ -15,7 +15,7 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 4</td>
+<td><b>Clone pairs:</b> &nbsp; 6</td>
 <td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
@@ -23,13 +23,13 @@
 <td style="background-color:white">Granularity: &nbsp; functions</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 0%</td>
 <td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
-<td style="background-color:white">Total functions: &nbsp; 40</td>
+<td style="background-color:white">Total functions: &nbsp; 80</td>
 </tr>
 </table>
 <br>
 <table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
 <tr><td style="background-color:white">
-<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 5 fragments, nominal size 5 lines, similarity 100%</p>
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 7 fragments, nominal size 5 lines, similarity 100%</p>
 <table cellpadding=4 border=2>
 <tr>
 <td width="auto">
@@ -45,10 +45,10 @@ def all_prefixes(string: str) -&gt; List[str]:
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag20')" href="javascript:;">
-Files/14_19.py: 2-6
+<a onclick="javascript:ShowHide('frag24')" href="javascript:;">
+Files/14_P13_17.py: 2-6
 </a>
-<div class="mid" id="frag20" style="display:none"><pre>
+<div class="mid" id="frag24" style="display:none"><pre>
 def all_prefixes(string: str) -&gt; List[str]:
     result = []
     for i in range(len(string)):
@@ -57,34 +57,10 @@ def all_prefixes(string: str) -&gt; List[str]:
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag7')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag15')" href="javascript:;">
 Files/14_13.py: 2-6
 </a>
-<div class="mid" id="frag7" style="display:none"><pre>
-def all_prefixes(string: str) -&gt; List[str]:
-    result = []
-    for i in range(len(string)):
-    result.append(string[:i+1])
-    return result
-</pre></div>
-</td>
-<td width="auto">
-<a onclick="javascript:ShowHide('frag23')" href="javascript:;">
-Files/14_6.py: 2-6
-</a>
-<div class="mid" id="frag23" style="display:none"><pre>
-def all_prefixes(string: str) -&gt; List[str]:
-    result = []
-    for i in range(len(string)):
-    result.append(string[:i+1])
-    return result
-</pre></div>
-</td>
-<td width="auto">
-<a onclick="javascript:ShowHide('frag16')" href="javascript:;">
-Files/14_18.py: 2-6
-</a>
-<div class="mid" id="frag16" style="display:none"><pre>
+<div class="mid" id="frag15" style="display:none"><pre>
 def all_prefixes(string: str) -&gt; List[str]:
     result = []
     for i in range(len(string)):
@@ -93,6 +69,55 @@ def all_prefixes(string: str) -&gt; List[str]:
 </pre></div>
 </td>
 </tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag32')" href="javascript:;">
+Files/14_18.py: 2-6
+</a>
+<div class="mid" id="frag32" style="display:none"><pre>
+def all_prefixes(string: str) -&gt; List[str]:
+    result = []
+    for i in range(len(string)):
+    result.append(string[:i+1])
+    return result
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag66')" href="javascript:;">
+Files/14_P13_4.py: 2-6
+</a>
+<div class="mid" id="frag66" style="display:none"><pre>
+def all_prefixes(string: str) -&gt; List[str]:
+    result = []
+    for i in range(len(string)):
+    result.append(string[:i+1])
+    return result
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag39')" href="javascript:;">
+Files/14_19.py: 2-6
+</a>
+<div class="mid" id="frag39" style="display:none"><pre>
+def all_prefixes(string: str) -&gt; List[str]:
+    result = []
+    for i in range(len(string)):
+    result.append(string[:i+1])
+    return result
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag46')" href="javascript:;">
+Files/14_6.py: 2-6
+</a>
+<div class="mid" id="frag46" style="display:none"><pre>
+def all_prefixes(string: str) -&gt; List[str]:
+    result = []
+    for i in range(len(string)):
+    result.append(string[:i+1])
+    return result
+</pre></div>
+</td>
 </tr>
 </table>
 </td></tr>

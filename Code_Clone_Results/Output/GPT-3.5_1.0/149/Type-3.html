@@ -15,7 +15,7 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 6</td>
+<td><b>Clone pairs:</b> &nbsp; 14</td>
 <td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
@@ -23,13 +23,13 @@
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
 <td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 33</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 72</td>
 </tr>
 </table>
 <br>
 <table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
 <tr><td style="background-color:white">
-<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 7 fragments, nominal size 7 lines, similarity 71%</p>
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 15 fragments, nominal size 7 lines, similarity 71%</p>
 <table cellpadding=4 border=2>
 <tr>
 <td width="auto">
@@ -47,39 +47,10 @@ def sorted_list_sum(lst):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag4')" href="javascript:;">
-Files/149_1.py: 1-7
-</a>
-<div class="mid" id="frag4" style="display:none"><pre>
-def sorted_list_sum(lst):
-    even_length_lst = []
-    for word in lst:
-        if len(word) % 2 == 0:
-            even_length_lst.append(word)
-    sorted_lst = sorted(even_length_lst, key=lambda x: (len(x), x))
-    return sorted_lst
-</pre></div>
-</td>
-<td width="auto">
-<a onclick="javascript:ShowHide('frag10')" href="javascript:;">
-Files/149_11.py: 1-7
-</a>
-<div class="mid" id="frag10" style="display:none"><pre>
-def sorted_list_sum(lst):
-    result = []
-    for string in lst:
-        if len(string) % 2 == 0:
-            result.append(string)
-    result.sort(key=lambda x: (len(x), x))
-    return result
-</pre></div>
-</td>
-</tr><tr>
-<td width="auto">
-<a onclick="javascript:ShowHide('frag5')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag12')" href="javascript:;">
 Files/149_P8_3.py: 1-7
 </a>
-<div class="mid" id="frag5" style="display:none"><pre>
+<div class="mid" id="frag12" style="display:none"><pre>
 def sorted_list_sum(lst):
     even_length_words = []
     for word in lst:
@@ -90,24 +61,96 @@ def sorted_list_sum(lst):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag19')" href="javascript:;">
-Files/149_17.py: 1-7
+<a onclick="javascript:ShowHide('frag60')" href="javascript:;">
+Files/149_all_12.py: 1-7
 </a>
-<div class="mid" id="frag19" style="display:none"><pre>
+<div class="mid" id="frag60" style="display:none"><pre>
+def sorted_list_sum(lst):
+    result = []
+    for word in lst:
+        if len(word) % 2 == 0:
+            result.append(word)
+    result.sort(key=lambda x: (len(x), x))
+    return result
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag11')" href="javascript:;">
+Files/149_1.py: 1-7
+</a>
+<div class="mid" id="frag11" style="display:none"><pre>
+def sorted_list_sum(lst):
+    even_length_lst = []
+    for word in lst:
+        if len(word) % 2 == 0:
+            even_length_lst.append(word)
+    sorted_lst = sorted(even_length_lst, key=lambda x: (len(x), x))
+    return sorted_lst
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag59')" href="javascript:;">
+Files/149_all_0.py: 1-7
+</a>
+<div class="mid" id="frag59" style="display:none"><pre>
 def sorted_list_sum(lst):
     new_lst = []
-    for s in lst:
-        if len(s) % 2 == 0:
-            new_lst.append(s)
+    for word in lst:
+        if len(word) % 2 == 0:
+            new_lst.append(word)
     new_lst.sort(key=lambda x: (len(x), x))
     return new_lst
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag15')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag7')" href="javascript:;">
+Files/149_all_6.py: 1-7
+</a>
+<div class="mid" id="frag7" style="display:none"><pre>
+def sorted_list_sum(lst):
+    even_length_strings = []
+    for string in lst:
+        if len(string) % 2 == 0:
+            even_length_strings.append(string)
+    sorted_strings = sorted(even_length_strings, key=lambda x: (len(x), x))
+    return sorted_strings
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag62')" href="javascript:;">
+Files/149_6.py: 1-7
+</a>
+<div class="mid" id="frag62" style="display:none"><pre>
+def sorted_list_sum(lst):
+    new_lst = []
+    for word in lst:
+        if len(word) % 2 == 0:
+            new_lst.append(word)
+    new_lst.sort(key=lambda x: (len(x), x))
+    return new_lst
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag6')" href="javascript:;">
+Files/149_all_14.py: 1-7
+</a>
+<div class="mid" id="frag6" style="display:none"><pre>
+def sorted_list_sum(lst):
+    valid_strings = []
+    for string in lst:
+        if len(string) % 2 == 0:
+            valid_strings.append(string)
+    sorted_strings = sorted(valid_strings, key=lambda x: (len(x), x))
+    return sorted_strings
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag30')" href="javascript:;">
 Files/149_14.py: 1-7
 </a>
-<div class="mid" id="frag15" style="display:none"><pre>
+<div class="mid" id="frag30" style="display:none"><pre>
 def sorted_list_sum(lst):
     even_lst = []
     for word in lst:
@@ -119,19 +162,89 @@ def sorted_list_sum(lst):
 </td>
 </tr><tr>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag29')" href="javascript:;">
-Files/149_6.py: 1-7
+<a onclick="javascript:ShowHide('frag46')" href="javascript:;">
+Files/149_P13_1.py: 1-7
 </a>
-<div class="mid" id="frag29" style="display:none"><pre>
+<div class="mid" id="frag46" style="display:none"><pre>
+def sorted_list_sum(lst):
+    even_list = []
+    for word in lst:
+        if len(word) % 2 == 0:
+            even_list.append(word)
+    sorted_list = sorted(even_list, key=lambda x: (len(x), x))
+    return sorted_list
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag38')" href="javascript:;">
+Files/149_P13_2.py: 1-6
+</a>
+<div class="mid" id="frag38" style="display:none"><pre>
+def sorted_list_sum(lst):
+    result = []
+    for word in lst:
+        if len(word) % 2 == 0:
+            result.append(word)
+    return sorted(result, key=lambda x: (len(x), x))
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag31')" href="javascript:;">
+Files/149_P13_14.py: 1-7
+</a>
+<div class="mid" id="frag31" style="display:none"><pre>
+def sorted_list_sum(lst):
+    result = []
+    for word in lst:
+        if len(word) % 2 == 0:
+            result.append(word)
+    result.sort(key=lambda x: (len(x), x))
+    return result
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag19')" href="javascript:;">
+Files/149_all_8.py: 1-6
+</a>
+<div class="mid" id="frag19" style="display:none"><pre>
 def sorted_list_sum(lst):
     new_lst = []
     for word in lst:
         if len(word) % 2 == 0:
             new_lst.append(word)
+    return sorted(new_lst, key=lambda x: (len(x), x))
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag21')" href="javascript:;">
+Files/149_11.py: 1-7
+</a>
+<div class="mid" id="frag21" style="display:none"><pre>
+def sorted_list_sum(lst):
+    result = []
+    for string in lst:
+        if len(string) % 2 == 0:
+            result.append(string)
+    result.sort(key=lambda x: (len(x), x))
+    return result
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag39')" href="javascript:;">
+Files/149_17.py: 1-7
+</a>
+<div class="mid" id="frag39" style="display:none"><pre>
+def sorted_list_sum(lst):
+    new_lst = []
+    for s in lst:
+        if len(s) % 2 == 0:
+            new_lst.append(s)
     new_lst.sort(key=lambda x: (len(x), x))
     return new_lst
 </pre></div>
 </td>
+</tr><tr>
 </tr>
 </table>
 </td></tr>

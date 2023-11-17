@@ -15,7 +15,7 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 4</td>
+<td><b>Clone pairs:</b> &nbsp; 7</td>
 <td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
@@ -23,13 +23,13 @@
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
 <td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 38</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 75</td>
 </tr>
 </table>
 <br>
 <table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
 <tr><td style="background-color:white">
-<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 5 fragments, nominal size 5 lines, similarity 80%</p>
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 8 fragments, nominal size 5 lines, similarity 80%</p>
 <table cellpadding=4 border=2>
 <tr>
 <td width="auto">
@@ -45,10 +45,10 @@ def modp(n: int, p: int):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag31')" href="javascript:;">
-Files/49_P8_9.py: 1-5
+<a onclick="javascript:ShowHide('frag24')" href="javascript:;">
+Files/49_P13_12.py: 1-5
 </a>
-<div class="mid" id="frag31" style="display:none"><pre>
+<div class="mid" id="frag24" style="display:none"><pre>
 def modp(n: int, p: int):
     result = 1
     for i in range(n):
@@ -57,10 +57,22 @@ def modp(n: int, p: int):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag16')" href="javascript:;">
-Files/49_P8_0.py: 1-5
+<a onclick="javascript:ShowHide('frag60')" href="javascript:;">
+Files/49_P8_9.py: 1-5
 </a>
-<div class="mid" id="frag16" style="display:none"><pre>
+<div class="mid" id="frag60" style="display:none"><pre>
+def modp(n: int, p: int):
+    result = 1
+    for i in range(n):
+    result = (result * 2) % p
+    return result
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag8')" href="javascript:;">
+Files/49_all_17.py: 1-5
+</a>
+<div class="mid" id="frag8" style="display:none"><pre>
 def modp(n: int, p: int):
     result = 1
     for _ in range(n):
@@ -68,11 +80,12 @@ def modp(n: int, p: int):
     return result
 </pre></div>
 </td>
+</tr><tr>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag28')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag55')" href="javascript:;">
 Files/49_P8_2.py: 1-5
 </a>
-<div class="mid" id="frag28" style="display:none"><pre>
+<div class="mid" id="frag55" style="display:none"><pre>
 def modp(n: int, p: int):
     result = 1
     for i in range(n):
@@ -81,15 +94,39 @@ def modp(n: int, p: int):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag26')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag30')" href="javascript:;">
+Files/49_P8_0.py: 1-5
+</a>
+<div class="mid" id="frag30" style="display:none"><pre>
+def modp(n: int, p: int):
+    result = 1
+    for _ in range(n):
+    result = (result * 2) % p
+    return result
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag51')" href="javascript:;">
 Files/49_P8_18.py: 1-5
 </a>
-<div class="mid" id="frag26" style="display:none"><pre>
+<div class="mid" id="frag51" style="display:none"><pre>
 def modp(n: int, p: int):
     ans = 1
     for i in range(n):
     ans = (ans*2) % p
     return ans
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag31')" href="javascript:;">
+Files/49_P13_17.py: 1-5
+</a>
+<div class="mid" id="frag31" style="display:none"><pre>
+def modp(n: int, p: int):
+    result = 1
+    for _ in range(n):
+    result = (result * 2) % p
+    return result
 </pre></div>
 </td>
 </tr><tr>

@@ -15,7 +15,7 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 10</td>
+<td><b>Clone pairs:</b> &nbsp; 22</td>
 <td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
@@ -23,13 +23,13 @@
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
 <td style="background-color:white">Clone size: &nbsp; 7 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 69</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 86</td>
 </tr>
 </table>
 <br>
 <table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
 <tr><td style="background-color:white">
-<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 11 fragments, nominal size 14 lines, similarity 70%</p>
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 23 fragments, nominal size 14 lines, similarity 70%</p>
 <table cellpadding=4 border=2>
 <tr>
 <td width="auto">
@@ -54,10 +54,107 @@ def sort_numbers(numbers: str) -&gt; str:
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag25')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag47')" href="javascript:;">
+Files/19_all_5.py: 2-19
+</a>
+<div class="mid" id="frag47" style="display:none"><pre>
+def sort_numbers(numbers: str) -&gt; str:
+    num_dict = {
+        'zero': 0,
+        'one': 1,
+        'two': 2,
+        'three': 3,
+        'four': 4,
+        'five': 5,
+        'six': 6,
+        'seven': 7,
+        'eight': 8,
+        'nine': 9
+    }
+    words = numbers.split()
+    number_list = [num_dict[word] for word in words]
+    number_list.sort()
+    sorted_words = [num_dict[number] for number in number_list]
+    return ' '.join(sorted_words)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag69')" href="javascript:;">
+Files/19_P13_4.py: 2-17
+</a>
+<div class="mid" id="frag69" style="display:none"><pre>
+def sort_numbers(numbers: str) -&gt; str:
+    number_words = {
+    'zero': 0,
+    'one': 1,
+    'two': 2,
+    'three': 3,
+    'four': 4,
+    'five': 5,
+    'six': 6,
+    'seven': 7,
+    'eight': 8,
+    'nine': 9
+    }
+    number_list = numbers.split()
+    sorted_list = sorted(number_list, key=lambda x: number_words[x])
+    return ' '.join(sorted_list)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag35')" href="javascript:;">
+Files/19_all_6.py: 2-19
+</a>
+<div class="mid" id="frag35" style="display:none"><pre>
+def sort_numbers(numbers: str) -&gt; str:
+    conversion_dict = {
+        'zero': 0,
+        'one': 1,
+        'two': 2,
+        'three': 3,
+        'four': 4,
+        'five': 5,
+        'six': 6,
+        'seven': 7,
+        'eight': 8,
+        'nine': 9
+    }
+    numbers_list = numbers.split()
+    numbers_list = [conversion_dict[number] for number in numbers_list]
+    numbers_list.sort()
+    sorted_numbers = [conversion_dict[value] for value in numbers_list]
+    return ' '.join(sorted_numbers)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag75')" href="javascript:;">
+Files/19_P13_0.py: 2-17
+</a>
+<div class="mid" id="frag75" style="display:none"><pre>
+def sort_numbers(numbers: str) -&gt; str:
+    numberals = {
+        'zero': 0,
+        'one': 1,
+        'two': 2,
+        'three': 3,
+        'four': 4,
+        'five': 5,
+        'six': 6,
+        'seven': 7,
+        'eight': 8,
+        'nine': 9
+    }
+    number_list = numbers.split()
+    number_list.sort(key=lambda x: numberals[x])
+    return ' '.join(number_list)
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag32')" href="javascript:;">
 Files/19_P8_3.py: 2-19
 </a>
-<div class="mid" id="frag25" style="display:none"><pre>
+<div class="mid" id="frag32" style="display:none"><pre>
 def sort_numbers(numbers: str) -&gt; str:
     numbers_mapping = {
         'zero': 0,
@@ -79,35 +176,12 @@ def sort_numbers(numbers: str) -&gt; str:
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag16')" href="javascript:;">
-Files/19_all_3.py: 2-17
+<a onclick="javascript:ShowHide('frag52')" href="javascript:;">
+Files/19_all_1.py: 2-17
 </a>
-<div class="mid" id="frag16" style="display:none"><pre>
+<div class="mid" id="frag52" style="display:none"><pre>
 def sort_numbers(numbers: str) -&gt; str:
-    numeral_map = {
-    'zero': 0,
-    'one': 1,
-    'two': 2,
-    'three': 3,
-    'four': 4,
-    'five': 5,
-    'six': 6,
-    'seven': 7,
-    'eight': 8,
-    'nine': 9
-    }
-    numbers = numbers.split()
-    numbers.sort(key=lambda x: numeral_map[x])
-    return ' '.join(numbers)
-</pre></div>
-</td>
-<td width="auto">
-<a onclick="javascript:ShowHide('frag4')" href="javascript:;">
-Files/19_all_9.py: 2-19
-</a>
-<div class="mid" id="frag4" style="display:none"><pre>
-def sort_numbers(numbers: str) -&gt; str:
-    numeral_dict = {
+    num_dict = {
         'zero': 0,
         'one': 1,
         'two': 2,
@@ -119,90 +193,16 @@ def sort_numbers(numbers: str) -&gt; str:
         'eight': 8,
         'nine': 9
     }
-    numbers_list = numbers.split()
-    numeral_values = [(numeral, numeral_dict[numeral]) for numeral in numbers_list]
-    numeral_values_sorted = sorted(numeral_values, key=lambda x: x[1])
-    sorted_numbers = ' '.join([numeral for numeral, _ in numeral_values_sorted])
-    return sorted_numbers
+    number_names = numbers.split()
+    sorted_number_names = sorted(number_names, key=lambda x: num_dict[x])
+    return ' '.join(sorted_number_names)
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag67')" href="javascript:;">
-Files/19_18.py: 2-18
-</a>
-<div class="mid" id="frag67" style="display:none"><pre>
-def sort_numbers(numbers: str) -&gt; str:
-    number_dict = {
-    'zero': 0,
-    'one': 1,
-    'two': 2,
-    'three': 3,
-    'four': 4,
-    'five': 5,
-    'six': 6,
-    'seven': 7,
-    'eight': 8,
-    'nine': 9
-    }
-    numbers_list = numbers.split()
-    sorted_numbers_list = sorted(numbers_list, key=lambda x: number_dict[x])
-    sorted_numbers_str = ' '.join(sorted_numbers_list)
-    return sorted_numbers_str
-</pre></div>
-</td>
-</tr><tr>
-<td width="auto">
-<a onclick="javascript:ShowHide('frag47')" href="javascript:;">
-Files/19_1.py: 2-18
-</a>
-<div class="mid" id="frag47" style="display:none"><pre>
-def sort_numbers(numbers: str) -&gt; str:
-    numbers_dict = {
-    'zero': 0,
-    'one': 1,
-    'two': 2,
-    'three': 3,
-    'four': 4,
-    'five': 5,
-    'six': 6,
-    'seven': 7,
-    'eight': 8,
-    'nine': 9
-    }
-    numbers_list = numbers.split(' ')
-    numbers_list.sort(key=lambda x: numbers_dict[x])
-    sorted_numbers = ' '.join(numbers_list)
-    return sorted_numbers
-</pre></div>
-</td>
-<td width="auto">
-<a onclick="javascript:ShowHide('frag39')" href="javascript:;">
-Files/19_13.py: 2-17
-</a>
-<div class="mid" id="frag39" style="display:none"><pre>
-def sort_numbers(numbers: str) -&gt; str:
-    num_map = {
-    'zero': 0,
-    'one': 1,
-    'two': 2,
-    'three': 3,
-    'four': 4,
-    'five': 5,
-    'six': 6,
-    'seven': 7,
-    'eight': 8,
-    'nine': 9
-    }
-    num_list = numbers.split()
-    num_list.sort(key=lambda x: num_map[x])
-    return ' '.join(num_list)
-</pre></div>
-</td>
-<td width="auto">
-<a onclick="javascript:ShowHide('frag65')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag81')" href="javascript:;">
 Files/19_P8_11.py: 2-18
 </a>
-<div class="mid" id="frag65" style="display:none"><pre>
+<div class="mid" id="frag81" style="display:none"><pre>
 def sort_numbers(numbers: str) -&gt; str:
     word_to_num = {
     'zero': 0,
@@ -224,11 +224,106 @@ def sort_numbers(numbers: str) -&gt; str:
 </td>
 <td width="auto">
 <a onclick="javascript:ShowHide('frag9')" href="javascript:;">
-Files/19_P8_16.py: 2-17
+Files/19_all_16.py: 2-17
 </a>
 <div class="mid" id="frag9" style="display:none"><pre>
 def sort_numbers(numbers: str) -&gt; str:
-    numerical_values = {
+    number_map = {
+    'zero': 0,
+    'one': 1,
+    'two': 2,
+    'three': 3,
+    'four': 4,
+    'five': 5,
+    'six': 6,
+    'seven': 7,
+    'eight': 8,
+    'nine': 9
+    }
+    numbers_list = numbers.split()
+    numbers_list.sort(key=lambda x: number_map[x])
+    return ' '.join(numbers_list)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag82')" href="javascript:;">
+Files/19_all_15.py: 2-18
+</a>
+<div class="mid" id="frag82" style="display:none"><pre>
+def sort_numbers(numbers: str) -&gt; str:
+    number_dict = {
+        'zero': 0,
+        'one': 1,
+        'two': 2,
+        'three': 3,
+        'four': 4,
+        'five': 5,
+        'six': 6,
+        'seven': 7,
+        'eight': 8,
+        'nine': 9
+    }
+    number_list = numbers.split()
+    sorted_list = sorted(number_list, key=lambda x: number_dict[x])
+    sorted_string = ' '.join(sorted_list)
+    return sorted_string
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag36')" href="javascript:;">
+Files/19_7.py: 2-17
+</a>
+<div class="mid" id="frag36" style="display:none"><pre>
+def sort_numbers(numbers: str) -&gt; str:
+    number_mapping = {
+        'zero': 0,
+        'one': 1,
+        'two': 2,
+        'three': 3,
+        'four': 4,
+        'five': 5,
+        'six': 6,
+        'seven': 7,
+        'eight': 8,
+        'nine': 9,
+    }
+    numbers_list = numbers.split()
+    numbers_list.sort(key=lambda x: number_mapping[x])
+    return ' '.join(numbers_list)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag3')" href="javascript:;">
+Files/19_all_12.py: 2-18
+</a>
+<div class="mid" id="frag3" style="display:none"><pre>
+def sort_numbers(numbers: str) -&gt; str:
+    number_map = {
+    'zero': 0,
+    'one': 1,
+    'two': 2,
+    'three': 3,
+    'four': 4,
+    'five': 5,
+    'six': 6,
+    'seven': 7,
+    'eight': 8,
+    'nine': 9
+    }
+    number_list = numbers.split()
+    sorted_list = sorted(number_list, key=lambda x: number_map[x])
+    sorted_numbers = ' '.join(sorted_list)
+    return sorted_numbers
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag84')" href="javascript:;">
+Files/19_P13_5.py: 2-17
+</a>
+<div class="mid" id="frag84" style="display:none"><pre>
+def sort_numbers(numbers: str) -&gt; str:
+    mapping = {
         'zero': 0,
         'one': 1,
         'two': 2,
@@ -241,15 +336,15 @@ def sort_numbers(numbers: str) -&gt; str:
         'nine': 9
     }
     numberals = numbers.split()
-    sorted_numberals = sorted(numberals, key=lambda x: numerical_values[x])
-    return ' '.join(sorted_numberals)
+    numberals.sort(key=lambda x: mapping[x])
+    return ' '.join(numberals)
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag40')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag51')" href="javascript:;">
 Files/19_P8_1.py: 2-18
 </a>
-<div class="mid" id="frag40" style="display:none"><pre>
+<div class="mid" id="frag51" style="display:none"><pre>
 def sort_numbers(numbers: str) -&gt; str:
     num_dict = {
     'zero': 0,
@@ -269,12 +364,177 @@ def sort_numbers(numbers: str) -&gt; str:
     return sorted_numbers
 </pre></div>
 </td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag19')" href="javascript:;">
+Files/19_all_8.py: 2-17
+</a>
+<div class="mid" id="frag19" style="display:none"><pre>
+def sort_numbers(numbers: str) -&gt; str:
+    numeral_dict = {
+        'zero': 0,
+        'one': 1,
+        'two': 2,
+        'three': 3,
+        'four': 4,
+        'five': 5,
+        'six': 6,
+        'seven': 7,
+        'eight': 8,
+        'nine': 9
+    }
+    numbers_list = numbers.split()
+    numbers_list.sort(key=lambda x: numeral_dict[x])
+    return ' '.join(numbers_list)
+</pre></div>
+</td>
 </tr><tr>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag27')" href="javascript:;">
-Files/19_7.py: 2-17
+<a onclick="javascript:ShowHide('frag83')" href="javascript:;">
+Files/19_18.py: 2-18
 </a>
-<div class="mid" id="frag27" style="display:none"><pre>
+<div class="mid" id="frag83" style="display:none"><pre>
+def sort_numbers(numbers: str) -&gt; str:
+    number_dict = {
+    'zero': 0,
+    'one': 1,
+    'two': 2,
+    'three': 3,
+    'four': 4,
+    'five': 5,
+    'six': 6,
+    'seven': 7,
+    'eight': 8,
+    'nine': 9
+    }
+    numbers_list = numbers.split()
+    sorted_numbers_list = sorted(numbers_list, key=lambda x: number_dict[x])
+    sorted_numbers_str = ' '.join(sorted_numbers_list)
+    return sorted_numbers_str
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag12')" href="javascript:;">
+Files/19_P8_16.py: 2-17
+</a>
+<div class="mid" id="frag12" style="display:none"><pre>
+def sort_numbers(numbers: str) -&gt; str:
+    numerical_values = {
+        'zero': 0,
+        'one': 1,
+        'two': 2,
+        'three': 3,
+        'four': 4,
+        'five': 5,
+        'six': 6,
+        'seven': 7,
+        'eight': 8,
+        'nine': 9
+    }
+    numberals = numbers.split()
+    sorted_numberals = sorted(numberals, key=lambda x: numerical_values[x])
+    return ' '.join(sorted_numberals)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag6')" href="javascript:;">
+Files/19_P13_2.py: 2-18
+</a>
+<div class="mid" id="frag6" style="display:none"><pre>
+def sort_numbers(numbers: str) -&gt; str:
+    number_dictionary = {
+        'zero': 0,
+        'one': 1,
+        'two': 2,
+        'three': 3,
+        'four': 4,
+        'five': 5,
+        'six': 6,
+        'seven': 7,
+        'eight': 8,
+        'nine': 9
+    }
+    numberals = numbers.split()
+    sorted_numbers = sorted(numberals, key=lambda x: number_dictionary[x])
+    sorted_string = ' '.join(sorted_numbers)
+    return sorted_string
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag50')" href="javascript:;">
+Files/19_P13_15.py: 2-17
+</a>
+<div class="mid" id="frag50" style="display:none"><pre>
+def sort_numbers(numbers: str) -&gt; str:
+    number_map = {
+        'zero': 0,
+        'one': 1,
+        'two': 2,
+        'three': 3,
+        'four': 4,
+        'five': 5,
+        'six': 6,
+        'seven': 7,
+        'eight': 8,
+        'nine': 9
+    }
+    numbers_list = numbers.split()
+    numbers_list.sort(key=lambda x: number_map[x])
+    return ' '.join(numbers_list)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag59')" href="javascript:;">
+Files/19_1.py: 2-18
+</a>
+<div class="mid" id="frag59" style="display:none"><pre>
+def sort_numbers(numbers: str) -&gt; str:
+    numbers_dict = {
+    'zero': 0,
+    'one': 1,
+    'two': 2,
+    'three': 3,
+    'four': 4,
+    'five': 5,
+    'six': 6,
+    'seven': 7,
+    'eight': 8,
+    'nine': 9
+    }
+    numbers_list = numbers.split(' ')
+    numbers_list.sort(key=lambda x: numbers_dict[x])
+    sorted_numbers = ' '.join(numbers_list)
+    return sorted_numbers
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag49')" href="javascript:;">
+Files/19_13.py: 2-17
+</a>
+<div class="mid" id="frag49" style="display:none"><pre>
+def sort_numbers(numbers: str) -&gt; str:
+    num_map = {
+    'zero': 0,
+    'one': 1,
+    'two': 2,
+    'three': 3,
+    'four': 4,
+    'five': 5,
+    'six': 6,
+    'seven': 7,
+    'eight': 8,
+    'nine': 9
+    }
+    num_list = numbers.split()
+    num_list.sort(key=lambda x: num_map[x])
+    return ' '.join(num_list)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag25')" href="javascript:;">
+Files/19_all_18.py: 2-17
+</a>
+<div class="mid" id="frag25" style="display:none"><pre>
 def sort_numbers(numbers: str) -&gt; str:
     number_mapping = {
         'zero': 0,
@@ -286,11 +546,34 @@ def sort_numbers(numbers: str) -&gt; str:
         'six': 6,
         'seven': 7,
         'eight': 8,
-        'nine': 9,
+        'nine': 9
     }
     numbers_list = numbers.split()
     numbers_list.sort(key=lambda x: number_mapping[x])
     return ' '.join(numbers_list)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag18')" href="javascript:;">
+Files/19_all_13.py: 2-17
+</a>
+<div class="mid" id="frag18" style="display:none"><pre>
+def sort_numbers(numbers: str) -&gt; str:
+    number_dict = {
+    'zero': 0,
+    'one': 1,
+    'two': 2,
+    'three': 3,
+    'four': 4,
+    'five': 5,
+    'six': 6,
+    'seven': 7,
+    'eight': 8,
+    'nine': 9
+    }
+    numbers_list = numbers.split()
+    sorted_numbers = sorted(numbers_list, key=lambda x: number_dict[x])
+    return ' '.join(sorted_numbers)
 </pre></div>
 </td>
 </tr>

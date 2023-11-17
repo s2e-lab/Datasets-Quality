@@ -15,7 +15,7 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 3</td>
+<td><b>Clone pairs:</b> &nbsp; 7</td>
 <td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
@@ -23,13 +23,13 @@
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
 <td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 31</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 65</td>
 </tr>
 </table>
 <br>
 <table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
 <tr><td style="background-color:white">
-<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 4 fragments, nominal size 10 lines, similarity 72%</p>
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 8 fragments, nominal size 10 lines, similarity 70%</p>
 <table cellpadding=4 border=2>
 <tr>
 <td width="auto">
@@ -49,10 +49,81 @@ def encrypt(s):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag23')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag35')" href="javascript:;">
+Files/89_all_16.py: 1-11
+</a>
+<div class="mid" id="frag35" style="display:none"><pre>
+def encrypt(s):
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    encrypted = ''
+    for char in s:
+        if char in alphabet:
+            index = alphabet.index(char)
+            shifted_index = (index + (2*2)) % len(alphabet)
+            encrypted += alphabet[shifted_index]
+        else:
+            encrypted += char
+    return encrypted
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag53')" href="javascript:;">
+Files/89_P13_9.py: 1-10
+</a>
+<div class="mid" id="frag53" style="display:none"><pre>
+def encrypt(s):
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    cipher = ''
+    for char in s:
+        if char in alphabet:
+            index = (alphabet.index(char) + (2 * 2)) % len(alphabet)
+            cipher += alphabet[index]
+        else:
+            cipher += char
+    return cipher
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag64')" href="javascript:;">
+Files/89_P13_12.py: 1-11
+</a>
+<div class="mid" id="frag64" style="display:none"><pre>
+def encrypt(s):
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    encrypted = ''
+    for char in s:
+        if char in alphabet:
+            index = alphabet.index(char)
+            encrypted += alphabet[(index + 2 * 2) % 26]
+        else:
+            encrypted += char
+    return encrypted
+    encrypt('hi')
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag48')" href="javascript:;">
+Files/89_all_2.py: 1-10
+</a>
+<div class="mid" id="frag48" style="display:none"><pre>
+def encrypt(s):
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    encrypted_s = ''
+    for letter in s:
+        if letter.isalpha():
+            index = (alphabet.index(letter) + 2 * 2) % 26
+            encrypted_s += alphabet[index]
+        else:
+            encrypted_s += letter
+    return encrypted_s
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag47')" href="javascript:;">
 Files/89_P8_12.py: 1-11
 </a>
-<div class="mid" id="frag23" style="display:none"><pre>
+<div class="mid" id="frag47" style="display:none"><pre>
 def encrypt(s):
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
     encrypted = ''
@@ -67,10 +138,10 @@ def encrypt(s):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag14')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag27')" href="javascript:;">
 Files/89_13.py: 1-10
 </a>
-<div class="mid" id="frag14" style="display:none"><pre>
+<div class="mid" id="frag27" style="display:none"><pre>
 def encrypt(s):
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
     encrypted = ''
@@ -84,10 +155,10 @@ def encrypt(s):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag24')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag50')" href="javascript:;">
 Files/89_6.py: 1-11
 </a>
-<div class="mid" id="frag24" style="display:none"><pre>
+<div class="mid" id="frag50" style="display:none"><pre>
 def encrypt(s):
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
     encrypted = ''

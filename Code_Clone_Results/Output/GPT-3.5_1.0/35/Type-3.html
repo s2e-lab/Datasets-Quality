@@ -15,7 +15,7 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 1</td>
+<td><b>Clone pairs:</b> &nbsp; 12</td>
 <td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
@@ -23,13 +23,13 @@
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
 <td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 35</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 70</td>
 </tr>
 </table>
 <br>
 <table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
 <tr><td style="background-color:white">
-<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 2 fragments, nominal size 7 lines, similarity 75%</p>
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 13 fragments, nominal size 7 lines, similarity 75%</p>
 <table cellpadding=4 border=2>
 <tr>
 <td width="auto">
@@ -46,10 +46,148 @@ def max_element(l: list):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag11')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag8')" href="javascript:;">
+Files/35_all_12.py: 1-8
+</a>
+<div class="mid" id="frag8" style="display:none"><pre>
+def max_element(l: list):
+    if l:
+        max_val = l[0]
+        for i in l:
+            if i &gt; max_val:
+                max_val = i
+        return max_val
+    return None
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag26')" href="javascript:;">
+Files/35_all_0.py: 1-8
+</a>
+<div class="mid" id="frag26" style="display:none"><pre>
+def max_element(l: list):
+    if len(l) &lt; 1:
+        return None
+    max_elem = l[0]
+    for elem in l:
+        if elem &gt; max_elem:
+            max_elem = elem
+    return max_elem
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag56')" href="javascript:;">
+Files/35_P13_3.py: 1-8
+</a>
+<div class="mid" id="frag56" style="display:none"><pre>
+def max_element(l: list):
+    if not l:
+        return None
+    max_val = l[0]
+    for num in l:
+        if num &gt; max_val:
+            max_val = num
+    return max_val
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag30')" href="javascript:;">
+Files/35_all_1.py: 1-8
+</a>
+<div class="mid" id="frag30" style="display:none"><pre>
+def max_element(l: list):
+    if len(l) == 0:
+        return None
+    max_num = l[0]
+    for num in l:
+        if num &gt; max_num:
+            max_num = num
+    return max_num
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag62')" href="javascript:;">
+Files/35_P13_7.py: 1-8
+</a>
+<div class="mid" id="frag62" style="display:none"><pre>
+def max_element(l: list):
+    if len(l) == 0:
+        return None
+    max_value = l[0]
+    for num in l:
+        if num &gt; max_value:
+            max_value = num
+    return max_value
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag39')" href="javascript:;">
+Files/35_P13_11.py: 1-8
+</a>
+<div class="mid" id="frag39" style="display:none"><pre>
+def max_element(l: list):
+    if len(l) == 0:
+        return None
+    max_val = l[0]
+    for num in l:
+        if num &gt; max_val:
+            max_val = num
+    return max_val
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag12')" href="javascript:;">
+Files/35_all_13.py: 1-8
+</a>
+<div class="mid" id="frag12" style="display:none"><pre>
+def max_element(l: list):
+    if len(l) == 0:
+        return None
+    max_val = l[0]
+    for num in l:
+        if num &gt; max_val:
+            max_val = num
+    return max_val
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag46')" href="javascript:;">
+Files/35_P13_14.py: 1-8
+</a>
+<div class="mid" id="frag46" style="display:none"><pre>
+def max_element(l: list):
+    if len(l) == 0:
+        return None
+    max_val = l[0]
+    for num in l:
+        if num &gt; max_val:
+            max_val = num
+    return max_val
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag6')" href="javascript:;">
+Files/35_P13_19.py: 1-8
+</a>
+<div class="mid" id="frag6" style="display:none"><pre>
+def max_element(l: list):
+    if len(l) == 0:
+        return None
+    max_elem = l[0]
+    for elem in l:
+        if elem &gt; max_elem:
+            max_elem = elem
+    return max_elem
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag18')" href="javascript:;">
 Files/35_9.py: 1-8
 </a>
-<div class="mid" id="frag11" style="display:none"><pre>
+<div class="mid" id="frag18" style="display:none"><pre>
 def max_element(l: list):
     if len(l) == 0:
         raise ValueError("Empty list")
@@ -60,7 +198,37 @@ def max_element(l: list):
     return max
 </pre></div>
 </td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag52')" href="javascript:;">
+Files/35_P13_10.py: 1-8
+</a>
+<div class="mid" id="frag52" style="display:none"><pre>
+def max_element(l: list):
+    if len(l) == 0:
+        return None
+    max_num = l[0]
+    for num in l:
+        if num &gt; max_num:
+            max_num = num
+    return max_num
+</pre></div>
+</td>
 </tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag20')" href="javascript:;">
+Files/35_P13_17.py: 1-8
+</a>
+<div class="mid" id="frag20" style="display:none"><pre>
+def max_element(l: list):
+    if len(l) == 0:
+        return None
+    max_element = l[0]
+    for num in l:
+        if num &gt; max_element:
+            max_element = num
+    return max_element
+</pre></div>
+</td>
 </tr>
 </table>
 </td></tr>

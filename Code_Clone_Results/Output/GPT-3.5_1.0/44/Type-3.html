@@ -15,7 +15,7 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 5</td>
+<td><b>Clone pairs:</b> &nbsp; 11</td>
 <td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
@@ -23,13 +23,13 @@
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
 <td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 36</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 73</td>
 </tr>
 </table>
 <br>
 <table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
 <tr><td style="background-color:white">
-<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 6 fragments, nominal size 6 lines, similarity 75%</p>
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 12 fragments, nominal size 6 lines, similarity 75%</p>
 <table cellpadding=4 border=2>
 <tr>
 <td width="auto">
@@ -46,10 +46,10 @@ def change_base(x: int, base: int):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag23')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag46')" href="javascript:;">
 Files/44_19.py: 1-8
 </a>
-<div class="mid" id="frag23" style="display:none"><pre>
+<div class="mid" id="frag46" style="display:none"><pre>
 def change_base(x: int, base: int):
     result = ''
     if x == 0:
@@ -61,10 +61,10 @@ def change_base(x: int, base: int):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag8')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag16')" href="javascript:;">
 Files/44_3.py: 1-6
 </a>
-<div class="mid" id="frag8" style="display:none"><pre>
+<div class="mid" id="frag16" style="display:none"><pre>
 def change_base(x: int, base: int):
     result = ""
     while x &gt; 0:
@@ -75,23 +75,10 @@ def change_base(x: int, base: int):
 </td>
 </tr><tr>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag32')" href="javascript:;">
-Files/44_13.py: 1-6
-</a>
-<div class="mid" id="frag32" style="display:none"><pre>
-def change_base(x: int, base: int):
-    result = ''
-    while x &gt; 0:
-    result = str(x % base) + result
-    x = x // base
-    return result
-</pre></div>
-</td>
-<td width="auto">
-<a onclick="javascript:ShowHide('frag28')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag56')" href="javascript:;">
 Files/44_P8_17.py: 1-6
 </a>
-<div class="mid" id="frag28" style="display:none"><pre>
+<div class="mid" id="frag56" style="display:none"><pre>
 def change_base(x: int, base: int):
     result = ''
     while x &gt; 0:
@@ -101,15 +88,108 @@ def change_base(x: int, base: int):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag9')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag72')" href="javascript:;">
+Files/44_all_6.py: 1-6
+</a>
+<div class="mid" id="frag72" style="display:none"><pre>
+def change_base(x: int, base: int):
+    result = ''
+    while x &gt; 0:
+    result = str(x % base) + result
+    x = x // base
+    return result
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag18')" href="javascript:;">
 Files/44_10.py: 1-6
 </a>
-<div class="mid" id="frag9" style="display:none"><pre>
+<div class="mid" id="frag18" style="display:none"><pre>
 def change_base(x: int, base: int):
     result = ''
     while x &gt; 0:
     result = str(x % base) + result
     x = x//base
+    return result
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag66')" href="javascript:;">
+Files/44_all_2.py: 1-6
+</a>
+<div class="mid" id="frag66" style="display:none"><pre>
+def change_base(x: int, base: int):
+    result = ""
+    while x &gt; 0:
+    result = str(x % base) + result
+    x //= base
+    return result
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag55')" href="javascript:;">
+Files/44_P13_11.py: 1-6
+</a>
+<div class="mid" id="frag55" style="display:none"><pre>
+def change_base(x: int, base: int):
+    converted = ""
+    while x &gt; 0:
+    converted = str(x % base) + converted
+    x = x // base
+    return converted
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag49')" href="javascript:;">
+Files/44_P13_3.py: 1-6
+</a>
+<div class="mid" id="frag49" style="display:none"><pre>
+def change_base(x: int, base: int):
+    result = ''
+    while x &gt; 0:
+        result = str(x % base) + result
+        x = x // base
+    return result
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag64')" href="javascript:;">
+Files/44_13.py: 1-6
+</a>
+<div class="mid" id="frag64" style="display:none"><pre>
+def change_base(x: int, base: int):
+    result = ''
+    while x &gt; 0:
+    result = str(x % base) + result
+    x = x // base
+    return result
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag8')" href="javascript:;">
+Files/44_all_13.py: 1-6
+</a>
+<div class="mid" id="frag8" style="display:none"><pre>
+def change_base(x: int, base: int):
+    result = ""
+    while x &gt; 0:
+    result = str(x % base) + result
+    x = x // base
+    return result
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag65')" href="javascript:;">
+Files/44_P13_8.py: 1-6
+</a>
+<div class="mid" id="frag65" style="display:none"><pre>
+def change_base(x: int, base: int):
+    result = ''
+    while x &gt; 0:
+    result = str(x % base) + result
+    x = x // base
     return result
 </pre></div>
 </td>

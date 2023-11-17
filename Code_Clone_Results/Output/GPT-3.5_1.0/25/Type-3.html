@@ -15,7 +15,7 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 1</td>
+<td><b>Clone pairs:</b> &nbsp; 4</td>
 <td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
@@ -23,13 +23,13 @@
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
 <td style="background-color:white">Clone size: &nbsp; 7 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 16</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 32</td>
 </tr>
 </table>
 <br>
 <table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
 <tr><td style="background-color:white">
-<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 2 fragments, nominal size 13 lines, similarity 92%</p>
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 5 fragments, nominal size 13 lines, similarity 84%</p>
 <table cellpadding=4 border=2>
 <tr>
 <td width="auto">
@@ -53,10 +53,10 @@ def factorize(n: int) -&gt; List[int]:
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag7')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag15')" href="javascript:;">
 Files/25_P1_5.py: 2-14
 </a>
-<div class="mid" id="frag7" style="display:none"><pre>
+<div class="mid" id="frag15" style="display:none"><pre>
 def factorize(n: int) -&gt; List[int]:
     import math
     factors = []
@@ -67,6 +67,63 @@ def factorize(n: int) -&gt; List[int]:
             n //= i
         else:
             i += 1
+    if n &gt; 1:
+        factors.append(n)
+    return factors
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag28')" href="javascript:;">
+Files/25_all_2.py: 2-13
+</a>
+<div class="mid" id="frag28" style="display:none"><pre>
+def factorize(n: int) -&gt; List[int]:
+    factors = []
+    d = 2
+    while d * d &lt;= n:
+        if n % d == 0:
+            factors.append(d)
+            n //= d
+        else:
+            d += 1
+    if n &gt; 1:
+        factors.append(n)
+    return factors
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag5')" href="javascript:;">
+Files/25_all_1.py: 2-13
+</a>
+<div class="mid" id="frag5" style="display:none"><pre>
+def factorize(n: int) -&gt; List[int]:
+    factors = []
+    d = 2
+    while d * d &lt;= n:
+        if n % d == 0:
+            factors.append(d)
+            n //= d
+        else:
+            d += 1
+    if n &gt; 1:
+        factors.append(n)
+    return factors
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag6')" href="javascript:;">
+Files/25_P13_15.py: 2-13
+</a>
+<div class="mid" id="frag6" style="display:none"><pre>
+def factorize(n: int) -&gt; List[int]:
+    factors = []
+    d = 2
+    while d * d &lt;= n:
+        if n % d == 0:
+            factors.append(d)
+            n //= d
+        else:
+            d += 1
     if n &gt; 1:
         factors.append(n)
     return factors

@@ -15,7 +15,7 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 12</td>
+<td><b>Clone pairs:</b> &nbsp; 21</td>
 <td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
@@ -23,13 +23,13 @@
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 0%</td>
 <td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 34</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 71</td>
 </tr>
 </table>
 <br>
 <table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
 <tr><td style="background-color:white">
-<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 13 fragments, nominal size 5 lines, similarity 100%</p>
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 22 fragments, nominal size 5 lines, similarity 100%</p>
 <table cellpadding=4 border=2>
 <tr>
 <td width="auto">
@@ -45,10 +45,10 @@ def below_threshold(l: list, t: int):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag5')" href="javascript:;">
-Files/52_7.py: 1-5
+<a onclick="javascript:ShowHide('frag71')" href="javascript:;">
+Files/52_P8_18.py: 1-5
 </a>
-<div class="mid" id="frag5" style="display:none"><pre>
+<div class="mid" id="frag71" style="display:none"><pre>
 def below_threshold(l: list, t: int):
     for num in l:
         if num &gt;= t:
@@ -57,23 +57,47 @@ def below_threshold(l: list, t: int):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag12')" href="javascript:;">
-Files/52_17.py: 1-5
+<a onclick="javascript:ShowHide('frag46')" href="javascript:;">
+Files/52_P8_12.py: 1-5
 </a>
-<div class="mid" id="frag12" style="display:none"><pre>
+<div class="mid" id="frag46" style="display:none"><pre>
 def below_threshold(l: list, t: int):
     for num in l:
         if num &gt;= t:
+            return False
+    return True
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag8')" href="javascript:;">
+Files/52_7.py: 1-5
+</a>
+<div class="mid" id="frag8" style="display:none"><pre>
+def below_threshold(l: list, t: int):
+    for num in l:
+        if num &gt;= t:
+            return False
+    return True
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag54')" href="javascript:;">
+Files/52_P13_9.py: 1-5
+</a>
+<div class="mid" id="frag54" style="display:none"><pre>
+def below_threshold(l: list, t: int):
+    for i in l:
+        if i &gt;= t:
             return False
     return True
 </pre></div>
 </td>
 </tr><tr>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag34')" href="javascript:;">
-Files/52_P8_18.py: 1-5
+<a onclick="javascript:ShowHide('frag70')" href="javascript:;">
+Files/52_P13_8.py: 1-5
 </a>
-<div class="mid" id="frag34" style="display:none"><pre>
+<div class="mid" id="frag70" style="display:none"><pre>
 def below_threshold(l: list, t: int):
     for num in l:
         if num &gt;= t:
@@ -82,10 +106,34 @@ def below_threshold(l: list, t: int):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag18')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag32')" href="javascript:;">
+Files/52_P8_8.py: 1-5
+</a>
+<div class="mid" id="frag32" style="display:none"><pre>
+def below_threshold(l: list, t: int):
+    for num in l:
+        if num &gt;= t:
+            return False
+    return True
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag67')" href="javascript:;">
+Files/52_P13_17.py: 1-5
+</a>
+<div class="mid" id="frag67" style="display:none"><pre>
+def below_threshold(l: list, t: int):
+    for num in l:
+        if num &gt;= t:
+            return False
+    return True
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag35')" href="javascript:;">
 Files/52_14.py: 1-5
 </a>
-<div class="mid" id="frag18" style="display:none"><pre>
+<div class="mid" id="frag35" style="display:none"><pre>
 def below_threshold(l: list, t: int):
     for number in l:
         if number &gt;= t:
@@ -94,10 +142,10 @@ def below_threshold(l: list, t: int):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag32')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag66')" href="javascript:;">
 Files/52_5.py: 1-5
 </a>
-<div class="mid" id="frag32" style="display:none"><pre>
+<div class="mid" id="frag66" style="display:none"><pre>
 def below_threshold(l: list, t: int):
     for i in l:
         if i &gt;= t:
@@ -106,58 +154,9 @@ def below_threshold(l: list, t: int):
 </pre></div>
 </td>
 </tr><tr>
-<td width="auto">
-<a onclick="javascript:ShowHide('frag17')" href="javascript:;">
-Files/52_P8_8.py: 1-5
-</a>
-<div class="mid" id="frag17" style="display:none"><pre>
-def below_threshold(l: list, t: int):
-    for num in l:
-        if num &gt;= t:
-            return False
-    return True
-</pre></div>
-</td>
-<td width="auto">
-<a onclick="javascript:ShowHide('frag9')" href="javascript:;">
-Files/52_12.py: 1-5
-</a>
-<div class="mid" id="frag9" style="display:none"><pre>
-def below_threshold(l: list, t: int):
-    for num in l:
-        if num &gt;= t:
-            return False
-    return True
-</pre></div>
-</td>
-<td width="auto">
-<a onclick="javascript:ShowHide('frag19')" href="javascript:;">
-Files/52_P8_17.py: 1-5
-</a>
-<div class="mid" id="frag19" style="display:none"><pre>
-def below_threshold(l: list, t: int):
-    for num in l:
-        if num &gt;= t:
-            return False
-    return True
-</pre></div>
-</td>
-</tr><tr>
-<td width="auto">
-<a onclick="javascript:ShowHide('frag28')" href="javascript:;">
-Files/52_0.py: 1-5
-</a>
-<div class="mid" id="frag28" style="display:none"><pre>
-def below_threshold(l: list, t: int):
-    for i in l:
-        if i &gt;= t:
-            return False
-    return True
-</pre></div>
-</td>
 <td width="auto">
 <a onclick="javascript:ShowHide('frag23')" href="javascript:;">
-Files/52_P8_12.py: 1-5
+Files/52_17.py: 1-5
 </a>
 <div class="mid" id="frag23" style="display:none"><pre>
 def below_threshold(l: list, t: int):
@@ -168,10 +167,46 @@ def below_threshold(l: list, t: int):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag26')" href="javascript:;">
-Files/52_P8_2.py: 1-5
+<a onclick="javascript:ShowHide('frag13')" href="javascript:;">
+Files/52_P13_11.py: 1-5
 </a>
-<div class="mid" id="frag26" style="display:none"><pre>
+<div class="mid" id="frag13" style="display:none"><pre>
+def below_threshold(l: list, t: int):
+    for element in l:
+        if element &gt;= t:
+            return False
+    return True
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag24')" href="javascript:;">
+Files/52_9.py: 1-5
+</a>
+<div class="mid" id="frag24" style="display:none"><pre>
+def below_threshold(l: list, t: int):
+    for i in l:
+        if i &gt;= t:
+            return False
+    return True
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag63')" href="javascript:;">
+Files/52_all_7.py: 1-5
+</a>
+<div class="mid" id="frag63" style="display:none"><pre>
+def below_threshold(l: list, t: int):
+    for num in l:
+        if num &gt;= t:
+            return False
+    return True
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag27')" href="javascript:;">
+Files/52_P13_4.py: 1-5
+</a>
+<div class="mid" id="frag27" style="display:none"><pre>
 def below_threshold(l: list, t: int):
     for i in l:
         if i &gt;= t:
@@ -181,13 +216,86 @@ def below_threshold(l: list, t: int):
 </td>
 </tr><tr>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag13')" href="javascript:;">
-Files/52_9.py: 1-5
+<a onclick="javascript:ShowHide('frag57')" href="javascript:;">
+Files/52_0.py: 1-5
 </a>
-<div class="mid" id="frag13" style="display:none"><pre>
+<div class="mid" id="frag57" style="display:none"><pre>
 def below_threshold(l: list, t: int):
     for i in l:
         if i &gt;= t:
+            return False
+    return True
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag37')" href="javascript:;">
+Files/52_P8_17.py: 1-5
+</a>
+<div class="mid" id="frag37" style="display:none"><pre>
+def below_threshold(l: list, t: int):
+    for num in l:
+        if num &gt;= t:
+            return False
+    return True
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag16')" href="javascript:;">
+Files/52_P13_5.py: 1-5
+</a>
+<div class="mid" id="frag16" style="display:none"><pre>
+def below_threshold(l: list, t: int):
+    for i in l:
+        if i &gt;= t:
+            return False
+    return True
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag53')" href="javascript:;">
+Files/52_P8_2.py: 1-5
+</a>
+<div class="mid" id="frag53" style="display:none"><pre>
+def below_threshold(l: list, t: int):
+    for i in l:
+        if i &gt;= t:
+            return False
+    return True
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag17')" href="javascript:;">
+Files/52_12.py: 1-5
+</a>
+<div class="mid" id="frag17" style="display:none"><pre>
+def below_threshold(l: list, t: int):
+    for num in l:
+        if num &gt;= t:
+            return False
+    return True
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag38')" href="javascript:;">
+Files/52_P13_7.py: 1-5
+</a>
+<div class="mid" id="frag38" style="display:none"><pre>
+def below_threshold(l: list, t: int):
+    for num in l:
+        if num &gt;= t:
+            return False
+    return True
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag18')" href="javascript:;">
+Files/52_all_15.py: 1-5
+</a>
+<div class="mid" id="frag18" style="display:none"><pre>
+def below_threshold(l: list, t: int):
+    for num in l:
+        if num &gt;= t:
             return False
     return True
 </pre></div>

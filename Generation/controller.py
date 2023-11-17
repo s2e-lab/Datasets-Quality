@@ -51,7 +51,7 @@ for d in original_data:
 from execution import check_correctness
 
 # %%
-file_name = 'GPT3.5_Output_Py_1.0'
+file_name = 'StarCoder_Output_Py_0.8'
 with open(f'./Output/{file_name}.json', 'r') as f:
     data = json.load(f)
 
@@ -126,12 +126,12 @@ for d in data:
         'entry_point': original_item['entry_point'],
         'prompt': d['prompt']+'\n',
     }
-    for i, c in enumerate(d['output']['choices']):
-    # for i, c in enumerate(d['output']):
+    # for i, c in enumerate(d['output']['choices']):
+    for i, c in enumerate(d['output']):
         # print(i)
         # completion = clear_generated_code(c['message']['content'])
-        completion = c['message']['content'].split('<|endoftext|>')[0]
-        # completion = c['text'].split('<|endoftext|>')[0]
+        # completion = c['message']['content'].split('<|endoftext|>')[0]
+        completion = c['text'].split('<|endoftext|>')[0]
         # problem['completion_'+str(i)] = completion
         # with open(f'./Files/{id}_{str(i)}.py', 'w') as f:
         #     # f.write(remove_comments(original_item['prompt']+'\n'+completion))

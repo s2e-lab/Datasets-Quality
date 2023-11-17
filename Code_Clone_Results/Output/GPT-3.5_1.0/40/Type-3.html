@@ -15,7 +15,7 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 2</td>
+<td><b>Clone pairs:</b> &nbsp; 3</td>
 <td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
@@ -23,13 +23,13 @@
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
 <td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 23</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 45</td>
 </tr>
 </table>
 <br>
 <table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
 <tr><td style="background-color:white">
-<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 3 fragments, nominal size 7 lines, similarity 87%</p>
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 4 fragments, nominal size 7 lines, similarity 71%</p>
 <table cellpadding=4 border=2>
 <tr>
 <td width="auto">
@@ -47,10 +47,10 @@ def triples_sum_to_zero(l: list):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag21')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag40')" href="javascript:;">
 Files/40_8.py: 1-8
 </a>
-<div class="mid" id="frag21" style="display:none"><pre>
+<div class="mid" id="frag40" style="display:none"><pre>
 def triples_sum_to_zero(l: list):
     triples = []
     for i in range(len(l)):
@@ -70,6 +70,20 @@ def triples_sum_to_zero(l: list):
     for i in range(len(l)):
         for j in range(i+1, len(l)):
             for k in range(j+1, len(l)):
+                if l[i] + l[j] + l[k] == 0:
+                    return True
+    return False
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag8')" href="javascript:;">
+Files/40_P13_9.py: 1-7
+</a>
+<div class="mid" id="frag8" style="display:none"><pre>
+def triples_sum_to_zero(l: list):
+    for i in range(len(l) - 2):
+        for j in range(i + 1, len(l) - 1):
+            for k in range(j + 1, len(l)):
                 if l[i] + l[j] + l[k] == 0:
                     return True
     return False

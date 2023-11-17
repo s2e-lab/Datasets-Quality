@@ -15,7 +15,7 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 1</td>
+<td><b>Clone pairs:</b> &nbsp; 2</td>
 <td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
@@ -23,13 +23,13 @@
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 0%</td>
 <td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 36</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 73</td>
 </tr>
 </table>
 <br>
 <table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
 <tr><td style="background-color:white">
-<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 2 fragments, nominal size 6 lines, similarity 100%</p>
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 3 fragments, nominal size 6 lines, similarity 100%</p>
 <table cellpadding=4 border=2>
 <tr>
 <td width="auto">
@@ -46,10 +46,23 @@ def change_base(x: int, base: int):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag8')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag66')" href="javascript:;">
+Files/44_all_2.py: 1-6
+</a>
+<div class="mid" id="frag66" style="display:none"><pre>
+def change_base(x: int, base: int):
+    result = ""
+    while x &gt; 0:
+    result = str(x % base) + result
+    x //= base
+    return result
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag16')" href="javascript:;">
 Files/44_3.py: 1-6
 </a>
-<div class="mid" id="frag8" style="display:none"><pre>
+<div class="mid" id="frag16" style="display:none"><pre>
 def change_base(x: int, base: int):
     result = ""
     while x &gt; 0:

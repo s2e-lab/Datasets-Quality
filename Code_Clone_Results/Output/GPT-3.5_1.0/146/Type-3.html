@@ -15,7 +15,7 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 8</td>
+<td><b>Clone pairs:</b> &nbsp; 14</td>
 <td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
@@ -23,13 +23,13 @@
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
 <td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 37</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 61</td>
 </tr>
 </table>
 <br>
 <table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
 <tr><td style="background-color:white">
-<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 9 fragments, nominal size 9 lines, similarity 70%</p>
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 15 fragments, nominal size 9 lines, similarity 70%</p>
 <table cellpadding=4 border=2>
 <tr>
 <td width="auto">
@@ -49,10 +49,43 @@ def specialFilter(nums):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag3')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag46')" href="javascript:;">
+Files/146_all_2.py: 1-10
+</a>
+<div class="mid" id="frag46" style="display:none"><pre>
+def specialFilter(nums):
+    count = 0
+    for num in nums:
+        if num &gt; 10:
+            str_num = str(num)
+            first_digit = int(str_num[0])
+            last_digit = int(str_num[-1])
+            if first_digit % 2 == 1 and last_digit % 2 == 1:
+                count += 1
+    return count
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag14')" href="javascript:;">
+Files/146_P8_1.py: 1-8
+</a>
+<div class="mid" id="frag14" style="display:none"><pre>
+def specialFilter(nums):
+    count = 0
+    for num in nums:
+        if num &gt; 10:
+            str_num = str(num)
+            if int(str_num[0]) % 2 != 0 and int(str_num[-1]) % 2 != 0:
+                count += 1
+    return count
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag4')" href="javascript:;">
 Files/146_16.py: 1-10
 </a>
-<div class="mid" id="frag3" style="display:none"><pre>
+<div class="mid" id="frag4" style="display:none"><pre>
 def specialFilter(nums):
     count = 0
     for num in nums:
@@ -66,25 +99,25 @@ def specialFilter(nums):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag9')" href="javascript:;">
-Files/146_P8_1.py: 1-8
+<a onclick="javascript:ShowHide('frag20')" href="javascript:;">
+Files/146_18.py: 1-8
 </a>
-<div class="mid" id="frag9" style="display:none"><pre>
+<div class="mid" id="frag20" style="display:none"><pre>
 def specialFilter(nums):
     count = 0
     for num in nums:
         if num &gt; 10:
-            str_num = str(num)
-            if int(str_num[0]) % 2 != 0 and int(str_num[-1]) % 2 != 0:
+            num_str = str(num)
+            if int(num_str[0]) % 2 != 0 and int(num_str[-1]) % 2 != 0:
                 count += 1
     return count
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag17')" href="javascript:;">
-Files/146_8.py: 1-10
+<a onclick="javascript:ShowHide('frag23')" href="javascript:;">
+Files/146_all_16.py: 1-10
 </a>
-<div class="mid" id="frag17" style="display:none"><pre>
+<div class="mid" id="frag23" style="display:none"><pre>
 def specialFilter(nums):
     count = 0
     for num in nums:
@@ -99,56 +132,42 @@ def specialFilter(nums):
 </td>
 </tr><tr>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag37')" href="javascript:;">
-Files/146_11.py: 1-8
+<a onclick="javascript:ShowHide('frag10')" href="javascript:;">
+Files/146_P13_12.py: 1-8
 </a>
-<div class="mid" id="frag37" style="display:none"><pre>
+<div class="mid" id="frag10" style="display:none"><pre>
 def specialFilter(nums):
-    count = 0
-    for num in nums:
-        if num &gt; 10:
-            num_str = str(num)
-            if int(num_str[0]) % 2 != 0 and int(num_str[-1]) % 2 != 0:
-                count += 1
-    return count
-</pre></div>
-</td>
-<td width="auto">
-<a onclick="javascript:ShowHide('frag15')" href="javascript:;">
-Files/146_P8_4.py: 1-9
-</a>
-<div class="mid" id="frag15" style="display:none"><pre>
-def specialFilter(nums):
-    return n % 2 != 0
     count = 0
     for num in nums:
         if num &gt; 10:
             str_num = str(num)
-            if is_odd(int(str_num[0])) and is_odd(int(str_num[-1])):
+            if int(str_num[0]) % 2 != 0 and int(str_num[-1]) % 2 != 0:
                 count += 1
     return count
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag27')" href="javascript:;">
-Files/146_P8_12.py: 1-8
+<a onclick="javascript:ShowHide('frag28')" href="javascript:;">
+Files/146_8.py: 1-10
 </a>
-<div class="mid" id="frag27" style="display:none"><pre>
+<div class="mid" id="frag28" style="display:none"><pre>
 def specialFilter(nums):
     count = 0
     for num in nums:
         if num &gt; 10:
             num_str = str(num)
-            if int(num_str[0]) % 2 != 0 and int(num_str[-1]) % 2 != 0:
+            first_digit = int(num_str[0])
+            last_digit = int(num_str[-1])
+            if first_digit % 2 != 0 and last_digit % 2 != 0:
                 count += 1
     return count
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag12')" href="javascript:;">
-Files/146_18.py: 1-8
+<a onclick="javascript:ShowHide('frag45')" href="javascript:;">
+Files/146_P8_12.py: 1-8
 </a>
-<div class="mid" id="frag12" style="display:none"><pre>
+<div class="mid" id="frag45" style="display:none"><pre>
 def specialFilter(nums):
     count = 0
     for num in nums:
@@ -161,10 +180,89 @@ def specialFilter(nums):
 </td>
 </tr><tr>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag13')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag31')" href="javascript:;">
+Files/146_P13_18.py: 1-10
+</a>
+<div class="mid" id="frag31" style="display:none"><pre>
+def specialFilter(nums):
+    count = 0
+    for num in nums:
+        if num &gt; 10:
+            num_str = str(num)
+            if int(num_str[0]) % 2 != 0 and int(num_str[-1]) % 2 != 0:
+                count += 1
+    return count
+    print(specialFilter([15, -73, 14, -15]))  
+    print(specialFilter([33, -2, -3, 45, 21, 109]))  
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag50')" href="javascript:;">
+Files/146_all_6.py: 1-8
+</a>
+<div class="mid" id="frag50" style="display:none"><pre>
+def specialFilter(nums):
+    count = 0
+    for num in nums:
+        if num &gt; 10:
+            num_str = str(num)
+            if int(num_str[0]) % 2 != 0 and int(num_str[-1]) % 2 != 0:
+                count += 1
+    return count
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag25')" href="javascript:;">
+Files/146_P8_4.py: 1-9
+</a>
+<div class="mid" id="frag25" style="display:none"><pre>
+def specialFilter(nums):
+    return n % 2 != 0
+    count = 0
+    for num in nums:
+        if num &gt; 10:
+            str_num = str(num)
+            if is_odd(int(str_num[0])) and is_odd(int(str_num[-1])):
+                count += 1
+    return count
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag61')" href="javascript:;">
+Files/146_11.py: 1-8
+</a>
+<div class="mid" id="frag61" style="display:none"><pre>
+def specialFilter(nums):
+    count = 0
+    for num in nums:
+        if num &gt; 10:
+            num_str = str(num)
+            if int(num_str[0]) % 2 != 0 and int(num_str[-1]) % 2 != 0:
+                count += 1
+    return count
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag18')" href="javascript:;">
+Files/146_all_12.py: 1-8
+</a>
+<div class="mid" id="frag18" style="display:none"><pre>
+def specialFilter(nums):
+    count = 0
+    for num in nums:
+        if num &gt; 10:
+            num_str = str(num)
+            if int(num_str[0]) % 2 == 1 and int(num_str[-1]) % 2 == 1:
+                count += 1
+    return count
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag22')" href="javascript:;">
 Files/146_9.py: 1-8
 </a>
-<div class="mid" id="frag13" style="display:none"><pre>
+<div class="mid" id="frag22" style="display:none"><pre>
 def specialFilter(nums):
     count = 0
     for num in nums:
@@ -175,6 +273,7 @@ def specialFilter(nums):
     return count
 </pre></div>
 </td>
+</tr><tr>
 </tr>
 </table>
 </td></tr>

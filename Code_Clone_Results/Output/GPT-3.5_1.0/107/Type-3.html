@@ -15,7 +15,7 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 9</td>
+<td><b>Clone pairs:</b> &nbsp; 15</td>
 <td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
@@ -23,13 +23,13 @@
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
 <td style="background-color:white">Clone size: &nbsp; 6 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 41</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 72</td>
 </tr>
 </table>
 <br>
 <table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
 <tr><td style="background-color:white">
-<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 10 fragments, nominal size 11 lines, similarity 72%</p>
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 16 fragments, nominal size 11 lines, similarity 72%</p>
 <table cellpadding=4 border=2>
 <tr>
 <td width="auto">
@@ -51,10 +51,46 @@ def even_odd_palindrome(n):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag7')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag20')" href="javascript:;">
+Files/107_16.py: 1-11
+</a>
+<div class="mid" id="frag20" style="display:none"><pre>
+def even_odd_palindrome(n):
+    return str(n) == str(n)[::-1]
+    count_even = 0
+    count_odd = 0
+    for i in range(1, n+1):
+        if is_palindrome(i):
+            if i % 2 == 0:
+                count_even += 1
+            else:
+                count_odd += 1
+    return (count_even, count_odd)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag39')" href="javascript:;">
+Files/107_all_15.py: 1-11
+</a>
+<div class="mid" id="frag39" style="display:none"><pre>
+def even_odd_palindrome(n):
+    return str(n) == str(n)[::-1]
+    even_count = 0
+    odd_count = 0
+    for i in range(1, n + 1):
+        if is_palindrome(i):
+            if i % 2 == 0:
+                even_count += 1
+            else:
+                odd_count += 1
+    return (even_count, odd_count)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag10')" href="javascript:;">
 Files/107_13.py: 1-11
 </a>
-<div class="mid" id="frag7" style="display:none"><pre>
+<div class="mid" id="frag10" style="display:none"><pre>
 def even_odd_palindrome(n):
         return str(num) == str(num)[::-1]
     even_count = 0
@@ -68,13 +104,14 @@ def even_odd_palindrome(n):
     return (even_count, odd_count)
 </pre></div>
 </td>
+</tr><tr>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag35')" href="javascript:;">
-Files/107_5.py: 1-11
+<a onclick="javascript:ShowHide('frag53')" href="javascript:;">
+Files/107_all_0.py: 1-11
 </a>
-<div class="mid" id="frag35" style="display:none"><pre>
+<div class="mid" id="frag53" style="display:none"><pre>
 def even_odd_palindrome(n):
-        return str(num) == str(num)[::-1]
+    return str(n) == str(n)[::-1]
     even_count = 0
     odd_count = 0
     for i in range(1, n+1):
@@ -105,12 +142,30 @@ def even_odd_palindrome(n):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag29')" href="javascript:;">
-Files/107_P8_5.py: 1-11
+<a onclick="javascript:ShowHide('frag40')" href="javascript:;">
+Files/107_P13_9.py: 1-11
 </a>
-<div class="mid" id="frag29" style="display:none"><pre>
+<div class="mid" id="frag40" style="display:none"><pre>
 def even_odd_palindrome(n):
         return str(num) == str(num)[::-1]
+    evens = 0
+    odds = 0
+    for i in range(1, n+1):
+        if is_palindrome(i):
+            if i % 2 == 0:
+                evens += 1
+            else:
+                odds += 1
+    return (evens, odds)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag27')" href="javascript:;">
+Files/107_all_3.py: 1-11
+</a>
+<div class="mid" id="frag27" style="display:none"><pre>
+def even_odd_palindrome(n):
+    return str(num) == str(num)[::-1]
     even_count = 0
     odd_count = 0
     for i in range(1, n+1):
@@ -124,10 +179,10 @@ def even_odd_palindrome(n):
 </td>
 </tr><tr>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag37')" href="javascript:;">
-Files/107_4.py: 1-11
+<a onclick="javascript:ShowHide('frag45')" href="javascript:;">
+Files/107_P8_4.py: 1-11
 </a>
-<div class="mid" id="frag37" style="display:none"><pre>
+<div class="mid" id="frag45" style="display:none"><pre>
 def even_odd_palindrome(n):
         return str(num) == str(num)[::-1]
     even_count = 0
@@ -142,10 +197,101 @@ def even_odd_palindrome(n):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag26')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag67')" href="javascript:;">
+Files/107_4.py: 1-11
+</a>
+<div class="mid" id="frag67" style="display:none"><pre>
+def even_odd_palindrome(n):
+        return str(num) == str(num)[::-1]
+    even_count = 0
+    odd_count = 0
+    for i in range(1, n+1):
+        if is_palindrome(i):
+            if i % 2 == 0:
+                even_count += 1
+            else:
+                odd_count += 1
+    return (even_count, odd_count)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag49')" href="javascript:;">
+Files/107_all_12.py: 1-11
+</a>
+<div class="mid" id="frag49" style="display:none"><pre>
+def even_odd_palindrome(n):
+    return str(n) == str(n)[::-1]
+    even_count = 0
+    odd_count = 0
+    for i in range(1, n+1):
+        if is_palindrome(i):
+            if i % 2 == 0:
+                even_count += 1
+            else:
+                odd_count += 1
+    return (even_count, odd_count)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag65')" href="javascript:;">
+Files/107_14.py: 1-11
+</a>
+<div class="mid" id="frag65" style="display:none"><pre>
+def even_odd_palindrome(n):
+    return str(n) == str(n)[::-1]
+    even_count = 0
+    odd_count = 0
+    for i in range(1, n+1):
+        if is_palindrome(i):
+            if i % 2 == 0:
+                even_count += 1
+            else:
+                odd_count += 1
+    return (even_count, odd_count)
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag42')" href="javascript:;">
+Files/107_all_6.py: 1-11
+</a>
+<div class="mid" id="frag42" style="display:none"><pre>
+def even_odd_palindrome(n):
+        return str(num) == str(num)[::-1]
+    even_count = 0
+    odd_count = 0
+    for i in range(1, n+1):
+        if is_palindrome(i):
+            if i % 2 == 0:
+                even_count += 1
+            else:
+                odd_count += 1
+    return (even_count, odd_count)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag62')" href="javascript:;">
+Files/107_5.py: 1-11
+</a>
+<div class="mid" id="frag62" style="display:none"><pre>
+def even_odd_palindrome(n):
+        return str(num) == str(num)[::-1]
+    even_count = 0
+    odd_count = 0
+    for i in range(1, n+1):
+        if is_palindrome(i):
+            if i % 2 == 0:
+                even_count += 1
+            else:
+                odd_count += 1
+    return (even_count, odd_count)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag41')" href="javascript:;">
 Files/107_P8_3.py: 1-11
 </a>
-<div class="mid" id="frag26" style="display:none"><pre>
+<div class="mid" id="frag41" style="display:none"><pre>
 def even_odd_palindrome(n):
     return str(num) == str(num)[::-1]
     even_count = 0
@@ -160,48 +306,12 @@ def even_odd_palindrome(n):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag14')" href="javascript:;">
-Files/107_16.py: 1-11
+<a onclick="javascript:ShowHide('frag54')" href="javascript:;">
+Files/107_P8_5.py: 1-11
 </a>
-<div class="mid" id="frag14" style="display:none"><pre>
-def even_odd_palindrome(n):
-    return str(n) == str(n)[::-1]
-    count_even = 0
-    count_odd = 0
-    for i in range(1, n+1):
-        if is_palindrome(i):
-            if i % 2 == 0:
-                count_even += 1
-            else:
-                count_odd += 1
-    return (count_even, count_odd)
-</pre></div>
-</td>
-<td width="auto">
-<a onclick="javascript:ShowHide('frag27')" href="javascript:;">
-Files/107_P8_4.py: 1-11
-</a>
-<div class="mid" id="frag27" style="display:none"><pre>
+<div class="mid" id="frag54" style="display:none"><pre>
 def even_odd_palindrome(n):
         return str(num) == str(num)[::-1]
-    even_count = 0
-    odd_count = 0
-    for i in range(1, n+1):
-        if is_palindrome(i):
-            if i % 2 == 0:
-                even_count += 1
-            else:
-                odd_count += 1
-    return (even_count, odd_count)
-</pre></div>
-</td>
-<td width="auto">
-<a onclick="javascript:ShowHide('frag36')" href="javascript:;">
-Files/107_14.py: 1-11
-</a>
-<div class="mid" id="frag36" style="display:none"><pre>
-def even_odd_palindrome(n):
-    return str(n) == str(n)[::-1]
     even_count = 0
     odd_count = 0
     for i in range(1, n+1):

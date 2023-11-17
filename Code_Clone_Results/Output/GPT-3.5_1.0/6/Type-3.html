@@ -1,0 +1,124 @@
+<html>
+<head>
+    <title>NiCad6 Clone Report</title>
+    <style type="text/css">
+        body {font-family:sans-serif;}
+        table {background-color:white; border:0px; padding:0px; border-spacing:4px; width:auto; margin-left:30px; margin-right:auto;}
+        td {background-color:rgba(192,212,238,0.8); border:0px; padding:8px; width:auto; vertical-align:top; border-radius:8px}
+        pre {background-color:white; padding:4px;}
+        a {color:darkblue;}
+    </style>
+</head>
+<body>
+<h2>NiCad6 Clone Report</h2>
+<table>
+<tr style="font-size:14pt">
+<td><b>System 1:</b> &nbsp; Original_Files</td>
+<td><b>System 2:</b> &nbsp; Files</td>
+<td><b>Clone pairs:</b> &nbsp; 3</td>
+<td><b>Clone classes:</b> &nbsp; 1</td>
+</tr>
+<tr style="font-size:12pt">
+<td style="background-color:white">Clone type: &nbsp; 3-2</td>
+<td style="background-color:white">Granularity: &nbsp; functions-blind</td>
+<td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
+<td style="background-color:white">Clone size: &nbsp; 7 - 2500 lines</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 66</td>
+</tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 4 fragments, nominal size 12 lines, similarity 75%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag1')" href="javascript:;">
+Original_Files/6_.py: 2-13
+</a>
+<div class="mid" id="frag1" style="display:none"><pre>
+def parse_nested_parens(paren_string: str) -&gt; List[int]:
+    def parse_paren_group(s):
+        depth = 0
+        max_depth = 0
+        for c in s:
+            if c == '(':
+                depth += 1
+                max_depth = max(depth, max_depth)
+            else:
+                depth -= 1
+        return max_depth
+    return [parse_paren_group(x) for x in paren_string.split(' ') if x]
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag3')" href="javascript:;">
+Files/6_11.py: 2-13
+</a>
+<div class="mid" id="frag3" style="display:none"><pre>
+def parse_nested_parens(paren_string: str) -&gt; List[int]:
+    result = []
+    count = 0
+    max_count = 0
+    for char in paren_string:
+        if char == '(':
+            count += 1
+            max_count = max(max_count, count)
+        elif char == ')':
+            count -= 1
+    result.append(max_count)
+    return result
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag39')" href="javascript:;">
+Files/6_P13_6.py: 2-12
+</a>
+<div class="mid" id="frag39" style="display:none"><pre>
+def parse_nested_parens(paren_string: str) -&gt; List[int]:
+    levels = []
+    max_level = 0
+    current_level = 0
+    for c in paren_string:
+        if c == '(':
+            current_level += 1
+            max_level = max(max_level, current_level)
+        elif c == ')':
+            current_level -= 1
+    return levels
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag48')" href="javascript:;">
+Files/6_18.py: 2-12
+</a>
+<div class="mid" id="frag48" style="display:none"><pre>
+def parse_nested_parens(paren_string: str) -&gt; List[int]:
+    result = []
+    count = 0
+    max_count = 0
+    for char in paren_string:
+        if char == "(":
+            count += 1
+            max_count = max(max_count, count)
+        elif char == ")":
+            count -= 1
+    return result
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<script language="JavaScript">
+function ShowHide(divId) { 
+    if(document.getElementById(divId).style.display == 'none') {
+        document.getElementById(divId).style.display='block';
+    } else { 
+        document.getElementById(divId).style.display = 'none';
+    } 
+}
+</script>
+</body>
+</html>

@@ -15,7 +15,7 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 3</td>
+<td><b>Clone pairs:</b> &nbsp; 11</td>
 <td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
@@ -23,13 +23,13 @@
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
 <td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 28</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 64</td>
 </tr>
 </table>
 <br>
 <table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
 <tr><td style="background-color:white">
-<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 4 fragments, nominal size 8 lines, similarity 75%</p>
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 12 fragments, nominal size 8 lines, similarity 75%</p>
 <table cellpadding=4 border=2>
 <tr>
 <td width="auto">
@@ -48,10 +48,10 @@ def choose_num(x, y):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag22')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag48')" href="javascript:;">
 Files/102_3.py: 1-8
 </a>
-<div class="mid" id="frag22" style="display:none"><pre>
+<div class="mid" id="frag48" style="display:none"><pre>
 def choose_num(x, y):
     if x &gt; y:
         return -1
@@ -63,10 +63,39 @@ def choose_num(x, y):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag23')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag9')" href="javascript:;">
+Files/102_P13_1.py: 1-7
+</a>
+<div class="mid" id="frag9" style="display:none"><pre>
+def choose_num(x, y):
+    if x &gt; y:
+        return -1
+    for num in range(y, x - 1, -1):
+        if num % 2 == 0:
+            return num
+    return -1
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag22')" href="javascript:;">
+Files/102_all_17.py: 1-7
+</a>
+<div class="mid" id="frag22" style="display:none"><pre>
+def choose_num(x, y):
+    if x &gt; y:
+        return -1
+    for i in range(y, x-1, -1):
+        if i % 2 == 0:
+            return i
+    return -1
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag52')" href="javascript:;">
 Files/102_8.py: 1-7
 </a>
-<div class="mid" id="frag23" style="display:none"><pre>
+<div class="mid" id="frag52" style="display:none"><pre>
 def choose_num(x, y):
     if x &gt; y:
         return -1
@@ -77,10 +106,96 @@ def choose_num(x, y):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag7')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag31')" href="javascript:;">
+Files/102_all_3.py: 1-7
+</a>
+<div class="mid" id="frag31" style="display:none"><pre>
+def choose_num(x, y):
+    if x &gt; y:
+        return -1
+    for i in range(y, x-1, -1):
+        if i % 2 == 0:
+            return i
+    return -1
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag41')" href="javascript:;">
+Files/102_all_11.py: 1-7
+</a>
+<div class="mid" id="frag41" style="display:none"><pre>
+def choose_num(x, y):
+    if x &gt; y:
+        return -1
+    for i in range(y, x-1, -1):
+        if i % 2 == 0:
+            return i
+    return -1
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag26')" href="javascript:;">
+Files/102_all_16.py: 1-7
+</a>
+<div class="mid" id="frag26" style="display:none"><pre>
+def choose_num(x, y):
+    if x &gt; y:
+        return -1
+    for i in range(y, x-1, -1):
+        if i % 2 == 0:
+            return i
+    return -1
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag8')" href="javascript:;">
+Files/102_P13_17.py: 1-7
+</a>
+<div class="mid" id="frag8" style="display:none"><pre>
+def choose_num(x, y):
+    if x &gt; y:
+        return -1
+    for i in range(y, x - 1, -1):
+        if i % 2 == 0:
+            return i
+    return -1
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag20')" href="javascript:;">
 Files/102_P8_1.py: 1-7
 </a>
-<div class="mid" id="frag7" style="display:none"><pre>
+<div class="mid" id="frag20" style="display:none"><pre>
+def choose_num(x, y):
+    if x &gt; y:
+        return -1
+    for i in range(y, x-1, -1):
+        if i % 2 == 0:
+            return i
+    return -1
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag11')" href="javascript:;">
+Files/102_all_18.py: 1-7
+</a>
+<div class="mid" id="frag11" style="display:none"><pre>
+def choose_num(x, y):
+    if x &gt; y:
+        return -1
+    for i in range(y, x-1, -1):
+        if i % 2 == 0:
+            return i
+    return -1
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag16')" href="javascript:;">
+Files/102_all_13.py: 1-7
+</a>
+<div class="mid" id="frag16" style="display:none"><pre>
 def choose_num(x, y):
     if x &gt; y:
         return -1

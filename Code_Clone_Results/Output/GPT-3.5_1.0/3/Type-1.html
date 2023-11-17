@@ -15,7 +15,7 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 4</td>
+<td><b>Clone pairs:</b> &nbsp; 11</td>
 <td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
@@ -23,13 +23,13 @@
 <td style="background-color:white">Granularity: &nbsp; functions</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 0%</td>
 <td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
-<td style="background-color:white">Total functions: &nbsp; 40</td>
+<td style="background-color:white">Total functions: &nbsp; 81</td>
 </tr>
 </table>
 <br>
 <table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
 <tr><td style="background-color:white">
-<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 5 fragments, nominal size 7 lines, similarity 100%</p>
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 12 fragments, nominal size 7 lines, similarity 100%</p>
 <table cellpadding=4 border=2>
 <tr>
 <td width="auto">
@@ -48,23 +48,23 @@ def below_zero(operations: List[int]) -&gt; bool:
 </td>
 <td width="auto">
 <a onclick="javascript:ShowHide('frag7')" href="javascript:;">
-Files/3_6.py: 2-8
+Files/3_all_0.py: 2-8
 </a>
 <div class="mid" id="frag7" style="display:none"><pre>
 def below_zero(operations: List[int]) -&gt; bool:
     balance = 0
     for op in operations:
-    balance += op
-    if balance &lt; 0:
-        return True
+        balance += op
+        if balance &lt; 0:
+            return True
     return False
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag15')" href="javascript:;">
-Files/3_14.py: 2-8
+<a onclick="javascript:ShowHide('frag59')" href="javascript:;">
+Files/3_4.py: 2-8
 </a>
-<div class="mid" id="frag15" style="display:none"><pre>
+<div class="mid" id="frag59" style="display:none"><pre>
 def below_zero(operations: List[int]) -&gt; bool:
     balance = 0
     for op in operations:
@@ -74,9 +74,10 @@ def below_zero(operations: List[int]) -&gt; bool:
     return False
 </pre></div>
 </td>
+</tr><tr>
 <td width="auto">
 <a onclick="javascript:ShowHide('frag10')" href="javascript:;">
-Files/3_7.py: 2-8
+Files/3_6.py: 2-8
 </a>
 <div class="mid" id="frag10" style="display:none"><pre>
 def below_zero(operations: List[int]) -&gt; bool:
@@ -89,16 +90,116 @@ def below_zero(operations: List[int]) -&gt; bool:
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag28')" href="javascript:;">
-Files/3_4.py: 2-8
+<a onclick="javascript:ShowHide('frag70')" href="javascript:;">
+Files/3_all_7.py: 2-8
 </a>
-<div class="mid" id="frag28" style="display:none"><pre>
+<div class="mid" id="frag70" style="display:none"><pre>
 def below_zero(operations: List[int]) -&gt; bool:
     balance = 0
     for op in operations:
     balance += op
     if balance &lt; 0:
         return True
+    return False
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag15')" href="javascript:;">
+Files/3_7.py: 2-8
+</a>
+<div class="mid" id="frag15" style="display:none"><pre>
+def below_zero(operations: List[int]) -&gt; bool:
+    balance = 0
+    for op in operations:
+    balance += op
+    if balance &lt; 0:
+        return True
+    return False
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag68')" href="javascript:;">
+Files/3_all_13.py: 2-8
+</a>
+<div class="mid" id="frag68" style="display:none"><pre>
+def below_zero(operations: List[int]) -&gt; bool:
+    balance = 0
+    for op in operations:
+    balance += op
+    if balance &lt; 0:
+        return True
+    return False
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag24')" href="javascript:;">
+Files/3_14.py: 2-8
+</a>
+<div class="mid" id="frag24" style="display:none"><pre>
+def below_zero(operations: List[int]) -&gt; bool:
+    balance = 0
+    for op in operations:
+    balance += op
+    if balance &lt; 0:
+        return True
+    return False
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag64')" href="javascript:;">
+Files/3_all_6.py: 2-8
+</a>
+<div class="mid" id="frag64" style="display:none"><pre>
+def below_zero(operations: List[int]) -&gt; bool:
+    balance = 0
+    for op in operations:
+    balance += op
+    if balance &lt; 0:
+        return True
+    return False
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag38')" href="javascript:;">
+Files/3_all_8.py: 2-8
+</a>
+<div class="mid" id="frag38" style="display:none"><pre>
+def below_zero(operations: List[int]) -&gt; bool:
+    balance = 0
+    for op in operations:
+        balance += op
+        if balance &lt; 0:
+            return True
+    return False
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag62')" href="javascript:;">
+Files/3_all_17.py: 2-8
+</a>
+<div class="mid" id="frag62" style="display:none"><pre>
+def below_zero(operations: List[int]) -&gt; bool:
+    balance = 0
+    for op in operations:
+        balance += op
+        if balance &lt; 0:
+            return True
+    return False
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag40')" href="javascript:;">
+Files/3_P13_3.py: 2-8
+</a>
+<div class="mid" id="frag40" style="display:none"><pre>
+def below_zero(operations: List[int]) -&gt; bool:
+    balance = 0
+    for op in operations:
+        balance += op
+        if balance &lt; 0:
+            return True
     return False
 </pre></div>
 </td>

@@ -15,7 +15,7 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 3</td>
+<td><b>Clone pairs:</b> &nbsp; 4</td>
 <td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
@@ -23,13 +23,13 @@
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
 <td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 23</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 41</td>
 </tr>
 </table>
 <br>
 <table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
 <tr><td style="background-color:white">
-<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 4 fragments, nominal size 10 lines, similarity 70%</p>
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 5 fragments, nominal size 10 lines, similarity 70%</p>
 <table cellpadding=4 border=2>
 <tr>
 <td width="auto">
@@ -50,10 +50,27 @@ def correct_bracketing(brackets: str):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag9')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag21')" href="javascript:;">
+Files/56_5.py: 1-10
+</a>
+<div class="mid" id="frag21" style="display:none"><pre>
+def correct_bracketing(brackets: str):
+    opening_brackets = 0
+    for bracket in brackets:
+        if bracket == '&lt;':
+            opening_brackets += 1
+        elif bracket == '&gt;':
+            opening_brackets -= 1
+        if opening_brackets &lt; 0:
+            return False
+    return opening_brackets == 0
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag18')" href="javascript:;">
 Files/56_4.py: 1-10
 </a>
-<div class="mid" id="frag9" style="display:none"><pre>
+<div class="mid" id="frag18" style="display:none"><pre>
 def correct_bracketing(brackets: str):
     count = 0
     for bracket in brackets:
@@ -67,10 +84,27 @@ def correct_bracketing(brackets: str):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag15')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag24')" href="javascript:;">
+Files/56_P13_1.py: 1-10
+</a>
+<div class="mid" id="frag24" style="display:none"><pre>
+def correct_bracketing(brackets: str):
+    open_brackets = 0
+    for bracket in brackets:
+        if bracket == "&lt;":
+            open_brackets += 1
+        elif bracket == "&gt;":
+            if open_brackets == 0:
+                return False
+            open_brackets -= 1
+    return open_brackets == 0
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag28')" href="javascript:;">
 Files/56_2.py: 1-10
 </a>
-<div class="mid" id="frag15" style="display:none"><pre>
+<div class="mid" id="frag28" style="display:none"><pre>
 def correct_bracketing(brackets: str):
     open_count = 0
     for bracket in brackets:
@@ -81,23 +115,6 @@ def correct_bracketing(brackets: str):
                 return False
             open_count -= 1
     return open_count == 0
-</pre></div>
-</td>
-<td width="auto">
-<a onclick="javascript:ShowHide('frag11')" href="javascript:;">
-Files/56_5.py: 1-10
-</a>
-<div class="mid" id="frag11" style="display:none"><pre>
-def correct_bracketing(brackets: str):
-    opening_brackets = 0
-    for bracket in brackets:
-        if bracket == '&lt;':
-            opening_brackets += 1
-        elif bracket == '&gt;':
-            opening_brackets -= 1
-        if opening_brackets &lt; 0:
-            return False
-    return opening_brackets == 0
 </pre></div>
 </td>
 </tr><tr>

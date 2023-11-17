@@ -15,7 +15,7 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 2</td>
+<td><b>Clone pairs:</b> &nbsp; 5</td>
 <td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
@@ -23,13 +23,13 @@
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
 <td style="background-color:white">Clone size: &nbsp; 6 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 31</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 60</td>
 </tr>
 </table>
 <br>
 <table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
 <tr><td style="background-color:white">
-<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 3 fragments, nominal size 12 lines, similarity 75%</p>
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 6 fragments, nominal size 12 lines, similarity 71%</p>
 <table cellpadding=4 border=2>
 <tr>
 <td width="auto">
@@ -52,10 +52,50 @@ def exchange(lst1, lst2):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag30')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag53')" href="javascript:;">
+Files/110_P13_14.py: 1-14
+</a>
+<div class="mid" id="frag53" style="display:none"><pre>
+def exchange(lst1, lst2):
+    even_count = 0
+    odd_count = 0
+    for num in lst1:
+        if num % 2 == 0:
+            even_count += 1
+        else:
+            odd_count += 1
+    if odd_count == 0:
+        return "YES"
+    for num in lst2:
+        if num % 2 == 1:
+            return "NO"
+    return "YES"
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag21')" href="javascript:;">
+Files/110_all_9.py: 1-11
+</a>
+<div class="mid" id="frag21" style="display:none"><pre>
+def exchange(lst1, lst2):
+    even_count = 0
+    for i in lst1:
+        if i % 2 == 0:
+            even_count += 1
+    if even_count == len(lst1):
+        return "YES"
+    for i in lst2:
+        if i % 2 == 0:
+            return "YES"
+    return "NO"
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag57')" href="javascript:;">
 Files/110_P8_14.py: 1-14
 </a>
-<div class="mid" id="frag30" style="display:none"><pre>
+<div class="mid" id="frag57" style="display:none"><pre>
 def exchange(lst1, lst2):
     from typing import List
     even_count = 0
@@ -73,10 +113,10 @@ def exchange(lst1, lst2):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag29')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag56')" href="javascript:;">
 Files/110_1.py: 1-12
 </a>
-<div class="mid" id="frag29" style="display:none"><pre>
+<div class="mid" id="frag56" style="display:none"><pre>
 def exchange(lst1, lst2):
     odd_count = 0
     even_count = 0
@@ -89,6 +129,25 @@ def exchange(lst1, lst2):
         return "NO"
     else:
         return "YES"
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag43')" href="javascript:;">
+Files/110_all_5.py: 1-12
+</a>
+<div class="mid" id="frag43" style="display:none"><pre>
+def exchange(lst1, lst2):
+    even_count = 0
+    for num in lst1:
+        if num % 2 == 0:
+            even_count += 1
+    for num in lst2:
+        if num % 2 == 0:
+            even_count -= 1
+    if even_count &gt;= 0:
+        return "YES"
+    else:
+        return "NO"
 </pre></div>
 </td>
 </tr><tr>

@@ -15,7 +15,7 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 3</td>
+<td><b>Clone pairs:</b> &nbsp; 5</td>
 <td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
@@ -23,13 +23,13 @@
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
 <td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 54</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 82</td>
 </tr>
 </table>
 <br>
 <table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
 <tr><td style="background-color:white">
-<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 4 fragments, nominal size 7 lines, similarity 71%</p>
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 6 fragments, nominal size 7 lines, similarity 71%</p>
 <table cellpadding=4 border=2>
 <tr>
 <td width="auto">
@@ -47,10 +47,10 @@ def split_words(txt):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag22')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag34')" href="javascript:;">
 Files/125_P1_10.py: 1-7
 </a>
-<div class="mid" id="frag22" style="display:none"><pre>
+<div class="mid" id="frag34" style="display:none"><pre>
 def split_words(txt):
     if ' ' in txt:
         return txt.split()
@@ -61,10 +61,10 @@ def split_words(txt):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag32')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag50')" href="javascript:;">
 Files/125_P8_2.py: 1-7
 </a>
-<div class="mid" id="frag32" style="display:none"><pre>
+<div class="mid" id="frag50" style="display:none"><pre>
 def split_words(txt):
     if ' ' in txt:
         return txt.split()
@@ -74,11 +74,12 @@ def split_words(txt):
         return len([x for x in txt if ord(x) % 2 != 0])
 </pre></div>
 </td>
+</tr><tr>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag36')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag54')" href="javascript:;">
 Files/125_P8_3.py: 1-7
 </a>
-<div class="mid" id="frag36" style="display:none"><pre>
+<div class="mid" id="frag54" style="display:none"><pre>
 def split_words(txt):
     if ' ' in txt:
         return txt.split()
@@ -86,6 +87,34 @@ def split_words(txt):
         return txt.split(',')
     else:
         return [char for char in txt if ord(char.lower()) % 2 == 1]
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag2')" href="javascript:;">
+Files/125_P13_17.py: 1-7
+</a>
+<div class="mid" id="frag2" style="display:none"><pre>
+def split_words(txt):
+    if ' ' in txt:
+        return txt.split()
+    elif ',' in txt:
+        return txt.split(',')
+    else:
+        return sum(1 for c in txt if ord(c) in range(ord('a'), ord('z')+1, 2))
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag52')" href="javascript:;">
+Files/125_all_14.py: 1-7
+</a>
+<div class="mid" id="frag52" style="display:none"><pre>
+def split_words(txt):
+    if ' ' in txt:
+        return txt.split()
+    elif ',' in txt:
+        return txt.split(',')
+    else:
+        return sum(1 for c in txt if ord('a') &lt;= ord(c) &lt;= ord('z') and ord(c) % 2 != 0)
 </pre></div>
 </td>
 </tr><tr>

@@ -15,7 +15,7 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 6</td>
+<td><b>Clone pairs:</b> &nbsp; 14</td>
 <td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
@@ -23,13 +23,13 @@
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
 <td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 71</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 88</td>
 </tr>
 </table>
 <br>
 <table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
 <tr><td style="background-color:white">
-<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 7 fragments, nominal size 6 lines, similarity 71%</p>
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 15 fragments, nominal size 6 lines, similarity 71%</p>
 <table cellpadding=4 border=2>
 <tr>
 <td width="auto">
@@ -46,39 +46,10 @@ def unique_digits(x):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag70')" href="javascript:;">
-Files/104_P8_1.py: 1-7
-</a>
-<div class="mid" id="frag70" style="display:none"><pre>
-def unique_digits(x):
-    result = []
-    for num in x:
-    digits = [int(digit) for digit in str(num)]
-    if all(digit % 2 != 0 for digit in digits):
-        result.append(num)
-    return sorted(result)
-</pre></div>
-</td>
-<td width="auto">
-<a onclick="javascript:ShowHide('frag68')" href="javascript:;">
-Files/104_3.py: 1-7
-</a>
-<div class="mid" id="frag68" style="display:none"><pre>
-def unique_digits(x):
-    digits = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-    result = []
-    for num in x:
-        if all(d not in str(num) for d in digits):
-            result.append(num)
-    return sorted(result)
-</pre></div>
-</td>
-</tr><tr>
-<td width="auto">
-<a onclick="javascript:ShowHide('frag53')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag66')" href="javascript:;">
 Files/104_P8_16.py: 1-7
 </a>
-<div class="mid" id="frag53" style="display:none"><pre>
+<div class="mid" id="frag66" style="display:none"><pre>
 def unique_digits(x):
     result = []
     for num in x:
@@ -89,10 +60,38 @@ def unique_digits(x):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag17')" href="javascript:;">
-Files/104_P8_7.py: 1-6
+<a onclick="javascript:ShowHide('frag41')" href="javascript:;">
+Files/104_all_17.py: 1-6
 </a>
-<div class="mid" id="frag17" style="display:none"><pre>
+<div class="mid" id="frag41" style="display:none"><pre>
+def unique_digits(x):
+    result = []
+    for num in x:
+        if all(int(digit) % 2 != 0 for digit in str(num)):
+            result.append(num)
+    return sorted(result)
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag86')" href="javascript:;">
+Files/104_P8_1.py: 1-7
+</a>
+<div class="mid" id="frag86" style="display:none"><pre>
+def unique_digits(x):
+    result = []
+    for num in x:
+    digits = [int(digit) for digit in str(num)]
+    if all(digit % 2 != 0 for digit in digits):
+        result.append(num)
+    return sorted(result)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag70')" href="javascript:;">
+Files/104_6.py: 1-6
+</a>
+<div class="mid" id="frag70" style="display:none"><pre>
 def unique_digits(x):
     result = []
     for num in x:
@@ -102,10 +101,10 @@ def unique_digits(x):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag18')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag20')" href="javascript:;">
 Files/104_1.py: 1-7
 </a>
-<div class="mid" id="frag18" style="display:none"><pre>
+<div class="mid" id="frag20" style="display:none"><pre>
 def unique_digits(x):
     odds = []
     for num in x:
@@ -117,10 +116,65 @@ def unique_digits(x):
 </td>
 </tr><tr>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag57')" href="javascript:;">
-Files/104_6.py: 1-6
+<a onclick="javascript:ShowHide('frag53')" href="javascript:;">
+Files/104_P13_3.py: 1-6
 </a>
-<div class="mid" id="frag57" style="display:none"><pre>
+<div class="mid" id="frag53" style="display:none"><pre>
+def unique_digits(x):
+    digits2add = []
+    for n in x:
+        if not any(digit in str(n) for digit in '02468'):
+            digits2add.append(n)
+    return sorted(digits2add)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag17')" href="javascript:;">
+Files/104_P13_12.py: 1-7
+</a>
+<div class="mid" id="frag17" style="display:none"><pre>
+def unique_digits(x):
+    result = []
+    for num in x:
+    digits = [int(d) for d in str(num)]
+    if all(d % 2 != 0 for d in digits):
+        result.append(num)
+    return sorted(result)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag56')" href="javascript:;">
+Files/104_all_9.py: 1-6
+</a>
+<div class="mid" id="frag56" style="display:none"><pre>
+def unique_digits(x):
+    result = []
+    for num in x:
+        if not any(digit % 2 == 0 for digit in str(num)):
+            result.append(num)
+    return sorted(result)
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag14')" href="javascript:;">
+Files/104_all_19.py: 1-7
+</a>
+<div class="mid" id="frag14" style="display:none"><pre>
+def unique_digits(x):
+    result = []
+    for num in x:
+    num_str = str(num)
+    if all(int(digit) % 2 != 0 for digit in num_str):
+        result.append(num)
+    return sorted(result)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag19')" href="javascript:;">
+Files/104_P8_7.py: 1-6
+</a>
+<div class="mid" id="frag19" style="display:none"><pre>
 def unique_digits(x):
     result = []
     for num in x:
@@ -129,6 +183,63 @@ def unique_digits(x):
     return sorted(result)
 </pre></div>
 </td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag8')" href="javascript:;">
+Files/104_all_18.py: 1-7
+</a>
+<div class="mid" id="frag8" style="display:none"><pre>
+def unique_digits(x):
+    result = []
+    for i in x:
+        digits = set(str(i))
+        if not any(int(d) % 2 == 0 for d in digits):
+            result.append(i)
+    return sorted(result)
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag83')" href="javascript:;">
+Files/104_P13_8.py: 1-7
+</a>
+<div class="mid" id="frag83" style="display:none"><pre>
+def unique_digits(x):
+    odd_digits = []
+    for num in x:
+    digits = [int(digit) for digit in str(num)]
+    if all(digit % 2 != 0 for digit in digits):
+        odd_digits.append(num)
+    return sorted(odd_digits)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag84')" href="javascript:;">
+Files/104_3.py: 1-7
+</a>
+<div class="mid" id="frag84" style="display:none"><pre>
+def unique_digits(x):
+    digits = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    result = []
+    for num in x:
+        if all(d not in str(num) for d in digits):
+            result.append(num)
+    return sorted(result)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag31')" href="javascript:;">
+Files/104_P13_19.py: 1-6
+</a>
+<div class="mid" id="frag31" style="display:none"><pre>
+def unique_digits(x):
+    result = []
+    for num in x:
+        if all(int(digit) % 2 != 0 for digit in str(num)):
+            result.append(num)
+    return sorted(result)
+</pre></div>
+</td>
+</tr><tr>
 </tr>
 </table>
 </td></tr>
