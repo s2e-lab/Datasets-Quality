@@ -15,16 +15,71 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 0</td>
-<td><b>Clone classes:</b> &nbsp; 0</td>
+<td><b>Clone pairs:</b> &nbsp; 1</td>
+<td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
 <td style="background-color:white">Clone type: &nbsp; 3-2</td>
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
 <td style="background-color:white">Clone size: &nbsp; 9 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 8</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 16</td>
 </tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 2 fragments, nominal size 15 lines, similarity 86%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag1')" href="javascript:;">
+Original_Files/1_.py: 2-16
+</a>
+<div class="mid" id="frag1" style="display:none"><pre>
+def separate_paren_groups(paren_string: str) -&gt; List[str]:
+    result = []
+    current_string = []
+    current_depth = 0
+    for c in paren_string:
+        if c == '(':
+            current_depth += 1
+            current_string.append(c)
+        elif c == ')':
+            current_depth -= 1
+            current_string.append(c)
+            if current_depth == 0:
+                result.append(''.join(current_string))
+                current_string.clear()
+    return result
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag7')" href="javascript:;">
+Files/1_all_2.py: 2-16
+</a>
+<div class="mid" id="frag7" style="display:none"><pre>
+def separate_paren_groups(paren_string: str) -&gt; List[str]:
+    groups = []
+    opened = 0
+    stack = []
+    for ch in paren_string:
+        if ch == '(':
+            opened += 1
+            stack.append(ch)
+        elif ch == ')':
+            opened -= 1
+            stack.pop()
+            if opened == 0:
+                groups.append(''.join(stack))
+                stack.clear()
+    return groups
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
 </table>
 <script language="JavaScript">
 function ShowHide(divId) { 

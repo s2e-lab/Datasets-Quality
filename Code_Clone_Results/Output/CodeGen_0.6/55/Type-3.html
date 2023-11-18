@@ -15,7 +15,7 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 2</td>
+<td><b>Clone pairs:</b> &nbsp; 5</td>
 <td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
@@ -23,13 +23,13 @@
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
 <td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 53</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 97</td>
 </tr>
 </table>
 <br>
 <table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
 <tr><td style="background-color:white">
-<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 3 fragments, nominal size 7 lines, similarity 71%</p>
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 6 fragments, nominal size 7 lines, similarity 71%</p>
 <table cellpadding=4 border=2>
 <tr>
 <td width="auto">
@@ -46,24 +46,53 @@ def fib(n: int):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag53')" href="javascript:;">
-Files/55_10.py: 1-7
+<a onclick="javascript:ShowHide('frag76')" href="javascript:;">
+Files/55_P13_12.py: 1-7
 </a>
-<div class="mid" id="frag53" style="display:none"><pre>
+<div class="mid" id="frag76" style="display:none"><pre>
 def fib(n: int):
     if n == 1:
         return 1
-    elif n == 0:
-        return 0
+    elif n == 2:
+        return 1
     else:
         return fib(n - 1) + fib(n - 2)
 </pre></div>
 </td>
 <td width="auto">
+<a onclick="javascript:ShowHide('frag34')" href="javascript:;">
+Files/55_P13_15.py: 1-7
+</a>
+<div class="mid" id="frag34" style="display:none"><pre>
+def fib(n: int):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fib(n - 1) + fib(n - 2)
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
 <a onclick="javascript:ShowHide('frag28')" href="javascript:;">
-Files/55_18.py: 1-7
+Files/55_P13_5.py: 1-7
 </a>
 <div class="mid" id="frag28" style="display:none"><pre>
+def fib(n: int):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fib(n - 1) + fib(n - 2)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag45')" href="javascript:;">
+Files/55_18.py: 1-7
+</a>
+<div class="mid" id="frag45" style="display:none"><pre>
 def fib(n: int):
     if n == 1:
         return 1
@@ -71,6 +100,20 @@ def fib(n: int):
         return 1
     else:
         return fib(n-1) + fib(n-2)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag94')" href="javascript:;">
+Files/55_10.py: 1-7
+</a>
+<div class="mid" id="frag94" style="display:none"><pre>
+def fib(n: int):
+    if n == 1:
+        return 1
+    elif n == 0:
+        return 0
+    else:
+        return fib(n - 1) + fib(n - 2)
 </pre></div>
 </td>
 </tr><tr>

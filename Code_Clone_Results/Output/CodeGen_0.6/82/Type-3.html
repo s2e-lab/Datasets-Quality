@@ -23,7 +23,7 @@
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
 <td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 27</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 40</td>
 </tr>
 </table>
 <br>
@@ -48,43 +48,10 @@ def prime_length(string):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag2')" href="javascript:;">
-Files/82_14.py: 1-10
-</a>
-<div class="mid" id="frag2" style="display:none"><pre>
-def prime_length(string):
-    number = len(string)
-    if number == 1 or number == 2:
-        return True
-    if number % 2 == 0:
-        return False
-    for i in range(3, number, 2):
-        if number % i == 0:
-            return False
-    return True
-</pre></div>
-</td>
-<td width="auto">
-<a onclick="javascript:ShowHide('frag14')" href="javascript:;">
-Files/82_P8_12.py: 1-8
-</a>
-<div class="mid" id="frag14" style="display:none"><pre>
-def prime_length(string: str) -&gt; bool:
-    n = len(string)
-    if n == 1:
-        return True
-    for i in range(2, n):
-        if n % i == 0:
-            return False
-    return True
-</pre></div>
-</td>
-</tr><tr>
-<td width="auto">
-<a onclick="javascript:ShowHide('frag27')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag40')" href="javascript:;">
 Files/82_13.py: 1-10
 </a>
-<div class="mid" id="frag27" style="display:none"><pre>
+<div class="mid" id="frag40" style="display:none"><pre>
 def prime_length(string):
     length = len(string)
     if len(string) == 2:
@@ -98,10 +65,43 @@ def prime_length(string):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag5')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag19')" href="javascript:;">
+Files/82_P8_12.py: 1-8
+</a>
+<div class="mid" id="frag19" style="display:none"><pre>
+def prime_length(string: str) -&gt; bool:
+    n = len(string)
+    if n == 1:
+        return True
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag3')" href="javascript:;">
+Files/82_14.py: 1-10
+</a>
+<div class="mid" id="frag3" style="display:none"><pre>
+def prime_length(string):
+    number = len(string)
+    if number == 1 or number == 2:
+        return True
+    if number % 2 == 0:
+        return False
+    for i in range(3, number, 2):
+        if number % i == 0:
+            return False
+    return True
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag9')" href="javascript:;">
 Files/82_4.py: 2-8
 </a>
-<div class="mid" id="frag5" style="display:none"><pre>
+<div class="mid" id="frag9" style="display:none"><pre>
     def is_prime(num):
         if num == 1:
             return False
@@ -112,10 +112,10 @@ Files/82_4.py: 2-8
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag24')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag35')" href="javascript:;">
 Files/82_8.py: 1-9
 </a>
-<div class="mid" id="frag24" style="display:none"><pre>
+<div class="mid" id="frag35" style="display:none"><pre>
 def prime_length(string):
     string_length = len(string)
     if string_length == 1:

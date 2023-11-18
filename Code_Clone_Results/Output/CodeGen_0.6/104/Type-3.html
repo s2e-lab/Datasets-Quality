@@ -15,7 +15,7 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 1</td>
+<td><b>Clone pairs:</b> &nbsp; 3</td>
 <td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
@@ -23,13 +23,13 @@
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
 <td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 37</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 47</td>
 </tr>
 </table>
 <br>
 <table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
 <tr><td style="background-color:white">
-<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 2 fragments, nominal size 6 lines, similarity 83%</p>
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 4 fragments, nominal size 6 lines, similarity 71%</p>
 <table cellpadding=4 border=2>
 <tr>
 <td width="auto">
@@ -46,10 +46,37 @@ def unique_digits(x):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag16')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag3')" href="javascript:;">
+Files/104_P13_17.py: 1-7
+</a>
+<div class="mid" id="frag3" style="display:none"><pre>
+def unique_digits(x):
+    unique_digits = []
+    for num in x:
+        num_str = str(num)
+        if "2" not in num_str and "4" not in num_str and "6" not in num_str and "8" not in num_str:
+            unique_digits.append(num)
+    return sorted(unique_digits)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag36')" href="javascript:;">
+Files/104_P13_3.py: 1-6
+</a>
+<div class="mid" id="frag36" style="display:none"><pre>
+def unique_digits(x):
+    res = []
+    for i in x:
+        if len(str(i)) % 2 == 1:
+            res.append(i)
+    return sorted(res)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag17')" href="javascript:;">
 Files/104_P1_19.py: 1-6
 </a>
-<div class="mid" id="frag16" style="display:none"><pre>
+<div class="mid" id="frag17" style="display:none"><pre>
 def unique_digits(x):
     l = []
     for i in x:

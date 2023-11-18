@@ -15,16 +15,61 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 0</td>
-<td><b>Clone classes:</b> &nbsp; 0</td>
+<td><b>Clone pairs:</b> &nbsp; 1</td>
+<td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
 <td style="background-color:white">Clone type: &nbsp; 3-2</td>
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
 <td style="background-color:white">Clone size: &nbsp; 7 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 14</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 25</td>
 </tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 2 fragments, nominal size 10 lines, similarity 70%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag2')" href="javascript:;">
+Original_Files/119_.py: 2-11
+</a>
+<div class="mid" id="frag2" style="display:none"><pre>
+    def check(s):
+        val = 0
+        for i in s:
+            if i == '(':
+                val = val + 1
+            else:
+                val = val - 1
+            if val &lt; 0:
+                return False
+        return True if val == 0 else False
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag6')" href="javascript:;">
+Files/119_P13_0.py: 2-11
+</a>
+<div class="mid" id="frag6" style="display:none"><pre>
+    def match_paren(s):
+        cnt = 0
+        for char in s:
+            if char == '(':
+                cnt += 1
+            else:
+                cnt -= 1
+            if cnt &lt; 0:
+                return False
+        return cnt == 0
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
 </table>
 <script language="JavaScript">
 function ShowHide(divId) { 

@@ -15,7 +15,7 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 3</td>
+<td><b>Clone pairs:</b> &nbsp; 6</td>
 <td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
@@ -23,13 +23,13 @@
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
 <td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 33</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 50</td>
 </tr>
 </table>
 <br>
 <table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
 <tr><td style="background-color:white">
-<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 4 fragments, nominal size 6 lines, similarity 83%</p>
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 7 fragments, nominal size 6 lines, similarity 71%</p>
 <table cellpadding=4 border=2>
 <tr>
 <td width="auto">
@@ -46,10 +46,38 @@ def count_upper(s):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag12')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag14')" href="javascript:;">
+Files/98_P13_17.py: 1-7
+</a>
+<div class="mid" id="frag14" style="display:none"><pre>
+def count_upper(s):
+    vowels = 'aeiou'
+    count = 0
+    for i in range(0, len(s), 2):
+        if s[i] in vowels:
+            count += 1
+    return count
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag50')" href="javascript:;">
+Files/98_8.py: 1-6
+</a>
+<div class="mid" id="frag50" style="display:none"><pre>
+def count_upper(s):
+    count = 0
+    for i in range(0,len(s),2):
+        if s[i].isupper():
+            count+=1
+    return count
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag15')" href="javascript:;">
 Files/98_5.py: 1-7
 </a>
-<div class="mid" id="frag12" style="display:none"><pre>
+<div class="mid" id="frag15" style="display:none"><pre>
 def count_upper(s):
     s = s.upper()
     total = 0
@@ -60,23 +88,23 @@ def count_upper(s):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag33')" href="javascript:;">
-Files/98_8.py: 1-6
+<a onclick="javascript:ShowHide('frag43')" href="javascript:;">
+Files/98_P13_3.py: 1-6
 </a>
-<div class="mid" id="frag33" style="display:none"><pre>
+<div class="mid" id="frag43" style="display:none"><pre>
 def count_upper(s):
     count = 0
-    for i in range(0,len(s),2):
+    for i in range(0, len(s), 2):
         if s[i].isupper():
-            count+=1
+            count += 1
     return count
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag16')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag22')" href="javascript:;">
 Files/98_12.py: 1-6
 </a>
-<div class="mid" id="frag16" style="display:none"><pre>
+<div class="mid" id="frag22" style="display:none"><pre>
 def count_upper(s):
     c = 0
     for i in range(0, len(s), 2):
@@ -86,6 +114,19 @@ def count_upper(s):
 </pre></div>
 </td>
 </tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag49')" href="javascript:;">
+Files/98_P13_6.py: 1-6
+</a>
+<div class="mid" id="frag49" style="display:none"><pre>
+def count_upper(s):
+    count = 0
+    for i in range(0, len(s), 2):
+        if s[i].isupper():
+            count += 1
+    return count
+</pre></div>
+</td>
 </tr>
 </table>
 </td></tr>

@@ -15,7 +15,7 @@
 <tr style="font-size:14pt">
 <td><b>System 1:</b> &nbsp; Original_Files</td>
 <td><b>System 2:</b> &nbsp; Files</td>
-<td><b>Clone pairs:</b> &nbsp; 2</td>
+<td><b>Clone pairs:</b> &nbsp; 4</td>
 <td><b>Clone classes:</b> &nbsp; 1</td>
 </tr>
 <tr style="font-size:12pt">
@@ -23,13 +23,13 @@
 <td style="background-color:white">Granularity: &nbsp; functions-blind</td>
 <td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
 <td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
-<td style="background-color:white">Total functions-blind: &nbsp; 10</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 27</td>
 </tr>
 </table>
 <br>
 <table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
 <tr><td style="background-color:white">
-<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 3 fragments, nominal size 6 lines, similarity 83%</p>
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 5 fragments, nominal size 6 lines, similarity 83%</p>
 <table cellpadding=4 border=2>
 <tr>
 <td width="auto">
@@ -47,7 +47,7 @@ def max_element(l: list):
 </td>
 <td width="auto">
 <a onclick="javascript:ShowHide('frag3')" href="javascript:;">
-Files/35_1.py: 7-12
+Files/35_P13_19.py: 7-12
 </a>
 <div class="mid" id="frag3" style="display:none"><pre>
 def min_element(l: list):
@@ -59,8 +59,21 @@ def min_element(l: list):
 </pre></div>
 </td>
 <td width="auto">
-<a onclick="javascript:ShowHide('frag2')" href="javascript:;">
+<a onclick="javascript:ShowHide('frag11')" href="javascript:;">
 Files/35_1.py: 1-6
+</a>
+<div class="mid" id="frag11" style="display:none"><pre>
+def max_element(l: list):
+    max = l[0]
+    for i in l:
+        if i &gt; max:
+            max = i
+    return max
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag2')" href="javascript:;">
+Files/35_P13_19.py: 1-6
 </a>
 <div class="mid" id="frag2" style="display:none"><pre>
 def max_element(l: list):
@@ -69,6 +82,19 @@ def max_element(l: list):
         if i &gt; max:
             max = i
     return max
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag12')" href="javascript:;">
+Files/35_1.py: 7-12
+</a>
+<div class="mid" id="frag12" style="display:none"><pre>
+def min_element(l: list):
+    min = l[0]
+    for i in l:
+        if i &lt; min:
+            min = i
+    return min
 </pre></div>
 </td>
 </tr><tr>
