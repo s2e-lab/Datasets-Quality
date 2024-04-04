@@ -51,7 +51,7 @@ for d in original_data:
 from execution import check_correctness
 
 # %%
-file_name = 'StarCoder_Output_Py_0.8'
+file_name = 'SantaCoder_1B_Output_Py_0.2'
 with open(f'./Output/{file_name}.json', 'r') as f:
     data = json.load(f)
 
@@ -171,6 +171,3 @@ with open(f'./Output/{file_name}_result.jsonl', 'w') as f:
         f.write(json.dumps(d)+'\n')
 
 # %%
-
-
-

@@ -31,10 +31,12 @@ def model_response(prompt, temperature=0.8, max_length=128):
     return prompt
 
 for item in dataset:
-    if 'Java' in item:
-        model_name = "Salesforce/codegen25-7b-mulit"
-    else:
-        model_name = "Salesforce/codegen25-7b-mono"
+    # if 'Java' in item:
+    #     model_name = "Salesforce/codegen25-7b-mulit"
+    # else:
+    #     model_name = "Salesforce/codegen25-7b-mono"
+
+    model_name = "WizardLM/WizardCoder-1B-V1.0"
 
     dtype = torch.float16
 
@@ -54,7 +56,7 @@ for item in dataset:
                 new_data.append(updated_item)
 
                 # Save to a JSON file with a filename indicating the parameters
-            filename = f'./Output/CodeGen_Output_{item}_{temp}.json'
+            filename = f'./Output/WizardCoder_Output_{item}_{temp}.json'
             with open(filename, "w") as f:
                     json.dump(new_data, f, indent=4)
                     print(f'Saved to {filename}')

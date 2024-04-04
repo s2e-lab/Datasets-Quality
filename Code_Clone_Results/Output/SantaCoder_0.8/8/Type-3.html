@@ -1,0 +1,165 @@
+<html>
+<head>
+    <title>NiCad6 Clone Report</title>
+    <style type="text/css">
+        body {font-family:sans-serif;}
+        table {background-color:white; border:0px; padding:0px; border-spacing:4px; width:auto; margin-left:30px; margin-right:auto;}
+        td {background-color:rgba(192,212,238,0.8); border:0px; padding:8px; width:auto; vertical-align:top; border-radius:8px}
+        pre {background-color:white; padding:4px;}
+        a {color:darkblue;}
+    </style>
+</head>
+<body>
+<h2>NiCad6 Clone Report</h2>
+<table>
+<tr style="font-size:14pt">
+<td><b>System 1:</b> &nbsp; Original_Files</td>
+<td><b>System 2:</b> &nbsp; Files</td>
+<td><b>Clone pairs:</b> &nbsp; 7</td>
+<td><b>Clone classes:</b> &nbsp; 1</td>
+</tr>
+<tr style="font-size:12pt">
+<td style="background-color:white">Clone type: &nbsp; 3-2</td>
+<td style="background-color:white">Granularity: &nbsp; functions-blind</td>
+<td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
+<td style="background-color:white">Clone size: &nbsp; 5 - 2500 lines</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 16</td>
+</tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 8 fragments, nominal size 7 lines, similarity 71%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag1')" href="javascript:;">
+Original_Files/8_.py: 2-8
+</a>
+<div class="mid" id="frag1" style="display:none"><pre>
+def sum_product(numbers: List[int]) -&gt; Tuple[int, int]:
+    sum_value = 0
+    prod_value = 1
+    for n in numbers:
+        sum_value += n
+        prod_value *= n
+    return sum_value, prod_value
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag2')" href="javascript:;">
+Files/8_16.py: 2-10
+</a>
+<div class="mid" id="frag2" style="display:none"><pre>
+def sum_product(numbers: List[int]) -&gt; Tuple[int, int]:
+    if len(numbers) == 0:
+        return (0, 1)
+    product = 1
+    s = 0
+    for n in numbers:
+        s += n
+        product *= n
+    return s, product
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag9')" href="javascript:;">
+Files/8_P13_7.py: 9-15
+</a>
+<div class="mid" id="frag9" style="display:none"><pre>
+def sum_product_2(numbers: List[int]) -&gt; Tuple[int, int]:
+	s = 0
+	p = 1
+	for n in numbers:
+		p *= n
+		s += n * p
+	return (s, p)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag3')" href="javascript:;">
+Files/8_P13_5.py: 2-8
+</a>
+<div class="mid" id="frag3" style="display:none"><pre>
+def sum_product(numbers: List[int]) -&gt; Tuple[int, int]:
+    sum_ = 0
+    prod_ = 1
+    for x in numbers:
+        sum_ += x
+        prod_ *= x
+    return (sum_, prod_)
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag11')" href="javascript:;">
+Files/8_P13_13.py: 2-8
+</a>
+<div class="mid" id="frag11" style="display:none"><pre>
+def sum_product(numbers: List[int]) -&gt; Tuple[int, int]:
+    product = 1
+    sum = 0
+    for num in numbers:
+        product *= num
+        sum += num
+    return (sum, product)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag15')" href="javascript:;">
+Files/8_P13_18.py: 2-8
+</a>
+<div class="mid" id="frag15" style="display:none"><pre>
+def sum_product(numbers: List[int]) -&gt; Tuple[int, int]:
+    product = 1
+    sum = 0
+    for number in numbers:
+        sum += number * product
+        product *= number
+    return sum, product
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag12')" href="javascript:;">
+Files/8_0.py: 2-8
+</a>
+<div class="mid" id="frag12" style="display:none"><pre>
+def sum_product(numbers: List[int]) -&gt; Tuple[int, int]:
+    total = 0
+    product = 1
+    for n in numbers:
+        total += n
+        product *= n
+    return (total, product)
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag8')" href="javascript:;">
+Files/8_P13_7.py: 2-8
+</a>
+<div class="mid" id="frag8" style="display:none"><pre>
+def sum_product(numbers: List[int]) -&gt; Tuple[int, int]:
+	total = 0
+	product = 1
+	for n in numbers:
+		total += n
+		product *= n
+	return (total, product)
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<script language="JavaScript">
+function ShowHide(divId) { 
+    if(document.getElementById(divId).style.display == 'none') {
+        document.getElementById(divId).style.display='block';
+    } else { 
+        document.getElementById(divId).style.display = 'none';
+    } 
+}
+</script>
+</body>
+</html>
